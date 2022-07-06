@@ -377,6 +377,14 @@ Despite its prevalence in the environment, no living organism is known to use al
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Aluminium"@en .
 
+ccat:103025
+	a	skos:Concept ;
+	ccat:code	"103025" ;
+	skos:altLabel	"NASAAC"@en ;
+	skos:broader	ccat:1030 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"North American Special Aluminum Alloy"@en .
+
 ccat:103030
 	a	skos:Concept ;
 	ccat:code	"103030" ;
@@ -3354,6 +3362,41 @@ Finished lumber is supplied in standard sizes, mostly for the construction indus
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Sawnwood"@en .
 
+ccat:3035
+	a	skos:Concept ;
+	ccat:code	"3035" ;
+	skos:broader	ccat:30 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Paper"@en .
+
+ccat:303510
+	a	skos:Concept ;
+	ccat:code	"303510" ;
+	skos:broader	ccat:3035 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Newsprint"@en .
+
+ccat:303520
+	a	skos:Concept ;
+	ccat:code	"303520" ;
+	skos:broader	ccat:3035 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Containerboard"@en .
+
+ccat:303530
+	a	skos:Concept ;
+	ccat:code	"303530" ;
+	skos:broader	ccat:3035 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Pulp"@en .
+
+ccat:303550
+	a	skos:Concept ;
+	ccat:code	"303550" ;
+	skos:broader	ccat:3035 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Recovered Paper"@en .
+
 ccat:3040
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
@@ -3701,6 +3744,34 @@ ccat:4010
 	skos:exactMatch	stw:13621-3 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Freight"@en .
+
+ccat:401010
+	a	skos:Concept ;
+	ccat:code	"401010" ;
+	skos:broader	ccat:4010 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Wet Freight"@en .
+
+ccat:401020
+	a	skos:Concept ;
+	ccat:code	"401020" ;
+	skos:broader	ccat:4010 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Container Freight"@en .
+
+ccat:401025
+	a	skos:Concept ;
+	ccat:code	"401025" ;
+	skos:broader	ccat:4010 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Dry Bulk Freight"@en .
+
+ccat:401030
+	a	skos:Concept ;
+	ccat:code	"401030" ;
+	skos:broader	ccat:4010 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Air Freight"@en .
 
 ccat:4020
 	a	skos:Concept ;
