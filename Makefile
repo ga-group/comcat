@@ -19,8 +19,8 @@ canon: .comcat.skos.ttl.canon
 
 check.%: %.ttl shacl/%.shacl.ttl
 	truncate -s 0 /tmp/$@.ttl
-	$(stardog) data add --remove-all -g "http://data.ga-group.nl/catasess/" catasess $< $(ADDITIONAL)
-	$(stardog) icv report --output-format PRETTY_TURTLE -g "http://data.ga-group.nl/catasess/" -r -l -1 catasess shacl/$*.shacl.ttl \
+	$(stardog) data add --remove-all -g "http://data.ga-group.nl/comcat/" comcat $< $(ADDITIONAL)
+	$(stardog) icv report --output-format PRETTY_TURTLE -g "http://data.ga-group.nl/comcat/" -r -l -1 comcat shacl/$*.shacl.ttl \
         >> /tmp/$@.ttl || true
 	$(MAKE) $*.rpt
 
@@ -28,9 +28,9 @@ check.%: %.ttl shacl/%.shacl.sql
 	$(RM) tmp/shacl-*.qry
 	mawk 'BEGIN{f=0}/\f/{f++;next}{print>"tmp/shacl-"f".qry"}' $(filter %.sql, $^)
 	truncate -s 0 /tmp/$@.ttl
-	$(stardog) data add --remove-all -g "http://data.ga-group.nl/catasess/" catasess $< $(ADDITIONAL)
+	$(stardog) data add --remove-all -g "http://data.ga-group.nl/comcat/" comcat $< $(ADDITIONAL)
 	for i in tmp/shacl-*.qry; do \
-		$(stardog) query execute --format PRETTY_TURTLE -g "http://data.ga-group.nl/catasess/" -r -l -1 catasess $${i}; \
+		$(stardog) query execute --format PRETTY_TURTLE -g "http://data.ga-group.nl/comcat/" -r -l -1 comcat $${i}; \
 	done \
         >> /tmp/$@.ttl || true
 	$(MAKE) $*.rpt
@@ -40,10 +40,8 @@ check.%: %.ttl shacl/%.shacl.sql
 
 
 setup-stardog:                                                                                                                                                                                          
-	$(stardog)-admin db create -o reasoning.sameas=OFF -n catasess
-	$(stardog) namespace add --prefix cata --uri http://data.ga-group.nl/catasess/Catalogues/ catasess
-	$(stardog) namespace add --prefix sess --uri http://data.ga-group.nl/catasess/TradingSessions/ catasess
-	$(stardog) namespace add --prefix treg --uri http://data.ga-group.nl/catasess/TradingRegimes/ catasess
+	$(stardog)-admin db create -o reasoning.sameas=OFF -n comcat
+	$(stardog) namespace add --prefix ccat --uri http://data.ga-group.nl/comcat/ comcat
 
 unsetup-stardog:
-	$(stardog)-admin db drop catasess
+	$(stardog)-admin db drop comcat

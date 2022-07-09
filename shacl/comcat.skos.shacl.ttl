@@ -1,0 +1,51 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix bps: <http://bsym.bloomberg.com/pricing_source/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ccat: <http://data.ga-group.nl/comcat/> .
+
+<> sh:entailment <http://www.w3.org/ns/entailment/RDFS> .
+
+ccat:concept a sh:NodeShape ;
+	sh:targetClass skos:Concept , skos:topConceptOf ;
+	## tests
+	sh:property ccat:comp.code ;
+	sh:sparql ccat:cons.scheme ;
+	sh:sparql ccat:cons.code ;
+	.
+
+ccat:comp.code a sh:PropertyShape ;
+	sh:path ccat:code ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	.
+
+ccat:cons.code
+	sh:prefixes ccat: ;
+	sh:message "IRI of ccat and ccat:code should coincide" ;
+	sh:select """
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ccat: <http://data.ga-group.nl/comcat/>
+
+SELECT $this ?value WHERE {
+	$this ccat:code ?value .
+	FILTER(STRAFTER(STR($this), STR(ccat:)) != ?value)
+}
+"""
+	.
+
+ccat:cons.scheme
+	sh:prefixes ccat: ;
+	sh:message "file should only contain comcat concepts" ;
+	sh:select """
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ccat: <http://data.ga-group.nl/comcat/>
+
+SELECT $this ?value WHERE {
+	$this skos:inScheme|skos:topConceptOf ?value .
+	FILTER(?value != ccat:)
+}
+"""
+	.
