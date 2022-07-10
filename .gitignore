@@ -1,2 +1,4 @@
 tmp
+secrets.mk
 *.canon
+.imported*

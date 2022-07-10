@@ -7,6 +7,9 @@ all: comcat.skos.ttl canon
 check:
 canon: .comcat.skos.ttl.canon
 
+-include secrets.mk
+csvsql := isql $(ISQL_HOST) $(ISQL_USER) $(ISQL_PASS) BANNER=ON CSV=ON VERBOSE=OFF PROMPT=OFF CSV_FIELD_SEPARATOR='	'
+
 .%.ttl.canon: %.ttl
 	rapper -i turtle $< >/dev/null
 	ttl2ttl --sortable $< \
@@ -15,6 +18,10 @@ canon: .comcat.skos.ttl.canon
 	| tr '\001' '@' \
 	| ttl2ttl -B \
 	> $@ && mv $@ $< \
+	&& touch $@
+
+.imported.%: sql/load-%.sql %.ttl
+	$(csvsql) $< \
 	&& touch $@
 
 check.%: %.ttl shacl/%.shacl.ttl
