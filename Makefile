@@ -22,21 +22,20 @@ csvsql := isql $(ISQL_HOST) $(ISQL_USER) $(ISQL_PASS) BANNER=ON CSV=ON VERBOSE=O
 	&& touch $@
 
 .imported.%: sql/load-%.sql %.ttl
-	$(csvsql) $< \
-	&& touch $@
+	$(csvsql) $(filter %.sql, $^)
+	$(stardog) data add --remove-all -g "http://data.ga-group.nl/comcat/" comcat $(filter %.ttl, $^)
+	touch $@
 
-check.%: %.ttl shacl/%.shacl.ttl
+check.%: %.ttl shacl/%.shacl.ttl .imported.%
 	truncate -s 0 /tmp/$@.ttl
-	$(stardog) data add --remove-all -g "http://data.ga-group.nl/comcat/" comcat $< $(ADDITIONAL)
 	$(stardog) icv report --output-format PRETTY_TURTLE -g "http://data.ga-group.nl/comcat/" -r -l -1 comcat shacl/$*.shacl.ttl \
         >> /tmp/$@.ttl || true
 	$(MAKE) $*.rpt
 
-check.%: %.ttl shacl/%.shacl.sql
+check.%: %.ttl shacl/%.shacl.sql .imported.%
 	$(RM) tmp/shacl-*.qry
 	mawk 'BEGIN{f=0}/\f/{f++;next}{print>"tmp/shacl-"f".qry"}' $(filter %.sql, $^)
 	truncate -s 0 /tmp/$@.ttl
-	$(stardog) data add --remove-all -g "http://data.ga-group.nl/comcat/" comcat $< $(ADDITIONAL)
 	for i in tmp/shacl-*.qry; do \
 		$(stardog) query execute --format PRETTY_TURTLE -g "http://data.ga-group.nl/comcat/" -r -l -1 comcat $${i}; \
 	done \
@@ -45,6 +44,23 @@ check.%: %.ttl shacl/%.shacl.sql
 
 %.rpt: /tmp/check.%.ttl
 	$(sparql) --results text --data $< --query sql/valrpt.sql
+
+export.void: tmp/comcat.skos.void
+	-mawk '(x+=$$0=="")<=3&&($$0==""||(x=0)||1)' void.ttl > $@
+	@echo >> $@
+	@echo "## with summaries" >> $@
+	cat $^ \
+	>> $@ && mv $@ void.ttl
+
+tmp/%.void: .imported.%
+	for i in sql/void-*.sql; do \
+		$(stardog) query execute --format PRETTY_TURTLE -g "http://data.ga-group.nl/comcat/" -r -l -1 comcat $${i}; \
+	done \
+	| ttl2ttl --sortable --expand-generic \
+	| sed 's@<urn:sha1:\([0-9a-f]*\)>@ _:b\1@; s/rdf:type\t/a\t/; /^@/d' \
+	| sort -u \
+	| ttl2ttl -B \
+	> $@
 
 
 setup-stardog:                                                                                                                                                                                          
