@@ -3,9 +3,10 @@ SHELL := /bin/zsh
 sparql := /home/freundt/usr/apache-jena/bin/sparql
 stardog := STARDOG_JAVA_ARGS='-Dstardog.default.cli.server=http://plutos:5820' /home/freundt/usr/stardog/bin/stardog
 
-all: comcat.skos.ttl canon
-check:
+all: comcat.skos.ttl canon imported
+check: check.comcat.skos
 canon: .comcat.skos.ttl.canon
+imported: .imported.comcat.skos
 
 -include secrets.mk
 csvsql := isql $(ISQL_HOST) $(ISQL_USER) $(ISQL_PASS) BANNER=ON CSV=ON VERBOSE=OFF PROMPT=OFF CSV_FIELD_SEPARATOR='	'

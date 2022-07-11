@@ -1,5 +1,5 @@
 @prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
-@prefix ccat: <http://schema.ga-group.nl/comcat/> .
+@prefix ccat: <http://data.ga-group.nl/comcat/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix eurovoc: <http://eurovoc.europa.eu/> .
@@ -8,18 +8,30 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sm: <http://www.omg.org/techprocess/ab/SpecificationMetadata/> .
 @prefix stw: <http://zbw.eu/stw/descriptor/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ccat:
 	a	skos:ConceptScheme ;
-	dct:abstract	"""This taxonomy """@en ;
+	dct:abstract	"""A taxonomy concerned with the collection of traded commodities for use by the global financial community. Taxons are assigned a numeric code across up to four tiers of hierarchy: the class of commodity, the category within the class, and the kind of commodity within the category, possibly extended with the sub-kind.
+
+The list of traded commodities, be it standard listed products or products traded OTC, is constantly monitored for the purpose of regular revisions to the standard."""@en ;
+	dct:creator	<https://orcid.org/0000-0002-7352-2825> ;
+	dct:format	"text/turtle"^^xsd:string ;
 	dct:issued	"2022-06-28T02:25:19Z"^^xsd:dateTime ;
 	dct:license	<https://creativecommons.org/licenses/by/4.0/> ;
+	dct:modified	"2022-06-18T12:43:00Z"^^xsd:dateTime ;
 	skos:definition	"A commodity is an economic good or service that has full or substantial fungibility, i.e the market treats instances of the good as equivalent or nearly so with no regard to who produced them."@en ;
-	skos:note	"This taxonomy follows industry's vocabularies."@en ;
-	skos:prefLabel	"Taxonomy for traded commodities"@en .
+	skos:note	"This taxonomy (broadly) follows industry's vocabularies, such as FAO's agrovoc, various tariff systems, or the STW thesaurus. It is made by market participants who needed  a single fine-grained classification system instead of choosing between several domain-specific ones or a single coarse one."@en ;
+	skos:prefLabel	"Taxonomy for traded commodities"@en ;
+	sm:copyright	"Copyright (c) 2022 GA Financial Solutions GmbH" ;
+	sm:fileAbbreviation	"comcat" ;
+	sm:filename	"comcat.skos.ttl" ;
+	vann:preferredNamespacePrefix	"ccat"^^xsd:string ;
+	vann:preferredNamespaceUri	"http://data.ga-group.nl/comcat/" .
 
 ccat:10
 	a	skos:Concept ;
@@ -223,6 +235,8 @@ ccat:10105010
 	a	skos:Concept ;
 	ccat:code	"10105010" ;
 	skos:broader	ccat:101050 ;
+	skos:definition	"The base load is the minimum level of demand on an electrical grid over a span of time, for example, one week. This demand can be met by unvarying power plants, dispatchable generation, or by a collection of smaller intermittent energy sources, depending on which approach has the best mix of low cost, availability and high reliability in any particular market."@en ;
+	skos:exactMatch	wd:Q360897 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Base Load"@en .
 
@@ -230,6 +244,8 @@ ccat:10105020
 	a	skos:Concept ;
 	ccat:code	"10105020" ;
 	skos:broader	ccat:101050 ;
+	skos:definition	"Peak demand on an electrical grid is simply the highest electrical power demand that has occurred over a specified time period (GC6nen 2008). Peak demand is typically characterized as annual, daily or seasonal and has the unit of power. Peak demand, peak load or on-peak are terms used in energy demand management describing a period in which electrical power is expected to be provided for a sustained period at a significantly higher than average supply level. Peak demand fluctuations may occur on daily, monthly, seasonal and yearly cycles. For an electric utility company, the actual point of peak demand is a single half-hour or hourly period which represents the highest point of customer consumption of electricity. At this time there is a combination of office, domestic demand and at some times of the year, the fall of darkness."@en ;
+	skos:exactMatch	wd:Q3393666 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Peak Load"@en .
 
@@ -237,13 +253,23 @@ ccat:10105030
 	a	skos:Concept ;
 	ccat:code	"10105030" ;
 	skos:broader	ccat:101050 ;
+	skos:definition	"Period in the load profile that shows nearly no peaks, typically the night."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Off-peak"@en .
+
+ccat:10105040
+	a	skos:Concept ;
+	ccat:code	"10105040" ;
+	skos:broader	ccat:101050 ;
+	skos:definition	"Upwards or downwards flank between off-peak and on-peak demand covered by special load following plants."@en ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Shoulder"@en .
 
 ccat:10105050
 	a	skos:Concept ;
 	ccat:code	"10105050" ;
 	skos:broader	ccat:101050 ;
+	skos:definition	"Transmission rights entitle the holder to receive compensation for congestion charges across an energy path."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Transmission Rights"@en .
 
@@ -621,7 +647,8 @@ ccat:2010
 	a	skos:Concept ;
 	ccat:code	"2010" ;
 	skos:broader	ccat:20 ;
-	skos:definition	""@en ;
+	skos:definition	"A cereal is any grass cultivated for the edible components of its grain. The term may also refer to the resulting grain itself. Cereal grain crops are grown in greater quantities and provide more food energy worldwide than any other type of crop and are therefore staple crops. Edible grains from other plant families, such as buckwheat, quinoa and chia, are referred to as pseudocereals."@en ;
+	skos:exactMatch	agrovoc:c_1474 , eurovoc:536 , wd:Q12117 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Cereals"@en .
 
@@ -738,22 +765,16 @@ ccat:201080
 	a	skos:Concept ;
 	ccat:code	"201080" ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"A group of highly variable small-seeded grasses, widely grown around the world as cereal crops or grains for fodder and human food."@en ;
-	skos:inScheme	ccat: ;
-	skos:prefLabel	"Millets"@en .
-
-ccat:20108010
-	a	skos:Concept ;
-	ccat:code	"20108010" ;
-	skos:broader	ccat:201080 ;
 	skos:definition	"Fonio is the term for two cultivated grasses, black fonio and white fonio, in the genus Digitaria that are notable crops in parts of West Africa. They are millets with small grains."@en ;
+	skos:exactMatch	agrovoc:c_3b4c07e9 , wd:Q1340738 ;
 	skos:inScheme	ccat: ;
-	skos:prefLabel	"Fonio"@en .
+	skos:prefLabel	"White Fonio"@en .
 
 ccat:201090
 	a	skos:Concept ;
 	ccat:code	"201090" ;
 	skos:broader	ccat:2010 ;
+	skos:closeMatch	agrovoc:c_6301 , wd:Q2643145 ;
 	skos:definition	"Cereals of minor economic importance."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Cereals and Pseudocereals"@en .
@@ -782,7 +803,7 @@ ccat:2020
 	a	skos:Concept ;
 	ccat:code	"2020" ;
 	skos:broader	ccat:20 ;
-	skos:definition	""@en ;
+	skos:definition	"Oil-bearing crops are plants that are grown primarily for their oil. Edible vegetable oils may be used for cooking, or as food additives. Many vegetable oils, edible and otherwise, are burned as fuel, for instance as a substitute for petroleum-based fuels. Some may be also used for cosmetics, medical purposes, wood finishing, oil painting and other industrial purposes."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil-Bearing Crops and Derived Products"@en .
 
@@ -849,7 +870,8 @@ ccat:202050
 	a	skos:Concept ;
 	ccat:code	"202050" ;
 	skos:broader	ccat:2020 ;
-	skos:definition	""@en ;
+	skos:definition	"The groundnut is a legume crop grown mainly for its edible seeds. It is widely grown in the tropics and subtropics, being important to both small and large commercial producers. It is classified as both a grain legume and, due to its high oil content, an oil crop."@en ;
+	skos:exactMatch	agrovoc:c_11368 , stw:14056-3 , wd:Q37383 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Groundnuts"@en .
 
@@ -867,7 +889,7 @@ ccat:202090
 	a	skos:Concept ;
 	ccat:code	"202090" ;
 	skos:broader	ccat:2020 ;
-	skos:definition	""@en ;
+	skos:definition	"The rosids are members of a large clade (monophyletic group) of flowering plants making up more than a quarter of all angiosperms with their about 70,000 species."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Rosid Seeds"@en .
 
@@ -876,6 +898,7 @@ ccat:20209010
 	ccat:code	"20209010" ;
 	skos:altLabel	"Egusi"@en ;
 	skos:broader	ccat:202090 ;
+	skos:closeMatch	agrovoc:c_12487 ;
 	skos:definition	"""Egusi (also known by variations including agusi,ohue,agushi) is the name for the protein-rich seeds of certain cucurbitaceous plants (squash, melon, gourd), which after being dried and ground are used as a major ingredient in West African cuisine.
 
 Authorities disagree whether the word is used more properly for the seeds of the colocynth, those of a particular large-seeded variety of the watermelon, or generically for those of any cucurbitaceous plant. The characteristics and uses of all these seeds are broadly similar. Major egusi-growing nations include Mali, Burkina Faso, Togo, Ghana, Cote d'Ivoire, Benin, Nigeria, and Cameroon.
@@ -889,7 +912,12 @@ ccat:20209020
 	a	skos:Concept ;
 	ccat:code	"20209020" ;
 	skos:broader	ccat:202090 ;
-	skos:definition	""@en ;
+	skos:definition	"""The castor bean is a species of perennial flowering plant in the spurge family, Euphorbiaceae. It is the sole species in the monotypic genus, Ricinus, and subtribe, Ricininae. It reproduces with a mixed pollination system which favors selfing by geitonogamy but at the same time can be an out-crosser by anemophily (wind pollination) or entomophily (insect pollination).
+
+Its seed is the castor bean, which, despite its name, is not a bean (that is, the seed of many Fabaceae). Castor is indigenous to the southeastern Mediterranean Basin, Eastern Africa, and India, but is widespread throughout tropical regions (and widely grown elsewhere as an ornamental plant).
+
+Castor seed is the source of castor oil, which has a wide variety of uses. The seeds contain between 40% and 60% oil that is rich in triglycerides, mainly ricinolein. The seed also contains ricin, a water-soluble toxin, which is also present in lower concentrations throughout the plant."""@en ;
+	skos:exactMatch	agrovoc:c_18705 , eurovoc:3724 , wd:Q64597240 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Castor Beans"@en .
 
@@ -897,7 +925,10 @@ ccat:20209030
 	a	skos:Concept ;
 	ccat:code	"20209030" ;
 	skos:broader	ccat:202090 ;
-	skos:definition	""@en ;
+	skos:closeMatch	wd:Q2699247 ;
+	skos:definition	"""The tung nut is the fruit of Vernicia fordii, usually known as the tung tree, a species of Vernicia in the spurge family native to southern China, Burma, and northern Vietnam. It is a hard, woody pear-shaped berry 4 to 6 cm long and 3 to 5 cm in diameter, containing four or five large, oily seeds. The tung nut is green initially, becoming dull brown when it is ripe in autumn. Tung oil, or China wood oil, is extracted from the nut.
+
+Global production of the fruit rose from just over 100,000 tonnes in 1970 to almost 200,000 tonnes by 1980. Fruit yields are typically in the range of 4.5 to 5 tonnes per hectare. A number of cultivars have been selected for increased yield and small tree size, including 'Folsom', 'Cahl', 'Isabel', 'La Crosser', and 'Lampton'."""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Tung Nuts"@en .
 
@@ -905,7 +936,10 @@ ccat:20209040
 	a	skos:Concept ;
 	ccat:code	"20209040" ;
 	skos:broader	ccat:202090 ;
-	skos:definition	""@en ;
+	skos:definition	"""Mustard seeds are the small round seeds of various mustard plants. The seeds are usually about 1 to 2 millimetres in diameter and may be coloured from yellowish white to black. They are an important spice in many regional foods and may come from one of three different plants: black mustard (Brassica nigra), brown Indian mustard (B. juncea), or white/yellow mustard (B. hirta/Sinapis alba).
+
+Mustard seeds are a rich source of oil and protein. The seed has oil as high as 46-48%, and whole seed meal has 43.6% protein. Grinding and mixing the seeds with water, vinegar or other liquids creates the yellow condiment known as prepared mustard."""@en ;
+	skos:exactMatch	agrovoc:c_fd07a050 , wd:Q1937700 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Mustard Seed"@en .
 
@@ -913,15 +947,19 @@ ccat:20209050
 	a	skos:Concept ;
 	ccat:code	"20209050" ;
 	skos:broader	ccat:202090 ;
-	skos:definition	""@en ;
+	skos:definition	"""Triadica sebifera is a tree native to eastern China and Taiwan. It is commonly called Chinese tallow, Chinese tallowtree, Florida aspen, chicken tree, gray popcorn tree, or candleberry tree.
+
+The seeds (as well as from those of Triadica cochinchinensis) are the sources of stillingia oil, a drying oil used in paints and varnishes. The fatty coat of the seeds, used for candle and soap making, is known as stillingia tallow; hence its common name. It is relevant to biodiesel production because it is the third most productive vegetable oil producing crop in the world, after algae and oil palm. The leaves are used as herbal medicine to treat boils. The plant sap and leaves are reputed to be toxic, and decaying leaves from the plant are toxic to other species of plants."""@en ;
+	skos:exactMatch	wd:Q113005689 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Tallowtree Seeds"@en .
 
 ccat:20209060
 	a	skos:Concept ;
-	ccat:code	"2020909060" ;
+	ccat:code	"20209060" ;
 	skos:broader	ccat:202090 ;
-	skos:definition	""@en ;
+	skos:definition	"Linseed is the seed of the flax plant. Depending on the sort they are brown or yellow in colour, taste nutty and contain about 40% oil."@en ;
+	skos:exactMatch	agrovoc:c_12192 , wd:Q911332 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Linseed"@en .
 
@@ -929,15 +967,16 @@ ccat:20209065
 	a	skos:Concept ;
 	ccat:code	"20209065" ;
 	skos:broader	ccat:202090 ;
-	skos:definition	""@en ;
+	skos:definition	"Hempseed is the seed of Cannabis sativa. Hempseed can be cold-pressed into hempseed oil and is high in unsaturated fatty acids."@en ;
+	skos:exactMatch	agrovoc:Q113005802 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Hempseed"@en .
 
 ccat:202095
 	a	skos:Concept ;
-	ccat:code	"202090" ;
+	ccat:code	"202095" ;
 	skos:broader	ccat:2020 ;
-	skos:definition	""@en ;
+	skos:definition	"The asterids are members of the largest group of flowering plant with more than 80,000 species, about a third of the total flowering plant species."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Asterid Seeds"@en .
 
@@ -975,7 +1014,10 @@ ccat:20209530
 	a	skos:Concept ;
 	ccat:code	"20209530" ;
 	skos:broader	ccat:202095 ;
-	skos:definition	""@en ;
+	skos:definition	"""Safflower seed is the seed of Carthamus tinctorius, a highly branched, herbaceous, thistle-like annual plant in the family Asteraceae. It is commercially cultivated for vegetable oil extracted from the seeds.
+
+In 2020, global production of safflower seeds was 653,030 tonnes, led by Kazakhstan with 35% of the world total. Other significant producers were Russia and Mexico, with 28% of world production combined."""@en ;
+	skos:exactMatch	agrovoc:c_25503 , wd:Q104413623 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Safflower Seed"@en .
 
@@ -983,7 +1025,18 @@ ccat:20209535
 	a	skos:Concept ;
 	ccat:code	"20209535" ;
 	skos:broader	ccat:202095 ;
-	skos:definition	""@en ;
+	skos:definition	"""Sesame seed is the seed of Sesamum indicum. Sesame seeds are small. Their sizes vary with the thousands of varieties known. Typically, the seeds are about 3 to 4 mm long by 2 mm wide and 1 mm thick.
+
+Sesame seed is considered to be the oldest oilseed crop known to humanity. The genus has many species, and most are wild. Most wild species of the genus Sesamum are native to sub-Saharan Africa. Sesamum indicum, the cultivated type, originated in India.
+
+Sesame seeds are protected by a capsule that bursts when the seeds are ripe. The time of this bursting, or \"dehiscence\", tends to vary, so farmers cut plants by hand and place them together in an upright position to continue ripening until all the capsules have opened.
+
+Since sesame is a small, flat seed, it is difficult to dry it after harvest because the small seed makes the movement of air around the seed difficult. Therefore, the seeds need to be harvested as dry as possible and stored at 6% moisture or less. If the seed is too moist, it can quickly heat up and become rancid. After harvesting, the seeds are usually cleaned and hulled. In some countries, once the seeds have been hulled, they are passed through an electronic color-sorting machine that rejects any discolored seeds to ensure perfect color, because sesame seeds with consistent appearance are perceived to be of better quality by consumers, and sell for a higher price. Immature or off-sized seeds are removed and used for sesame oil production.
+
+In 2020, world production of sesame seeds was 7 million metric tons (6,900,000 long tons; 7,700,000 short tons), led by Sudan, Myanmar, and Tanzania. The white and other lighter-coloured sesame seeds are common in Europe, the Americas, West Asia, and the Indian subcontinent. The black and darker-coloured sesame seeds are mostly produced in China and Southeast Asia. In the United States most sesame is raised by farmers under contract to Sesaco, which also supplies proprietary seed.
+
+Japan is the world's largest sesame importer. Sesame oil, particularly from roasted seed, is an important component of Japanese cooking and traditionally the principal use of the seed. China is the second-largest importer of sesame, mostly oil-grade. China exports lower-priced food-grade sesame seeds, particularly to Southeast Asia. Other major importers are United States, Canada, Netherlands, Turkey, and France."""@en ;
+	skos:exactMatch	agrovoc:c_14216 , wd:Q12000036 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Sesame Seed"@en .
 
@@ -992,7 +1045,10 @@ ccat:20209540
 	ccat:code	"20209540" ;
 	skos:altLabel	"Shea Nuts"@en ;
 	skos:broader	ccat:202095 ;
-	skos:definition	""@en ;
+	skos:definition	"""Shea nut (karite nut) is seed from Butyrospermum parkii, a tree that can get up to 300 years old. After 20 years it blooms for the first time and carries fruits, after 50 years it will carry an anual yield of about 20 kg of fruits.
+
+Farming and processing the fruit is arduous work that is traditionally done by hand by the African women. The falling shea fruits are collected from the savanna ground. They are then separated from the pulp, cleaned, and left out in the sun to dry. After a few days the nuts are cracked open, and the kernels are removed and dried bagain before the fat extraction can begin."""@en ;
+	skos:exactMatch	agrovoc:c_25505 , wd:Q104212650 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Karite Nuts"@en .
 
@@ -1000,15 +1056,17 @@ ccat:20209545
 	a	skos:Concept ;
 	ccat:code	"20209545" ;
 	skos:broader	ccat:202095 ;
-	skos:definition	""@en ;
+	skos:definition	"""Kapok fruit is the fruit of Ceiba pentandra, a tropical tree of the order Malvales and the family Malvaceae, native to Mexico, Central America and the Caribbean, northern South America, and (as the variety Ceiba pentandra var guineensis) West Africa. A somewhat smaller variety was introduced to South and Southeast Asia, where it is cultivated.
+
+The fruit is famous for its cottonlike seed fibre, known as Java cotton. Its seeds are used to press a vegetable oil. The oil has a yellow colour and a pleasant, mild odour and taste, resembling cottonseed oil. It becomes rancid quickly when exposed to air. Kapok oil is produced in India, Indonesia and Malaysia. The oil has some potential as a biofuel and in paint preparation."""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Kapok Fruit"@en .
 
 ccat:202099
 	a	skos:Concept ;
-	ccat:code	"202090" ;
+	ccat:code	"202099" ;
 	skos:broader	ccat:2020 ;
-	skos:definition	""@en ;
+	skos:definition	"Any other oil seeds"@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Oilseeds"@en .
 
@@ -1026,7 +1084,9 @@ ccat:20209920
 	ccat:code	"20209920" ;
 	skos:altLabel	"Goat Nut"@en ;
 	skos:broader	ccat:202099 ;
-	skos:definition	""@en ;
+	skos:closeMatch	wd:Q267749 ;
+	skos:definition	"Jojoba, or goat nut, deer nut, pignut, wild hazel, quinine nut, coffeeberry, is the seed of Simmondsia chinensis which is native to the Southwestern United States. Jojoba is grown commercially to produce jojoba oil, a liquid wax ester extracted from its seed. Jojoba is normally harvested by hand because seeds do not all mature in the same time. Yield is around 3.5 t/ha depending on the age of the plantation."@en ;
+	skos:exactMatch	agrovoc:c_11913 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Jojoba"@en .
 
@@ -1197,7 +1257,7 @@ ccat:202595
 
 ccat:20259510
 	a	skos:Concept ;
-	ccat:code	"20259010" ;
+	ccat:code	"20259510" ;
 	skos:broader	ccat:202595 ;
 	skos:definition	"""Sunflower oil is the non-volatile oil pressed from the seeds of sunflower (Helianthus annuus). Sunflower oil is commonly used in food as a frying oil, and in cosmetic formulations as an emollient.
 
@@ -1225,7 +1285,7 @@ The composition of olive oil varies with the cultivar, altitude, time of harvest
 
 ccat:20259525
 	a	skos:Concept ;
-	ccat:code	"20259025" ;
+	ccat:code	"20259525" ;
 	skos:broader	ccat:202595 ;
 	skos:definition	"Oil made from the olive cake left after the virgin pressing."@en ;
 	skos:inScheme	ccat: ;
@@ -1516,6 +1576,7 @@ ccat:204050
 
 ccat:204060
 	a	skos:Concept ;
+	ccat:code	"204060" ;
 	skos:broader	ccat:2040 ;
 	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
@@ -1588,6 +1649,7 @@ ccat:20501040
 
 ccat:20501090
 	a	skos:Concept ;
+	ccat:code	"20501090" ;
 	skos:broader	ccat:205010 ;
 	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
@@ -1699,6 +1761,7 @@ ccat:20503090
 
 ccat:205040
 	a	skos:Concept ;
+	ccat:code	"205040" ;
 	skos:broader	ccat:2050 ;
 	skos:definition	"Botanical fruit with fleshy pericarp, containing one or many seeds."@en ;
 	skos:exactMatch	wd:Q13184 ;
@@ -1936,7 +1999,9 @@ ccat:206040
 	a	skos:Concept ;
 	ccat:code	"206040" ;
 	skos:broader	ccat:2060 ;
-	skos:definition	""@en ;
+	skos:definition	"""Ginger (Zingiber officinale) is a flowering plant whose rhizome, ginger root or ginger, is widely used as a spice and a folk medicine. It is a herbaceous perennial which grows annual pseudostems (false stems made of the rolled bases of leaves) about one meter tall bearing narrow leaf blades. The inflorescences bear flowers having pale yellow petals with purple edges, and arise directly from the rhizome on separate shoots.
+
+Though it is grown in many areas across the globe, ginger is among the earliest recorded spices to be cultivated and exported from southwest India. India holds the seventh position in ginger export worldwide, however is the largest producer of ginger in the world. Regions in southwest and Northeast India are most suitable for ginger production due to their warm and humid climate, average rainfall and land space."""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Ginger"@en .
 
@@ -1993,6 +2058,7 @@ Vanilla is the second-most expensive spice after saffron because growing the van
 
 ccat:206070
 	a	skos:Concept ;
+	ccat:code	"206070" ;
 	skos:broader	ccat:2060 ;
 	skos:definition	"""Black pepper (Piper nigrum) is a flowering vine in the family Piperaceae, cultivated for its fruit, known as a peppercorn, which is usually dried and used as a spice and seasoning. When fresh and fully mature, the fruit is about 5 mm (0.20 in) in diameter and dark red, and contains a single seed, like all drupes. Peppercorns and the ground pepper derived from them may be described simply as pepper, or more precisely as black pepper (cooked and dried unripe fruit), green pepper (dried unripe fruit), or white pepper (ripe fruit seeds).
 
@@ -2005,6 +2071,7 @@ Ground, dried and cooked peppercorns have been used since antiquity, both for fl
 
 ccat:206075
 	a	skos:Concept ;
+	ccat:code	"206075" ;
 	skos:altLabel	"Allspice"@en ;
 	skos:broader	ccat:2060 ;
 	skos:definition	"""Allspice, also known as Jamaica pepper, myrtle pepper, pimenta, or pimento, is the dried unripe berry of Pimenta dioica, a midcanopy tree native to the Greater Antilles, southern Mexico, and Central America, now cultivated in many warm parts of the world. The name \"allspice\" was coined as early as 1621 by the English, who valued it as a spice that combined the flavours of cinnamon, nutmeg, and clove.
@@ -2026,6 +2093,7 @@ ccat:206090
 
 ccat:2070
 	a	skos:Concept ;
+	ccat:code	"2070" ;
 	skos:broader	ccat:20 ;
 	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
@@ -2033,6 +2101,7 @@ ccat:2070
 
 ccat:207010
 	a	skos:Concept ;
+	ccat:code	"207010" ;
 	skos:broader	ccat:2070 ;
 	skos:definition	"""A coffee bean is a seed of the Coffea plant and the source for coffee. It is the pit inside the red or purple fruit often referred to as a cherry. Just like ordinary cherries, the coffee fruit is also a so-called stone fruit. Even though the coffee beans are not technically beans, they are referred to as such because of their resemblance to true beans. The fruits -- coffee cherries or coffee berries -- most commonly contain two stones with their flat sides together. A small percentage of cherries contain a single seed, instead of the usual two. This is called a \"peaberry\". The peaberry occurs only between 10 and 15% of the time, and it is a fairly common (yet scientifically unproven) belief that they have more flavour than normal coffee beans. Like Brazil nuts (a seed) and white rice, coffee beans consist mostly of endosperm.
 
@@ -2043,6 +2112,7 @@ The two most economically important varieties of coffee plant are the Arabica an
 
 ccat:207020
 	a	skos:Concept ;
+	ccat:code	"207020" ;
 	skos:broader	ccat:2070 ;
 	skos:definition	"Seeds from the pod of the cacao tree (Theobroma cacao), native to Amazon forests. The center of the cocoa bean is called the nib, from which chocolate is made.  The cocoa bean or simply cocoa, also called cacao bean or cacao, is the dried and fully fermented seed of Theobroma cacao, from which cocoa solids (a mixture of nonfat substances) and cocoa butter (the fat) can be extracted. Cocoa beans are the basis of chocolate, and Mesoamerican foods including tejate, an indigenous Mexican drink that also includes maize. "@en ;
 	skos:exactMatch	agrovoc:c_1711 ;
@@ -2190,7 +2260,7 @@ ccat:251040
 
 Originally raised for cockfighting or for special ceremonies, chickens were not kept for food until the Hellenistic period (4th-2nd centuries BCE). Humans now keep chickens primarily as a source of food (consuming both their meat and eggs) and as pets.
 
-Chickens are one of the most common and widespread domestic animals, with a total population of 23.7 billion as of 2018, up from more than 19 billion in 2011. There are more chickens in the world than any other bird. There are numerous cultural references to chickens â�� in myth, folklore and religion, and in language and literature."""@en ;
+Chickens are one of the most common and widespread domestic animals, with a total population of 23.7 billion as of 2018, up from more than 19 billion in 2011. There are more chickens in the world than any other bird."""@en ;
 	skos:exactMatch	agrovoc:c_1540 , wd:Q780 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Chickens"@en .
@@ -2225,9 +2295,9 @@ The females of many breeds of domestic ducks are unreliable at sitting their egg
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Ducks"@en .
 
-ccat:251048
+ccat:251047
 	a	skos:Concept ;
-	ccat:code	"251048" ;
+	ccat:code	"251047" ;
 	skos:broadMatch	stw:14135-0 ;
 	skos:broader	ccat:2510 ;
 	skos:definition	"""Domestic geese (Anser anser domesticus or Anser cygnoides domesticus, two separate species) are domesticated grey geese (either greylag geese or swan geese) that are kept by humans as poultry for their meat, eggs and down feathers since ancient times. Approximately 700 million geese are slaughtered each year for meat worldwide."""@en ;
@@ -2235,21 +2305,34 @@ ccat:251048
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Geese"@en .
 
-ccat:251049
+ccat:251048
 	a	skos:Concept ;
-	ccat:code	"251049" ;
+	ccat:code	"251048" ;
 	skos:broader	ccat:2510 ;
 	skos:closeMatch	agrovoc:c_3180 ;
 	skos:definition	"""Pigeons are domesticated birds bred to be a source of meat called squab. Squabs have been used as a food in many nations for centuries. They were bred to breed and grow quickly. Other birds refers to domesticated or wild fowl bred or hunted for meat."""@en ;
 	skos:inScheme	ccat: ;
 	skos:narrowMatch	agrovoc:c_5870 , wd:Q204179 ;
-	skos:prefLabel	"Pigeons and Other Birds"@en .
+	skos:prefLabel	"Pigeons"@en .
+
+ccat:251049
+	a	skos:Concept ;
+	ccat:code	"251049" ;
+	skos:broader	ccat:2510 ;
+	skos:definition	"Other birds, gamebirds, or domestic birds bred or hunted for consumption, such as quail, ostrich, Guinea fowl, etc."@en ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Other Birds"@en .
 
 ccat:251050
 	a	skos:Concept ;
 	ccat:code	"251050" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
+	skos:definition	"""The horse (Equus ferus caballus) is a domesticated, odd-toed, hoofed mammal. It belongs to the taxonomic family Equidae and is one of two extant subspecies of Equus ferus.
+
+Horses are adapted to run, allowing them to quickly escape predators, possessing an excellent sense of balance and a strong fight-or-flight response. Female horses, called mares, carry their young for approximately 11 months, and a young horse, called a foal, can stand and run shortly following birth.
+
+Horses and humans interact in a wide variety of sport competitions and non-competitive recreational pursuits, as well as in working activities such as police work, agriculture, entertainment, and therapy. Horses were historically used in warfare, from which a wide variety of riding and driving techniques developed, using many different styles of equipment and methods of control. Many products are derived from horses, including meat, milk, hide, hair, bone, and pharmaceuticals extracted from the urine of pregnant mares."""@en ;
+	skos:exactMatch	agrovoc:c_3668 , wd:Q726 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Horses"@en .
 
@@ -2524,8 +2607,8 @@ ccat:253042
 	a	skos:Concept ;
 	ccat:code	"253042" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
-	skos:exactMatch	agrovoc:c_24096 ;
+	skos:definition	"Turkey meat, commonly referred to as just turkey, is the meat from turkeys, typically domesticated turkeys but also wild turkeys. It is a popular poultry dish, especially in North America, where it is traditionally consumed as part of culturally significant events such as Thanksgiving and Christmas, as well as in standard cuisine."@en ;
+	skos:exactMatch	agrovoc:c_24096 , wd:Q4200953 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Turkey Meat"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/headings/0207> .
@@ -2534,37 +2617,58 @@ ccat:253045
 	a	skos:Concept ;
 	ccat:code	"253045" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
-	skos:exactMatch	agrovoc:c_24021 ;
+	skos:definition	"""Duck or duckling is the meat of several species of bird in the family Anatidae, found in both fresh and salt water. Duck is eaten in many cuisines around the world. It is a high-fat, high-protein meat rich in iron.
+
+Duck is particularly predominant in the Chinese cuisine, partly in the (Northeast) Indian cuisine, and in a variety of dishes around the world, most of which involve roasting for at least part of the cooking process to aid in crisping the skin. Some dishes use parts of the duck as an ingredient along with other ingredients."""@en ;
+	skos:exactMatch	agrovoc:c_24021 , wd:Q542042 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Duck Meat"@en ;
+	skos:related	<https://www.trade-tariff.service.gov.uk/headings/0207> .
+
+ccat:253047
+	a	skos:Concept ;
+	ccat:code	"253047" ;
+	skos:broader	ccat:2530 ;
+	skos:definition	"Goose is the meat of domesticated or wild geese, used traditionally in the French, Polish, and Baltic cuisines, particularly during the Christmas season."@en ;
+	skos:exactMatch	agrovoc:c_24034 , wd:Q46976697 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Goose Meat"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/headings/0207> .
 
 ccat:253048
 	a	skos:Concept ;
 	ccat:code	"253048" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
-	skos:exactMatch	agrovoc:c_24034 ;
+	skos:definition	"""Pigeon meat, sometimes called squab, refers to the meat of domestic pigeons, or more broadly of all dove and pigeon species, such as the wood pigeon, the mourning dove, the extinct-in-the-wild socorro dove, and the now extinct passenger pigeon. and their meat. More recently, squab meat comes almost entirely from domesticated pigeons. The meat of dove and pigeon gamebirds hunted primarily for sport is rarely called squab.
+
+The practice of domesticating pigeons as livestock may have come from North Africa; historically, squabs or pigeons have been consumed in many civilizations, including ancient Egypt (still common in modern Egypt), Rome, China, (Northeast) India, and Medieval Europe. Although squab has been consumed throughout much of recorded history, it is generally regarded as exotic, not as a contemporary staple food; there are more records of its preparation for the wealthy than for the poor.
+
+The modern squab industry uses utility pigeons. Squabs are raised until they are roughly a month old, when they reach adult size but have not yet flown, before being slaughtered."""@en ;
+	skos:exactMatch	wd:Q7581884 ;
 	skos:inScheme	ccat: ;
-	skos:prefLabel	"Goose Meat"@en ;
-	skos:related	<https://www.trade-tariff.service.gov.uk/headings/0207> .
+	skos:prefLabel	"Meat of Pigeons"@en ;
+	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208901000> , agrovoc:c_6147 .
 
 ccat:253049
 	a	skos:Concept ;
 	ccat:code	"253049" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
+	skos:definition	"Meat from other birds bred or hunted for consumption, such as quail, ostrich, Guinea fowl, etc."@en ;
 	skos:inScheme	ccat: ;
-	skos:prefLabel	"Meat of Pigeons and other Birds"@en ;
-	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208901000> , agrovoc:c_6147 .
+	skos:prefLabel	"Meat of Other Birds"@en .
 
 ccat:253050
 	a	skos:Concept ;
 	ccat:code	"253050" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
-	skos:exactMatch	agrovoc:c_15983 ;
+	skos:definition	"""Horse meat forms a significant part of the culinary traditions of many countries, particularly in Europe and Asia. The eight countries that consume the most horse meat consume about 4.3 million horses a year. For the majority of humanity's early existence, wild horses were hunted as a source of protein.
+
+Horse meat has a slightly sweet taste reminiscent of beef. Many consumers allege not being able to tell the difference between beef and horse meat. Meat from younger horses tends to be lighter in color, while older horses produce richer color and flavor, as with most mammals. Horse meat can be used to replace beef, pork, mutton, venison, and any other meat in virtually any recipe. Horse meat is usually very lean. Jurisdictions that allow for the slaughter of horses for food rarely have age restrictions, so many are quite young, some even as young as 16 to 24 months old. IHDH did find that horses at the age of 6 months had lower value of moisture and protein.
+
+In most countries where horses are slaughtered for food, they are processed in a similar fashion to cattle, i.e., in large-scale factory slaughter houses (abattoirs) where they are stunned with a captive bolt gun and bled to death. In countries with a less industrialized food-production system, horses and other animals are slaughtered individually outdoors as needed, in or near the village where they will be consumed.
+
+As horses are relatively poor converters of grass and grain to meat compared to cattle, they are not usually bred or raised specifically for their meat. Instead, horses are slaughtered when their monetary value as riding or work animals is low, but their owners can still make money selling them for horse meat."""@en ;
+	skos:exactMatch	agrovoc:c_15983 , wd:Q1124327 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Horse Meat"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/headings/0205> .
@@ -2727,7 +2831,7 @@ ccat:253520
 
 ccat:253525
 	a	skos:Concept ;
-	ccat:ccat	"253525" ;
+	ccat:code	"253525" ;
 	skos:broader	ccat:2535 ;
 	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
@@ -3399,6 +3503,7 @@ ccat:303550
 
 ccat:3040
 	a	skos:Concept ;
+	ccat:code	"3040" ;
 	skos:broader	ccat:30 ;
 	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
