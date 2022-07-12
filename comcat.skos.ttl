@@ -972,7 +972,7 @@ ccat:20209065
 	ccat:code	"20209065" ;
 	skos:broader	ccat:202090 ;
 	skos:definition	"Hempseed is the seed of Cannabis sativa. Hempseed can be cold-pressed into hempseed oil and is high in unsaturated fatty acids."@en ;
-	skos:exactMatch	agrovoc:Q113005802 ;
+	skos:exactMatch	wd:Q113005802 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Hempseed"@en .
 
