@@ -11,11 +11,11 @@
 ccat:concept a sh:NodeShape ;
 	sh:targetClass skos:Concept ;
 	## tests
-	sh:property ccat:comp.code ;
+	sh:property ccat:comp.notation ;
 	sh:property ccat:comp.label ;
 	sh:property ccat:comp.definition ;
 	sh:property ccat:comp.inScheme ;
-	sh:sparql ccat:cons.code ;
+	sh:sparql ccat:cons.notation ;
 	.
 
 ccat:topConcept a sh:NodeShape ;
@@ -24,8 +24,8 @@ ccat:topConcept a sh:NodeShape ;
 	sh:property ccat:comp.topConceptOf ;
 	.
 
-ccat:comp.code a sh:PropertyShape ;
-	sh:path ccat:code ;
+ccat:comp.notation a sh:PropertyShape ;
+	sh:path skos:notation ;
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
 	.
@@ -58,15 +58,15 @@ ccat:comp.topConceptOf a sh:PropertyShape ;
 	sh:hasValue ccat: ;
 	.
 
-ccat:cons.code
+ccat:cons.notation
 	sh:prefixes ccat: ;
-	sh:message "IRI of ccat and ccat:code should coincide" ;
+	sh:message "IRI of ccat and skos:notation should coincide" ;
 	sh:select """
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX ccat: <http://data.ga-group.nl/comcat/>
 
 SELECT $this ?value WHERE {
-	$this ccat:code ?value .
+	$this skos:notation ?value .
 	FILTER(STRAFTER(STR($this), STR(ccat:)) != ?value)
 }
 """
