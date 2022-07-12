@@ -16,7 +16,7 @@
 	dct:title	"comcat" ;
 	pav:createdBy	<https://orcid.org/0000-0002-7352-2825> ;
 	pav:createdOn	"2022-06-28"^^xsd:date ;
-	skos:note	"This taxonomy (broadly) follows industry's vocabularies, such as FAO's agrovoc, various tariff systems, or the STW thesaurus. It is made by market participants who needed  a single fine-grained classification system instead of choosing between several domain-specific ones or a single coarse one."@en ;
+	skos:note	"This taxonomy (broadly) follows industry's vocabularies, such as FAO's agrovoc, various tariff systems, or the STW thesaurus. It is made by market participants who needed a single fine-grained classification system instead of choosing between several domain-specific ones or a single coarse one."@en ;
 
 
 
@@ -25,22 +25,22 @@
 
 <http://data.ga-group.nl/comcat/Dataset>
 	a	void:Dataset ;
-	pav:lastRefreshedOn	"2022-07-11T12:05:46.481Z"^^xsd:dateTime ;
+	pav:lastRefreshedOn	"2022-07-12T04:40:40.176Z"^^xsd:dateTime ;
 	void:classPartition	[
 		void:class	<http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 		void:entities	1 ;
 	] , [
 		void:class	owl:Thing ;
-		void:entities	899 ;
+		void:entities	924 ;
 	] , [
 		void:class	rdf:DatatypeProperty ;
 		void:entities	1 ;
 	] , [
 		void:class	<http://www.w3.org/2004/02/skos/core#Concept> ;
-		void:entities	414 ;
+		void:entities	416 ;
 	] ;
 	void:classes	4 ;
-	void:entities	900 ;
+	void:entities	925 ;
 	void:properties	27 ;
 	void:propertyPartition	[
 		void:distinctObjects	1 ;
@@ -68,15 +68,15 @@
 		void:property	<http://purl.org/dc/terms/abstract> ;
 		void:triples	1 ;
 	] , [
-		void:distinctObjects	36 ;
-		void:distinctSubjects	34 ;
+		void:distinctObjects	38 ;
+		void:distinctSubjects	36 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#altLabel> ;
-		void:triples	36 ;
+		void:triples	38 ;
 	] , [
-		void:distinctObjects	252 ;
-		void:distinctSubjects	404 ;
+		void:distinctObjects	264 ;
+		void:distinctSubjects	266 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#definition> ;
-		void:triples	405 ;
+		void:triples	266 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -104,19 +104,19 @@
 		void:triples	1 ;
 	] , [
 		void:distinctObjects	1 ;
-		void:distinctSubjects	409 ;
+		void:distinctSubjects	416 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#inScheme> ;
-		void:triples	409 ;
-	] , [
-		void:distinctObjects	414 ;
-		void:distinctSubjects	414 ;
-		void:property	<http://data.ga-group.nl/comcat/code> ;
-		void:triples	414 ;
+		void:triples	416 ;
 	] , [
 		void:distinctObjects	416 ;
-		void:distinctSubjects	415 ;
-		void:property	<http://www.w3.org/2004/02/skos/core#prefLabel> ;
+		void:distinctSubjects	416 ;
+		void:property	<http://data.ga-group.nl/comcat/code> ;
 		void:triples	416 ;
+	] , [
+		void:distinctObjects	417 ;
+		void:distinctSubjects	417 ;
+		void:property	<http://www.w3.org/2004/02/skos/core#prefLabel> ;
+		void:triples	417 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -133,15 +133,15 @@
 		void:property	<http://purl.org/dc/terms/modified> ;
 		void:triples	1 ;
 	] , [
-		void:distinctObjects	413 ;
-		void:distinctSubjects	184 ;
+		void:distinctObjects	436 ;
+		void:distinctSubjects	197 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#exactMatch> ;
-		void:triples	417 ;
+		void:triples	440 ;
 	] , [
 		void:distinctObjects	62 ;
-		void:distinctSubjects	409 ;
+		void:distinctSubjects	411 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#broader> ;
-		void:triples	411 ;
+		void:triples	413 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -149,9 +149,9 @@
 		void:triples	1 ;
 	] , [
 		void:distinctObjects	4 ;
-		void:distinctSubjects	900 ;
+		void:distinctSubjects	925 ;
 		void:property	rdf:type ;
-		void:triples	1315 ;
+		void:triples	1342 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -178,4 +178,4 @@
 		void:property	<http://www.w3.org/2004/02/skos/core#broadMatch> ;
 		void:triples	7 ;
 	] ;
-	void:triples	3929 .
+	void:triples	3854 .

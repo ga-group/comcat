@@ -24,6 +24,7 @@ The list of traded commodities, be it standard listed products or products trade
 	dct:issued	"2022-06-28T02:25:19Z"^^xsd:dateTime ;
 	dct:license	<https://creativecommons.org/licenses/by/4.0/> ;
 	dct:modified	"2022-06-18T12:43:00Z"^^xsd:dateTime ;
+	dct:title	"comcat" ;
 	skos:definition	"A commodity is an economic good or service that has full or substantial fungibility, i.e the market treats instances of the good as equivalent or nearly so with no regard to who produced them."@en ;
 	skos:note	"This taxonomy (broadly) follows industry's vocabularies, such as FAO's agrovoc, various tariff systems, or the STW thesaurus. It is made by market participants who needed  a single fine-grained classification system instead of choosing between several domain-specific ones or a single coarse one."@en ;
 	skos:prefLabel	"Taxonomy for traded commodities"@en ;
@@ -37,6 +38,7 @@ ccat:10
 	a	skos:Concept ;
 	ccat:code	"10" ;
 	skos:definition	"Hard commodities, or hards, are commodities that, generally, are mined, rather than grown."@en ;
+	skos:inScheme	ccat: ;
 	skos:prefLabel	"Hards"@en ;
 	skos:topConceptOf	ccat: .
 
@@ -408,6 +410,7 @@ ccat:103025
 	ccat:code	"103025" ;
 	skos:altLabel	"NASAAC"@en ;
 	skos:broader	ccat:1030 ;
+	skos:definition	"Aluminium alloy conforming to the LME NA380.1 specification which is a modification of The Aluminium Association Inc. A380.1 specification (1989).  The alloy has a composition of 8.50%-9.50% Si, 3.00%-3.50% Cu, 0.80%-1.00% Fe, a maximum of 3.00% Zn, a maximum of 1.80% sludge (Fe + 2Mn + 3Cr), a maximum of 0.50% Ni, a maximum of 0.45% Mn, a maximum of 0.10% Mg, Sn, Pb, Ti, and Cr each."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"North American Special Aluminum Alloy"@en .
 
@@ -640,6 +643,7 @@ ccat:20
 	a	skos:Concept ;
 	ccat:code	"20" ;
 	skos:definition	"Soft commodities, or softs, are commodities that, generally, are grown, rather than mined.  Furthermore, softs in this concept scheme are primarily for consumption, i.e. distinct from Materials."@en ;
+	skos:inScheme	ccat: ;
 	skos:prefLabel	"Softs"@en ;
 	skos:topConceptOf	ccat: .
 
@@ -1166,7 +1170,8 @@ ccat:202550
 	a	skos:Concept ;
 	ccat:code	"202550" ;
 	skos:broader	ccat:2025 ;
-	skos:definition	""@en ;
+	skos:definition	"Groundnut oil is a vegetal oil derived from groundnuts. The oil usually has a mild or neutral flavour. The flavour and aroma is intensified when made from roasted groundnuts. It is often used in American, Chinese, Indian, African and Southeast Asian cuisine, both for general cooking, and in the case of roasted oil, for added flavour. Peanut oil has a high smoke point (around 225 C) relative to many other cooking oils, so it is commonly used for frying foods."@en ;
+	skos:exactMatch	agrovoc:c_25477 , eurovoc:1263 , wd:Q265878 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Groundnuts"@en .
 
@@ -1174,7 +1179,7 @@ ccat:202590
 	a	skos:Concept ;
 	ccat:code	"202590" ;
 	skos:broader	ccat:2025 ;
-	skos:definition	""@en ;
+	skos:definition	"Oil of oil seeds of the rosid clade"@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Rosid Oils"@en .
 
@@ -1194,7 +1199,8 @@ ccat:20259020
 	a	skos:Concept ;
 	ccat:code	"20259020" ;
 	skos:broader	ccat:202590 ;
-	skos:definition	""@en ;
+	skos:definition	"Castor oil is a vegetable oil pressed from castor beans. It is a colourless or pale yellow liquid with a distinct taste and odour. Castor oil and its derivatives are used in the manufacturing of soaps, lubricants, hydraulic and brake fluids, paints, dyes, coatings, inks, cold-resistant plastics, waxes and polishes, nylon, and perfumes."@en ;
+	skos:exactMatch	agrovoc:c_25466 , wd:Q337492 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Castor Beans"@en .
 
@@ -1202,15 +1208,19 @@ ccat:20259025
 	a	skos:Concept ;
 	ccat:code	"20259025" ;
 	skos:broader	ccat:202590 ;
-	skos:definition	""@en ;
+	skos:definition	"Hydrogenated castor oil is made from the oil of castor beans by hydrogenation. The process saturates the alkenes, giving a waxy lubricant."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Hydrogenated Castor Oil"@en .
 
 ccat:20259030
 	a	skos:Concept ;
 	ccat:code	"20259030" ;
+	skos:altLabel	"China wood oil"@en ;
 	skos:broader	ccat:202590 ;
-	skos:definition	""@en ;
+	skos:definition	"""Tung oil or China wood oil is a drying oil obtained by pressing the seed from the nut of the tung tree (Vernicia fordii). The oil and its use are believed to have originated in ancient China and appear in the writings of Confucius from about 400 BC.
+
+Tung oil hardens upon exposure to air (through polymerization), and the resulting coating is transparent and has a deep, almost wet look. Used mostly for finishing and protecting wood, after numerous coats, the finish can even look plastic-like. Related drying oils include linseed, safflower, poppy, and soybean oils."""@en ;
+	skos:exactMatch	agrovoc:c_8005 , wd:Q2094522 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Tung Nuts"@en .
 
@@ -1218,7 +1228,12 @@ ccat:20259040
 	a	skos:Concept ;
 	ccat:code	"20259040" ;
 	skos:broader	ccat:202590 ;
-	skos:definition	""@en ;
+	skos:definition	"""Mustard oil is oil pressed from mustard seeds and is used as cooking oil in some cultures, but sale is restricted in some countries due to high levels of erucic acid. Varieties of mustard seed also exist that are low in erucic acid.
+
+Oil makes up about 30% of the mustard seeds. It can be produced from black mustard (Brassica nigra), brown Indian mustard (B. juncea), and white mustard (B. hirta).
+
+Having a distinctive pungent taste, the oil is used for cooking in India, Pakistan, Nepal and Bangladesh. Its pungent flavor is due to allyl isothiocyanate, a phytochemical of plants in the mustard family, Brassicaceae (for example, cabbage, horseradish or wasabi). Mustard oil has about 60% monounsaturated fatty acids (42% erucic acid and 12% oleic acid); it has about 21% polyunsaturated fats (6% the omega-3 alpha-linolenic acid and 15% the omega-6 linoleic acid), and it has about 12% saturated fats."""@en ;
+	skos:exactMatch	agrovoc:c_36137 , wd:Q910958 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Mustard Seed"@en .
 
@@ -1227,15 +1242,34 @@ ccat:20259050
 	ccat:code	"20259050" ;
 	skos:altLabel	"Chinese Vegetable Tallow"@en ;
 	skos:broader	ccat:202590 ;
-	skos:definition	""@en ;
+	skos:definition	"""Stillingia tallow or Chinese vegetable tallow is a fatty substance extracted from the coat of the seeds of Triadica sebifera (Chinese tallow tree) or Triadica cochinchinensis (Mountain tallow tree). It has traditionally been used for making candles.
+
+Stillingia tallow is essentially a mixture of triglycerides (esters of glycerol and fatty acids). The main triglycerides are glicerotriyl tripalmitate (5-30%) and 2-oleate,1,3-dipalmitate (~70%).
+
+The \"tallow\" is edible, and has applications in confectionery. However, the risk of contamination by the seed oil, which is toxic, is a possible concern."""@en ;
+	skos:exactMatch	wd:Q102347788 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Stillingia Tallow"@en .
+
+ccat:20259052
+	a	skos:Concept ;
+	ccat:code	"20259052" ;
+	skos:broader	ccat:202590 ;
+	skos:definition	"""Stillingia oil is an oil extracted (by solvents) from the seeds of plants of the Triadica genus such as Triadica sebifera (Chinese tallow tree) and Triadica cochinchinensis (Mountain tallow tree). It is a drying oil used in paints and varnishes, and it is believed to be toxic in China. Stillingia oil is different from stillingia tallow, a fatty substance that surround the seeds in the fruit, which is removed before extracting the oil.
+
+Stillingia oil has a typical drying time of 4-6 hours. The seeds produce 20-30% w/w of tallow fat and 10-17% w/w of stillingia oil. It has iodine number 127, a saponification value of 206, and a thiocyanogen value of 100.7."""@en ;
+	skos:exactMatch	wd:Q3142827 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Stillingia Oil"@en .
 
 ccat:20259060
 	a	skos:Concept ;
 	ccat:code	"20259060" ;
 	skos:broader	ccat:202590 ;
-	skos:definition	""@en ;
+	skos:definition	"""Linseed oil, also known as flaxseed oil or flax oil (in its edible form), is a colourless to yellowish oil obtained from the dried, ripened seeds of the flax plant (Linum usitatissimum). The oil is obtained by pressing, sometimes followed by solvent extraction.
+
+Linseed oil is an edible oil in demand as a dietary supplement, as a source of N1-Linolenic acid, an omega-3 fatty acid. In parts of Europe, it is traditionally eaten with potatoes and quark. It is regarded as a delicacy due to its hearty taste and ability to improve the bland flavour of quark."""@en ;
+	skos:exactMatch	agrovoc:c_4353 , wd:Q818405 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Linseed"@en .
 
@@ -1243,7 +1277,16 @@ ccat:20259065
 	a	skos:Concept ;
 	ccat:code	"20259065" ;
 	skos:broader	ccat:202590 ;
-	skos:definition	""@en ;
+	skos:definition	"""Hempseed oil is oil obtained by pressing hemp seeds. Cold pressed, unrefined hemp oil is dark to clear light green in color, with a nutty flavor. The darker the color, the grassier the flavour.
+
+Refined hemp seed oil is clear and colourless, with little flavour. It is primarily used in body care products. Industrial hemp seed oil is used in lubricants, paints, inks, fuel, and plastics. Hemp seed oil is used in the production of soaps, shampoos and detergents. The oil has a 3:1 ratio of omega-6 to omega-3 essential fatty acids. It may also be used as a feedstock for the large-scale production of biodiesel.
+
+About 49% of the weight of hempseed is an edible oil that contains 76% as polyunsaturated fat, including omega-6 fatty acids such as linoleic acid (LA, 54%) and gamma-linolenic acid (GLA, 3%), and omega-3 fatty acids such as alpha-linolenic acid (ALA, 17%) and stearidonic acid (2%). Both LA and ALA are essential fatty acids. In addition, hempseed oil contains 5% to 11% monounsaturated fat and 5% to 7% saturated fat. In common with other oils and fats, hemp seed oil provides 9 kcal/g.
+
+Compared with other culinary oils, hempseed oil is low in saturated fat and rich in polyunsaturated fat. It has a relatively low smoke point and is not suitable for frying. It is primarily used as a food oil and dietary supplement.
+
+Hemp oil is a \"drying oil\", as it can polymerize into a solid form. Due to its polymer-forming properties, hemp oil is used on its own or blended with other oils, resins, and solvents as an impregnator and varnish in wood finishing, as a pigment binder in oil paints, and as a plasticizer and hardener in putty."""@en ;
+	skos:exactMatch	wd:Q1575477 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Hempseed"@en .
 
@@ -1251,7 +1294,7 @@ ccat:202595
 	a	skos:Concept ;
 	ccat:code	"202595" ;
 	skos:broader	ccat:2025 ;
-	skos:definition	""@en ;
+	skos:definition	"Oil of oil seeds of the asterid clade"@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Asterid Oils"@en .
 
@@ -1295,7 +1338,8 @@ ccat:20259530
 	a	skos:Concept ;
 	ccat:code	"20259530" ;
 	skos:broader	ccat:202595 ;
-	skos:definition	""@en ;
+	skos:definition	"Safflower oil is made from the achenes of safflower. Cold pressing the seeds yields a cooking oil which is lower in saturated fats than olive oil. Hot pressing the seeds yields an industrial oil which is used in cosmetic products."@en ;
+	skos:exactMatch	agrovoc:c_25502 , wd:Q441113 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Safflower Seed"@en .
 
@@ -1303,15 +1347,22 @@ ccat:20259535
 	a	skos:Concept ;
 	ccat:code	"20259535" ;
 	skos:broader	ccat:202595 ;
-	skos:definition	""@en ;
+	skos:definition	"""Sesame oil is an edible vegetable oil derived from sesame seeds. The oil is one of the earliest-known crop-based oils. Worldwide mass modern production is limited due to the inefficient manual harvesting process required to extract the oil. Oil made from raw seeds, which may or may not be cold-pressed, is used as a cooking oil. Oil made from toasted seeds is used for its distinctive nutty aroma and taste, although it may be unsuitable for frying, which makes it taste burnt and bitter.
+
+Industrial uses include solvents in injected drugs, as a carrier oil in cosmetics, or as a coating for stored grains to prevent weevil attacks."""@en ;
+	skos:exactMatch	agrovoc:c_25504 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Sesame Seed"@en .
 
 ccat:20259540
 	a	skos:Concept ;
 	ccat:code	"20259540" ;
+	skos:altLabel	"Shea Butter"@en ;
 	skos:broader	ccat:202595 ;
-	skos:definition	""@en ;
+	skos:definition	"""The butter of karite nuts, also called shea butter, is an edible fat extracted from the nut of the African shea tree (Vitellaria paradoxa). It is ivory in colour when raw and commonly dyed yellow with borututu root or palm oil.
+
+The primary export market for shea butter is in the chocolate and confectionery industry. However, shea is also used as a cooking fat, food accompaniment and skin-care product in West Africa."""@en ;
+	skos:exactMatch	agrovoc:c_37951 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Butter of Karite Nuts"@en .
 
@@ -1319,7 +1370,6 @@ ccat:20259545
 	a	skos:Concept ;
 	ccat:code	"20259545" ;
 	skos:broader	ccat:202595 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Kapok"@en .
 
@@ -1327,7 +1377,6 @@ ccat:202599
 	a	skos:Concept ;
 	ccat:code	"202599" ;
 	skos:broader	ccat:2025 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Vegetal Oils"@en .
 
@@ -1346,7 +1395,6 @@ ccat:20259920
 	a	skos:Concept ;
 	ccat:code	"20259920" ;
 	skos:broader	ccat:202599 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Jojoba Oil"@en .
 
@@ -1354,7 +1402,6 @@ ccat:20259980
 	a	skos:Concept ;
 	ccat:code	"20259980" ;
 	skos:broader	ccat:202599 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Rice Bran"@en .
 
@@ -1363,7 +1410,6 @@ ccat:20259981
 	ccat:code	"20259981" ;
 	skos:altLabel	"Corn Oil"@en ;
 	skos:broader	ccat:202599 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Oil of Maize"@en .
 
@@ -1389,6 +1435,7 @@ ccat:202620
 	ccat:code	"202620" ;
 	skos:broader	ccat:2026 ;
 	skos:definition	"Residue of rapeseed oil extraction."@en ;
+	skos:exactMatch	agrovoc:c_16027 , wd:Q113010548 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Cake and Meal of Rapeseed"@en .
 
@@ -1405,6 +1452,7 @@ ccat:202632
 	ccat:code	"202632" ;
 	skos:broader	ccat:2026 ;
 	skos:definition	"Palm kernel cake (PKC) is the main by-product of the palm kernel oil extraction process. It further processed into palm kernel meal (PKM) by heating up the cake and evaporating residual water. It is a highly fibrous and medium grade protein feed, hence most suited to ruminant or rabbit feeding (Pickard, 2005). Palm kernel resulting from mechanical extraction contains 5-12% oil and solvent-extracted palm kernel meal contains 0.5-3% oil (Chin, 2001)."@en ;
+	skos:exactMatch	agrovoc:c_36344 , wd:Q110583134 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Cake and Meal of Palm Kernel"@en .
 
@@ -1413,6 +1461,7 @@ ccat:202640
 	ccat:code	"202640" ;
 	skos:broader	ccat:2026 ;
 	skos:definition	"Residue of cottonseed after oil extraction."@en ;
+	skos:exactMatch	agrovoc:c_35678 , wd:Q5175773 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Cake and Meal of Cottonseed"@en .
 
@@ -1444,7 +1493,7 @@ ccat:203010
 	a	skos:Concept ;
 	ccat:code	"203010" ;
 	skos:broader	ccat:2030 ;
-	skos:definition	""@en ;
+	skos:exactMatch	agrovoc:c_7501 , wd:Q36940 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Sugar Cane"@en .
 
@@ -1453,6 +1502,7 @@ ccat:20301010
 	ccat:code	"20301010" ;
 	skos:broader	ccat:203010 ;
 	skos:definition	"A non-refined, crystallized material derived from the juices of sugar-cane stalk and consisting either wholly or essentially of sucrose."@en ;
+	skos:exactMatch	agrovoc:c_16477 , wd:Q487233 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Cane Sugar"@en .
 
@@ -1460,7 +1510,7 @@ ccat:203020
 	a	skos:Concept ;
 	ccat:code	"203020" ;
 	skos:broader	ccat:2030 ;
-	skos:definition	""@en ;
+	skos:exactMatch	agrovoc:c_7499 , wd:Q151964 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Sugar Beet"@en .
 
@@ -1469,6 +1519,7 @@ ccat:20302010
 	ccat:code	"20302010" ;
 	skos:broader	ccat:203020 ;
 	skos:definition	"A non-refined, crystallized material derived from the juices extracted from the root of the sugar beet and consisting either wholly or essentially of sucrose."@en ;
+	skos:exactMatch	agrovoc:c_16474 , wd:Q9197055 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Beet Sugar"@en .
 
@@ -1516,7 +1567,7 @@ ccat:2040
 	a	skos:Concept ;
 	ccat:code	"2040" ;
 	skos:broader	ccat:20 ;
-	skos:definition	""@en ;
+	skos:closeMatch	agrovoc:c_6651 , agrovoc:c_7998 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Roots and Tubers"@en .
 
@@ -1546,7 +1597,6 @@ ccat:204020
 	a	skos:Concept ;
 	ccat:code	"204020" ;
 	skos:broader	ccat:2040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Yams"@en .
 
@@ -1554,7 +1604,6 @@ ccat:204030
 	a	skos:Concept ;
 	ccat:code	"204030" ;
 	skos:broader	ccat:2040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Cassava"@en .
 
@@ -1562,7 +1611,6 @@ ccat:204040
 	a	skos:Concept ;
 	ccat:code	"204040" ;
 	skos:broader	ccat:2040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Yautia"@en .
 
@@ -1570,7 +1618,6 @@ ccat:204050
 	a	skos:Concept ;
 	ccat:code	"204050" ;
 	skos:broader	ccat:2040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Taro"@en .
 
@@ -1578,7 +1625,6 @@ ccat:204060
 	a	skos:Concept ;
 	ccat:code	"204060" ;
 	skos:broader	ccat:2040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Chicory Roots"@en .
 
@@ -1586,7 +1632,6 @@ ccat:204090
 	a	skos:Concept ;
 	ccat:code	"204090" ;
 	skos:broader	ccat:2040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Roots"@en .
 
@@ -1627,7 +1672,6 @@ ccat:20501020
 	a	skos:Concept ;
 	ccat:code	"20501020" ;
 	skos:broader	ccat:205010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Tangerines and Mandarines and Clementines and Satsumas"@en .
 
@@ -1635,23 +1679,38 @@ ccat:20501030
 	a	skos:Concept ;
 	ccat:code	"20501030" ;
 	skos:broader	ccat:205010 ;
-	skos:definition	""@en ;
+	skos:exactMatch	agrovoc:c_4259 ;
 	skos:inScheme	ccat: ;
-	skos:prefLabel	"Lemons and Limes"@en .
+	skos:prefLabel	"Lemons"@en .
+
+ccat:20501035
+	a	skos:Concept ;
+	ccat:code	"20501035" ;
+	skos:broader	ccat:205010 ;
+	skos:exactMatch	agrovoc:c_4341 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Limes"@en .
 
 ccat:20501040
 	a	skos:Concept ;
 	ccat:code	"20501040" ;
 	skos:broader	ccat:205010 ;
-	skos:definition	""@en ;
+	skos:exactMatch	agrovoc:c_3358 ;
 	skos:inScheme	ccat: ;
-	skos:prefLabel	"Grapefruit and Pomelo"@en .
+	skos:prefLabel	"Grapefruit"@en .
+
+ccat:20501045
+	a	skos:Concept ;
+	ccat:code	"20501045" ;
+	skos:broader	ccat:205010 ;
+	skos:exactMatch	agrovoc:c_6367 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Pomelo"@en .
 
 ccat:20501090
 	a	skos:Concept ;
 	ccat:code	"20501090" ;
 	skos:broader	ccat:205010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Citrus Fruit"@en .
 
@@ -1681,7 +1740,6 @@ ccat:20502020
 	a	skos:Concept ;
 	ccat:code	"20502020" ;
 	skos:broader	ccat:205020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Pears"@en .
 
@@ -1689,7 +1747,6 @@ ccat:20502030
 	a	skos:Concept ;
 	ccat:code	"20502030" ;
 	skos:broader	ccat:205020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Quinces"@en .
 
@@ -1697,7 +1754,6 @@ ccat:20502090
 	a	skos:Concept ;
 	ccat:code	"20502090" ;
 	skos:broader	ccat:205020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Pome Fruits"@en .
 
@@ -1715,7 +1771,6 @@ ccat:20503010
 	a	skos:Concept ;
 	ccat:code	"20503010" ;
 	skos:broader	ccat:205030 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Cherries"@en .
 
@@ -1723,7 +1778,6 @@ ccat:20503015
 	a	skos:Concept ;
 	ccat:code	"20503015" ;
 	skos:broader	ccat:205030 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Sour Cherries"@en .
 
@@ -1731,7 +1785,6 @@ ccat:20503020
 	a	skos:Concept ;
 	ccat:code	"20503020" ;
 	skos:broader	ccat:205030 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Apricots"@en .
 
@@ -1739,7 +1792,6 @@ ccat:20503030
 	a	skos:Concept ;
 	ccat:code	"20503030" ;
 	skos:broader	ccat:205030 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Peaches and Nectarines"@en .
 
@@ -1747,7 +1799,6 @@ ccat:20503040
 	a	skos:Concept ;
 	ccat:code	"20503040" ;
 	skos:broader	ccat:205030 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Plums"@en .
 
@@ -1755,7 +1806,6 @@ ccat:20503090
 	a	skos:Concept ;
 	ccat:code	"20503090" ;
 	skos:broader	ccat:205030 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Drupes"@en .
 
@@ -1772,7 +1822,6 @@ ccat:20504010
 	a	skos:Concept ;
 	ccat:code	"20504010" ;
 	skos:broader	ccat:205040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Strawberries"@en .
 
@@ -1780,7 +1829,6 @@ ccat:20504020
 	a	skos:Concept ;
 	ccat:code	"20504020" ;
 	skos:broader	ccat:205040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Raspberries"@en .
 
@@ -1788,7 +1836,6 @@ ccat:20504030
 	a	skos:Concept ;
 	ccat:code	"20504030" ;
 	skos:broader	ccat:205040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Gooseberries"@en .
 
@@ -1796,7 +1843,6 @@ ccat:20504040
 	a	skos:Concept ;
 	ccat:code	"20504040" ;
 	skos:broader	ccat:205040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Currants"@en .
 
@@ -1804,7 +1850,6 @@ ccat:20504050
 	a	skos:Concept ;
 	ccat:code	"20504050" ;
 	skos:broader	ccat:205040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Blueberries"@en .
 
@@ -1812,7 +1857,6 @@ ccat:20504060
 	a	skos:Concept ;
 	ccat:code	"20504060" ;
 	skos:broader	ccat:205040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Cranberries"@en .
 
@@ -1820,7 +1864,6 @@ ccat:20504090
 	a	skos:Concept ;
 	ccat:code	"20504090" ;
 	skos:broader	ccat:205040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Berries"@en .
 
@@ -1828,8 +1871,7 @@ ccat:205050
 	a	skos:Concept ;
 	ccat:code	"205050" ;
 	skos:broader	ccat:2050 ;
-	skos:definition	""@en ;
-	skos:exactMatch	agrovoc:c_7974 , stw:14117-2 ;
+	skos:exactMatch	agrovoc:c_7974 , stw:14117-2 , wd:Q844144 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Tropical Fruits"@en .
 
@@ -1837,7 +1879,6 @@ ccat:20505010
 	a	skos:Concept ;
 	ccat:code	"20505010" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Bananas"@en .
 
@@ -1854,7 +1895,6 @@ ccat:20505020
 	a	skos:Concept ;
 	ccat:code	"20505020" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Kiwi Fruit"@en .
 
@@ -1862,7 +1902,6 @@ ccat:20505030
 	a	skos:Concept ;
 	ccat:code	"20505030" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Mangoes"@en .
 
@@ -1879,7 +1918,6 @@ ccat:20505050
 	a	skos:Concept ;
 	ccat:code	"20505050" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Avocados"@en .
 
@@ -1887,7 +1925,6 @@ ccat:20505060
 	a	skos:Concept ;
 	ccat:code	"20505060" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Dates"@en .
 
@@ -1895,7 +1932,6 @@ ccat:20505065
 	a	skos:Concept ;
 	ccat:code	"20505065" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:exactMatch	agrovoc:c_10840 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Figs"@en .
@@ -1904,7 +1940,6 @@ ccat:20505068
 	a	skos:Concept ;
 	ccat:code	"20505068" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:exactMatch	agrovoc:c_10840 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Jackfruit"@en .
@@ -1913,7 +1948,6 @@ ccat:20505070
 	a	skos:Concept ;
 	ccat:code	"20505070" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Papayas"@en .
 
@@ -1921,7 +1955,6 @@ ccat:20505080
 	a	skos:Concept ;
 	ccat:code	"20505080" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Pineapples"@en .
 
@@ -1929,7 +1962,6 @@ ccat:20505090
 	a	skos:Concept ;
 	ccat:code	"20505090" ;
 	skos:broader	ccat:205050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Tropical Fruit"@en .
 
@@ -1937,7 +1969,6 @@ ccat:205090
 	a	skos:Concept ;
 	ccat:code	"205090" ;
 	skos:broader	ccat:2050 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Fresh Fruit"@en .
 
@@ -2087,7 +2118,6 @@ ccat:206090
 	a	skos:Concept ;
 	ccat:code	"206090" ;
 	skos:broader	ccat:2060 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Spices"@en .
 
@@ -2095,7 +2125,6 @@ ccat:2070
 	a	skos:Concept ;
 	ccat:code	"2070" ;
 	skos:broader	ccat:20 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Stimulant Crops"@en .
 
@@ -2123,7 +2152,6 @@ ccat:207025
 	a	skos:Concept ;
 	ccat:code	"207025" ;
 	skos:broader	ccat:2070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Carobs"@en .
 
@@ -2131,7 +2159,6 @@ ccat:207030
 	a	skos:Concept ;
 	ccat:code	"207030" ;
 	skos:broader	ccat:2070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Tea"@en .
 
@@ -2139,7 +2166,6 @@ ccat:207035
 	a	skos:Concept ;
 	ccat:code	"207035" ;
 	skos:broader	ccat:2070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Mate"@en .
 
@@ -2147,7 +2173,6 @@ ccat:207039
 	a	skos:Concept ;
 	ccat:code	"207039" ;
 	skos:broader	ccat:2070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Tea"@en .
 
@@ -2155,7 +2180,6 @@ ccat:207040
 	a	skos:Concept ;
 	ccat:code	"207040" ;
 	skos:broader	ccat:2070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Tobacco Leaves"@en .
 
@@ -2163,7 +2187,6 @@ ccat:207050
 	a	skos:Concept ;
 	ccat:code	"207050" ;
 	skos:broader	ccat:2070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Hops"@en .
 
@@ -2171,7 +2194,6 @@ ccat:207090
 	a	skos:Concept ;
 	ccat:code	"207090" ;
 	skos:broader	ccat:2070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Stimulant Crops"@en .
 
@@ -2340,7 +2362,6 @@ ccat:251055
 	a	skos:Concept ;
 	ccat:code	"251055" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Asses"@en .
 
@@ -2348,7 +2369,6 @@ ccat:251058
 	a	skos:Concept ;
 	ccat:code	"251058" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Mules"@en .
 
@@ -2356,7 +2376,6 @@ ccat:251060
 	a	skos:Concept ;
 	ccat:code	"251060" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Camels"@en .
 
@@ -2364,7 +2383,6 @@ ccat:251069
 	a	skos:Concept ;
 	ccat:code	"251069" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Camelids"@en .
 
@@ -2372,7 +2390,6 @@ ccat:251070
 	a	skos:Concept ;
 	ccat:code	"251070" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Rabbits"@en .
 
@@ -2380,7 +2397,6 @@ ccat:251079
 	a	skos:Concept ;
 	ccat:code	"251079" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Rodents"@en .
 
@@ -2388,7 +2404,6 @@ ccat:251080
 	a	skos:Concept ;
 	ccat:code	"251080" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Game and Quarries"@en .
 
@@ -2396,7 +2411,6 @@ ccat:251090
 	a	skos:Concept ;
 	ccat:code	"251090" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Live Animals"@en .
 
@@ -2404,7 +2418,6 @@ ccat:251095
 	a	skos:Concept ;
 	ccat:code	"251095" ;
 	skos:broader	ccat:2510 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Non-Food Live Animals"@en .
 
@@ -2412,7 +2425,6 @@ ccat:2520
 	a	skos:Concept ;
 	ccat:code	"2520" ;
 	skos:broader	ccat:20 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Animal Fats"@en .
 
@@ -2420,7 +2432,6 @@ ccat:252010
 	a	skos:Concept ;
 	ccat:code	"252010" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fat of Cattle"@en .
 
@@ -2428,7 +2439,6 @@ ccat:252015
 	a	skos:Concept ;
 	ccat:code	"252015" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fat of Buffalo"@en .
 
@@ -2436,7 +2446,6 @@ ccat:252020
 	a	skos:Concept ;
 	ccat:code	"252020" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fat of Sheep"@en .
 
@@ -2444,7 +2453,6 @@ ccat:252025
 	a	skos:Concept ;
 	ccat:code	"252025" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fat of Goats"@en .
 
@@ -2452,7 +2460,6 @@ ccat:252030
 	a	skos:Concept ;
 	ccat:code	"252030" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fat of Pigs"@en .
 
@@ -2460,7 +2467,6 @@ ccat:252040
 	a	skos:Concept ;
 	ccat:code	"252040" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fat of Poultry"@en .
 
@@ -2468,7 +2474,6 @@ ccat:252060
 	a	skos:Concept ;
 	ccat:code	"252060" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fat of Camels"@en .
 
@@ -2476,7 +2481,6 @@ ccat:252069
 	a	skos:Concept ;
 	ccat:code	"252069" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fat of Other Camelids"@en .
 
@@ -2484,7 +2488,6 @@ ccat:252090
 	a	skos:Concept ;
 	ccat:code	"252090" ;
 	skos:broader	ccat:2520 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Animal Fats"@en .
 
@@ -2677,7 +2680,6 @@ ccat:253055
 	a	skos:Concept ;
 	ccat:code	"253055" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:exactMatch	agrovoc:c_24021 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Meat of Asses"@en ;
@@ -2687,7 +2689,6 @@ ccat:253058
 	a	skos:Concept ;
 	ccat:code	"253058" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Meat of Mules"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/headings/0205> .
@@ -2696,7 +2697,6 @@ ccat:253060
 	a	skos:Concept ;
 	ccat:code	"253060" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:exactMatch	agrovoc:c_23998 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Meat of Camels"@en ;
@@ -2706,7 +2706,6 @@ ccat:253069
 	a	skos:Concept ;
 	ccat:code	"253069" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Meat of other Domestic Camelids"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208600000> .
@@ -2715,7 +2714,6 @@ ccat:253070
 	a	skos:Concept ;
 	ccat:code	"253070" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Rabbit Meat"@en .
 
@@ -2723,7 +2721,6 @@ ccat:253074
 	a	skos:Concept ;
 	ccat:code	"253074" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Meat of other Domestic Rodents"@en .
 
@@ -2731,7 +2728,6 @@ ccat:253075
 	a	skos:Concept ;
 	ccat:code	"253075" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Game Meat"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208600000> , <https://www.trade-tariff.service.gov.uk/commodities/0208906000> .
@@ -2740,7 +2736,6 @@ ccat:253080
 	a	skos:Concept ;
 	ccat:code	"253080" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Snails"@en .
 
@@ -2748,7 +2743,6 @@ ccat:253081
 	a	skos:Concept ;
 	ccat:code	"253081" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Insects"@en .
 
@@ -2756,7 +2750,6 @@ ccat:253082
 	a	skos:Concept ;
 	ccat:code	"253082" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Reptiles"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208500000> .
@@ -2774,7 +2767,6 @@ ccat:253084
 	a	skos:Concept ;
 	ccat:code	"253084" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Seals, Sea Lions, Walruses"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208400000> .
@@ -2783,7 +2775,6 @@ ccat:253085
 	a	skos:Concept ;
 	ccat:code	"253085" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Frogs' Legs"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208907000> .
@@ -2792,7 +2783,6 @@ ccat:253090
 	a	skos:Concept ;
 	ccat:code	"253090" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Meat"@en ;
 	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208909800> .
@@ -2801,7 +2791,6 @@ ccat:253095
 	a	skos:Concept ;
 	ccat:code	"253095" ;
 	skos:broader	ccat:2530 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Offals"@en .
 
@@ -2809,7 +2798,6 @@ ccat:2535
 	a	skos:Concept ;
 	ccat:code	"2535" ;
 	skos:broader	ccat:20 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Meat Products and Meat Preparations"@en .
 
@@ -2817,7 +2805,6 @@ ccat:253510
 	a	skos:Concept ;
 	ccat:code	"253510" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Dried Meat"@en .
 
@@ -2825,7 +2812,6 @@ ccat:253520
 	a	skos:Concept ;
 	ccat:code	"253520" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Meat Meal"@en .
 
@@ -2833,7 +2819,6 @@ ccat:253525
 	a	skos:Concept ;
 	ccat:code	"253525" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Blood Meal"@en .
 
@@ -2841,7 +2826,6 @@ ccat:253530
 	a	skos:Concept ;
 	ccat:code	"253530" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Lard Stearine and Lard Oil"@en .
 
@@ -2849,7 +2833,6 @@ ccat:253535
 	a	skos:Concept ;
 	ccat:code	"253535" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Tallow"@en .
 
@@ -2857,7 +2840,6 @@ ccat:253540
 	a	skos:Concept ;
 	ccat:code	"253540" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Indigenous Meat"@en .
 
@@ -2865,7 +2847,6 @@ ccat:253550
 	a	skos:Concept ;
 	ccat:code	"253550" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Biological Meat"@en .
 
@@ -2873,7 +2854,6 @@ ccat:253590
 	a	skos:Concept ;
 	ccat:code	"253590" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Prepared Meat"@en .
 
@@ -2881,7 +2861,6 @@ ccat:253592
 	a	skos:Concept ;
 	ccat:code	"253592" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Fat Preparations"@en .
 
@@ -2889,7 +2868,6 @@ ccat:253595
 	a	skos:Concept ;
 	ccat:code	"253595" ;
 	skos:broader	ccat:2535 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Food Preparations"@en .
 
@@ -2897,7 +2875,6 @@ ccat:2540
 	a	skos:Concept ;
 	ccat:code	"2540" ;
 	skos:broader	ccat:20 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Food from Live Animals"@en .
 
@@ -3002,6 +2979,7 @@ ccat:25401030
 	ccat:code	"25401030" ;
 	skos:broader	ccat:254010 ;
 	skos:definition	"The liquid part of the milk that remains after the separation of curd in cheese making. Its main food use is in the preparation of whey cheese, whey drinks and fermented whey drinks. The main industrial uses are in the manufacture of lactose, whey paste and dried whey."@en ;
+	skos:exactMatch	agrovoc:c_8376 , wd:Q185009 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fresh Whey"@en .
 
@@ -3009,7 +2987,7 @@ ccat:25401031
 	a	skos:Concept ;
 	ccat:code	"25401031" ;
 	skos:broader	ccat:254010 ;
-	skos:definition	"Whey paste."@en ;
+	skos:definition	"Condensed whey is pasteurised fresh whey where some of the liquid has been evaporated in a vaccum forming a paste that can then be dried to produce dry whey."@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Condensed Whey"@en .
 
@@ -3017,7 +2995,8 @@ ccat:25401033
 	a	skos:Concept ;
 	ccat:code	"25401033" ;
 	skos:broader	ccat:254010 ;
-	skos:definition	"Used in both food and animal feed."@en ;
+	skos:definition	"Dry whey, or whey powder, is produced by removing all water from condensed whey."@en ;
+	skos:exactMatch	agrovoc:c_24019 , wd:Q57656307 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Dry Whey"@en .
 
@@ -3041,23 +3020,28 @@ ccat:25401043
 	a	skos:Concept ;
 	ccat:code	"25401043" ;
 	skos:broader	ccat:254010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Whey Cheese"@en .
+
+ccat:25401045
+	a	skos:Concept ;
+	ccat:code	"25401045" ;
+	skos:broader	ccat:254010 ;
+	skos:inScheme	ccat: ;
+	skos:prefLabel	"Processed Cheese"@en .
 
 ccat:25401050
 	a	skos:Concept ;
 	ccat:code	"25401050" ;
 	skos:broader	ccat:254010 ;
-	skos:definition	""@en , "Buttermilk is a fermented dairy drink. Traditionally, it was the liquid left behind after churning butter out of cultured cream; however, most modern buttermilk is cultured."@en ;
+	skos:definition	"Buttermilk is a fermented dairy drink. Traditionally, it was the liquid left behind after churning butter out of cultured cream; however, most modern buttermilk is cultured."@en ;
 	skos:inScheme	ccat: ;
-	skos:prefLabel	"Buttermilk, Curdled Milk, Acidifie"@en , "Processed Cheese"@en .
+	skos:prefLabel	"Buttermilk, Curdled Milk, Acidifie"@en .
 
 ccat:25401053
 	a	skos:Concept ;
 	ccat:code	"25401053" ;
 	skos:broader	ccat:254010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Dry Buttermilk"@en .
 
@@ -3081,7 +3065,6 @@ ccat:25401060
 	a	skos:Concept ;
 	ccat:code	"25401060" ;
 	skos:broader	ccat:254010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Lactose"@en .
 
@@ -3105,7 +3088,6 @@ ccat:25401080
 	a	skos:Concept ;
 	ccat:code	"25401080" ;
 	skos:broader	ccat:254010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Products of Natural Milk Constituents"@en .
 
@@ -3121,7 +3103,6 @@ ccat:254015
 	a	skos:Concept ;
 	ccat:code	"254015" ;
 	skos:broader	ccat:2540 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Buffalo Milk"@en .
 
@@ -3129,7 +3110,6 @@ ccat:254016
 	a	skos:Concept ;
 	ccat:code	"254016" ;
 	skos:broader	ccat:2540 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Sheep Milk"@en .
 
@@ -3137,7 +3117,6 @@ ccat:254017
 	a	skos:Concept ;
 	ccat:code	"254017" ;
 	skos:broader	ccat:2540 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Goat Milk"@en .
 
@@ -3145,7 +3124,6 @@ ccat:254018
 	a	skos:Concept ;
 	ccat:code	"254018" ;
 	skos:broader	ccat:2540 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Camel Milk"@en .
 
@@ -3153,7 +3131,6 @@ ccat:254019
 	a	skos:Concept ;
 	ccat:code	"254019" ;
 	skos:broader	ccat:2540 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Milk"@en .
 
@@ -3172,7 +3149,6 @@ ccat:254029
 	a	skos:Concept ;
 	ccat:code	"254029" ;
 	skos:broader	ccat:2540 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Eggs"@en .
 
@@ -3192,6 +3168,7 @@ ccat:30
 	skos:definition	"""Commodities used as inputs to manufacturing processes to produce prodcts or more complex materials. Materials can be classified based on their physical and chemical properties, or on their geological origin or biological function.
 
 Raw materials can be processed in different ways to influence their properties, by purification, shaping or the introduction of other materials. New materials can be produced from raw materials by synthesis."""@en ;
+	skos:inScheme	ccat: ;
 	skos:prefLabel	"Materials"@en ;
 	skos:related	agrovoc:c_330705 ;
 	skos:topConceptOf	ccat: .
@@ -3280,7 +3257,6 @@ ccat:301045
 	a	skos:Concept ;
 	ccat:code	"301045" ;
 	skos:broader	ccat:3010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Jute-like Fibre"@en .
 
@@ -3319,7 +3295,6 @@ ccat:301059
 	a	skos:Concept ;
 	ccat:code	"301059" ;
 	skos:broader	ccat:3010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Agave Fibres"@en .
 
@@ -3364,7 +3339,6 @@ ccat:301090
 	a	skos:Concept ;
 	ccat:code	"301090" ;
 	skos:broader	ccat:3010 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Fibre Crops"@en .
 
@@ -3381,7 +3355,6 @@ ccat:302010
 	a	skos:Concept ;
 	ccat:code	"302010" ;
 	skos:broader	ccat:3020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Greasy Wool"@en .
 
@@ -3389,7 +3362,6 @@ ccat:302015
 	a	skos:Concept ;
 	ccat:code	"302015" ;
 	skos:broader	ccat:3020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fine Hair"@en .
 
@@ -3397,7 +3369,6 @@ ccat:302020
 	a	skos:Concept ;
 	ccat:code	"302020" ;
 	skos:broader	ccat:3020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Coarse Goat Hair"@en .
 
@@ -3405,7 +3376,6 @@ ccat:302025
 	a	skos:Concept ;
 	ccat:code	"302025" ;
 	skos:broader	ccat:3020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fine Goat Hair"@en .
 
@@ -3413,7 +3383,6 @@ ccat:302030
 	a	skos:Concept ;
 	ccat:code	"302030" ;
 	skos:broader	ccat:3020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Hair of Horses"@en .
 
@@ -3421,7 +3390,6 @@ ccat:302040
 	a	skos:Concept ;
 	ccat:code	"302040" ;
 	skos:broader	ccat:3020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Reelable Cocoons"@en .
 
@@ -3429,7 +3397,6 @@ ccat:302090
 	a	skos:Concept ;
 	ccat:code	"302090" ;
 	skos:broader	ccat:3020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Coarse Hair"@en .
 
@@ -3437,7 +3404,6 @@ ccat:3030
 	a	skos:Concept ;
 	ccat:code	"3030" ;
 	skos:broader	ccat:30 ;
-	skos:definition	""@en ;
 	skos:exactMatch	agrovoc:c_3049 , stw:14149-3 ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Forest Products"@en .
@@ -3505,7 +3471,6 @@ ccat:3040
 	a	skos:Concept ;
 	ccat:code	"3040" ;
 	skos:broader	ccat:30 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Rubber and Wax"@en .
 
@@ -3526,7 +3491,6 @@ ccat:304015
 	a	skos:Concept ;
 	ccat:code	"304015" ;
 	skos:broader	ccat:3040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Natural Gums"@en .
 
@@ -3534,7 +3498,6 @@ ccat:304016
 	a	skos:Concept ;
 	ccat:code	"304016" ;
 	skos:broader	ccat:3040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Arabic Gum"@en .
 
@@ -3542,7 +3505,6 @@ ccat:304019
 	a	skos:Concept ;
 	ccat:code	"304019" ;
 	skos:broader	ccat:3040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Other Resins"@en .
 
@@ -3550,7 +3512,6 @@ ccat:304030
 	a	skos:Concept ;
 	ccat:code	"304030" ;
 	skos:broader	ccat:3040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Vegetable Waxes"@en .
 
@@ -3558,7 +3519,6 @@ ccat:304035
 	a	skos:Concept ;
 	ccat:code	"304035" ;
 	skos:broader	ccat:3040 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Beeswax"@en .
 
@@ -3723,7 +3683,6 @@ ccat:307010
 	a	skos:Concept ;
 	ccat:code	"307010" ;
 	skos:broader	ccat:3070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Urea"@en .
 
@@ -3731,7 +3690,6 @@ ccat:307012
 	a	skos:Concept ;
 	ccat:code	"307012" ;
 	skos:broader	ccat:3070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Ammonia"@en .
 
@@ -3740,7 +3698,6 @@ ccat:307015
 	ccat:code	"307015" ;
 	skos:altLabel	"Urea Ammonium Nitrate"@en ;
 	skos:broader	ccat:3070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"UAN"@en .
 
@@ -3749,7 +3706,6 @@ ccat:307020
 	ccat:code	"307020" ;
 	skos:altLabel	"Diamidophosphate"@en ;
 	skos:broader	ccat:3070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"DAP"@en .
 
@@ -3758,7 +3714,6 @@ ccat:307025
 	ccat:code	"307025" ;
 	skos:altLabel	"Monoammonium phosphate"@en ;
 	skos:broader	ccat:3070 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"MAP"@en .
 
@@ -3789,7 +3744,6 @@ ccat:308010
 	a	skos:Concept ;
 	ccat:code	"308010" ;
 	skos:broader	ccat:3080 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Herbicide"@en .
 
@@ -3797,7 +3751,6 @@ ccat:308020
 	a	skos:Concept ;
 	ccat:code	"308020" ;
 	skos:broader	ccat:3080 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Insecticide"@en .
 
@@ -3805,7 +3758,6 @@ ccat:308030
 	a	skos:Concept ;
 	ccat:code	"308030" ;
 	skos:broader	ccat:3080 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Nematicide"@en .
 
@@ -3813,7 +3765,6 @@ ccat:308040
 	a	skos:Concept ;
 	ccat:code	"308040" ;
 	skos:broader	ccat:3080 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Bactericide"@en .
 
@@ -3821,7 +3772,6 @@ ccat:308050
 	a	skos:Concept ;
 	ccat:code	"308050" ;
 	skos:broader	ccat:3080 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Fungicide"@en .
 
@@ -3837,6 +3787,7 @@ ccat:40
 	a	skos:Concept ;
 	ccat:code	"40" ;
 	skos:definition	"Commoditized goods are tradables that have been made fungible by standardisation."@en ;
+	skos:inScheme	ccat: ;
 	skos:prefLabel	"Commoditized"@en ;
 	skos:topConceptOf	ccat: .
 
@@ -3899,7 +3850,6 @@ ccat:402020
 	a	skos:Concept ;
 	ccat:code	"402020" ;
 	skos:broader	ccat:4020 ;
-	skos:definition	""@en ;
 	skos:inScheme	ccat: ;
 	skos:prefLabel	"Rainfall"@en .
 
@@ -3960,6 +3910,7 @@ ccat:50
 	a	skos:Concept ;
 	ccat:code	"50" ;
 	skos:definition	"Financials are tradables made up of one or a basket of financial instruments."@en ;
+	skos:inScheme	ccat: ;
 	skos:prefLabel	"Financials"@en ;
 	skos:topConceptOf	ccat: .
 
