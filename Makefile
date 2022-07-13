@@ -3,7 +3,7 @@ SHELL := /bin/zsh
 sparql := /home/freundt/usr/apache-jena/bin/sparql
 stardog := STARDOG_JAVA_ARGS='-Dstardog.default.cli.server=http://plutos:5820' /home/freundt/usr/stardog/bin/stardog
 
-all: comcat.skos.ttl canon imported
+all: comcat.skos.ttl canon imported tree.md
 check: check.comcat.skos
 canon: .comcat.skos.ttl.canon
 imported: .imported.comcat.skos
@@ -45,6 +45,10 @@ check.%: %.ttl shacl/%.shacl.sql .imported.%
 %.rpt: /tmp/check.%.ttl
 	$(sparql) --results text --data $< --query sql/valrpt.sql
 
+tmp/%.out: sql/%.sql .imported.comcat.skos
+	$(csvsql) $< \
+	> $@.t && mv $@.t $@
+
 export.void: tmp/comcat.skos.void
 	-mawk '(x+=$$0=="")<=3&&($$0==""||(x=0)||1)' void.ttl > $@
 	@echo >> $@
@@ -62,6 +66,16 @@ tmp/%.void: .imported.%
 	| ttl2ttl -B \
 	> $@
 
+
+define header
+comcat tree
+===========
+
+endef
+export header
+tree.md: tmp/tree.out
+	mawk -v header="$$header" '(NR==1){print header}{sub("\(\)","",$$0)}NR>1' < $< \
+	> $@.t && mv $@.t $@
 
 setup-stardog:                                                                                                                                                                                          
 	$(stardog)-admin db create -o reasoning.sameas=OFF -n comcat
