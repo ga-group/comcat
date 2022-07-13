@@ -77,7 +77,11 @@ tree.md: tmp/tree.out
 	mawk -v header="$$header" '(NR==1){print header}{sub("\(\)","",$$0)}NR>1' < $< \
 	> $@.t && mv $@.t $@
 
-setup-stardog:                                                                                                                                                                                          
+tmp/comcat.html: comcat.skos.ttl
+	skos-play hierarchical -f html -i $< -o $@ -s unesco -l en
+
+
+setup-stardog:
 	$(stardog)-admin db create -o reasoning.sameas=OFF -n comcat
 	$(stardog) namespace add --prefix ccat --uri http://data.ga-group.nl/comcat/ comcat
 
