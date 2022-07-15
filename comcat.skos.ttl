@@ -60,6 +60,22 @@ ccat:101010
 	skos:notation	"101010" ;
 	skos:prefLabel	"Crude Oil"@en .
 
+ccat:10101080
+	a	skos:Concept ;
+	skos:broader	ccat:101010 ;
+	skos:definition	"Spread between two different crude oils that determines the premium of one oil over the other due to chemical composition, freight or storage costs."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10101080" ;
+	skos:prefLabel	"Crude Spread"@en .
+
+ccat:10101085
+	a	skos:Concept ;
+	skos:broader	ccat:101010 ;
+	skos:definition	"Spread between two different crude oils that determines the premium of one oil over the other due to chemical composition, freight or storage costs."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10101085" ;
+	skos:prefLabel	"Crack Spread"@en .
+
 ccat:101020
 	a	skos:Concept ;
 	skos:broader	ccat:1010 ;
@@ -73,6 +89,7 @@ ccat:101020
 
 ccat:10102010
 	a	skos:Concept ;
+	skos:altLabel	"Hard Coal"@en ;
 	skos:broader	ccat:101020 ;
 	skos:definition	"""Anthracite, also known as hard coal, is a hard, compact variety of coal that has a submetallic luster. It has the highest carbon content, the fewest impurities, and the highest energy density of all types of coal and is the highest ranking of coals.
 
@@ -86,14 +103,26 @@ Anthracite is categorized into standard grade, which is used mainly in power gen
 
 ccat:10102020
 	a	skos:Concept ;
+	skos:altLabel	"Black Coal"@en , "Thermal Coal"@en ;
+	skos:broader	ccat:101020 ;
+	skos:definition	"""Bituminous coal, or black coal, is a type of coal containing a tar-like substance called bitumen or asphalt. Its coloration can be black or sometimes dark brown; often there are well-defined bands of bright and dull material within the seams. It is typically hard but friable. Its quality is ranked higher than lignite and sub-bituminous coal, but lesser than anthracite. It is the most abundant rank of coal, with deposits found around the world, often in rocks of Carboniferous age. Bituminous coal is formed from sub-bituminous coal that is buried deeply enough to be heated to 85 \u00B0C or higher.
+
+Bituminous coal which lacks the qualities required for use as metallurgical coal is graded as thermal coal. This is used primarily for electrical power generation. The ideal thermal coal is easily ignited but has a high heat content."""@en ;
+	skos:exactMatch	wd:Q732607 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10102020" ;
+	skos:prefLabel	"Bituminous Coal"@en .
+
+ccat:10102030
+	a	skos:Concept ;
 	skos:broader	ccat:101020 ;
 	skos:definition	"""Lignite, often referred to as brown coal, is a soft, brown, combustible, sedimentary rock formed from naturally compressed peat. It is considered the lowest rank of coal due to its relatively low heat content. It has a carbon content around 25 to 35 percent. It is mined all around the world and is used almost exclusively as a fuel for steam-electric power generation."""@en ;
 	skos:exactMatch	agrovoc:c_32489 , eurovoc:1656 , stw:14194-5 , wd:Q156267 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"10102020" ;
+	skos:notation	"10102030" ;
 	skos:prefLabel	"Lignite"@en .
 
-ccat:10102030
+ccat:10102040
 	a	skos:Concept ;
 	skos:broader	ccat:101020 ;
 	skos:definition	"""Coke is a grey, hard, and porous fuel with a high carbon content and few impurities, made by heating coal or oil in the absence of air--a destructive distillation process. It is an important industrial product, used mainly in iron ore smelting, but also as a fuel in stoves and forges when air pollution is a concern.
@@ -101,7 +130,7 @@ ccat:10102030
 The unqualified term \"coke\" usually refers to the product derived from low-ash and low-sulphur bituminous coal by a process called coking. A similar product called petroleum coke, or pet coke, is obtained from crude oil in oil refineries. Coke may also be formed naturally by geologic processes."""@en ;
 	skos:exactMatch	wd:Q192795 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"10102030" ;
+	skos:notation	"10102040" ;
 	skos:prefLabel	"Coke"@en .
 
 ccat:101030
@@ -113,10 +142,18 @@ ccat:101030
 	skos:notation	"101030" ;
 	skos:prefLabel	"Natural Gas"@en .
 
-ccat:101032
+ccat:10103010
+	a	skos:Concept ;
+	skos:broader	ccat:101030 ;
+	skos:definition	"Baseload of gas delivered uniformly over a specified period of time (Time of delivery, TOD) through one or more designated hubs."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10103010" ;
+	skos:prefLabel	"Baseload Gas"@en .
+
+ccat:10103020
 	a	skos:Concept ;
 	skos:altLabel	"LNG"@en ;
-	skos:broader	ccat:1010 ;
+	skos:broader	ccat:101030 ;
 	skos:definition	"""Liquefied natural gas (LNG) is natural gas (predominantly methane, CH4, with some mixture of ethane, C2H6) that has been cooled down to liquid form for ease and safety of non-pressurized storage or transport. It takes up about 1/600th the volume of natural gas in the gaseous state (at standard conditions for temperature and pressure). It is odorless, colorless, non-toxic and non-corrosive. Hazards include flammability after vaporization into a gaseous state, freezing and asphyxia. The liquefaction process involves removal of certain components, such as dust, acid gases, helium, water, and heavy hydrocarbons, which could cause difficulty downstream. The natural gas is then condensed into a liquid at close to atmospheric pressure by cooling it to approximately -162 °C; maximum transport pressure is set at around 25 kPa (4 psi).
 
 The gas produced from hydrocarbon deposits typically contains a wide range of hydrocarbon products, which usually includes methane (CH4), ethane (C2H6), propane (C3H8) and butane (C4H10). All these products have wide-ranging boiling points and also different heating values allowing different routes to commercialization and also different uses. The \"acidic\" elements such as hydrogen sulphide (H2S) and carbon dioxide (CO2), together with oil, mud, water, and mercury, are removed from the gas to deliver a clean sweetened stream of gas. Failure to remove such acidic molecules, mercury, and other impurities could result in damage to the equipment. Corrosion of steel pipes and amalgamization of mercury to aluminium within cryogenic heat exchangers could cause expensive damage.
@@ -128,13 +165,13 @@ Natural gas was considered to be economically unimportant wherever gas-producing
 Developments of production processes, cryogenic storage, and transportation effectively created the tools required to commercialize natural gas into a global market which now competes with other fuels. Furthermore, the development of LNG storage also introduced a reliability in networks which was previously thought impossible. Given that storage of other fuels is relatively easily secured using simple tanks, a supply for several months could be kept in storage. With the advent of large scale cryogenic storage, it was possible to create long term gas storage reserves. These reserves of liquefied gas could be deployed at a moment's notice through regasification processes and today are the main means for networks to handle local peak shaving requirements."""@en ;
 	skos:exactMatch	stw:18236-2 , wd:Q358333 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"101032" ;
+	skos:notation	"10103020" ;
 	skos:prefLabel	"Liquefied Natural Gas"@en .
 
-ccat:101035
+ccat:10103030
 	a	skos:Concept ;
 	skos:altLabel	"LPG"@en ;
-	skos:broader	ccat:1010 ;
+	skos:broader	ccat:101030 ;
 	skos:definition	"""Liquefied petroleum gas (LPG or LP gas), is a flammable mixture of hydrocarbon gases used as fuel in heating appliances, cooking equipment, and vehicles. It is a mixture of 48% propane, 50% butane, and 2% pentane.
 
 It is increasingly used as an aerosol propellant and a refrigerant, replacing chlorofluorocarbons in an effort to reduce damage to the ozone layer. When specifically used as a vehicle fuel it is often referred to as autogas.
@@ -152,7 +189,7 @@ As its boiling point is below room temperature and heat, LPG will evaporate quic
 A full LPG cylinder contains 85% liquid; the ullage volume will contain vapour at a pressure that varies with temperature."""@en ;
 	skos:exactMatch	wd:Q351609 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"101035" ;
+	skos:notation	"10103030" ;
 	skos:prefLabel	"Liquefied Petroleum Gas"@en .
 
 ccat:101040
@@ -206,7 +243,7 @@ Kerosene is widely used to power jet engines of aircraft (jet fuel) and some roc
 
 ccat:10104040
 	a	skos:Concept ;
-	skos:altLabel	"Petrodiesel"@en ;
+	skos:altLabel	"Gas Oil"@en , "Petrodiesel"@en ;
 	skos:broader	ccat:101040 ;
 	skos:definition	"""Diesel fuel in general is any liquid fuel specifically designed for use in diesel engines, whose fuel ignition takes place, without any spark, as a result of compression of the inlet air mixture and then injection of fuel. Therefore, diesel fuel needs good compression ignition characteristics.
 
@@ -222,12 +259,43 @@ Before diesel fuel had been standardised, the majority of diesel engines typical
 	skos:notation	"10104040" ;
 	skos:prefLabel	"Diesel"@en .
 
+ccat:10104050
+	a	skos:Concept ;
+	skos:altLabel	"Bunker"@en , "Fuel Oil"@en ;
+	skos:broader	ccat:101040 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10104050" ;
+	skos:prefLabel	"Marine Fuel"@en .
+
+ccat:10104060
+	a	skos:Concept ;
+	skos:broader	ccat:101040 ;
+	skos:definition	"Naphtha is a flammable liquid hydrocarbon mixture. Mixtures labelled naphtha have been produced from natural gas condensates, petroleum distillates, and the distillation of coal tar and peat. In different industries and regions naphtha may also be crude oil or refined products such as kerosene. It is also known as Shellite in Australia."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10104060" ;
+	skos:prefLabel	"Naphtha"@en .
+
+ccat:10104080
+	a	skos:Concept ;
+	skos:broader	ccat:101040 ;
+	skos:definition	"Spread between different refined products that determines the premium of one oil over the other due to chemical composition, freight or storage costs."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10104080" ;
+	skos:prefLabel	"Visco Spread"@en .
+
+ccat:10104090
+	a	skos:Concept ;
+	skos:broader	ccat:101040 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10104090" ;
+	skos:prefLabel	"Other Refined Products"@en .
+
 ccat:101050
 	a	skos:Concept ;
 	skos:broader	ccat:1010 ;
 	skos:definition	"""Electrical energy is energy derived from electric potential energy or kinetic energy. When used loosely, electrical energy refers to energy that has been converted from electric potential energy. This energy is supplied by the combination of electric current and electric potential that is delivered by an electrical circuit (e.g., provided by an electric power utility). At the point that this electric potential energy has been converted to another type of energy, it ceases to be electric potential energy. Thus, all electrical energy is potential energy before it is delivered to the end-use. Once converted from potential energy, electrical energy can always be called another type of energy (heat, light, motion, etc.).
 	
-	Electrical energy is usually sold by the kilowatt hour (1 kWÂ·h = 3.6 MJ) which is the product of the power in kilowatts multiplied by running time in hours. Electric utilities measure energy using an electricity meter, which keeps a running total of the electric energy delivered to a customer."""@en ;
+	Electrical energy is usually sold by the kilowatt hour (1 kWh = 3.6 MJ) which is the product of the power in kilowatts multiplied by running time in hours. Electric utilities measure energy using an electricity meter, which keeps a running total of the electric energy delivered to a customer."""@en ;
 	skos:exactMatch	eurovoc:747 , stw:14174-4 , wd:Q206799 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"101050" ;
@@ -544,8 +612,8 @@ ccat:103535
 ccat:103540
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:closeMatch	wd:Q102078 ;
 	skos:definition	"Bauxite is a sedimentary rock with a relatively high aluminium content. It is the world's main source of aluminium and gallium. Bauxite is used as flux in blast furnaces for smelting."@en ;
+	skos:exactMatch	eurovoc:3755 , stw:14190-6 , wd:Q102078 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103540" ;
 	skos:prefLabel	"Bauxite"@en .
@@ -553,8 +621,8 @@ ccat:103540
 ccat:103550
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:closeMatch	wd:Q731 ;
-	skos:definition	"Often found in minerals in combination with iron."@en ;
+	skos:definition	"Manganese is a hard, brittle, silvery metal, often found in minerals in combination with iron. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide."@en ;
+	skos:exactMatch	agrovoc:c_4570 , eurovoc:1779 , stw:14301-2 , wd:Q731 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103550" ;
 	skos:prefLabel	"Manganese"@en .
@@ -736,6 +804,17 @@ The leading producers of S. bicolor in 2011 were Nigeria (12.6%), India (11.2%),
 	skos:inScheme	ccat: ;
 	skos:notation	"201060" ;
 	skos:prefLabel	"Sorghum"@en .
+
+ccat:201065
+	a	skos:Concept ;
+	skos:altLabel	"Bajra"@en , "Kambu"@en , "Pennisetum glaucum"@en , "Sajjey"@en ;
+	skos:broader	ccat:2010 ;
+	skos:definition	"""Pearl millet has ovoid grains of 3-4 mm length, the largest kernels of all varieties of millet (not including sorghum). These can be nearly white, pale yellow, brown, grey, slate blue or purple. The 1000-seed weight can be anything from 2.5 to 14 g with a mean of 8 g. The height of the plant ranges from 0.5 to 4 m.
+
+Pearl millet is well adapted to growing areas characterized by drought, low soil fertility, and high temperature. It performs well in soils with high salinity or low pH. Because of its tolerance to difficult growing conditions, it can be grown in areas where other cereal crops, such as maize or wheat, would not survive. Pearl millet is a summer annual crop well-suited for double cropping and rotations."""@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"201065" ;
+	skos:prefLabel	"Pearl Millet"@en .
 
 ccat:201070
 	a	skos:Concept ;
@@ -976,6 +1055,15 @@ ccat:20209065
 	skos:notation	"20209065" ;
 	skos:prefLabel	"Hempseed"@en .
 
+ccat:20209070
+	a	skos:Concept ;
+	skos:broader	ccat:202090 ;
+	skos:definition	"The guar or cluster bean, with the botanical name Cyamopsis tetragonoloba, is an annual legume and the source of guar gum. It is also known as gavar, gawar, or guvar bean. This legume is a valuable plant in a crop rotation cycle, as it lives in symbiosis with nitrogen-fixing bacteria. Agriculturists in semi-arid regions of Rajasthan follow crop-rotation and use guar to replenish the soil with essential fertilizers and nitrogen fixation, before the next crop. Guar has many functions for human and animal nutrition, but the gelling agent in its seeds (guar gum) is the most important use. Demand is rising due to the use of guar gum in hydraulic fracturing (oil shale gas). About 80% of world production occurs in India, but due to strong demand, the plant is being introduced elsewhere."@en ;
+	skos:exactMatch	wd:Q264770 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20209070" ;
+	skos:prefLabel	"Guar"@en .
+
 ccat:202095
 	a	skos:Concept ;
 	skos:broader	ccat:2020 ;
@@ -1124,12 +1212,52 @@ ccat:202520
 
 ccat:202530
 	a	skos:Concept ;
+	skos:altLabel	"CPO"@en , "Crude Palm Oil"@en ;
 	skos:broader	ccat:2025 ;
 	skos:definition	"Palm oil is an edible vegetable oil derived from the mesocarp (reddish pulp) of the fruit of the oil palms, primarily the African oil palm Elaeis guineensis, and to a lesser extent from the American oil palm Elaeis oleifera and the maripa palm Attalea maripa."@en ;
 	skos:exactMatch	agrovoc:c_5514 , stw:18077-3 , wd:Q231458 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"202530" ;
 	skos:prefLabel	"Oil of Palm"@en .
+
+ccat:202531
+	a	skos:Concept ;
+	skos:broader	ccat:2025 ;
+	skos:definition	"""Crude palm oil that has undergone some or all processes of refinement (neutralisation, bleaching, dewaxing, deodourising, fractionation, degumming). The PORAM standard specifies qualities and properties.  Most prominently palm oil is processed to RBD palm olein or NBD palm olein."""@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"202531" ;
+	skos:prefLabel	"Processed Oil of Palm"@en .
+
+ccat:20253110
+	a	skos:Concept ;
+	skos:broader	ccat:202531 ;
+	skos:definition	"""Refined, bleached and deodourised palm olein is the liquid fraction of crude palm oil that is then bleached, degummed, and deodourised."""@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20253110" ;
+	skos:prefLabel	"RBD Palm Olein"@en .
+
+ccat:20253120
+	a	skos:Concept ;
+	skos:broader	ccat:202531 ;
+	skos:definition	"""Palm stearin is the solid fraction of palm oil that is produced by partial crystallisation at controlled temperature. It is more variable in composition than palm olein, the liquid fraction of palm oil, especially in terms of its solid fat content, and therefore has more variable physical characteristics."""@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20253120" ;
+	skos:prefLabel	"Palm Stearin"@en .
+
+ccat:20253130
+	a	skos:Concept ;
+	skos:broader	ccat:202531 ;
+	skos:definition	"""Palm acid oil is a by-product of neutralising crude palm oil."""@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20253130" ;
+	skos:prefLabel	"Palm Acid Oil"@en .
+
+ccat:20253135
+	a	skos:Concept ;
+	skos:broader	ccat:202531 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20253135" ;
+	skos:prefLabel	"Palm Fatty Acid Distillate"@en .
 
 ccat:202532
 	a	skos:Concept ;
@@ -1290,6 +1418,15 @@ Hemp oil is a \"drying oil\", as it can polymerize into a solid form. Due to its
 	skos:notation	"20259065" ;
 	skos:prefLabel	"Oil of Hempseed"@en .
 
+ccat:20259070
+	a	skos:Concept ;
+	skos:altLabel	"Guaran"@en ;
+	skos:broader	ccat:202590 ;
+	skos:definition	"Guar gum, also called guaran, is a galactomannan polysaccharide extracted from guar beans that has thickening and stabilizing properties useful in food, feed, and industrial applications. The guar seeds are mechanically dehusked, hydrated, milled and screened according to application. It is typically produced as a free-flowing, off-white powder."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20259070" ;
+	skos:prefLabel	"Guar Gum"@en .
+
 ccat:202595
 	a	skos:Concept ;
 	skos:broader	ccat:2025 ;
@@ -1372,6 +1509,14 @@ ccat:20259545
 	skos:inScheme	ccat: ;
 	skos:notation	"20259545" ;
 	skos:prefLabel	"Oil of Kapok"@en .
+
+ccat:20259550
+	a	skos:Concept ;
+	skos:broader	ccat:202595 ;
+	skos:definition	"Oil extracted from the leaves of the Mentha plant."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20259550" ;
+	skos:prefLabel	"Oil of Mentha"@en .
 
 ccat:202599
 	a	skos:Concept ;
@@ -1713,6 +1858,13 @@ ccat:20501090
 	skos:inScheme	ccat: ;
 	skos:notation	"20501090" ;
 	skos:prefLabel	"Other Citrus Fruit"@en .
+
+ccat:205015
+	a	skos:Concept ;
+	skos:broader	ccat:2050 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"205015" ;
+	skos:prefLabel	"Frozen Orange Juice"@en .
 
 ccat:205020
 	a	skos:Concept ;
@@ -2075,7 +2227,7 @@ Most people perceive the taste of coriander leaves as a tart, lemon/lime taste, 
 ccat:206060
 	a	skos:Concept ;
 	skos:broader	ccat:2060 ;
-	skos:definition	"""Vanilla is a spice derived from orchids of the genus Vanilla, primarily obtained from pods of the Mexican species, flat-leaved vanilla (V. planifolia). The word vanilla, derived from vainilla, the diminutive of the Spanish word vaina (vaina itself meaning a sheath or a pod), is translated simply as \"little pod\". Pre-Columbian Mesoamerican people cultivated the vine of the vanilla orchid, called tlÄ«lxochitl by the Aztecs.
+	skos:definition	"""Vanilla is a spice derived from orchids of the genus Vanilla, primarily obtained from pods of the Mexican species, flat-leaved vanilla (V. planifolia). The word vanilla, derived from vainilla, the diminutive of the Spanish word vaina (vaina itself meaning a sheath or a pod), is translated simply as \"little pod\". Pre-Columbian Mesoamerican people cultivated the vine of the vanilla orchid.
 
 Pollination is required to make the plants produce the fruit from which the vanilla spice is obtained. In 1837, Belgian botanist Charles FranÃ§ois Antoine Morren discovered this fact and pioneered a method of artificially pollinating the plant. The method proved financially unworkable and was not deployed commercially. In 1841, Edmond Albius, a 12-year-old slave who lived on the French island of RÃ©union in the Indian Ocean, discovered that the plant could be hand-pollinated. Hand-pollination allowed global cultivation of the plant. Noted French botanist and plant collector Jean Michel Claude Richard falsely claimed to have discovered the technique three or four years earlier. By the end of the 20th century, Albius was considered the true discoverer.
 
@@ -2400,13 +2552,6 @@ ccat:251079
 	skos:notation	"251079" ;
 	skos:prefLabel	"Other Rodents"@en .
 
-ccat:251080
-	a	skos:Concept ;
-	skos:broader	ccat:2510 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"251080" ;
-	skos:prefLabel	"Game and Quarries"@en .
-
 ccat:251090
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
@@ -2717,75 +2862,33 @@ ccat:253070
 	skos:notation	"253070" ;
 	skos:prefLabel	"Rabbit Meat"@en .
 
-ccat:253074
+ccat:253079
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"253074" ;
+	skos:notation	"253079" ;
 	skos:prefLabel	"Meat of other Domestic Rodents"@en .
-
-ccat:253075
-	a	skos:Concept ;
-	skos:broader	ccat:2530 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253075" ;
-	skos:prefLabel	"Game Meat"@en ;
-	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208600000> , <https://www.trade-tariff.service.gov.uk/commodities/0208906000> .
 
 ccat:253080
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253080" ;
-	skos:prefLabel	"Snails"@en .
-
-ccat:253081
-	a	skos:Concept ;
-	skos:broader	ccat:2530 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253081" ;
-	skos:prefLabel	"Insects"@en .
-
-ccat:253082
-	a	skos:Concept ;
-	skos:broader	ccat:2530 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253082" ;
-	skos:prefLabel	"Reptiles"@en ;
-	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208500000> .
-
-ccat:253083
-	a	skos:Concept ;
-	skos:broader	ccat:2530 ;
-	skos:definition	"Whales, dolphins, porpoises, manatees, dugongs."@en ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253083" ;
-	skos:prefLabel	"Mammals of the sea"@en ;
-	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208400000> .
-
-ccat:253084
-	a	skos:Concept ;
-	skos:broader	ccat:2530 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253084" ;
-	skos:prefLabel	"Seals, Sea Lions, Walruses"@en ;
-	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208400000> .
+	skos:prefLabel	"Gutted Iced Tuna"@en .
 
 ccat:253085
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253085" ;
-	skos:prefLabel	"Frogs' Legs"@en ;
-	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208907000> .
+	skos:prefLabel	"Gutted Iced Salmon"@en .
 
 ccat:253090
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253090" ;
-	skos:prefLabel	"Other Meat"@en ;
-	skos:related	<https://www.trade-tariff.service.gov.uk/commodities/0208909800> .
+	skos:prefLabel	"Other Meat"@en .
 
 ccat:253095
 	a	skos:Concept ;
@@ -3264,7 +3367,7 @@ ccat:301048
 	a	skos:Concept ;
 	skos:altLabel	"Manila Hemp"@en ;
 	skos:broader	ccat:3010 ;
-	skos:definition	"""Manila hemp, also known as abacÃ¡, is a type of buff-colored fiber obtained from Musa textilis (a relative of edible bananas), which is likewise called Manila hemp as well as abacÃ¡. It is mostly used for pulping for a range of uses, including speciality papers. It was once used mainly to make Manila rope, but this is now of minor importance. AbacÃ¡ is an exceptionally strong fibre, nowadays used for special papers like teabag tissue. It is also very expensive, priced several times higher than woodpulp. Manila envelopes and Manila paper take their name from this fibre.
+	skos:definition	"""Manila hemp is a type of buff-colored fiber obtained from Musa textilis (a relative of edible bananas), which is likewise called Manila hemp as well as Abaca. It is mostly used for pulping for a range of uses, including speciality papers. It was once used mainly to make Manila rope, but this is now of minor importance. AbacÃ¡ is an exceptionally strong fibre, nowadays used for special papers like teabag tissue. It is also very expensive, priced several times higher than woodpulp. Manila envelopes and Manila paper take their name from this fibre.
 
 It is not actually hemp, but named so because hemp was long a major source of fibre, and other fibres were sometimes named after it. The name refers to the capital of the Philippines, one of the main producers of Manila hemp. The hatmaking straw made from Manila hemp is called tagal or tagal straw."""@en ;
 	skos:exactMatch	agrovoc:c_4 , wd:Q1814695 ;
@@ -3342,62 +3445,62 @@ ccat:301090
 	skos:notation	"301090" ;
 	skos:prefLabel	"Other Fibre Crops"@en .
 
-ccat:3020
+ccat:3015
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
 	skos:definition	"Animal fibres are fibres that are produced by animals. Most notably they comprise bristles, hair, wool, and silk."@en ;
 	skos:exactMatch	agrovoc:c_430 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"3020" ;
+	skos:notation	"3015" ;
 	skos:prefLabel	"Fibres of Animal Origin"@en .
 
-ccat:302010
+ccat:301510
 	a	skos:Concept ;
-	skos:broader	ccat:3020 ;
+	skos:broader	ccat:3015 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"302010" ;
+	skos:notation	"301510" ;
 	skos:prefLabel	"Greasy Wool"@en .
 
-ccat:302015
+ccat:301515
 	a	skos:Concept ;
-	skos:broader	ccat:3020 ;
+	skos:broader	ccat:3015 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"302015" ;
+	skos:notation	"301515" ;
 	skos:prefLabel	"Fine Hair"@en .
 
-ccat:302020
+ccat:301520
 	a	skos:Concept ;
-	skos:broader	ccat:3020 ;
+	skos:broader	ccat:3015 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"302020" ;
+	skos:notation	"301520" ;
 	skos:prefLabel	"Coarse Goat Hair"@en .
 
-ccat:302025
+ccat:301525
 	a	skos:Concept ;
-	skos:broader	ccat:3020 ;
+	skos:broader	ccat:3015 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"302025" ;
+	skos:notation	"301525" ;
 	skos:prefLabel	"Fine Goat Hair"@en .
 
-ccat:302030
+ccat:301530
 	a	skos:Concept ;
-	skos:broader	ccat:3020 ;
+	skos:broader	ccat:3015 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"302030" ;
+	skos:notation	"301530" ;
 	skos:prefLabel	"Hair of Horses"@en .
 
-ccat:302040
+ccat:301540
 	a	skos:Concept ;
-	skos:broader	ccat:3020 ;
+	skos:broader	ccat:3015 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"302040" ;
+	skos:notation	"301540" ;
 	skos:prefLabel	"Reelable Cocoons"@en .
 
-ccat:302090
+ccat:301590
 	a	skos:Concept ;
-	skos:broader	ccat:3020 ;
+	skos:broader	ccat:3015 ;
 	skos:inScheme	ccat: ;
-	skos:notation	"302090" ;
+	skos:notation	"301590" ;
 	skos:prefLabel	"Other Coarse Hair"@en .
 
 ccat:3030
@@ -3508,6 +3611,41 @@ ccat:304019
 	skos:notation	"304019" ;
 	skos:prefLabel	"Other Resins"@en .
 
+ccat:304020
+	a	skos:Concept ;
+	skos:altLabel	"HA Latex"@en ;
+	skos:broader	ccat:3040 ;
+	skos:definition	"Centrifuged and ammoniated field latex that has been processed into latex concentrate."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"304020" ;
+	skos:prefLabel	"Concentrated Latex"@en .
+
+ccat:304022
+	a	skos:Concept ;
+	skos:broader	ccat:3040 ;
+	skos:definition	"Field latex that has been transferred into coagulation tanks"@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"304022" ;
+	skos:prefLabel	"Coagulated Latex"@en .
+
+ccat:304025
+	a	skos:Concept ;
+	skos:altLabel	"TSR"@en ;
+	skos:broader	ccat:3040 ;
+	skos:definition	"Naturally coagulated rubber (cup lump) that has been reduced in size, cleaned and dried, then baled and palletised for storage and shipment."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"304025" ;
+	skos:prefLabel	"Technically Specified Rubber"@en .
+
+ccat:304027
+	a	skos:Concept ;
+	skos:altLabel	"RSS Rubber"@en ;
+	skos:broader	ccat:3040 ;
+	skos:definition	"Coagulated latex sheets that have been air dried or smoked in ovens."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"304027" ;
+	skos:prefLabel	"Ribbed Smoked Sheet Rubber"@en .
+
 ccat:304030
 	a	skos:Concept ;
 	skos:broader	ccat:3040 ;
@@ -3540,6 +3678,37 @@ ccat:305010
 	skos:inScheme	ccat: ;
 	skos:notation	"305010" ;
 	skos:prefLabel	"Sodium Carbonate"@en .
+
+ccat:305020
+	a	skos:Concept ;
+	skos:broader	ccat:3050 ;
+	skos:definition	"""Glass is a non-crystalline, often transparent amorphous solid, that has widespread practical, technological, and decorative use in, for example, window panes, tableware, and optics. Glass is most often formed by rapid cooling (quenching) of the molten form.
+
+The most familiar, and historically the oldest, types of manufactured glass are \"silicate glasses\" based on the chemical compound silica (silicon dioxide, or quartz), the primary constituent of sand. Soda-lime glass, containing around 70% silica, accounts for around 90% of manufactured glass."""@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"305020" ;
+	skos:prefLabel	"Glass"@en .
+
+ccat:305030
+	a	skos:Concept ;
+	skos:broader	ccat:3050 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"305030" ;
+	skos:prefLabel	"Intermetallics"@en .
+
+ccat:30503010
+	a	skos:Concept ;
+	skos:broader	ccat:305030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30503010" ;
+	skos:prefLabel	"Ferrosilicon"@en .
+
+ccat:30503020
+	a	skos:Concept ;
+	skos:broader	ccat:305030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30503020" ;
+	skos:prefLabel	"Manganese Silicide"@en .
 
 ccat:3060
 	a	skos:Concept ;
@@ -3583,6 +3752,14 @@ Many kinds of polyethylene are known, with most having the chemical formula (C2H
 	skos:notation	"30601020" ;
 	skos:prefLabel	"Polyethylene"@en .
 
+ccat:30601025
+	a	skos:Concept ;
+	skos:altLabel	"PET"@en ;
+	skos:broader	ccat:306010 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30601025" ;
+	skos:prefLabel	"Polyethylene Terephthalate"@en .
+
 ccat:30601030
 	a	skos:Concept ;
 	skos:broader	ccat:306010 ;
@@ -3620,20 +3797,43 @@ ccat:306020
 
 ccat:30602010
 	a	skos:Concept ;
+	skos:broader	ccat:306020 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30602010" ;
+	skos:prefLabel	"Benzene"@en .
+
+ccat:30602015
+	a	skos:Concept ;
+	skos:broader	ccat:306020 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30602015" ;
+	skos:prefLabel	"Naphthalene"@en .
+
+ccat:30602017
+	a	skos:Concept ;
+	skos:broader	ccat:306020 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30602017" ;
+	skos:prefLabel	"Styrene"@en .
+
+ccat:30602020
+	a	skos:Concept ;
+	skos:altLabel	"p-Xylene"@en ;
 	skos:broadMatch	<http://classyfire.wishartlab.com/tax_nodes/C0004211> ;
 	skos:broader	ccat:306020 ;
 	skos:definition	"Aromatic compounds that contain a p-xylene moiety, which is a monocyclic benzene carrying exactly two methyl groups at the 1- and 4-positions."@en ;
 	skos:inScheme	ccat: ;
-	skos:notation	"30602010" ;
+	skos:notation	"30602020" ;
 	skos:prefLabel	"Paraxylene"@en .
 
-ccat:30602020
+ccat:30602030
 	a	skos:Concept ;
+	skos:altLabel	"PTA"@en ;
 	skos:broadMatch	<http://classyfire.wishartlab.com/tax_nodes/C0001108> ;
 	skos:broader	ccat:306020 ;
 	skos:definition	"Compounds containing a benzene ring bearing a carboxylic acid group at ring carbon atoms 1 and 4."@en ;
 	skos:inScheme	ccat: ;
-	skos:notation	"30602020" ;
+	skos:notation	"30602030" ;
 	skos:prefLabel	"Terephthalic Acid"@en .
 
 ccat:306030
@@ -3642,7 +3842,7 @@ ccat:306030
 	skos:exactMatch	<http://classyfire.wishartlab.com/tax_nodes/C0000129> ;
 	skos:inScheme	ccat: ;
 	skos:notation	"306030" ;
-	skos:prefLabel	"Alkanols and Polyols" .
+	skos:prefLabel	"Alkanols and Polyols"@en .
 
 ccat:30603010
 	a	skos:Concept ;
@@ -3661,6 +3861,13 @@ ccat:30603020
 	skos:inScheme	ccat: ;
 	skos:notation	"30603020" ;
 	skos:prefLabel	"Ethanol"@en .
+
+ccat:30603025
+	a	skos:Concept ;
+	skos:broader	ccat:306030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30603025" ;
+	skos:prefLabel	"Ethylene Glycol"@en .
 
 ccat:3070
 	a	skos:Concept ;
@@ -3825,9 +4032,18 @@ ccat:401025
 ccat:401030
 	a	skos:Concept ;
 	skos:broader	ccat:4010 ;
+	skos:definition	"Freight shipped in an aircraft."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"401030" ;
 	skos:prefLabel	"Air Freight"@en .
+
+ccat:401050
+	a	skos:Concept ;
+	skos:broader	ccat:4010 ;
+	skos:definition	"Spread between identical loads where one is shipped CIF and the other is shipped FOB."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"401050" ;
+	skos:prefLabel	"CIF v FOB"@en .
 
 ccat:4020
 	a	skos:Concept ;
@@ -3917,17 +4133,38 @@ ccat:50
 ccat:5010
 	a	skos:Concept ;
 	skos:broader	ccat:50 ;
-	skos:closeMatch	wd:Q66076 ;
-	skos:definition	"The foreign exchange market (Forex, FX, or currency market) is a global decentralized or over-the-counter (OTC) market for the trading of currencies."@en ;
+	skos:definition	"Money is characterised by the following properties (1) a medium of exchange, (2) a unit of account, (3) a store of value, (4) a standard of deferred payment."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"5010" ;
+	skos:prefLabel	"Money"@en .
+
+ccat:501010
+	a	skos:Concept ;
+	skos:broader	ccat:5010 ;
+	skos:definition	"""A currency is a system of money in common use within a specific environment over time, especially for people in a nation state. Currencies may act as stores of value and be traded between nations in foreign exchange markets, which determine the relative values of the different currencies. Currencies in this sense are either chosen by users or decreed by governments, and each type has limited boundaries of acceptance - i.e. legal tender laws may require a particular unit of account for payments to government agencies.
+
+The foreign exchange market (Forex, FX, or currency market) is a global decentralized or over-the-counter (OTC) market for the trading of currencies."""@en ;
+	skos:exactMatch	wd:Q8142 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"501010" ;
 	skos:prefLabel	"Currency"@en .
+
+ccat:501020
+	a	skos:Concept ;
+	skos:broader	ccat:5010 ;
+	skos:definition	"""Digital currency is any currency, money, or money-like asset that is primarily managed, stored or exchanged on digital computer systems, especially over the internet. Types of digital currencies include cryptocurrency, virtual currency and central bank digital currency. Digital currency may be recorded on a distributed database on the internet, a centralized electronic computer database owned by a company or bank, within digital files or on a stored-value card.
+
+Non-sovereign digital currency is largely unregulated and issued and usually controlled by its developers and used and accepted electronically among the members of a specific virtual community. The European Banking Authority defines this variant as \"a digital representation of value that is neither issued by a central bank or a public authority, nor necessarily attached to a fiat currency, but is accepted by natural or legal persons as a means of payment and can be transferred, stored or traded electronically.\""""@en ;
+	skos:exactMatch	wd:Q10836209 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"501020" ;
+	skos:prefLabel	"Digital Currency"@en .
 
 ccat:5020
 	a	skos:Concept ;
 	skos:broader	ccat:50 ;
 	skos:closeMatch	wd:Q3239315 ;
-	skos:definition	"A tradeable debt instrument that provides a return in the form of fixed periodic interest payments and the eventual return of principal at maturity."@en ;
+	skos:definition	"A tradeable debt or rate instrument that provides a return in the form of fixed periodic interest payments and the eventual return of principal at maturity."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"5020" ;
 	skos:prefLabel	"Fixed Income"@en .
@@ -3959,6 +4196,23 @@ ccat:502030
 	skos:inScheme	ccat: ;
 	skos:notation	"502030" ;
 	skos:prefLabel	"IRS"@en .
+
+ccat:502032
+	a	skos:Concept ;
+	skos:broader	ccat:5020 ;
+	skos:definition	"Forward rate agreement, one payment of an IRS."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"502032" ;
+	skos:prefLabel	"FRA"@en .
+
+ccat:502035
+	a	skos:Concept ;
+	skos:broader	ccat:5020 ;
+	skos:definition	"Overnight Index Swaps, float/float or compounded."@en ;
+	skos:exactMatch	msa:99560960 , wd:Q205258 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"502035" ;
+	skos:prefLabel	"OIS"@en .
 
 ccat:502040
 	a	skos:Concept ;
@@ -3996,14 +4250,52 @@ Two of the primary criteria of an index are that it is investable and transparen
 	skos:notation	"503020" ;
 	skos:prefLabel	"Equity Index"@en .
 
+ccat:503022
+	a	skos:Concept ;
+	skos:broader	ccat:5030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"503022" ;
+	skos:prefLabel	"Dividend Index"@en .
+
+ccat:503025
+	a	skos:Concept ;
+	skos:broader	ccat:5030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"503025" ;
+	skos:prefLabel	"Volatility/Variance Index"@en .
+
 ccat:503030
 	a	skos:Concept ;
 	skos:broader	ccat:5030 ;
 	skos:closeMatch	wd:Q1284784 ;
-	skos:definition	"An index that measures the performance of a basket of fixed-income securities."@en ;
+	skos:definition	"An index that measures the performance of a basket of fixed-income (debt or rate) securities."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"503030" ;
 	skos:prefLabel	"Fixed Income Index"@en .
+
+ccat:503040
+	a	skos:Concept ;
+	skos:broader	ccat:5030 ;
+	skos:definition	"An index that measures the performance of a basket of currencies or special drawing rights."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"503040" ;
+	skos:prefLabel	"Currency Index"@en .
+
+ccat:503045
+	a	skos:Concept ;
+	skos:broader	ccat:5030 ;
+	skos:definition	"An index that measures the performance of a basket of digital currencies."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"503045" ;
+	skos:prefLabel	"Digital Currency Index"@en .
+
+ccat:503050
+	a	skos:Concept ;
+	skos:broader	ccat:5030 ;
+	skos:definition	"An index that measures the performance of a basket of real estate properties."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"503050" ;
+	skos:prefLabel	"Real Estate Index"@en .
 
 ccat:503090
 	a	skos:Concept ;

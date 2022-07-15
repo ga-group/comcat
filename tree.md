@@ -4,18 +4,26 @@ comcat tree
 - 10  Hards  
   - 1010  Energy  
     - 101010  Crude Oil  
+      - 10101080  Crude Spread  
+      - 10101085  Crack Spread  
     - 101020  Coal  
-      - 10102010  Anthracite  
-      - 10102020  Lignite  
-      - 10102030  Coke  
+      - 10102010  Anthracite  (Hard Coal)
+      - 10102020  Bituminous Coal  (Thermal Coal, Black Coal)
+      - 10102030  Lignite  
+      - 10102040  Coke  
     - 101030  Natural Gas  
-    - 101032  Liquefied Natural Gas  (LNG)
-    - 101035  Liquefied Petroleum Gas  (LPG)
+      - 10103010  Baseload Gas  
+      - 10103020  Liquefied Natural Gas  (LNG)
+      - 10103030  Liquefied Petroleum Gas  (LPG)
     - 101040  Refined Products  
       - 10104010  Heating Oil  
       - 10104020  Gasoline  (Petrol)
       - 10104030  Kerosene  
-      - 10104040  Diesel  (Petrodiesel)
+      - 10104040  Diesel  (Petrodiesel, Gas Oil)
+      - 10104050  Marine Fuel  (Fuel Oil, Bunker)
+      - 10104060  Naphtha  
+      - 10104080  Visco Spread  
+      - 10104090  Other Refined Products  
     - 101050  Electricity  
       - 10105010  Base Load  
       - 10105020  Peak Load  
@@ -62,6 +70,7 @@ comcat tree
     - 201040  Barley  
     - 201050  Oats  
     - 201060  Sorghum  
+    - 201065  Pearl Millet  (Bajra, Kambu, Pennisetum glaucum, Sajjey)
     - 201070  Rye  
     - 201075  Triticale  
     - 201080  White Fonio  
@@ -84,6 +93,7 @@ comcat tree
       - 20209050  Tallowtree Seeds  
       - 20209060  Linseed  
       - 20209065  Hempseed  
+      - 20209070  Guar  
     - 202095  Other Asterid Seeds  
       - 20209510  Sunflower Seed  
       - 20209520  Olives  
@@ -97,7 +107,12 @@ comcat tree
   - 2025  Vegetal Oils  
     - 202510  Oil of Soybeans  
     - 202520  Oil of Rapeseed  
-    - 202530  Oil of Palm  
+    - 202530  Oil of Palm  (CPO, Crude Palm Oil)
+    - 202531  Processed Oil of Palm  
+      - 20253110  RBD Palm Olein  
+      - 20253120  Palm Stearin  
+      - 20253130  Palm Acid Oil  
+      - 20253135  Palm Fatty Acid Distillate  
     - 202532  Oil of Palm Kernel  
     - 202535  Oil of Coconuts  (Oil of Copra)
     - 202540  Oil of Cottonseed  
@@ -112,6 +127,7 @@ comcat tree
       - 20259052  Stillingia Oil  
       - 20259060  Oil of Linseed  
       - 20259065  Oil of Hempseed  
+      - 20259070  Guar Gum  (Guaran)
     - 202595  Other Asterid Oils  
       - 20259510  Oil of Sunflower  
       - 20259520  Virgin Oil of Olives  
@@ -120,6 +136,7 @@ comcat tree
       - 20259535  Oil of Sesame Seed  
       - 20259540  Butter of Karite Nuts  (Shea Butter)
       - 20259545  Oil of Kapok  
+      - 20259550  Oil of Mentha  
     - 202599  Other Vegetal Oils  
       - 20259910  Oil of Poppy Seed  
       - 20259920  Jojoba Oil  
@@ -159,6 +176,7 @@ comcat tree
       - 20501040  Grapefruit  
       - 20501045  Pomelo  
       - 20501090  Other Citrus Fruit  
+    - 205015  Frozen Orange Juice  
     - 205020  Pome Fruits  
       - 20502010  Apples  
       - 20502020  Pears  
@@ -235,7 +253,6 @@ comcat tree
     - 251069  Other Camelids  
     - 251070  Rabbits  
     - 251079  Other Rodents  
-    - 251080  Game and Quarries  
     - 251090  Other Live Animals  
     - 251095  Other Non-Food Live Animals  
   - 2520  Animal Fats  
@@ -266,14 +283,9 @@ comcat tree
     - 253060  Meat of Camels  
     - 253069  Meat of other Domestic Camelids  
     - 253070  Rabbit Meat  
-    - 253074  Meat of other Domestic Rodents  
-    - 253075  Game Meat  
-    - 253080  Snails  
-    - 253081  Insects  
-    - 253082  Reptiles  
-    - 253083  Mammals of the sea  
-    - 253084  Seals, Sea Lions, Walruses  
-    - 253085  Frogs' Legs  
+    - 253079  Meat of other Domestic Rodents  
+    - 253080  Gutted Iced Tuna  
+    - 253085  Gutted Iced Salmon  
     - 253090  Other Meat  
     - 253095  Other Offals  
   - 2535  Meat Products and Meat Preparations  
@@ -339,14 +351,14 @@ comcat tree
     - 301070  Ramie  
     - 301080  Coir  
     - 301090  Other Fibre Crops  
-  - 3020  Fibres of Animal Origin  
-    - 302010  Greasy Wool  
-    - 302015  Fine Hair  
-    - 302020  Coarse Goat Hair  
-    - 302025  Fine Goat Hair  
-    - 302030  Hair of Horses  
-    - 302040  Reelable Cocoons  
-    - 302090  Other Coarse Hair  
+  - 3015  Fibres of Animal Origin  
+    - 301510  Greasy Wool  
+    - 301515  Fine Hair  
+    - 301520  Coarse Goat Hair  
+    - 301525  Fine Goat Hair  
+    - 301530  Hair of Horses  
+    - 301540  Reelable Cocoons  
+    - 301590  Other Coarse Hair  
   - 3030  Forest Products  
     - 303010  Wood  (Timber)
     - 303015  Sawnwood  (Lumber)
@@ -360,22 +372,35 @@ comcat tree
     - 304015  Natural Gums  
     - 304016  Arabic Gum  
     - 304019  Other Resins  
+    - 304020  Concentrated Latex  (HA Latex)
+    - 304022  Coagulated Latex  
+    - 304025  Technically Specified Rubber  (TSR)
+    - 304027  Ribbed Smoked Sheet Rubber  (RSS Rubber)
     - 304030  Vegetable Waxes  
     - 304035  Beeswax  
   - 3050  Inorganic Compounds  
     - 305010  Sodium Carbonate  (Soda Ash, Washing Soda)
+    - 305020  Glass  
+    - 305030  Intermetallics  
+      - 30503010  Ferrosilicon  
+      - 30503020  Manganese Silicide  
   - 3060  Organic Compounds  
     - 306010  Polymers  
       - 30601010  Polyvinyl Chloride  
       - 30601020  Polyethylene  
+      - 30601025  Polyethylene Terephthalate  (PET)
       - 30601030  Polypropylene  
       - 30601040  Polystyrene  
     - 306020  Benzenoids  
-      - 30602010  Paraxylene  
-      - 30602020  Terephthalic Acid  
+      - 30602010  Benzene  
+      - 30602015  Naphthalene  
+      - 30602017  Styrene  
+      - 30602020  Paraxylene  (p-Xylene)
+      - 30602030  Terephthalic Acid  (PTA)
     - 306030  Alkanols and Polyols  
       - 30603010  Methanol  
       - 30603020  Ethanol  
+      - 30603025  Ethylene Glycol  
   - 3070  Fertilizer  
     - 307010  Urea  
     - 307012  Ammonia  
@@ -396,6 +421,7 @@ comcat tree
     - 401020  Container Freight  
     - 401025  Dry Bulk Freight  
     - 401030  Air Freight  
+    - 401050  CIF v FOB  
   - 4020  Weather  
     - 402010  Temperature  
     - 402020  Rainfall  
@@ -406,14 +432,23 @@ comcat tree
     - 403040  Renewable Energy Credits/Guarantee of Origin  (GO, REC)
   - 4040  Commercial Water Rights  
 - 50  Financials  
-  - 5010  Currency  
+  - 5010  Money  
+    - 501010  Currency  
+    - 501020  Digital Currency  
   - 5020  Fixed Income  
     - 502010  Sovereign bonds  (Government bonds)
     - 502020  STIR  
     - 502030  IRS  
+    - 502032  FRA  
+    - 502035  OIS  
     - 502040  Inflation-linked Security  
   - 5030  Index  
     - 503010  Commodity Index  
     - 503020  Equity Index  
+    - 503022  Dividend Index  
+    - 503025  Volatility/Variance Index  
     - 503030  Fixed Income Index  
+    - 503040  Currency Index  
+    - 503045  Digital Currency Index  
+    - 503050  Real Estate Index  
     - 503090  Other Index  
