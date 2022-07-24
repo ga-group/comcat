@@ -47,6 +47,7 @@ check.%: %.ttl shacl/%.shacl.sql .imported.%
 
 tmp/%.out: sql/%.sql .imported.comcat.skos
 	$(csvsql) $< \
+	| sed 's@%0A@\n@' \
 	> $@.t && mv $@.t $@
 
 export.void: tmp/comcat.skos.void
@@ -74,6 +75,9 @@ comcat tree
 endef
 export header
 tree.md: tmp/tree.out
+	mawk -v header="$$header" '(NR==1){print header}{sub("\(\)","",$$0)}NR>1' < $< \
+	> $@.t && mv $@.t $@
+tree+def.md: tmp/tree+def.out
 	mawk -v header="$$header" '(NR==1){print header}{sub("\(\)","",$$0)}NR>1' < $< \
 	> $@.t && mv $@.t $@
 

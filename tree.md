@@ -4,32 +4,39 @@ comcat tree
 - 10  Hards  
   - 1010  Energy  
     - 101010  Crude Oil  
-      - 10101080  Crude Spread  
+      - 10101050  Crude Transfer  
+      - 10101070  Crude Storage  
+      - 10101080  Crude Premium  
       - 10101085  Crack Spread  
-    - 101020  Coal  
-      - 10102010  Anthracite  (Hard Coal)
-      - 10102020  Bituminous Coal  (Thermal Coal, Black Coal)
-      - 10102030  Lignite  
-      - 10102040  Coke  
-    - 101030  Natural Gas  
-      - 10103010  Baseload Gas  
-      - 10103020  Liquefied Natural Gas  (LNG)
-      - 10103030  Liquefied Petroleum Gas  (LPG)
-    - 101040  Refined Products  
-      - 10104010  Heating Oil  
-      - 10104020  Gasoline  (Petrol)
-      - 10104030  Kerosene  
-      - 10104040  Diesel  (Petrodiesel, Gas Oil)
-      - 10104050  Marine Fuel  (Fuel Oil, Bunker)
-      - 10104060  Naphtha  
-      - 10104080  Visco Spread  
-      - 10104090  Other Refined Products  
+    - 101020  Natural Gas  
+      - 10102010  Purified Natural Gas  
+      - 10102020  Liquefied Natural Gas  (LNG)
+      - 10102030  Liquefied Petroleum Gas  (LPG)
+      - 10102040  Natural Gas Condensate  (Condy)
+      - 10102050  Gas Baseload  
+      - 10102055  Pipeline capacity  
+      - 10102080  Gas Premium  
+    - 101030  Refined Products  
+      - 10103010  Heating Oil  
+      - 10103020  Gasoline  (Petrol)
+      - 10103030  Kerosene  (Jet Fuel, Paraffin)
+      - 10103040  Diesel  (Petrodiesel, Gas Oil)
+      - 10103050  Marine Fuel  (Fuel Oil, Bunker, HFO, HSFO, NSFO)
+      - 10103060  Naphtha  
+      - 10103080  Visco Spread  
+      - 10103090  Other Refined Products  
+    - 101040  Coal  
+      - 10104010  Anthracite  (Hard Coal)
+      - 10104020  Bituminous Coal  (Thermal Coal, Black Coal)
+      - 10104030  Lignite  (Brown Coal)
+      - 10104040  Coke  
     - 101050  Electricity  
       - 10105010  Base Load  
       - 10105020  Peak Load  
       - 10105030  Off-peak  
       - 10105040  Shoulder  
       - 10105050  Transmission Rights  
+      - 10105080  Floor/Cap  
   - 1020  Precious Metal  
     - 102010  Gold  
     - 102020  Silver  
@@ -38,6 +45,8 @@ comcat tree
     - 102050  Iridium  
     - 102060  Rhodium  
     - 102070  Ruthenium  
+    - 102075  Osmium  
+    - 102080  Precious Metal Cross  
   - 1030  Base Metal  (Non-ferrous Metal)
     - 103010  Copper  
     - 103020  Aluminium  
@@ -66,25 +75,24 @@ comcat tree
     - 201010  Maize  (Corn)
     - 201020  Rice  
     - 201030  Wheat  
-    - 201035  Durum  
+    - 201035  Durum  (Pasta Wheat)
     - 201040  Barley  
     - 201050  Oats  
     - 201060  Sorghum  
-    - 201065  Pearl Millet  (Bajra, Kambu, Pennisetum glaucum, Sajjey)
+    - 201065  Pearl Millet  (Bajra, Kambu, Sajjey)
     - 201070  Rye  
     - 201075  Triticale  
     - 201080  White Fonio  
     - 201090  Other Cereals and Pseudocereals  
       - 20109010  Buckwheat  
       - 20109020  Quinoa  
-  - 2020  Oil-Bearing Crops and Derived Products  
+  - 2020  Oil-Bearing Crops  
     - 202010  Soybeans  
     - 202020  Rapeseed  (Canola)
     - 202030  Oil Palm  
     - 202035  Coconuts  
     - 202040  Cottonseed  
     - 202050  Groundnuts  
-    - 202055  Adzuki Beans  (Azuki Beans)
     - 202090  Other Rosid Seeds  
       - 20209010  Melonseed  (Egusi)
       - 20209020  Castor Beans  
@@ -93,7 +101,6 @@ comcat tree
       - 20209050  Tallowtree Seeds  
       - 20209060  Linseed  
       - 20209065  Hempseed  
-      - 20209070  Guar  
     - 202095  Other Asterid Seeds  
       - 20209510  Sunflower Seed  
       - 20209520  Olives  
@@ -104,7 +111,7 @@ comcat tree
     - 202099  Other Oilseeds  
       - 20209910  Poppy Seed  
       - 20209920  Jojoba  (Goat Nut)
-  - 2025  Vegetal Oils  
+  - 2025  Vegetal Oils and Fats  
     - 202510  Oil of Soybeans  
     - 202520  Oil of Rapeseed  
     - 202530  Oil of Palm  (CPO, Crude Palm Oil)
@@ -127,7 +134,6 @@ comcat tree
       - 20259052  Stillingia Oil  
       - 20259060  Oil of Linseed  
       - 20259065  Oil of Hempseed  
-      - 20259070  Guar Gum  (Guaran)
     - 202595  Other Asterid Oils  
       - 20259510  Oil of Sunflower  
       - 20259520  Virgin Oil of Olives  
@@ -158,6 +164,15 @@ comcat tree
     - 203050  Raw Centrifugal Sugar  
       - 20305010  Refined Sugar  
       - 20305020  Molasses  
+  - 2035  Starches, Gums, and Polysaccharides  
+    - 203510  Corn Starch  
+    - 203520  Potatoe Starch  
+    - 203530  Malt  
+    - 203550  Guar  
+    - 203555  Guar Gum  
+    - 203557  Guar Meal  
+    - 203560  Arabic Gum  
+    - 203570  Adzuki Beans  (Azuki Beans, Red Beans)
   - 2040  Roots and Tubers  
     - 204010  Potatoes  
     - 204015  Sweet Potatoes  
@@ -359,9 +374,16 @@ comcat tree
     - 301530  Hair of Horses  
     - 301540  Reelable Cocoons  
     - 301590  Other Coarse Hair  
+  - 3020  Oleochemicals  
+    - 302010  Biodiesel  (FAME, Fatty Acid Methyl Ester)
+    - 302020  Polylactic Acid  (PLA)
+    - 302030  Polyamide 11  (PA 11)
   - 3030  Forest Products  
     - 303010  Wood  (Timber)
     - 303015  Sawnwood  (Lumber)
+    - 303020  Plywood  (Blockboard)
+    - 303030  Fibreboard  
+    - 303050  Wood Pellets  
   - 3035  Paper  
     - 303510  Newsprint  
     - 303520  Containerboard  
@@ -369,8 +391,6 @@ comcat tree
     - 303550  Recovered Paper  
   - 3040  Rubber and Wax  
     - 304010  Natural Rubber  
-    - 304015  Natural Gums  
-    - 304016  Arabic Gum  
     - 304019  Other Resins  
     - 304020  Concentrated Latex  (HA Latex)
     - 304022  Coagulated Latex  
@@ -401,6 +421,8 @@ comcat tree
       - 30603010  Methanol  
       - 30603020  Ethanol  
       - 30603025  Ethylene Glycol  
+      - 30603030  Propanol  
+      - 30603040  Butanol  
   - 3070  Fertilizer  
     - 307010  Urea  
     - 307012  Ammonia  
@@ -418,10 +440,13 @@ comcat tree
 - 40  Commoditized  
   - 4010  Freight  
     - 401010  Wet Freight  
+      - 40101010  Dirty Freight  
+      - 40101020  Clean Freight  
+      - 40101030  Gas Freight  
     - 401020  Container Freight  
     - 401025  Dry Bulk Freight  
     - 401030  Air Freight  
-    - 401050  CIF v FOB  
+    - 401050  Cargo Spread  
   - 4020  Weather  
     - 402010  Temperature  
     - 402020  Rainfall  
@@ -430,25 +455,38 @@ comcat tree
     - 403020  NOx permits  
     - 403030  SO2 permits  
     - 403040  Renewable Energy Credits/Guarantee of Origin  (GO, REC)
+    - 403050  Emission Reduction Unit  (ERU)
   - 4040  Commercial Water Rights  
+    - 404010  Diversion Rights  
+    - 404020  Groundwater Rights  
+    - 404030  Surface Storage Reservoir Rights  
+    - 404040  Treated Wastewater Rights  
+  - 4050  Tax and Duties  
 - 50  Financials  
   - 5010  Money  
     - 501010  Currency  
     - 501020  Digital Currency  
+    - 501080  Currency Basket  
   - 5020  Fixed Income  
-    - 502010  Sovereign bonds  (Government bonds)
+    - 502010  Sovereign bond  (Government bonds)
     - 502020  STIR  
     - 502030  IRS  
     - 502032  FRA  
     - 502035  OIS  
     - 502040  Inflation-linked Security  
-  - 5030  Index  
-    - 503010  Commodity Index  
-    - 503020  Equity Index  
-    - 503022  Dividend Index  
-    - 503025  Volatility/Variance Index  
-    - 503030  Fixed Income Index  
-    - 503040  Currency Index  
-    - 503045  Digital Currency Index  
-    - 503050  Real Estate Index  
-    - 503090  Other Index  
+    - 502080  FI Basket  
+  - 5030  Equity  
+    - 503010  Single Stock  
+    - 503020  Dividend  
+    - 503030  Variance  
+    - 503080  Stock Index  
+  - 5040  Real Estate  
+    - 504010  REIT  
+    - 504020  Property Market Indicator  
+    - 504080  Property Portfolio  
+  - 5090  Other Financial  
+    - 509080  Commodity Index  
+    - 509090  Other Index  
+- 90  Ephemerals  
+  - 9080  Test  
+  - 9090  Unclassified  

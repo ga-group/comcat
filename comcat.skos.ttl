@@ -54,24 +54,41 @@ ccat:1010
 ccat:101010
 	a	skos:Concept ;
 	skos:broader	ccat:1010 ;
-	skos:definition	"Petroleum is a naturally occurring, yellowish-black liquid found in geological formations beneath the Earth's surface. It is commonly refined into various types of fuels. Components of petroleum are separated using a technique called fractional distillation, i.e. separation of a liquid mixture into fractions differing in boiling point by means of distillation, typically using a fractionating column."@en ;
+	skos:definition	"Raw, unprocessed blend of various petroleum products. Highly volatile components are traded as Natural Gas (101020)."@en ;
 	skos:exactMatch	agrovoc:c_5747 , eurovoc:2366 , stw:14197-6 , wd:Q22656 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"101010" ;
 	skos:prefLabel	"Crude Oil"@en .
 
+ccat:10101050
+	a	skos:Concept ;
+	skos:broader	ccat:101010 ;
+	skos:definition	"Booked pipeline capacity for the purpose of oil transfers."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10101050" ;
+	skos:prefLabel	"Crude Transfer"@en .
+
+ccat:10101070
+	a	skos:Concept ;
+	skos:broader	ccat:101010 ;
+	skos:definition	"Booked storage capacity for the purpose of deferring transfer or refining."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10101070" ;
+	skos:prefLabel	"Crude Storage"@en .
+
 ccat:10101080
 	a	skos:Concept ;
 	skos:broader	ccat:101010 ;
-	skos:definition	"Spread between two different crude oils that determines the premium of one oil over the other due to chemical composition, freight or storage costs."@en ;
+	skos:definition	"Premium of one oil over another due to chemical composition, freight or storage costs."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10101080" ;
-	skos:prefLabel	"Crude Spread"@en .
+	skos:prefLabel	"Crude Premium"@en .
 
 ccat:10101085
 	a	skos:Concept ;
 	skos:broader	ccat:101010 ;
-	skos:definition	"Spread between two different crude oils that determines the premium of one oil over the other due to chemical composition, freight or storage costs."@en ;
+	skos:definition	"Premium of a component extracted from a crude oil over the crude oil itself. Also includes combinations of components, e.g. the 3-2-1 crack spread."@en ;
+	skos:exactMatch	wd:Q5180334 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10101085" ;
 	skos:prefLabel	"Crack Spread"@en .
@@ -79,223 +96,211 @@ ccat:10101085
 ccat:101020
 	a	skos:Concept ;
 	skos:broader	ccat:1010 ;
-	skos:definition	"""Coal is a combustible black or brownish-black sedimentary rock, formed as rock strata called coal seams. Coal is mostly carbon with variable amounts of other elements; chiefly hydrogen, sulfur, oxygen, and nitrogen. Coal is formed when dead plant matter decays into peat and is converted into coal by the heat and pressure of deep burial over millions of years. Vast deposits of coal originate in former wetlands that covered much of the Earth's tropical land areas during the late Carboniferous (Pennsylvanian) and Permian times.
-	
-	Coal is primarily used as a fuel. While coal has been known and used for thousands of years, its usage was limited prior to the Industrial Revolution. With the invention of the steam engine coal consumption increased. As of 2016, coal remains an important fuel as it supplied about a quarter of the world's primary energy and two-fifths of electricity. Some iron and steel making and other industrial processes burn coal."""@en ;
-	skos:exactMatch	agrovoc:c_1693 , eurovoc:5386 , stw:14200-1 , wd:Q24489 ;
+	skos:definition	"Naturally occurring hydrocarbon gas mixture of higher alkanes (methane, ethane, propane, others), sometimes a small percentage of carbon dioxide, nitrogen, hydrogen sulfide, or helium."@en ;
+	skos:exactMatch	agrovoc:c_5087 , eurovoc:1141 , stw:14196-1 , wd:Q40858 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"101020" ;
-	skos:prefLabel	"Coal"@en .
+	skos:prefLabel	"Natural Gas"@en .
 
 ccat:10102010
 	a	skos:Concept ;
-	skos:altLabel	"Hard Coal"@en ;
 	skos:broader	ccat:101020 ;
-	skos:definition	"""Anthracite, also known as hard coal, is a hard, compact variety of coal that has a submetallic luster. It has the highest carbon content, the fewest impurities, and the highest energy density of all types of coal and is the highest ranking of coals.
-
-Anthracite is the most metamorphosed type of coal (but still represents low-grade metamorphism), in which the carbon content is between 86% and 98%. The term is applied to those varieties of coal which do not give off tarry or other hydrocarbon vapours when heated below their point of ignition. Anthracite ignites with difficulty and burns with a short, blue, and smokeless flame.
-
-Anthracite is categorized into standard grade, which is used mainly in power generation, and high grade (HG) and ultra high grade (UHG), the principal uses of which are in the metallurgy sector. Anthracite accounts for about 1% of global coal reserves, and is mined in only a few countries around the world. China accounts for the majority of global production; other producers are Russia, Ukraine, North Korea, South Africa, Vietnam, the UK, Australia, Canada and the US. Total production in 2010 was 670 million tons."""@en ;
-	skos:exactMatch	wd:Q182458 ;
+	skos:definition	"Processed natural gas, or gas from petro-chemical processes, that is close to pure methane or pure ethane."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10102010" ;
-	skos:prefLabel	"Anthracite"@en .
+	skos:prefLabel	"Purified Natural Gas"@en .
 
 ccat:10102020
 	a	skos:Concept ;
-	skos:altLabel	"Black Coal"@en , "Thermal Coal"@en ;
+	skos:altLabel	"LNG"@en ;
 	skos:broader	ccat:101020 ;
-	skos:definition	"""Bituminous coal, or black coal, is a type of coal containing a tar-like substance called bitumen or asphalt. Its coloration can be black or sometimes dark brown; often there are well-defined bands of bright and dull material within the seams. It is typically hard but friable. Its quality is ranked higher than lignite and sub-bituminous coal, but lesser than anthracite. It is the most abundant rank of coal, with deposits found around the world, often in rocks of Carboniferous age. Bituminous coal is formed from sub-bituminous coal that is buried deeply enough to be heated to 85 \u00B0C or higher.
-
-Bituminous coal which lacks the qualities required for use as metallurgical coal is graded as thermal coal. This is used primarily for electrical power generation. The ideal thermal coal is easily ignited but has a high heat content."""@en ;
-	skos:exactMatch	wd:Q732607 ;
+	skos:definition	"Natural gas or purified natural gas that has been cooled down to liquid form for ease and safety of non-pressurized storage or transfer."@en ;
+	skos:exactMatch	stw:18236-2 , wd:Q358333 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10102020" ;
-	skos:prefLabel	"Bituminous Coal"@en .
+	skos:prefLabel	"Liquefied Natural Gas"@en .
 
 ccat:10102030
 	a	skos:Concept ;
+	skos:altLabel	"LPG"@en ;
 	skos:broader	ccat:101020 ;
-	skos:definition	"""Lignite, often referred to as brown coal, is a soft, brown, combustible, sedimentary rock formed from naturally compressed peat. It is considered the lowest rank of coal due to its relatively low heat content. It has a carbon content around 25 to 35 percent. It is mined all around the world and is used almost exclusively as a fuel for steam-electric power generation."""@en ;
-	skos:exactMatch	agrovoc:c_32489 , eurovoc:1656 , stw:14194-5 , wd:Q156267 ;
+	skos:definition	"Flammable hydrocarbon gases used as fuel in heating appliances, cooking equipment, and vehicles. Either propane or butane or a mixture of roughly equal amounts thereof. Pentane, propylene, butylenes and various other hydrocarbons are usually also present in small concentrations. Standardised in EN 589."@en ;
+	skos:exactMatch	wd:Q351609 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10102030" ;
-	skos:prefLabel	"Lignite"@en .
+	skos:prefLabel	"Liquefied Petroleum Gas"@en .
 
 ccat:10102040
 	a	skos:Concept ;
+	skos:altLabel	"Condy"@en ;
 	skos:broader	ccat:101020 ;
-	skos:definition	"""Coke is a grey, hard, and porous fuel with a high carbon content and few impurities, made by heating coal or oil in the absence of air--a destructive distillation process. It is an important industrial product, used mainly in iron ore smelting, but also as a fuel in stoves and forges when air pollution is a concern.
-
-The unqualified term \"coke\" usually refers to the product derived from low-ash and low-sulphur bituminous coal by a process called coking. A similar product called petroleum coke, or pet coke, is obtained from crude oil in oil refineries. Coke may also be formed naturally by geologic processes."""@en ;
-	skos:exactMatch	wd:Q192795 ;
+	skos:definition	"Low-density mixture of hydrocarbons present in raw natural gas cooled down below the hydrocarbon dew point."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10102040" ;
-	skos:prefLabel	"Coke"@en .
+	skos:prefLabel	"Natural Gas Condensate"@en .
+
+ccat:10102050
+	a	skos:Concept ;
+	skos:broader	ccat:101020 ;
+	skos:definition	"Baseload of gas delivered uniformly over a specified period of time (Time of delivery, TOD) through one or more designated hubs."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10102050" ;
+	skos:prefLabel	"Gas Baseload"@en .
+
+ccat:10102055
+	a	skos:Concept ;
+	skos:broader	ccat:101020 ;
+	skos:definition	"Booked capacity for the purpose of gas transfers."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10102055" ;
+	skos:prefLabel	"Pipeline capacity"@en .
+
+ccat:10102080
+	a	skos:Concept ;
+	skos:broader	ccat:101020 ;
+	skos:definition	"Premium of one gas over another due to chemical composition, freight or storage costs."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10102080" ;
+	skos:prefLabel	"Gas Premium"@en .
 
 ccat:101030
 	a	skos:Concept ;
 	skos:broader	ccat:1010 ;
-	skos:definition	"Natural gas (also called fossil gas; sometimes just gas), is a naturally occurring hydrocarbon gas mixture consisting primarily of methane, but commonly including varying amounts of other higher alkanes, and sometimes a small percentage of carbon dioxide, nitrogen, hydrogen sulfide, or helium. It is formed when layers of decomposing plant and animal matter are exposed to intense heat and pressure under the surface of the Earth over millions of years. The energy that the plants originally obtained from the sun is stored in the form of chemical bonds in the gas. Natural gas is a fossil fuel."@en ;
-	skos:exactMatch	agrovoc:c_5087 , eurovoc:1141 , stw:14196-1 , wd:Q40858 ;
+	skos:definition	"Petrochemicals derived from crude oil when processed in oil refineries. This explicitly excludes chemical compounds produced in biochemical or (non-petro) industrial processes, e.g. ethanol from fermentation, or methanol from catalytic gas synthesis."@en ;
+	skos:exactMatch	eurovoc:2772 , wd:Q1059843 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"101030" ;
-	skos:prefLabel	"Natural Gas"@en .
+	skos:prefLabel	"Refined Products"@en ;
+	skos:related	wd:Q3444730 .
 
 ccat:10103010
 	a	skos:Concept ;
 	skos:broader	ccat:101030 ;
-	skos:definition	"Baseload of gas delivered uniformly over a specified period of time (Time of delivery, TOD) through one or more designated hubs."@en ;
+	skos:definition	"Fuel oil that is primarily used for heating. Chemically very similar to diesel (gasoil, the motor fuel) which is why imarkers, e.g. Yellow 124 in the EU, might have been added."@en ;
+	skos:exactMatch	wd:Q912452 ;
 	skos:inScheme	ccat: ;
+	skos:narrowMatch	stw:14215-2 ;
 	skos:notation	"10103010" ;
-	skos:prefLabel	"Baseload Gas"@en .
+	skos:prefLabel	"Heating Oil"@en .
 
 ccat:10103020
 	a	skos:Concept ;
-	skos:altLabel	"LNG"@en ;
+	skos:altLabel	"Petrol"@en ;
 	skos:broader	ccat:101030 ;
-	skos:definition	"""Liquefied natural gas (LNG) is natural gas (predominantly methane, CH4, with some mixture of ethane, C2H6) that has been cooled down to liquid form for ease and safety of non-pressurized storage or transport. It takes up about 1/600th the volume of natural gas in the gaseous state (at standard conditions for temperature and pressure). It is odorless, colorless, non-toxic and non-corrosive. Hazards include flammability after vaporization into a gaseous state, freezing and asphyxia. The liquefaction process involves removal of certain components, such as dust, acid gases, helium, water, and heavy hydrocarbons, which could cause difficulty downstream. The natural gas is then condensed into a liquid at close to atmospheric pressure by cooling it to approximately -162 °C; maximum transport pressure is set at around 25 kPa (4 psi).
-
-The gas produced from hydrocarbon deposits typically contains a wide range of hydrocarbon products, which usually includes methane (CH4), ethane (C2H6), propane (C3H8) and butane (C4H10). All these products have wide-ranging boiling points and also different heating values allowing different routes to commercialization and also different uses. The \"acidic\" elements such as hydrogen sulphide (H2S) and carbon dioxide (CO2), together with oil, mud, water, and mercury, are removed from the gas to deliver a clean sweetened stream of gas. Failure to remove such acidic molecules, mercury, and other impurities could result in damage to the equipment. Corrosion of steel pipes and amalgamization of mercury to aluminium within cryogenic heat exchangers could cause expensive damage.
-
-The gas stream is typically separated into the Liquefied Petroleum fractions (butane and propane), which can be stored in liquid form at relatively low pressure, and the lighter ethane and methane fractions. These lighter fractions of methane and ethane are then liquefied to make up the bulk of LNG that is shipped.
-
-Natural gas was considered to be economically unimportant wherever gas-producing oil or gas fields were distant from gas pipelines or located in offshore locations where pipelines were not viable. In the past this usually meant that natural gas produced was typically flared, especially since unlike oil no viable method for natural gas storage or transport existed other than pipelines which required the immediate use by end users of the same gas. This meant that natural gas markets were historically entirely local and any production had to be consumed within the local network.
-
-Developments of production processes, cryogenic storage, and transportation effectively created the tools required to commercialize natural gas into a global market which now competes with other fuels. Furthermore, the development of LNG storage also introduced a reliability in networks which was previously thought impossible. Given that storage of other fuels is relatively easily secured using simple tanks, a supply for several months could be kept in storage. With the advent of large scale cryogenic storage, it was possible to create long term gas storage reserves. These reserves of liquefied gas could be deployed at a moment's notice through regasification processes and today are the main means for networks to handle local peak shaving requirements."""@en ;
-	skos:exactMatch	stw:18236-2 , wd:Q358333 ;
+	skos:definition	"Petroleum-derived flammable liquid used primarily as a motor fuel, obtained by the fractional distillation of petroleum, enhanced with a variety of additives."@en ;
+	skos:exactMatch	agrovoc:c_5746 , eurovoc:3771 , stw:14212-1 , wd:Q39558 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10103020" ;
-	skos:prefLabel	"Liquefied Natural Gas"@en .
+	skos:note	"On average, a 160-liter (42-U.S.-gallon) barrel of crude oil can yield up to about 72 liters (19 U.S. gallons) of gasoline, depending on the crude oil assay and on what other refined products are also extracted.  Additives improve chemical stability and performance characteristics, control corrosiveness, and provide fuel system cleaning. Gasoline may contain oxygen-containing chemicals such as ethanol, MTBE, or ETBE to improve combustion."@en ;
+	skos:prefLabel	"Gasoline"@en .
 
 ccat:10103030
 	a	skos:Concept ;
-	skos:altLabel	"LPG"@en ;
+	skos:altLabel	"Jet Fuel"@en , "Paraffin"@en ;
 	skos:broader	ccat:101030 ;
-	skos:definition	"""Liquefied petroleum gas (LPG or LP gas), is a flammable mixture of hydrocarbon gases used as fuel in heating appliances, cooking equipment, and vehicles. It is a mixture of 48% propane, 50% butane, and 2% pentane.
-
-It is increasingly used as an aerosol propellant and a refrigerant, replacing chlorofluorocarbons in an effort to reduce damage to the ozone layer. When specifically used as a vehicle fuel it is often referred to as autogas.
-
-Varieties of LPG bought and sold include mixes that are mostly propane (C3H8), mostly butane (C4H10), and, most commonly, mixes including both propane and butane. In the northern hemisphere winter, the mixes contain more propane, while in summer, they contain more butane. In the United States, mainly two grades of LPG are sold: commercial propane and HD-5. These specifications are published by the Gas Processors Association (GPA) and the American Society of Testing and Materials. Propane/butane blends are also listed in these specifications.
-
-Propylene, butylenes and various other hydrocarbons are usually also present in small concentrations such as C2H6 ,CH4, and C3H8. HD-5 limits the amount of propylene that can be placed in LPG to 5% and is utilized as an autogas specification. A powerful odorant, ethanethiol, is added so that leaks can be detected easily. The internationally recognized European Standard is EN 589. In the United States, tetrahydrothiophene (thiophane) or amyl mercaptan are also approved odorants, although neither is currently being utilized.
-
-LPG is prepared by refining petroleum or \"wet\" natural gas, and is almost entirely derived from fossil fuel sources, being manufactured during the refining of petroleum (crude oil), or extracted from petroleum or natural gas streams as they emerge from the ground. It was first produced in 1910 by Dr. Walter Snelling, and the first commercial products appeared in 1912. It currently provides about 3% of all energy consumed, and burns relatively cleanly with no soot and very few sulfur emissions. As it is a gas, it does not pose ground or water pollution hazards, but it can cause air pollution. LPG has a typical specific calorific value of 46.1 MJ/kg compared with 42.5 MJ/kg for fuel oil and 43.5 MJ/kg for premium grade petrol (gasoline). However, its energy density per volume unit of 26 MJ/L is lower than either that of petrol or fuel oil, as its relative density is lower (about 0.5-0.58 kg/L, compared to 0.71-0.77 kg/L for gasoline).
-
-Besides using as energy carrier, the LPG is also a promising feedstock in the chemical industry for the synthesis of olefins such as ethylene, propylene, butene as well as acrylic acid.
-
-As its boiling point is below room temperature and heat, LPG will evaporate quickly at normal temperatures and pressures and is usually supplied in pressurized steel vessels. They are typically filled to 80%-85% of their capacity to allow for thermal expansion of the contained liquid. The ratio between the volumes of the vaporized gas and the liquefied gas varies depending on composition, pressure, and temperature, but is typically around 250:1. The pressure at which LPG becomes liquid, called its vapour pressure, likewise varies depending on composition and temperature; for example, it is approximately 220 kilopascals (32 psi) for pure butane at 20 °C (68 °F), and approximately 2,200 kilopascals (320 psi) for pure propane at 55 °C (131 °F). LPG is heavier than air, unlike natural gas, and thus will flow along floors and tend to settle in low spots, such as basements. There are two main dangers to this. The first is a possible explosion if the mixture of LPG and air is within the explosive limits and there is an ignition source. The second is suffocation due to LPG displacing air, causing a decrease in oxygen concentration.
-
-A full LPG cylinder contains 85% liquid; the ullage volume will contain vapour at a pressure that varies with temperature."""@en ;
-	skos:exactMatch	wd:Q351609 ;
+	skos:definition	"Combustible hydrocarbon liquid widely used widely used as aviation fuel."@en ;
+	skos:exactMatch	wd:Q76904 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10103030" ;
-	skos:prefLabel	"Liquefied Petroleum Gas"@en .
+	skos:prefLabel	"Kerosene"@en .
+
+ccat:10103040
+	a	skos:Concept ;
+	skos:altLabel	"Gas Oil"@en , "Petrodiesel"@en ;
+	skos:broader	ccat:101030 ;
+	skos:definition	"Any liquid fuel specifically designed for use in diesel engines"@en ;
+	skos:exactMatch	eurovoc:3772 , stw:14214-4 , wd:Q38423 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10103040" ;
+	skos:prefLabel	"Diesel"@en ;
+	skos:scopeNote	"Standardised in EN 590 (EU)"@en .
+
+ccat:10103050
+	a	skos:Concept ;
+	skos:altLabel	"Bunker"@en , "Fuel Oil"@en , "HFO"@en , "HSFO"@en , "NSFO"@en ;
+	skos:broader	ccat:101030 ;
+	skos:definition	"Any type of fuel oil used aboard water vessels. Usually bunker B or bunker C, also known as No. 5 or No. 6 respectively."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10103050" ;
+	skos:prefLabel	"Marine Fuel"@en .
+
+ccat:10103060
+	a	skos:Concept ;
+	skos:broader	ccat:101030 ;
+	skos:definition	"Flammable liquid hydrocarbon mixture produced from natural gas condensates, petroleum distillates, and the distillation of coal tar and peat."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10103060" ;
+	skos:note	"In different industries and regions naphtha may also be crude oil or refined products such as kerosene. It is also known as Shellite in Australia."@en ;
+	skos:prefLabel	"Naphtha"@en .
+
+ccat:10103080
+	a	skos:Concept ;
+	skos:broader	ccat:101030 ;
+	skos:definition	"Spread between different refined products that determines the premium of one oil over the other due to chemical composition, freight or storage costs."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10103080" ;
+	skos:prefLabel	"Visco Spread"@en .
+
+ccat:10103090
+	a	skos:Concept ;
+	skos:broader	ccat:101030 ;
+	skos:definition	"Any other petrochemicals."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10103090" ;
+	skos:prefLabel	"Other Refined Products"@en .
 
 ccat:101040
 	a	skos:Concept ;
 	skos:broader	ccat:1010 ;
-	skos:definition	"""Petroleum products are materials derived from crude oil (petroleum) as it is processed in oil refineries. Unlike petrochemicals, which are a collection of well-defined usually pure chemical compounds, petroleum products are complex mixtures. The majority of petroleum is converted to petroleum products, which includes several classes of fuels.
-	
-	According to the composition of the crude oil and depending on the demands of the market, refineries can produce different shares of petroleum products. The largest share of oil products is used as \"energy carriers\", i.e. various grades of fuel oil and gasoline. These fuels include or can be blended to give gasoline, jet fuel, diesel fuel, heating oil, and heavier fuel oils. Heavier (less volatile) fractions can also be used to produce asphalt, tar, paraffin wax, lubricating and other heavy oils. Refineries also produce other chemicals, some of which are used in chemical processes to produce plastics and other useful materials. Since petroleum often contains a few percent sulfur-containing molecules, elemental sulfur is also often produced as a petroleum product. Carbon, in the form of petroleum coke, and hydrogen may also be produced as petroleum products. The hydrogen produced is often used as an intermediate product for other oil refinery processes such as hydrocracking and hydrodesulfurization."""@en ;
-	skos:exactMatch	eurovoc:2772 , wd:Q1059843 ;
+	skos:definition	"Combustible black or brownish-black sedimentary rock, formed as rock strata called coal seams."@en ;
+	skos:exactMatch	agrovoc:c_1693 , eurovoc:5386 , stw:14200-1 , wd:Q24489 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"101040" ;
-	skos:prefLabel	"Refined Products"@en ;
-	skos:related	wd:Q3444730 .
+	skos:prefLabel	"Coal"@en .
 
 ccat:10104010
 	a	skos:Concept ;
+	skos:altLabel	"Hard Coal"@en ;
 	skos:broader	ccat:101040 ;
-	skos:definition	"""Heating oil is any petroleum product or other oil used for heating; a fuel oil. Most commonly, it refers to low viscosity grades of fuel oil used for furnaces or boilers use for home heating and in other buildings. Home heating oil is often abbreviated as HHO.
-
-Most heating oil products are chemically very similar to diesel fuel used as motor fuel; motor fuel is typically subject to higher fuel taxes. Many countries add fuel dyes to heating oil, allowing law enforcement to check if a driver is evading fuel taxes. Since 2002, Solvent Yellow 124 has been added as a \"Euromarker\" in the European Union; untaxed diesel is known as \"red diesel\" in the United Kingdom.
-
-Heating oil is commonly delivered by tank truck to residential, commercial and municipal buildings and stored in above-ground storage tanks (\"ASTs\") located in the basements, garages, or outside adjacent to the building. It is sometimes stored in underground storage tanks (or \"USTs\") but less often than ASTs. ASTs are used for smaller installations due to the lower cost factor. Heating oil is less commonly used as an industrial fuel or for power generation."""@en ;
-	skos:exactMatch	wd:Q912452 ;
+	skos:definition	"Coal variety with the highest carbon content and the highest energy density."@en ;
+	skos:exactMatch	wd:Q182458 ;
 	skos:inScheme	ccat: ;
-	skos:narrowMatch	stw:14215-2 ;
 	skos:notation	"10104010" ;
-	skos:prefLabel	"Heating Oil"@en .
+	skos:prefLabel	"Anthracite"@en .
 
 ccat:10104020
 	a	skos:Concept ;
-	skos:altLabel	"Petrol"@en ;
+	skos:altLabel	"Black Coal"@en , "Thermal Coal"@en ;
 	skos:broader	ccat:101040 ;
-	skos:definition	"""Gasoline, or petrol (see the etymology for naming differences), is a transparent, petroleum-derived flammable liquid that is used primarily as a fuel in most spark-ignited internal combustion engines. It consists mostly of organic compounds obtained by the fractional distillation of petroleum, enhanced with a variety of additives. On average, a 160-liter (42-U.S.-gallon) barrel of crude oil can yield up to about 72 liters (19 U.S. gallons) of gasoline after processing in an oil refinery, depending on the crude oil assay and on what other refined products are also extracted. The characteristic of a particular gasoline blend to resist igniting too early (which causes knocking and reduces efficiency in reciprocating engines) is measured by its octane rating, which is produced in several grades. Tetraethyl lead and other lead compounds, once widely used to increase octane rating, are no longer used in most areas (they are still used in aviation and auto-racing). Other chemicals are frequently added to gasoline to improve chemical stability and performance characteristics, control corrosiveness, and provide fuel system cleaning. Gasoline may contain oxygen-containing chemicals such as ethanol, MTBE, or ETBE to improve combustion.
-
-Gasoline can enter the environment uncombusted, both as liquid and as vapor, from leakage and handling during production, transport, and delivery (e.g., from storage tanks, from spills, etc.). As an example of efforts to control such leakage, many underground storage tanks are required to have extensive measures in place to detect and prevent such leaks."""@en ;
-	skos:exactMatch	agrovoc:c_5746 , eurovoc:3771 , stw:14212-1 , wd:Q39558 ;
+	skos:definition	"Coal with bitumen or asphalt, second highest ranking coal. Widely used as a thermal coal."@en ;
+	skos:exactMatch	wd:Q732607 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10104020" ;
-	skos:prefLabel	"Gasoline"@en .
+	skos:prefLabel	"Bituminous Coal"@en .
 
 ccat:10104030
 	a	skos:Concept ;
+	skos:altLabel	"Brown Coal"@en ;
 	skos:broader	ccat:101040 ;
-	skos:definition	"""Kerosene, also known as paraffin, is a combustible hydrocarbon liquid which is derived from petroleum. It is widely used as a fuel in aviation as well as households. Its name derives from Greek keros meaning \"wax\", and was registered as a trademark by Canadian geologist and inventor Abraham Gesner in 1854 before evolving into a genericized trademark. It is sometimes spelled kerosine in scientific and industrial usage. The term kerosene is common in much of Argentina, Australia, Canada, India, New Zealand, Nigeria, and the United States, while the term paraffin (or a closely related variant) is used in Chile, eastern Africa, South Africa, Norway, and in the United Kingdom. The term lamp oil, or the equivalent in the local languages, is common in the majority of Asia. Liquid paraffin (called mineral oil in the US) is a more viscous and highly refined product which is used as a laxative. Paraffin wax is a waxy solid extracted from petroleum.
-
-Kerosene is widely used to power jet engines of aircraft (jet fuel) and some rocket engines in a highly refined form called RP-1. It is also commonly used as a cooking and lighting fuel, and for fire toys such as poi. In parts of Asia, kerosene is sometimes used as fuel for small outboard motors or even motorcycles. World total kerosene consumption for all purposes is equivalent to about 1.2 million barrels (50 million U.S. gallons; 42 million imperial gallons; 190 million liters) per day."""@en ;
-	skos:exactMatch	wd:Q76904 ;
+	skos:definition	"Soft coal with a relatively low heat content, used almost exclusively as a fuel for steam-electric power generation."@en ;
+	skos:exactMatch	agrovoc:c_32489 , eurovoc:1656 , stw:14194-5 , wd:Q156267 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10104030" ;
-	skos:prefLabel	"Kerosene"@en .
+	skos:prefLabel	"Lignite"@en .
 
 ccat:10104040
 	a	skos:Concept ;
-	skos:altLabel	"Gas Oil"@en , "Petrodiesel"@en ;
 	skos:broader	ccat:101040 ;
-	skos:definition	"""Diesel fuel in general is any liquid fuel specifically designed for use in diesel engines, whose fuel ignition takes place, without any spark, as a result of compression of the inlet air mixture and then injection of fuel. Therefore, diesel fuel needs good compression ignition characteristics.
-
-The most common type of diesel fuel is a specific fractional distillate of petroleum fuel oil, but alternatives that are not derived from petroleum, such as biodiesel, biomass to liquid (BTL) or gas to liquid (GTL) diesel, are increasingly being developed and adopted. To distinguish these types, petroleum-derived diesel is increasingly called petrodiesel in some academic circles.
-
-In many countries, diesel fuel is standardised. For example, in the European Union, the standard for diesel fuel is EN 590. Diesel fuel has many colloquial names, most commonly, it is simply referred to as Diesel. In the UK, diesel fuel for on-road use is commonly abbreviated DERV, standing for diesel-engined road vehicle, which carries a tax premium over equivalent fuel for non-road use. In Australia, diesel fuel is also known as distillate, and in Indonesia, it is known as Solar, a trademarked name by the local oil company Pertamina.
-
-Ultra-low-sulfur diesel (ULSD) is a diesel fuel with substantially lowered sulfur contents. As of 2016, almost all of the petroleum-based diesel fuel available in the UK, mainland Europe, and North America is of a ULSD type.
-
-Before diesel fuel had been standardised, the majority of diesel engines typically ran on cheap fuel oils; these fuel oils are still used in watercraft diesel engines. Despite being specifically designed for diesel engines, diesel fuel can also be used as fuel for several non-diesel engines, for example the Akroyd engine, the Stirling engine, or boilers for steam engines."""@en ;
-	skos:exactMatch	eurovoc:3772 , stw:14214-4 , wd:Q38423 ;
+	skos:definition	"Made from thermal coal or oil in the absence of air, a process known as coking. May also be formed naturally by geologic processes."@en ;
+	skos:exactMatch	wd:Q192795 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10104040" ;
-	skos:prefLabel	"Diesel"@en .
-
-ccat:10104050
-	a	skos:Concept ;
-	skos:altLabel	"Bunker"@en , "Fuel Oil"@en ;
-	skos:broader	ccat:101040 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"10104050" ;
-	skos:prefLabel	"Marine Fuel"@en .
-
-ccat:10104060
-	a	skos:Concept ;
-	skos:broader	ccat:101040 ;
-	skos:definition	"Naphtha is a flammable liquid hydrocarbon mixture. Mixtures labelled naphtha have been produced from natural gas condensates, petroleum distillates, and the distillation of coal tar and peat. In different industries and regions naphtha may also be crude oil or refined products such as kerosene. It is also known as Shellite in Australia."@en ;
-	skos:inScheme	ccat: ;
-	skos:notation	"10104060" ;
-	skos:prefLabel	"Naphtha"@en .
-
-ccat:10104080
-	a	skos:Concept ;
-	skos:broader	ccat:101040 ;
-	skos:definition	"Spread between different refined products that determines the premium of one oil over the other due to chemical composition, freight or storage costs."@en ;
-	skos:inScheme	ccat: ;
-	skos:notation	"10104080" ;
-	skos:prefLabel	"Visco Spread"@en .
-
-ccat:10104090
-	a	skos:Concept ;
-	skos:broader	ccat:101040 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"10104090" ;
-	skos:prefLabel	"Other Refined Products"@en .
+	skos:prefLabel	"Coke"@en .
 
 ccat:101050
 	a	skos:Concept ;
 	skos:broader	ccat:1010 ;
-	skos:definition	"""Electrical energy is energy derived from electric potential energy or kinetic energy. When used loosely, electrical energy refers to energy that has been converted from electric potential energy. This energy is supplied by the combination of electric current and electric potential that is delivered by an electrical circuit (e.g., provided by an electric power utility). At the point that this electric potential energy has been converted to another type of energy, it ceases to be electric potential energy. Thus, all electrical energy is potential energy before it is delivered to the end-use. Once converted from potential energy, electrical energy can always be called another type of energy (heat, light, motion, etc.).
-	
-	Electrical energy is usually sold by the kilowatt hour (1 kWh = 3.6 MJ) which is the product of the power in kilowatts multiplied by running time in hours. Electric utilities measure energy using an electricity meter, which keeps a running total of the electric energy delivered to a customer."""@en ;
+	skos:definition	"Energy derived from electric potential energy or kinetic energy, supplied by the combination of electric current and electric potential that is delivered by an electrical circuit"@en ;
 	skos:exactMatch	eurovoc:747 , stw:14174-4 , wd:Q206799 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"101050" ;
@@ -304,7 +309,7 @@ ccat:101050
 ccat:10105010
 	a	skos:Concept ;
 	skos:broader	ccat:101050 ;
-	skos:definition	"The base load is the minimum level of demand on an electrical grid over a span of time, for example, one week. This demand can be met by unvarying power plants, dispatchable generation, or by a collection of smaller intermittent energy sources, depending on which approach has the best mix of low cost, availability and high reliability in any particular market."@en ;
+	skos:definition	"The minimum level of demand on an electrical grid over a span of time, met by unvarying power plants, dispatchable generation, or by a collection of smaller intermittent energy sources."@en ;
 	skos:exactMatch	wd:Q360897 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10105010" ;
@@ -313,7 +318,7 @@ ccat:10105010
 ccat:10105020
 	a	skos:Concept ;
 	skos:broader	ccat:101050 ;
-	skos:definition	"Peak demand on an electrical grid is simply the highest electrical power demand that has occurred over a specified time period (GC6nen 2008). Peak demand is typically characterized as annual, daily or seasonal and has the unit of power. Peak demand, peak load or on-peak are terms used in energy demand management describing a period in which electrical power is expected to be provided for a sustained period at a significantly higher than average supply level. Peak demand fluctuations may occur on daily, monthly, seasonal and yearly cycles. For an electric utility company, the actual point of peak demand is a single half-hour or hourly period which represents the highest point of customer consumption of electricity. At this time there is a combination of office, domestic demand and at some times of the year, the fall of darkness."@en ;
+	skos:definition	"Period in the load profile where demand is significantly higher than minimum supply level. Fluctuations may occur from hour to hour. Met by intermittent energy sources."@en ;
 	skos:exactMatch	wd:Q3393666 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10105020" ;
@@ -322,7 +327,7 @@ ccat:10105020
 ccat:10105030
 	a	skos:Concept ;
 	skos:broader	ccat:101050 ;
-	skos:definition	"Period in the load profile that shows nearly no peaks, typically the night."@en ;
+	skos:definition	"Period in the load profile that shows nearly no peaks, typically the night, met by unvarying power plants."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10105030" ;
 	skos:prefLabel	"Off-peak"@en .
@@ -338,17 +343,23 @@ ccat:10105040
 ccat:10105050
 	a	skos:Concept ;
 	skos:broader	ccat:101050 ;
-	skos:definition	"Transmission rights entitle the holder to receive compensation for congestion charges across an energy path."@en ;
+	skos:definition	"Entitles the holder to receive compensation for congestion charges across an energy path."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10105050" ;
 	skos:prefLabel	"Transmission Rights"@en .
 
+ccat:10105080
+	a	skos:Concept ;
+	skos:broader	ccat:101050 ;
+	skos:definition	"Entitles the holder to receive compensation when the spot price (possibly including transmission charges) goes below/above a strike price."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10105080" ;
+	skos:prefLabel	"Floor/Cap"@en .
+
 ccat:1020
 	a	skos:Concept ;
 	skos:broader	ccat:10 ;
-	skos:definition	"""Precious metals are rare, naturally occurring metallic chemical element of high economic value. Chemically, the precious metals tend to be less reactive than most elements (see noble metal). They are usually ductile and have a high lustre. Historically, precious metals were important as currency but are now regarded mainly as investment and industrial commodities. Gold, silver, platinum, and palladium each have an ISO 4217 currency code.
-
-The best known precious metals are the coinage metals, which are gold and silver. Although both have industrial uses, they are better known for their uses in art, jewelry, and coinage. Other precious metals include the platinum group metals: ruthenium, rhodium, palladium, osmium, iridium, and platinum, of which platinum is the most widely traded. The demand for precious metals is driven not only by their practical use but also by their role as investments and a store of value. Historically, precious metals have commanded much higher prices than common industrial metals."""@en ;
+	skos:definition	"Rare, naturally occurring metallic chemical element of high economic value. Chemically, less reactive than most elements."@en ;
 	skos:exactMatch	eurovoc:1886 , stw:14296-4 , wd:Q271449 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"1020" ;
@@ -357,24 +368,17 @@ The best known precious metals are the coinage metals, which are gold and silver
 ccat:102010
 	a	skos:Concept ;
 	skos:broader	ccat:1020 ;
-	skos:definition	"""Gold in its pure form is a bright, slightly reddish yellow, dense, soft, malleable, and ductile metal. It is one of the least reactive chemical elements and is solid under standard conditions. Gold often occurs in free elemental (native) form, as nuggets or grains, in rocks, in veins, and in alluvial deposits. It occurs in a solid solution series with the native element silver (as electrum) and also naturally alloyed with copper and palladium. Less commonly, it occurs in minerals as gold compounds, often with tellurium (gold tellurides).
-
-A relatively rare element, gold is a precious metal that has been used for coinage, jewelry, and other arts throughout recorded history. In the past, a gold standard was often implemented as a monetary policy, but gold coins ceased to be minted as a circulating currency in the 1930s, and the world gold standard was abandoned for a fiat currency system after 1971.
-
-The world consumption of new gold produced is about 50% in jewelry, 40% in investments, and 10% in industry. Gold's high malleability, ductility, resistance to corrosion and most other chemical reactions, and conductivity of electricity have led to its continued use in corrosion resistant electrical connectors in all types of computerized devices (its chief industrial use). Gold is also used in infrared shielding, colored-glass production, gold leafing, and tooth restoration. Certain gold salts are still used as anti-inflammatories in medicine. As of 2017, the world's largest gold producer by far was China with 440 tonnes per year."""@en ;
+	skos:definition	"Bright, slightly reddish yellow, dense, soft, malleable, and ductile metal. One of the least reactive chemical elements. Solid under standard conditions."@en ;
 	skos:exactMatch	agrovoc:c_33067 , eurovoc:2156 , stw:14298-0 , wd:Q897 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"102010" ;
+	skos:note	"As of 2017, the world's largest gold producer by far was China with 440 tonnes per year."@en ;
 	skos:prefLabel	"Gold"@en .
 
 ccat:102020
 	a	skos:Concept ;
 	skos:broader	ccat:1020 ;
-	skos:definition	"""Silver in its pure form is a soft, white, lustrous transition metal, it exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal. The metal is found in the Earth's crust in the pure, free elemental form (\"native silver\"), as an alloy with gold and other metals, and in minerals such as argentite and chlorargyrite. Most silver is produced as a byproduct of copper, gold, lead, and zinc refining.
-
-Silver has long been valued as a precious metal. Silver metal is used in many bullion coins, sometimes alongside gold: while it is more abundant than gold, it is much less abundant as a native metal. Its purity is typically measured on a per-mille basis; a 94%-pure alloy is described as \"0.940 fine\". As one of the seven metals of antiquity, silver has had an enduring role in most human cultures.
-
-Other than in currency and as an investment medium (coins and bullion), silver is used in solar panels, water filtration, jewellery, ornaments, high-value tableware and utensils (hence the term silverware), in electrical contacts and conductors, in specialized mirrors, window coatings, in catalysis of chemical reactions, as a colorant in stained glass and in specialised confectionery. Its compounds are used in photographic and X-ray film. Dilute solutions of silver nitrate and other silver compounds are used as disinfectants and microbiocides (oligodynamic effect), added to bandages and wound-dressings, catheters, and other medical instruments."""@en ;
+	skos:definition	"Soft, white, lustrous transition metal, exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal. Solid under standard conditions."@en ;
 	skos:exactMatch	agrovoc:c_7068 , eurovoc:2514 , stw:14308-2 , wd:Q1090 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"102020" ;
@@ -383,70 +387,78 @@ Other than in currency and as an investment medium (coins and bullion), silver i
 ccat:102030
 	a	skos:Concept ;
 	skos:broader	ccat:1020 ;
-	skos:definition	"""Platinum in its pure form is a dense, malleable, ductile, highly unreactive, precious, silverish-white transition metal. Its name is derived from the Spanish term platino, meaning \"little silver\".
-
-Platinum is a member of the platinum group of elements and group 10 of the periodic table of elements. It has six naturally occurring isotopes. It is one of the rarer elements in Earth's crust, with an average abundance of approximately 5 ¼g/kg. It occurs in some nickel and copper ores along with some native deposits, mostly in South Africa, which accounts for 80% of the world production. Because of its scarcity in Earth's crust, only a few hundred tonnes are produced annually, and given its important uses, it is highly valuable and is a major precious metal commodity.
-
-Platinum is one of the least reactive metals. It has remarkable resistance to corrosion, even at high temperatures, and is therefore considered a noble metal. Consequently, platinum is often found chemically uncombined as native platinum. Because it occurs naturally in the alluvial sands of various rivers, it was first used by pre-Columbian South American natives to produce artifacts. It was referenced in European writings as early as 16th century, but it was not until Antonio de Ulloa published a report on a new metal of Colombian origin in 1748 that it began to be investigated by scientists.
-
-Platinum is used in catalytic converters, laboratory equipment, electrical contacts and electrodes, platinum resistance thermometers, dentistry equipment, and jewelry. Being a heavy metal, it leads to health problems upon exposure to its salts; but due to its corrosion resistance, metallic platinum has not been linked to adverse health effects. Compounds containing platinum, such as cisplatin, oxaliplatin and carboplatin, are applied in chemotherapy against certain types of cancer."""@en ;
+	skos:definition	"Dense, malleable, ductile, highly unreactive, precious, silverish-white transition metal."@en ;
 	skos:exactMatch	agrovoc:c_33116 , eurovoc:2424 , stw:14306-6 , wd:Q880 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"102030" ;
+	skos:note	"Used in catalytic converters, laboratory equipment, electrical contacts and electrodes, platinum resistance thermometers, dentistry equipment, and jewelry. Being a heavy metal, it leads to health problems upon exposure to its salts; but due to its corrosion resistance, metallic platinum has not been linked to adverse health effects. Compounds containing platinum, such as cisplatin, oxaliplatin and carboplatin, are applied in chemotherapy against certain types of cancer."@en ;
 	skos:prefLabel	"Platinum"@en .
 
 ccat:102040
 	a	skos:Concept ;
 	skos:broader	ccat:1020 ;
-	skos:definition	"""Palladium in its pure form is a rare and lustrous silvery-white metal discovered in 1803 by the English chemist William Hyde Wollaston. He named it after the asteroid Pallas, which was itself named after the epithet of the Greek goddess Athena, acquired by her when she slew Pallas. Palladium, platinum, rhodium, ruthenium, iridium and osmium form a group of elements referred to as the platinum group metals (PGMs). They have similar chemical properties, but palladium has the lowest melting point and is the least dense of them.
-
-More than half the supply of palladium and its congener platinum is used in catalytic converters, which convert as much as 90% of the harmful gases in automobile exhaust (hydrocarbons, carbon monoxide, and nitrogen dioxide) into less noxious substances (nitrogen, carbon dioxide and water vapor). Palladium is also used in electronics, dentistry, medicine, hydrogen purification, chemical applications, groundwater treatment, and jewelry. Palladium is a key component of fuel cells, which react hydrogen with oxygen to produce electricity, heat, and water.
-
-Ore deposits of palladium and other PGMs are rare. The most extensive deposits have been found in the norite belt of the Bushveld Igneous Complex covering the Transvaal Basin in South Africa, the Stillwater Complex in Montana, United States; the Sudbury Basin and Thunder Bay District of Ontario, Canada, and the Norilsk Complex in Russia. Recycling is also a source, mostly from scrapped catalytic converters. The numerous applications and limited supply sources result in considerable investment interest."""@en ;
-	skos:exactMatch	wd:Q1089 ;
+	skos:definition	"Rare and lustrous silvery-white metal with the lowest melting point and is the least density of platinum group elements."@en ;
+	skos:exactMatch	agrovoc:c_549615fb , wd:Q1089 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"102040" ;
+	skos:note	"Used in catalytic converters, electronics, dentistry, medicine, hydrogen purification, chemical applications, groundwater treatment, and jewelry. Key component of fuel cells, which react hydrogen with oxygen to produce electricity, heat, and water."@en ;
 	skos:prefLabel	"Palladium"@en .
 
 ccat:102050
 	a	skos:Concept ;
 	skos:broader	ccat:1020 ;
-	skos:definition	"""Iridium a is very hard, brittle, silvery-white transition metal of the platinum group, iridium is considered to be the second-densest metal (after osmium). ridium is one of the rarest elements in Earth's crust, with annual production and consumption of only three tonnes.
-
-The most important iridium compounds in use are the salts and acids it forms with chlorine, though iridium also forms a number of organometallic compounds used in industrial catalysis, and in research. Iridium metal is employed when high corrosion resistance at high temperatures is needed, as in high-performance spark plugs, crucibles for recrystallization of semiconductors at high temperatures, and electrodes for the production of chlorine in the chloralkali process. Iridium radioisotopes are used in some radioisotope thermoelectric generators."""@en ;
-	skos:exactMatch	wd:Q877 ;
+	skos:definition	"Very rare, very hard, very dense, brittle, silvery-white transition metal."@en ;
+	skos:exactMatch	agrovoc:c_c2041bc1 , wd:Q877 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"102050" ;
+	skos:note	"Second-densest metal (after osmium). One of the rarest elements in Earth's crust, with annual production and consumption of only three tonnes. Iridium metal is employed when high corrosion resistance at high temperatures is needed, as in high-performance spark plugs, crucibles for recrystallization of semiconductors at high temperatures, and electrodes for the production of chlorine in the chloralkali process. Iridium radioisotopes are used in some radioisotope thermoelectric generators."@en ;
 	skos:prefLabel	"Iridium"@en .
 
 ccat:102060
 	a	skos:Concept ;
 	skos:broader	ccat:1020 ;
-	skos:definition	"""Rhodium is an ultra-rare, silvery-white, hard, corrosion-resistant, and chemically inert transition metal. It is a noble metal and a member of the platinum group. Rhodium is found in platinum or nickel ores together with the other members of the platinum group metals.
-
-The element's major use (approximately 80% of world rhodium production) is as one of the catalysts in the three-way catalytic converters in automobiles. Because rhodium metal is inert against corrosion and most aggressive chemicals, and because of its rarity, rhodium is usually alloyed with platinum or palladium and applied in high-temperature and corrosion-resistive coatings. White gold is often plated with a thin rhodium layer to improve its appearance while sterling silver is often rhodium-plated for tarnish resistance. Rhodium is sometimes used to cure silicones; a two-part silicone in which one part containing a silicon hydride and the other containing a vinyl-terminated silicone are mixed. One of these liquids contains a rhodium complex.
-
-Rhodium detectors are used in nuclear reactors to measure the neutron flux level. Other uses of rhodium include asymmetric hydrogenation used to form drug precursors and the processes for the production of acetic acid."""@en ;
-	skos:exactMatch	wd:Q1087 ;
+	skos:definition	"Ultra-rare, silvery-white, hard, corrosion-resistant, and chemically inert transition metal."@en ;
+	skos:exactMatch	agrovoc:c_ea2af13b , wd:Q1087 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"102060" ;
+	skos:note	"Found in platinum or nickel ores together with the other members of the platinum group metals. Used as catalyst in three-way catalytic converters in automobiles. Because rhodium metal is inert against corrosion and most aggressive chemicals, and because of its rarity, rhodium is usually alloyed with platinum or palladium and applied in high-temperature and corrosion-resistive coatings. White gold is often plated with a thin rhodium layer to improve its appearance while sterling silver is often rhodium-plated for tarnish resistance. Rhodium is sometimes used to cure silicones; a two-part silicone in which one part containing a silicon hydride and the other containing a vinyl-terminated silicone are mixed. One of these liquids contains a rhodium complex. Rhodium detectors are used in nuclear reactors to measure the neutron flux level. Other uses of rhodium include asymmetric hydrogenation used to form drug precursors and the processes for the production of acetic acid."@en ;
 	skos:prefLabel	"Rhodium"@en .
 
 ccat:102070
 	a	skos:Concept ;
 	skos:broader	ccat:1020 ;
-	skos:definition	"""Ruthenium is a chemical element with the symbol Ru and atomic number 44. It is a rare transition metal belonging to the platinum group of the periodic table. Like the other metals of the platinum group, ruthenium is inert to most other chemicals. Russian-born scientist of Baltic-German ancestry Karl Ernst Claus discovered the element in 1844 at Kazan State University and named ruthenium in honor of Russia. Ruthenium is usually found as a minor component of platinum ores; the annual production has risen from about 19 tonnes in 2009 to some 35.5 tonnes in 2017. Most ruthenium produced is used in wear-resistant electrical contacts and thick-film resistors. A minor application for ruthenium is in platinum alloys and as a chemistry catalyst. A new application of ruthenium is as the capping layer for extreme ultraviolet photomasks. Ruthenium is generally found in ores with the other platinum group metals in the Ural Mountains and in North and South America. Small but commercially important quantities are also found in pentlandite extracted from Sudbury, Ontario and in pyroxenite deposits in South Africa."""@en ;
-	skos:exactMatch	wd:Q1086 ;
+	skos:definition	"Rare transition metal belonging to the platinum group, inert to most other chemicals."@en ;
+	skos:exactMatch	agrovoc:c_87cd9fbc , wd:Q1086 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"102070" ;
+	skos:note	"Annual production in 2017 was 35.5 tonnes. Used in wear-resistant electrical contacts and thick-film resistors, as the capping layer for extreme ultraviolet photomasks. Ruthenium is generally found in ores with the other platinum group metals in the Ural Mountains and in North and South America. Small but commercially important quantities are also found in pentlandite extracted from Sudbury, Ontario and in pyroxenite deposits in South Africa."@en ;
 	skos:prefLabel	"Ruthenium"@en .
+
+ccat:102075
+	a	skos:Concept ;
+	skos:broader	ccat:1020 ;
+	skos:definition	"Hard, brittle, bluish-white transition metal in the platinum group."@en ;
+	skos:exactMatch	agrovoc:c_9d49077b ;
+	skos:inScheme	ccat: ;
+	skos:notation	"102075" ;
+	skos:note	"Found as a trace element in alloys, mostly in platinum ores. Osmium is the densest naturally occurring element. Used in fountain pen nib tipping, electrical contacts, and in other applications that require extreme durability and hardness. Osmium is among the rarest elements in the Earth's crust, making up only 50 parts per trillion (ppt)."@en ;
+	skos:prefLabel	"Osmium"@en .
+
+ccat:102080
+	a	skos:Concept ;
+	skos:broader	ccat:1020 ;
+	skos:definition	"Precious metals expressed in terms of other precious metals, e.g. XAUXAG, XAUXPT, etc."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"102080" ;
+	skos:note	"ISO officially assigned currency codes to gold, silver, platinum, and palladium (XAU, XAG, XPT, XPL), by extension unofficial codes for other precious metals are XRH, XIR, XOS, XRU."@en ;
+	skos:prefLabel	"Precious Metal Cross"@en .
 
 ccat:1030
 	a	skos:Concept ;
 	skos:altLabel	"Non-ferrous Metal"@en ;
 	skos:broader	ccat:10 ;
 	skos:closeMatch	wd:Q428855 , wd:Q5679431 ;
-	skos:definition	"A base metal is a common and inexpensive non-ferrous metal, as opposed to a precious metal."@en ;
+	skos:definition	"Common and inexpensive non-ferrous metals, as opposed to precious metals."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"1030" ;
 	skos:prefLabel	"Base Metal"@en .
@@ -454,23 +466,21 @@ ccat:1030
 ccat:103010
 	a	skos:Concept ;
 	skos:broader	ccat:1030 ;
-	skos:definition	"Copper is a soft, malleable, and ductile metal with very high thermal and electrical conductivity. A freshly exposed surface of pure copper has a pinkish-orange color. Copper is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement."@en ;
+	skos:definition	"Soft, malleable, and ductile metal with very high thermal and electrical conductivity."@en ;
 	skos:exactMatch	agrovoc:c_1868 , stw:14299-5 , wd:Q753 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103010" ;
+	skos:note	"A freshly exposed surface of pure copper has a pinkish-orange color. Copper is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement."@en ;
 	skos:prefLabel	"Copper"@en .
 
 ccat:103020
 	a	skos:Concept ;
 	skos:broader	ccat:1030 ;
-	skos:definition	"""Aluminium (aluminum in American and Canadian English) is a chemical element with the symbol Al and atomic number 13. It is a silvery-white, soft, non-magnetic and ductile metal in the boron group. By mass, aluminium is the most abundant metal in the Earth's crust and the third most abundant element (after oxygen and silicon). The abundance of aluminium decreases relative to other elements at greater depths into Earth's mantle and beyond. The chief ore of aluminium is bauxite. Aluminium metal is highly reactive, so native specimens are rare and limited to extreme reducing environments. Instead, it is found combined in over 270 different minerals.
-
-Aluminium is remarkable for its low density and its ability to resist corrosion through the phenomenon of passivation. Aluminium and its alloys are vital to the aerospace industry and important in transportation and building industries, such as building facades and window frames. The oxides and sulfates are the most useful compounds of aluminium.
-
-Despite its prevalence in the environment, no living organism is known to use aluminium salts metabolically, but aluminium is well tolerated by plants and animals. Because of these salts' abundance, the potential for a biological role for them is of continuing interest, and studies continue."""@en ;
+	skos:definition	"Silvery-white, soft, non-magnetic and ductile metal in the boron group."@en ;
 	skos:exactMatch	agrovoc:c_317 , eurovoc:1446 , msa:513153333 , stw:14293-3 , wd:Q663 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103020" ;
+	skos:note	"Aluminium is remarkable for its low density and its ability to resist corrosion through the phenomenon of passivation. Aluminium and its alloys are vital to the aerospace industry and important in transportation and building industries, such as building facades and window frames. The oxides and sulfates are the most useful compounds of aluminium. Despite its prevalence in the environment, no living organism is known to use aluminium salts metabolically, but aluminium is well tolerated by plants and animals. Because of these salts' abundance, the potential for a biological role for them is of continuing interest, and studies continue."@en ;
 	skos:prefLabel	"Aluminium"@en .
 
 ccat:103025
@@ -485,11 +495,7 @@ ccat:103025
 ccat:103030
 	a	skos:Concept ;
 	skos:broader	ccat:1030 ;
-	skos:definition	"""Zinc is a chemical element with the symbol Zn and atomic number 30. Zinc is a slightly brittle metal at room temperature and has a blue-silvery appearance when oxidation is removed. It is the first element in group 12 of the periodic table. In some respects, zinc is chemically similar to magnesium: both elements exhibit only one normal oxidation state (+2), and the Zn2+ and Mg2+ ions are of similar size. Zinc is the 24th most abundant element in Earth's crust and has five stable isotopes. The most common zinc ore is sphalerite (zinc blende), a zinc sulfide mineral. The largest workable lodes are in Australia, Asia, and the United States. Zinc is refined by froth flotation of the ore, roasting, and final extraction using electricity (electrowinning).
-
-Brass, an alloy of copper and zinc in various proportions, was used as early as the third millennium BC in the Aegean, Iraq, the United Arab Emirates, Kalmykia, Turkmenistan and Georgia, and the second millennium BC in West India, Uzbekistan, Iran, Syria, Iraq, and Israel/Palestine. Zinc metal was not produced on a large scale until the 12th century in India, though it was known to the ancient Romans and Greeks. The mines of Rajasthan have given definite evidence of zinc production going back to the 6th century BC. To date, the oldest evidence of pure zinc comes from Zawar, in Rajasthan, as early as the 9th century AD when a distillation process was employed to make pure zinc. Alchemists burned zinc in air to form what they called \"philosopher's wool\" or \"white snow\".
-
-Zinc is an essential mineral, including to prenatal and postnatal development. Zinc deficiency affects about two billion people in the developing world and is associated with many diseases. In children, deficiency causes growth retardation, delayed sexual maturation, infection susceptibility, and diarrhea. Enzymes with a zinc atom in the reactive center are widespread in biochemistry, such as alcohol dehydrogenase in humans."""@en ;
+	skos:definition	"Slightly brittle metal at room temperature, blue-silvery appearance when oxidation is removed."@en ;
 	skos:exactMatch	agrovoc:c_8517 , eurovoc:4783 , stw:14309-0 , wd:Q758 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103030" ;
@@ -498,61 +504,47 @@ Zinc is an essential mineral, including to prenatal and postnatal development. Z
 ccat:103040
 	a	skos:Concept ;
 	skos:broader	ccat:1030 ;
-	skos:definition	"""Nickel is a chemical element with the symbol Ni and atomic number 28. It is a silvery-white lustrous metal with a slight golden tinge. Nickel belongs to the transition metals and is hard and ductile. Pure nickel, powdered to maximize the reactive surface area, shows a significant chemical activity, but larger pieces are slow to react with air under standard conditions because an oxide layer forms on the surface and prevents further corrosion (passivation). Even so, pure native nickel is found in Earth's crust only in tiny amounts, usually in ultramafic rocks, and in the interiors of larger nickel-iron meteorites that were not exposed to oxygen when outside Earth's atmosphere.
-
-Meteoric nickel is found in combination with iron, a reflection of the origin of those elements as major end products of supernova nucleosynthesis. An iron-nickel mixture is thought to compose Earth's outer and inner cores.
-
-Use of nickel (as a natural meteoric nickel-iron alloy) has been traced as far back as 3500 BCE. Nickel was first isolated and classified as a chemical element in 1751 by Axel Fredrik Cronstedt, who initially mistook the ore for a copper mineral, in the cobalt mines of Los, HÃ¤lsingland, Sweden. The element's name comes from a mischievous sprite of German miner mythology, Nickel (similar to Old Nick), who personified the fact that copper-nickel ores resisted refinement into copper. An economically important source of nickel is the iron ore limonite, which often contains 1-2% nickel. Nickel's other important ore minerals include pentlandite and a mixture of Ni-rich natural silicates known as garnierite. Major production sites include the Sudbury region in Canada (which is thought to be of meteoric origin), New Caledonia in the Pacific, and Norilsk in Russia.
-
-Nickel is slowly oxidized by air at room temperature and is considered corrosion-resistant. Historically, it has been used for plating iron and brass, coating chemistry equipment, and manufacturing certain alloys that retain a high silvery polish, such as German silver. About 9% of world nickel production is still used for corrosion-resistant nickel plating. Nickel-plated objects sometimes provoke nickel allergy. Nickel has been widely used in coins, though its rising price has led to some replacement with cheaper metals in recent years.
-
-Nickel is one of four elements (the others are iron, cobalt, and gadolinium) that are ferromagnetic at approximately room temperature. Alnico permanent magnets based partly on nickel are of intermediate strength between iron-based permanent magnets and rare-earth magnets. The metal is valuable in modern times chiefly in alloys; about 68% of world production is used in stainless steel. A further 10% is used for nickel-based and copper-based alloys, 7% for alloy steels, 3% in foundries, 9% in plating and 4% in other applications, including the fast-growing battery sector, including those in electric vehicles (EVs). As a compound, nickel has a number of niche chemical manufacturing uses, such as a catalyst for hydrogenation, cathodes for batteries, pigments and metal surface treatments. Nickel is an essential nutrient for some microorganisms and plants that have enzymes with nickel as an active site."""@en ;
+	skos:definition	"Silvery-white, hard, ductile, lustrous transition metal with a slight golden tinge."@en ;
 	skos:exactMatch	agrovoc:c_5172 , eurovoc:2056 , stw:14305-1 , wd:Q744 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103040" ;
+	skos:note	"Nickel is one of four elements (the others are iron, cobalt, and gadolinium) that are ferromagnetic at approximately room temperature. About 68% of world production is used in stainless steel. A further 10% is used for nickel-based and copper-based alloys, 7% for alloy steels, 3% in foundries, 9% in plating and 4% in other applications, including the fast-growing battery sector, including those in electric vehicles (EVs). As a compound, nickel has a number of niche chemical manufacturing uses, such as a catalyst for hydrogenation, cathodes for batteries, pigments and metal surface treatments. Nickel is an essential nutrient for some microorganisms and plants that have enzymes with nickel as an active site."@en ;
 	skos:prefLabel	"Nickel"@en .
 
 ccat:103050
 	a	skos:Concept ;
 	skos:broader	ccat:1030 ;
-	skos:definition	"""Tin is a chemical element with the symbol Sn (from Latin: stannum) and atomic number 50. Tin is a silvery metal that characteristically has a faint yellow hue. Tin, like indium, is soft enough to be cut without much force. When a bar of tin is bent, the so-called \"tin cry\" can be heard as a result of twinning in tin crystals; this trait is shared by indium, cadmium, and frozen mercury. Pure tin after solidifying keeps a mirror-like appearance similar to most metals. However, in most tin alloys (such as pewter), the metal solidifies with a dull gray color. Tin is a post-transition metal in group 14 of the periodic table of elements. It is obtained chiefly from the mineral cassiterite, which contains stannic oxide, SnO2. Tin shows a chemical similarity to both of its neighbors in group 14, germanium and lead, and has two main oxidation states, +2 and the slightly more stable +4. Tin is the 49th most abundant element on Earth and has, with 10 stable isotopes, the largest number of stable isotopes in the periodic table, thanks to its magic number of protons. It has two main allotropes: at room temperature, the stable allotrope is beta-tin, a silvery-white, malleable metal, but at low temperatures, it transforms into the less dense grey alpha-tin, which has the diamond cubic structure. Metallic tin does not easily oxidize in air.
-
-The first tin alloy used on a large scale was bronze, made of 1/8 tin and 7/8 copper, from as early as 3000 BC. After 600 BC, pure metallic tin was produced. Pewter, which is an alloy of 85-90% tin with the remainder commonly consisting of copper, antimony, and lead, was used for flatware from the Bronze Age until the 20th century. In modern times, tin is used in many alloys, most notably tin / lead soft solders, which are typically 60% or more tin, and in the manufacture of transparent, electrically conducting films of indium tin oxide in optoelectronic applications. Another large application for tin is corrosion-resistant tin plating of steel. Because of the low toxicity of inorganic tin, tin-plated steel is widely used for food packaging as tin cans. However, some organotin compounds can be almost as toxic as cyanide."""@en ;
+	skos:definition	"Silvery metal that characteristically has a faint yellow hue, soft enough to be cut without much force"@en ;
 	skos:exactMatch	agrovoc:c_7782 , eurovoc:879 , stw:14310-1 , wd:Q1096 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103050" ;
+	skos:note	"Obtained chiefly from the mineral cassiterite, which contains stannic oxide, SnO2. Tin shows a chemical similarity to both of its neighbors in group 14, germanium and lead, and has two main oxidation states, +2 and the slightly more stable +4. Tin is the 49th most abundant element on Earth and has, with 10 stable isotopes, the largest number of stable isotopes in the periodic table, thanks to its magic number of protons. It has two main allotropes: at room temperature, the stable allotrope is beta-tin, a silvery-white, malleable metal, but at low temperatures, it transforms into the less dense grey alpha-tin, which has the diamond cubic structure. Metallic tin does not easily oxidize in air. Tin is used in many alloys, most notably tin / lead soft solders, which are typically 60% or more tin, and in the manufacture of transparent, electrically conducting films of indium tin oxide in optoelectronic applications. Another large application for tin is corrosion-resistant tin plating of steel. Because of the low toxicity of inorganic tin, tin-plated steel is widely used for food packaging as tin cans. However, some organotin compounds can be almost as toxic as cyanide."@en ;
 	skos:prefLabel	"Tin"@en .
 
 ccat:103060
 	a	skos:Concept ;
 	skos:broader	ccat:1030 ;
-	skos:definition	"""Lead is a chemical element with the symbol Pb (from the Latin plumbum) and atomic number 82. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and also has a relatively low melting point. When freshly cut, lead is silvery with a hint of blue; it tarnishes to a dull gray color when exposed to air. Lead has the highest atomic number of any stable element and three of its isotopes are endpoints of major nuclear decay chains of heavier elements.
-
-Lead is a relatively unreactive post-transition metal. Its weak metallic character is illustrated by its amphoteric nature; lead and lead oxides react with acids and bases, and it tends to form covalent bonds. Compounds of lead are usually found in the +2 oxidation state rather than the +4 state common with lighter members of the carbon group. Exceptions are mostly limited to organolead compounds. Like the lighter members of the group, lead tends to bond with itself; it can form chains and polyhedral structures.
-
-Lead is easily extracted from its ores; prehistoric people in Western Asia knew of it. Galena is a principal ore of lead which often bears silver. Interest in silver helped initiate widespread extraction and use of lead in ancient Rome. Lead production declined after the fall of Rome and did not reach comparable levels until the Industrial Revolution. In 2014, the annual global production of lead was about ten million tonnes, over half of which was from recycling. Lead's high density, low melting point, ductility and relative inertness to oxidation make it useful. These properties, combined with its relative abundance and low cost, resulted in its extensive use in construction, plumbing, batteries, bullets and shot, weights, solders, pewters, fusible alloys, white paints, leaded gasoline, and radiation shielding.
-
-In the late 19th century, lead's toxicity was recognized, and its use has since been phased out of many applications. However, many countries still allow the sale of products that expose humans to lead, including some types of paints and bullets. Lead is a neurotoxin that accumulates in soft tissues and bones; it damages the nervous system and interferes with the function of biological enzymes, causing neurological disorders, such as brain damage and behavioral problems."""@en ;
+	skos:definition	"Heavy, soft, malleable, and relatively unreactive post-transition metal with a relatively low melting point, silvery with a hint of blue when freshly cut, tarnishes to a dull grey when exposed to air."@en ;
 	skos:exactMatch	agrovoc:c_4235 , eurovoc:2428 , msa:2909791279 , stw:14294-1 , wd:Q708 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103060" ;
+	skos:note	"""Lead's weak metallic character is illustrated by its amphoteric nature; lead and lead oxides react with acids and bases, and it tends to form covalent bonds. Compounds of lead are usually found in the +2 oxidation state rather than the +4 state common with lighter members of the carbon group. Exceptions are mostly limited to organolead compounds. Like the lighter members of the group, lead tends to bond with itself; it can form chains and polyhedral structures.
+
+Lead's high density, low melting point, ductility and relative inertness to oxidation make it useful. These properties, combined with its relative abundance and low cost, resulted in its extensive use in construction, plumbing, batteries, bullets and shot, weights, solders, pewters, fusible alloys, white paints, leaded gasoline, and radiation shielding."""@en ;
 	skos:prefLabel	"Lead"@en .
 
 ccat:103070
 	a	skos:Concept ;
 	skos:broader	ccat:1030 ;
-	skos:definition	"""Titanium is a lustrous transition metal with a silver color, low density, and high strength. Titanium is resistant to corrosion in sea water, aqua regia, and chlorine.
-
-The element occurs within a number of mineral deposits, principally rutile and ilmenite, which are widely distributed in the Earth's crust and lithosphere; it is found in almost all living things, as well as bodies of water, rocks, and soils. The metal is extracted from its principal mineral ores by the Kroll and Hunter processes. The most common compound, titanium dioxide, is a popular photocatalyst and is used in the manufacture of white pigments. Other compounds include titanium tetrachloride (TiCl4), a component of smoke screens and catalysts; and titanium trichloride (TiCl3), which is used as a catalyst in the production of polypropylene.
-
-Titanium can be alloyed with iron, aluminium, vanadium, and molybdenum, among other elements, to produce strong, lightweight alloys for aerospace (jet engines, missiles, and spacecraft), military, industrial processes (chemicals and petrochemicals, desalination plants, pulp, and paper), automotive, agriculture (farming), medical prostheses, orthopedic implants, dental and endodontic instruments and files, dental implants, sporting goods, jewelry, mobile phones, and other applications.
-
-The two most useful properties of the metal are corrosion resistance and strength-to-density ratio, the highest of any metallic element. In its unalloyed condition, titanium is as strong as some steels, but less dense.
-
-Titanium is traded almost exclusively as titanium dioxide."""@en ;
+	skos:definition	"Traded almost exclusively as titanium dioxide. Lustrous transition metal with a silver colour, low density, and high strength, resistant to corrosion in sea water, aqua regia, and chlorine."@en ;
 	skos:exactMatch	agrovoc:c_32704 , eurovoc:4462 , msa:506065880 , stw:18240-4 , wd:Q716 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103070" ;
+	skos:note	"""Occurs within a number of mineral deposits, principally rutile and ilmenite, which are widely distributed in the Earth's crust and lithosphere; it is found in almost all living things, as well as bodies of water, rocks, and soils. The metal is extracted from its principal mineral ores by the Kroll and Hunter processes. The most common compound, titanium dioxide, is a popular photocatalyst and is used in the manufacture of white pigments. Other compounds include titanium tetrachloride (TiCl4), a component of smoke screens and catalysts; and titanium trichloride (TiCl3), which is used as a catalyst in the production of polypropylene.
+
+Titanium can be alloyed with iron, aluminium, vanadium, and molybdenum, among other elements, to produce strong, lightweight alloys for aerospace (jet engines, missiles, and spacecraft), military, industrial processes (chemicals and petrochemicals, desalination plants, pulp, and paper), automotive, agriculture (farming), medical prostheses, orthopedic implants, dental and endodontic instruments and files, dental implants, sporting goods, jewelry, mobile phones, and other applications.
+
+The two most useful properties of the metal are corrosion resistance and strength-to-density ratio, the highest of any metallic element. In its unalloyed condition, titanium is as strong as some steels, but less dense."""@en ;
 	skos:prefLabel	"Titanium"@en .
 
 ccat:1035
@@ -567,15 +559,7 @@ ccat:1035
 ccat:103510
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:definition	"""Pig iron, also known as crude iron, is an intermediate product of the iron industry in the production of steel which is obtained by smelting iron ore in a blast furnace. Pig iron has a very high carbon content, typically 3.8-4.7% along with silica and other constituents of dross, which makes it very brittle and not useful directly as a material except for limited applications.
-
-Iron is a chemical element with symbol Fe (from Latin: ferrum) and atomic number 26. It is a metal that belongs to the first transition series and group 8 of the periodic table. It is by mass the most common element on Earth, right in front of oxygen (32.1% and 30.1%, respectively), forming much of Earth's outer and inner core. It is the fourth most common element in the Earth's crust.
-
-In its metallic state, iron is rare in the Earth's crust, limited mainly to deposition by meteorites. Iron ores, by contrast, are among the most abundant in the Earth's crust, although extracting usable metal from them requires kilns or furnaces capable of reaching 1,500 °C (2,730 °F) or higher, about 500 °C (900 °F) higher than that required to smelt copper. Humans started to master that process in Eurasia only about 2000 BCE, and the use of iron tools and weapons began to displace copper alloys, in some regions, only around 1200 BCE. That event is considered the transition from the Bronze Age to the Iron Age. In the modern world, iron alloys, such as steel, inox, cast iron and special steels are by far the most common industrial metals, because of their mechanical properties and low cost.
-
-Pristine and smooth pure iron surfaces are mirror-like silvery-gray. However, iron reacts readily with oxygen and water to give brown to black hydrated iron oxides, commonly known as rust. Unlike the oxides of some other metals, that form passivating layers, rust occupies more volume than the metal and thus flakes off, exposing fresh surfaces for corrosion.
-
-The body of an adult human contains about 4 grams (0.005% body weight) of iron, mostly in hemoglobin and myoglobin. These two proteins play essential roles in vertebrate metabolism, respectively oxygen transport by blood and oxygen storage in muscles. To maintain the necessary levels, human iron metabolism requires a minimum of iron in the diet. Iron is also the metal at the active site of many important redox enzymes dealing with cellular respiration and oxidation and reduction in plants and animals."""@en ;
+	skos:definition	"Obtained by smelting iron ore in a blast furnace as intermediate product in the production of steel."@en ;
 	skos:exactMatch	agrovoc:c_3950 , eurovoc:981 , stw:14281-3 , wd:Q901785 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103510" ;
@@ -584,35 +568,36 @@ The body of an adult human contains about 4 grams (0.005% body weight) of iron, 
 ccat:103520
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:definition	"Steel is an alloy of iron with typically a few percent of carbon to improve its strength and fracture resistance compared to iron. Many other additional elements may be present or added. Stainless steels that are corrosion and oxidation resistant need typically an additional 11% chromium. Because of its high tensile strength and low cost, steel is used in buildings, infrastructure, tools, ships, trains, cars, machines, electrical appliances, and weapons. Iron is the base metal of steel and it can take on two crystalline forms (allotropic forms): body centred cubic and face-centred cubic. These forms depend on temperature. In the body-centred cubic arrangement, there is an iron atom in the centre and eight atoms at the vertices of each cubic unit cell; in the face-centred cubic, there is one atom at the centre of each of the six faces of the cubic unit cell and eight atoms at its vertices. It is the interaction of the allotropes of iron with the alloying elements, primarily carbon, that gives steel and cast iron their range of unique properties."@en ;
+	skos:definition	"Alloy of iron with typically a few percent of carbon to improve its strength and fracture resistance, or 11% of chromium to produce corrosion and oxidation resistant stainless steel."@en ;
 	skos:exactMatch	agrovoc:c_7384 , eurovoc:5065 , stw:14285-2 , wd:Q11427 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103520" ;
+	skos:note	"Because of its high tensile strength and low cost, steel is used in buildings, infrastructure, tools, ships, trains, cars, machines, electrical appliances, and weapons. Iron is the base metal of steel and it can take on two crystalline forms (allotropic forms): body centred cubic and face-centred cubic. These forms depend on temperature. In the body-centred cubic arrangement, there is an iron atom in the centre and eight atoms at the vertices of each cubic unit cell; in the face-centred cubic, there is one atom at the centre of each of the six faces of the cubic unit cell and eight atoms at its vertices. It is the interaction of the allotropes of iron with the alloying elements, primarily carbon, that gives steel and cast iron their range of unique properties."@en ;
 	skos:prefLabel	"Steel"@en .
 
 ccat:103530
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:definition	"""Iron ores are rocks and minerals from which metallic iron can be economically extracted. The ores are usually rich in iron oxides and vary in color from dark grey, bright yellow, or deep purple to rusty red. The iron is usually found in the form of magnetite (Fe3O4, 72.4% Fe), hematite (Fe2O3, 69.9% Fe), goethite (FeO(OH), 62.9% Fe), limonite (FeO(OH)Â·n(H2O), 55% Fe) or siderite (FeCO3, 48.2% Fe).
-
-Ores containing very high quantities of hematite or magnetite (greater than about 60% iron) are known as \"natural ore\" or \"direct shipping ore\", meaning they can be fed directly into iron-making blast furnaces. Iron ore is the raw material used to make pig iron, which is one of the main raw materials to make steel---98% of the mined iron ore is used to make steel. In 2011 the Financial Times has speculated that iron ore is \"more integral to the global economy than any other commodity, except perhaps oil."""@en ;
+	skos:definition	"Rocks and minerals from which metallic iron can be economically extracted. The ores are usually rich in iron oxides and vary in colour from dark grey, bright yellow, or deep purple to rusty red. The iron is usually found in the form of magnetite (Fe3O4, 72.4% Fe), hematite (Fe2O3, 69.9% Fe), goethite (FeO(OH), 62.9% Fe), limonite (FeO(OH)Â·n(H2O), 55% Fe) or siderite (FeCO3, 48.2% Fe)."@en ;
 	skos:exactMatch	eurovoc:1933 , stw:14195-3 , wd:Q191552 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103530" ;
+	skos:note	"Ores containing very high quantities of hematite or magnetite (greater than about 60% iron) are known as \"natural ore\" or \"direct shipping ore\", meaning they can be fed directly into iron-making blast furnaces. Iron ore is the raw material used to make pig iron, which is one of the main raw materials to make steel---98% of the mined iron ore is used to make steel. In 2011 the Financial Times has speculated that iron ore is \"more integral to the global economy than any other commodity, except perhaps oil."@en ;
 	skos:prefLabel	"Iron Ore"@en .
 
 ccat:103535
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:definition	"Ferrous scrap is the most recycled material in the world. The U.S. Geological Survey estimates that 65 million metric tons (143 BILLION pounds!) of iron and steel scrap was processed around the world in 2016.  Ferrous scrap comes from many consumer products like automobiles or household appliances, or from industrial structures and equipment such as buildings, railroads, trains, bridges, ships, and farming equipment."@en ;
+	skos:definition	""@en , "Iron and steel scrap from automobiles, trains, ships, bridges, buildings, railway rails and fasteners, or farming equipment."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103535" ;
+	skos:note	"Ferrous scrap is the most recycled material in the world. The U.S. Geological Survey estimates that 65 million metric tons of iron and steel scrap was processed around the world in 2016.  Ferrous scrap comes from many consumer products like automobiles or household appliances, or from industrial structures and equipment such as buildings, railroads, trains, bridges, ships, and farming equipment."@en ;
 	skos:prefLabel	"Ferrous Scrap"@en .
 
 ccat:103540
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:definition	"Bauxite is a sedimentary rock with a relatively high aluminium content. It is the world's main source of aluminium and gallium. Bauxite is used as flux in blast furnaces for smelting."@en ;
+	skos:definition	"Sedimentary rock with a relatively high aluminium content. The world's main source of aluminium and gallium. Used as flux in blast furnaces for smelting."@en ;
 	skos:exactMatch	eurovoc:3755 , stw:14190-6 , wd:Q102078 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103540" ;
@@ -621,28 +606,31 @@ ccat:103540
 ccat:103550
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:definition	"Manganese is a hard, brittle, silvery metal, often found in minerals in combination with iron. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide."@en ;
+	skos:definition	"Hard, brittle, silvery transition metal, often found in minerals in combination with iron. Alloys are used in stainless steels. It improves strength, workability, and resistance to wear."@en ;
 	skos:exactMatch	agrovoc:c_4570 , eurovoc:1779 , stw:14301-2 , wd:Q731 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103550" ;
+	skos:note	"Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide."@en ;
 	skos:prefLabel	"Manganese"@en .
 
 ccat:103560
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
 	skos:closeMatch	wd:Q1053 ;
-	skos:definition	"Molybdenum does not occur naturally as a free metal on Earth; it is found only in various oxidation states in minerals. The free element, a silvery metal with a gray cast, has the sixth-highest melting point of any element. It readily forms hard, stable carbides in alloys, and for this reason most of world production of the element (about 80%) is used in steel alloys, including high-strength alloys and superalloys."@en ;
+	skos:definition	"Silvery metal with a grey cast."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103560" ;
+	skos:note	"Molybdenum does not occur naturally as a free metal on Earth; it is found only in various oxidation states in minerals. As free element molybdenum has the sixth-highest melting point of any element. It readily forms hard, stable carbides in alloys, and for this reason most of world production of the element (about 80%) is used in steel alloys, including high-strength alloys and superalloys."@en ;
 	skos:prefLabel	"Molybdenum"@en .
 
 ccat:103570
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
 	skos:closeMatch	wd:Q725 ;
-	skos:definition	"Chromium is the main additive in stainless steel, to which it adds anti-corrosive properties. Chromium is also highly valued as a metal that is able to be highly polished while resisting tarnishing. Polished chromium reflects almost 70% of the visible spectrum, with almost 90% of infrared light being reflected."@en ;
+	skos:definition	"Main additive in stainless steel adding anti-corrosive properties."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103570" ;
+	skos:note	"Chromium is also highly valued as a metal that is able to be highly polished while resisting tarnishing. Polished chromium reflects almost 70% of the visible spectrum, with almost 90% of infrared light being reflected."@en ;
 	skos:prefLabel	"Chromium"@en .
 
 ccat:1040
@@ -656,55 +644,42 @@ ccat:1040
 ccat:104010
 	a	skos:Concept ;
 	skos:broader	ccat:1040 ;
-	skos:definition	"""Uranium is a chemical element with the symbol U and atomic number 92. It is a silvery-grey metal in the actinide series of the periodic table. A uranium atom has 92 protons and 92 electrons, of which 6 are valence electrons. Uranium is weakly radioactive because all isotopes of uranium are unstable; the half-lives of its naturally occurring isotopes range between 159,200 years and 4.5 billion years. The most common isotopes in natural uranium are uranium-238 (which has 146 neutrons and accounts for over 99% of uranium on Earth) and uranium-235 (which has 143 neutrons). Uranium has the highest atomic weight of the primordially occurring elements. Its density is about 70% higher than that of lead, and slightly lower than that of gold or tungsten. It occurs naturally in low concentrations of a few parts per million in soil, rock and water, and is commercially extracted from uranium-bearing minerals such as uraninite.
-
-In nature, uranium is found as uranium-238 (99.2739-99.2752%), uranium-235 (0.7198-0.7202%), and a very small amount of uranium-234 (0.0050-0.0059%). Uranium decays slowly by emitting an alpha particle. The half-life of uranium-238 is about 4.47 billion years and that of uranium-235 is 704 million years, making them useful in dating the age of the Earth.
-
-Many contemporary uses of uranium exploit its unique nuclear properties. Uranium-235 is the only naturally occurring fissile isotope, which makes it widely used in nuclear power plants and nuclear weapons. However, because of the tiny amounts found in nature, uranium needs to undergo enrichment so that enough uranium-235 is present. Uranium-238 is fissionable by fast neutrons, and is fertile, meaning it can be transmuted to fissile plutonium-239 in a nuclear reactor. Another fissile isotope, uranium-233, can be produced from natural thorium and is studied for future industrial use in nuclear technology. Uranium-238 has a small probability for spontaneous fission or even induced fission with fast neutrons; uranium-235 and to a lesser degree uranium-233 have a much higher fission cross-section for slow neutrons. In sufficient concentration, these isotopes maintain a sustained nuclear chain reaction. This generates the heat in nuclear power reactors, and produces the fissile material for nuclear weapons. Depleted uranium (238U) is used in kinetic energy penetrators and armor plating. Uranium is used as a colorant in uranium glass, producing lemon yellow to green colors. Uranium glass fluoresces green in ultraviolet light. It was also used for tinting and shading in early photography."""@en ;
-	skos:exactMatch	agrovoc:c_8084 , eurovoc:4617 , stw:14222-5 , wd:Q1098 ;
+	skos:closeMatch	agrovoc:c_8084 , eurovoc:4617 , stw:14222-5 , wd:Q1098 ;
+	skos:definition	"Uranium oxide or Uranium fluoride, extracted from uranium-bearing minerals such as uraninite."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"104010" ;
+	skos:note	"Uranium-235 is the only naturally occurring fissile isotope, which makes it widely used in nuclear power plants and nuclear weapons. However, because of the tiny amounts found in nature, uranium needs to undergo enrichment so that enough uranium-235 is present. Uranium-238 is fissionable by fast neutrons, and is fertile, meaning it can be transmuted to fissile plutonium-239 in a nuclear reactor. Another fissile isotope, uranium-233, can be produced from natural thorium and is studied for future industrial use in nuclear technology. Depleted uranium (238U) is used in kinetic energy penetrators and armor plating. Uranium is used as a colorant in uranium glass, producing lemon yellow to green colors. Uranium glass fluoresces green in ultraviolet light. It was also used for tinting and shading in early photography."@en ;
 	skos:prefLabel	"Uranium"@en .
 
 ccat:104020
 	a	skos:Concept ;
 	skos:broader	ccat:1040 ;
-	skos:definition	"""Cobalt is a chemical element with the symbol Co and atomic number 27. Like nickel, cobalt is found in the Earth's crust only in chemically combined form, save for small deposits found in alloys of natural meteoric iron. The free element, produced by reductive smelting, is a hard, lustrous, silver-gray metal.
-
-Cobalt-based blue pigments (cobalt blue) have been used since ancient times for jewelry and paints, and to impart a distinctive blue tint to glass, but the color was later thought to be due to the known metal bismuth. Miners had long used the name kobold ore (German for goblin ore) for some of the blue-pigment-producing minerals; they were so named because they were poor in known metals, and gave poisonous arsenic-containing fumes when smelted. In 1735, such ores were found to be reducible to a new metal (the first discovered since ancient times), and this was ultimately named for the kobold.
-
-Today, some cobalt is produced specifically from one of a number of metallic-lustered ores, such as cobaltite (CoAsS). The element is, however, more usually produced as a by-product of copper and nickel mining. The copper belt in the Democratic Republic of the Congo (DRC) and Zambia yields most of the global cobalt production. World production in 2016 was 116,000 metric tons (114,000 long tons; 128,000 short tons) (according to Natural Resources Canada), and the DRC alone accounted for more than 50%.
-
-Cobalt is primarily used in lithium-ion batteries, and in the manufacture of magnetic, wear-resistant and high-strength alloys. The compounds cobalt silicate and cobalt(II) aluminate (CoAl2O4, cobalt blue) give a distinctive deep blue color to glass, ceramics, inks, paints and varnishes. Cobalt occurs naturally as only one stable isotope, cobalt-59. Cobalt-60 is a commercially important radioisotope, used as a radioactive tracer and for the production of high-energy gamma rays.
-
-Cobalt is the active center of a group of coenzymes called cobalamins. Vitamin B12, the best-known example of the type, is an essential vitamin for all animals. Cobalt in inorganic form is also a micronutrient for bacteria, algae, and fungi."""@en ;
-	skos:exactMatch	agrovoc:c_1702 , eurovoc:6018 , wd:Q740 ;
+	skos:closeMatch	agrovoc:c_1702 , eurovoc:6018 , wd:Q740 ;
+	skos:definition	"Cobalt 99.8%, cobalt standard grade, cobalt alloy grade, cobalt hydroxide 0%, cobalt sulfate 20.5%, or cobalt tetroxide 72.6%."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"104020" ;
+	skos:note	"Cobalt is primarily used in lithium-ion batteries, and in the manufacture of magnetic, wear-resistant and high-strength alloys. The compounds cobalt silicate and cobalt(II) aluminate (CoAl2O4, cobalt blue) give a distinctive deep blue color to glass, ceramics, inks, paints and varnishes. Cobalt occurs naturally as only one stable isotope, cobalt-59. Cobalt-60 is a commercially important radioisotope, used as a radioactive tracer and for the production of high-energy gamma rays."@en ;
 	skos:prefLabel	"Cobalt"@en .
 
 ccat:104030
 	a	skos:Concept ;
 	skos:broader	ccat:1040 ;
-	skos:closeMatch	wd:Q568 ;
-	skos:definition	"""Lithium is a soft, silvery-white alkali metal. Under standard conditions, it is the lightest metal and the lightest solid element. Like all alkali metals, lithium is highly reactive and flammable, and must be stored in mineral oil. When cut, it exhibits a metallic luster, but moist air corrodes it quickly to a dull silvery gray, then black tarnish. It never occurs freely in nature, but only in (usually ionic) compounds, such as pegmatitic minerals, which were once the main source of lithium. Due to its solubility as an ion, it is present in ocean water and is commonly obtained from brines. Lithium metal is isolated electrolytically from a mixture of lithium chloride and potassium chloride.
-
-Lithium and its compounds have several industrial applications, including heat-resistant glass and ceramics, lithium grease lubricants, flux additives for iron, steel and aluminium production, lithium batteries, and lithium-ion batteries. These uses consume more than three-quarters of lithium production.
-
-Lithium is present in biological systems in trace amounts; its functions are uncertain. Lithium salts have proven to be useful as a mood-stabilizing drug in the treatment of bipolar disorder in humans."""@en ;
-	skos:exactMatch	agrovoc:c_4386 ;
+	skos:closeMatch	agrovoc:c_4386 , wd:Q568 ;
+	skos:definition	"Lithium carbonate 99%, or Lithium hydroxide monohydrate 56.5%."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"104030" ;
+	skos:note	"Lithium and its compounds have several industrial applications, including heat-resistant glass and ceramics, lithium grease lubricants, flux additives for iron, steel and aluminium production, lithium batteries, and lithium-ion batteries. These uses consume more than three-quarters of lithium production."@en ;
 	skos:prefLabel	"Lithium"@en .
 
 ccat:104040
 	a	skos:Concept ;
 	skos:broader	ccat:1040 ;
 	skos:closeMatch	wd:Q942 ;
-	skos:definition	"Bismuth is a pentavalent post-transition metal and one of the pnictogens with chemical properties resembling its lighter group 15 siblings arsenic and antimony. Elemental bismuth may occur naturally, although its sulfide and oxide form important commercial ores. The free element is 86% as dense as lead. It is a brittle metal with a silvery white color when freshly produced, but surface oxidation can give it an iridescent tinge in numerous colours. Bismuth is the most naturally diamagnetic element, and has one of the lowest values of thermal conductivity among metals."@en ;
+	skos:definition	"Bismuth 99.99% extracted from ores containing bismuth oxide or sulfide"@en ;
 	skos:exactMatch	agrovoc:c_938 , eurovoc:4990 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"104040" ;
+	skos:note	"It is a brittle metal with a silvery white color when freshly produced, but surface oxidation can give it an iridescent tinge in numerous colours. Bismuth is the most naturally diamagnetic element, and has one of the lowest values of thermal conductivity among metals."@en ;
 	skos:prefLabel	"Bismuth"@en .
 
 ccat:20
@@ -718,7 +693,7 @@ ccat:20
 ccat:2010
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
-	skos:definition	"A cereal is any grass cultivated for the edible components of its grain. The term may also refer to the resulting grain itself. Cereal grain crops are grown in greater quantities and provide more food energy worldwide than any other type of crop and are therefore staple crops. Edible grains from other plant families, such as buckwheat, quinoa and chia, are referred to as pseudocereals."@en ;
+	skos:definition	"Any grass cultivated for the edible components of its grain. Cereal grain crops are grown in greater quantities and provide more food energy worldwide than any other type of crop and are therefore staple crops. Edible grains from other plant families, such as buckwheat, quinoa and chia, are referred to as pseudocereals."@en ;
 	skos:exactMatch	agrovoc:c_1474 , eurovoc:536 , wd:Q12117 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"2010" ;
@@ -729,125 +704,122 @@ ccat:201010
 	skos:altLabel	"Corn"@en ;
 	skos:broader	ccat:2010 ;
 	skos:closeMatch	wd:Q25618328 ;
-	skos:definition	"""Maize, also known as corn (American English), is a cereal grain first domesticated by indigenous peoples in southern Mexico about 10,000 years ago. The leafy stalk of the plant produces pollen inflorescences and separate ovuliferous inflorescences called ears that yield kernels or seeds, which are fruits.
-
-Maize has become a staple food in many parts of the world, with the total production of maize surpassing that of wheat or rice. In addition to being consumed directly by humans (often in the form of masa), maize is also used for corn ethanol, animal feed and other maize products, such as corn starch and corn syrup."""@en ;
-	skos:exactMatch	agrovoc:c_12332 , stw:14093-4 ;
+	skos:definition	"Cereal grain with a leafy stalk that produces pollen inflorescences and separate ovuliferous inflorescences called ears that yield kernels or seeds, which are fruits."@en ;
+	skos:exactMatch	agrovoc:c_12332 , stw:14093-4 , wd:Q11575 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201010" ;
+	skos:note	"Maize has become a staple food in many parts of the world, with the total production of maize surpassing that of wheat or rice. In addition to being consumed directly by humans (often in the form of masa), maize is also used for corn ethanol, animal feed and other maize products, such as corn starch and corn syrup."@en ;
 	skos:prefLabel	"Maize"@en .
 
 ccat:201020
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
 	skos:closeMatch	wd:Q5090 ;
-	skos:definition	"Rice is the seed of the grass species Oryza glaberrima (African rice) or Oryza sativa (Asian rice). As a cereal grain, it is the most widely consumed staple food for a large part of the world's human population, especially in Asia and Africa. It is the agricultural commodity with the third-highest worldwide production (rice, 741.5 million tonnes in 2014), after sugarcane (1.9 billion tonnes) and maize (1.0 billion tonnes)."@en ;
-	skos:exactMatch	agrovoc:c_6599 , stw:14095-0 ;
+	skos:definition	"Seed of the grass species Oryza glaberrima (African rice) or Oryza sativa (Asian rice)."@en ;
+	skos:exactMatch	agrovoc:c_6599 , stw:14095-0 , wd:Q5090 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201020" ;
+	skos:note	"As a cereal grain, it is the most widely consumed staple food for a large part of the world's human population, especially in Asia and Africa. It is the agricultural commodity with the third-highest worldwide production (rice, 741.5 million tonnes in 2014), after sugarcane (1.9 billion tonnes) and maize (1.0 billion tonnes)."@en ;
 	skos:prefLabel	"Rice"@en .
 
 ccat:201030
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
 	skos:closeMatch	wd:Q15645384 ;
-	skos:definition	"Wheat is a grass widely cultivated for its seed, a cereal grain which is a worldwide staple food. The many species of wheat together make up the genus Triticum; the most widely grown is common wheat (T. aestivum). The archaeological record suggests that wheat was first cultivated in the regions of the Fertile Crescent around 9600 BCE. Botanically, the wheat kernel is a type of fruit called a caryopsis."@en ;
-	skos:exactMatch	agrovoc:c_8373 , stw:14098-1 ;
+	skos:definition	"Cereal grain in the genus Triticum; the most widely grown is common wheat (T. aestivum)."@en ;
+	skos:exactMatch	agrovoc:c_8373 , stw:14098-1 , wd:Q15645384 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201030" ;
 	skos:prefLabel	"Wheat"@en .
 
 ccat:201035
 	a	skos:Concept ;
+	skos:altLabel	"Pasta Wheat"@en ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"""Durum wheat, also called pasta wheat or macaroni wheat (Triticum durum or Triticum turgidum subsp. durum), is a tetraploid species of wheat. It is the second most cultivated species of wheat after common wheat, although it represents only 5% to 8% of global wheat production. It was developed by artificial selection of the domesticated emmer wheat strains formerly grown in Central Europe and the Near East around 7000 BC, which developed a naked, free-threshing form. Like emmer, durum wheat is awned (with bristles). It is the predominant wheat that grows in the Middle East.
-
-Durum in Latin means \"hard\", and the species is the hardest of all wheats. This refers to the resistance of the grain to milling, in particular of the starchy endosperm, implying dough made from its flour is weak or \"soft\". This makes durum favorable for semolina and pasta and less practical for flour, which requires more work than with hexaploid wheats like common bread wheats. Despite its high protein content, durum is not a strong wheat in the sense of giving strength to dough through the formation of a gluten network. Durum contains 27% extractable wet gluten, about 3% higher than in common wheat (T. aestivum L.)."""@en ;
+	skos:definition	"Tetraploid species of wheat, second most cultivated species of wheat after common wheat, predominant wheat of the Middle East."@en ;
 	skos:exactMatch	agrovoc:c_11456 , wd:Q618324 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201035" ;
+	skos:note	"Durum in Latin means \"hard\", and the species is the hardest of all wheats. This refers to the resistance of the grain to milling, in particular of the starchy endosperm, implying dough made from its flour is weak or \"soft\". This makes durum favorable for semolina and pasta and less practical for flour, which requires more work than with hexaploid wheats like common bread wheats. Despite its high protein content, durum is not a strong wheat in the sense of giving strength to dough through the formation of a gluten network. Durum contains 27% extractable wet gluten, about 3% higher than in common wheat (T. aestivum L.)."@en ;
 	skos:prefLabel	"Durum"@en .
 
 ccat:201040
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"""Barley (Hordeum vulgare), a member of the grass family, is a major cereal grain grown in temperate climates globally. It was one of the first cultivated grains, particularly in Eurasia as early as 10,000 years ago. Barley has been used as animal fodder, as a source of fermentable material for beer and certain distilled beverages, and as a component of various health foods. It is used in soups and stews, and in barley bread of various cultures. Barley grains are commonly made into malt in a traditional and ancient method of preparation.
-
-In 2017, barley was ranked fourth among grains in quantity produced (149 million tonnes) behind maize, rice and wheat."""@en ;
-	skos:exactMatch	agrovoc:c_823 , stw:14087-6 ;
+	skos:definition	"Major cereal grain grown in temperate climates globally; Hordeum vulgare, a member of the grass family."@en ;
+	skos:exactMatch	agrovoc:c_823 , stw:14087-6 , wd:Q61665121 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201040" ;
+	skos:note	"Barley has been used as animal fodder, as a source of fermentable material for beer and certain distilled beverages, and as a component of various health foods. It is used in soups and stews, and in barley bread of various cultures. Barley grains are commonly made into malt in a traditional and ancient method of preparation. In 2017, barley was ranked fourth among grains in quantity produced (149 million tonnes) behind maize, rice and wheat."@en ;
 	skos:prefLabel	"Barley"@en .
 
 ccat:201050
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"The oat (Avena sativa), sometimes called the common oat, is a species of cereal grain grown for its seed, which is known by the same name (usually in the plural, unlike other cereals and pseudocereals). While oats are suitable for human consumption as oatmeal and oat milk, one of the most common uses is as livestock feed. Oats are associated with lower blood cholesterol when consumed regularly."@en ;
-	skos:exactMatch	agrovoc:c_5287 , stw:14090-3 ;
+	skos:definition	"Cereal grain in the Avena genus (Avena sativa)."@en ;
+	skos:exactMatch	agrovoc:c_5287 , stw:14090-3 , wd:Q24265484 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201050" ;
+	skos:note	"While oats are suitable for human consumption as oatmeal and oat milk, one of the most common uses is as livestock feed. Oats are associated with lower blood cholesterol when consumed regularly."@en ;
 	skos:prefLabel	"Oats"@en .
 
 ccat:201060
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"""Sorghum bicolor, often called Sorghum, and also known as great millet, durra, jowari/jowar, or milo, is a grass species cultivated for its grain, which is used for food for humans, animal feed, and ethanol production. Sorghum originated in Africa, and is now cultivated widely in tropical and subtropical regions. Sorghum is the world's fifth-most important cereal crop after rice, wheat, maize, and barley, with 59.34 million metric tons of annual global production in 2018. S. bicolor is typically an annual, but some cultivars are perennial. It grows in clumps that may reach over 4 m high. The grain is small, ranging from 2 to 4 mm in diameter. Sweet sorghums are sorghum cultivars that are primarily grown for forage, syrup production, and ethanol; they are taller than those grown for grain.
-
-The leading producers of S. bicolor in 2011 were Nigeria (12.6%), India (11.2%), Mexico (11.2%), and the United States (10.0%). Sorghum grows in a wide range of temperatures, high altitudes, and toxic soils, and can recover growth after some drought. It has five features that make it one of the most drought-resistant crops:
+	skos:definition	"Grain of an annual cereal, some cultivars are perennial, in the Sorghum genus ranging from 2 to 4 mm in diameter."@en ;
+	skos:exactMatch	agrovoc:c_7247 , wd:Q332062 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"201060" ;
+	skos:note	"""Primarily grown for forage, syrup production, and ethanol. The leading producers of S. bicolor in 2011 were Nigeria (12.6%), India (11.2%), Mexico (11.2%), and the United States (10.0%). Sorghum grows in a wide range of temperatures, high altitudes, and toxic soils, and can recover growth after some drought. It has five features that make it one of the most drought-resistant crops:
 
 - It has a very large root-to-leaf surface area ratio.
 - In times of drought, it rolls its leaves to lessen water loss by transpiration.
 - If drought continues, it goes into dormancy rather than dying.
 - Its leaves are protected by a waxy cuticle.
 - It uses C4 carbon fixation thus using only a third the amount of water that C3 plants require."""@en ;
-	skos:exactMatch	agrovoc:c_7247 , wd:Q332062 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"201060" ;
 	skos:prefLabel	"Sorghum"@en .
 
 ccat:201065
 	a	skos:Concept ;
-	skos:altLabel	"Bajra"@en , "Kambu"@en , "Pennisetum glaucum"@en , "Sajjey"@en ;
+	skos:altLabel	"Bajra"@en , "Kambu"@en , "Sajjey"@en ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"""Pearl millet has ovoid grains of 3-4 mm length, the largest kernels of all varieties of millet (not including sorghum). These can be nearly white, pale yellow, brown, grey, slate blue or purple. The 1000-seed weight can be anything from 2.5 to 14 g with a mean of 8 g. The height of the plant ranges from 0.5 to 4 m.
-
-Pearl millet is well adapted to growing areas characterized by drought, low soil fertility, and high temperature. It performs well in soils with high salinity or low pH. Because of its tolerance to difficult growing conditions, it can be grown in areas where other cereal crops, such as maize or wheat, would not survive. Pearl millet is a summer annual crop well-suited for double cropping and rotations."""@en ;
+	skos:definition	"Grain of Pennisetum glaucum, ovoid, of 3-4 mm length, nearly white, pale yellow, brown, grey, slate blue or purple."@en ;
+	skos:exactMatch	agrovoc:c_e4e17d1b , wd:Q104037539 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201065" ;
+	skos:note	"Pearl millet is well adapted to growing areas characterized by drought, low soil fertility, and high temperature. It performs well in soils with high salinity or low pH. Because of its tolerance to difficult growing conditions, it can be grown in areas where other cereal crops, such as maize or wheat, would not survive. Pearl millet is a summer annual crop well-suited for double cropping and rotations."@en ;
 	skos:prefLabel	"Pearl Millet"@en .
 
 ccat:201070
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"""Rye (Secale cereale) is a grass grown extensively as a grain, a cover crop and a forage crop. It is a member of the wheat tribe (Triticeae) and is closely related to both wheat (Triticum) and barley (genus Hordeum). Rye grain is used for flour, bread, beer, crispbread, some whiskeys, some vodkas, and animal fodder. It can also be eaten whole, either as boiled rye berries or by being rolled, similar to rolled oats.
-
-Rye is a cereal grain and should not be confused with ryegrass, which is used for lawns, pasture, and hay for livestock."""@en ;
+	skos:definition	"Grain of the cereal of the Triticeae tribe in the Secale genus."@en ;
 	skos:exactMatch	agrovoc:c_14010 , eurovoc:4059 , stw:14096-5 , wd:Q12099 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201070" ;
+	skos:note	"Rye grain is used for flour, bread, beer, crispbread, some whiskeys, some vodkas, and animal fodder. It can also be eaten whole, either as boiled rye berries or by being rolled, similar to rolled oats."@en ;
 	skos:prefLabel	"Rye"@en .
 
 ccat:201075
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"""Hybrid of wheat (female) and rye (male) first bred in laboratories during the late 19th century in Scotland and Germany. Commercially available triticale is almost always a second-generation hybrid, i.e., a cross between two kinds of primary (first-cross) triticales. As a rule, triticale combines the yield potential and grain quality of wheat with the disease and environmental tolerance (including soil conditions) of rye. Only recently has it been developed into a commercially viable crop. Depending on the cultivar, triticale can more or less resemble either of its parents. It is grown mostly for forage or fodder, although some triticale-based foods can be purchased at health food stores and can be found in some breakfast cereals.
-
-When crossing wheat and rye, wheat is used as the female parent and rye as the male parent (pollen donor). The resulting hybrid is sterile and must be treated with colchicine to induce polyploidy and thus the ability to reproduce itself.
+	skos:definition	"Hybrid of wheat (female) and rye (male)."@en ;
+	skos:exactMatch	agrovoc:c_33914 , wd:Q380329 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"201075" ;
+	skos:note	"""Almost always a second-generation hybrid, i.e., a cross between two kinds of primary (first-cross) triticales. As a rule, triticale combines the yield potential and grain quality of wheat with the disease and environmental tolerance (including soil conditions) of rye. Only recently has it been developed into a commercially viable crop. Grown mostly for forage or fodder, although some triticale-based foods can be purchased at health food stores and can be found in some breakfast cereals.
 
 The primary producers of triticale are Poland, Germany, Belarus, France and Russia. In 2014, according to the Food and Agriculture Organization (FAO), 17.1 million tons were harvested in 37 countries across the world.
 
 The triticale hybrids are all amphidiploid, which means the plant is diploid for two genomes derived from different species. In other words, triticale is an allotetraploid. In earlier years, most work was done on octoploid triticale. Different ploidy levels have been created and evaluated over time. The tetraploids showed little promise, but hexaploid triticale was successful enough to find commercial application.
 
 The International Maize and Wheat Improvement Center triticale improvement program was intended to improve food production and nutrition in developing countries. Triticale was thought to have potential in the production of bread and other food products, such as cookies, pasta, pizza dough and breakfast cereals. The protein content is higher than that of wheat, although the glutenin fraction is less. The grain has also been stated to have higher levels of lysine than wheat. Acceptance would require the milling industry to adapt to triticale, as the milling techniques employed for wheat are unsuited to triticale. Past research indicated that triticale could be used as a feed grain and, particularly, later research found that its starch is readily digested. As a feed grain, triticale is already well established and of high economic importance. It has received attention as a potential energy crop, and research is currently being conducted on the use of the crop's biomass in bioethanol production."""@en ;
-	skos:exactMatch	agrovoc:c_33914 , wd:Q380329 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"201075" ;
 	skos:prefLabel	"Triticale"@en .
 
 ccat:201080
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"Fonio is the term for two cultivated grasses, black fonio and white fonio, in the genus Digitaria that are notable crops in parts of West Africa. They are millets with small grains."@en ;
+	skos:definition	"Grain of millets in the genus Digitaria."@en ;
 	skos:exactMatch	agrovoc:c_3b4c07e9 , wd:Q1340738 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201080" ;
@@ -857,7 +829,7 @@ ccat:201090
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
 	skos:closeMatch	agrovoc:c_6301 , wd:Q2643145 ;
-	skos:definition	"Cereals of minor economic importance."@en ;
+	skos:definition	"Cereals and grains of minor economic importance."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201090" ;
 	skos:prefLabel	"Other Cereals and Pseudocereals"@en .
@@ -865,52 +837,54 @@ ccat:201090
 ccat:20109010
 	a	skos:Concept ;
 	skos:broader	ccat:201090 ;
-	skos:definition	"""Cultivated for its grain-like seeds and as a cover crop, primarily in northern regions. The name \"buckwheat\" is used for several other species, such as Fagopyrum tataricum, a domesticated food plant raised in Asia. Despite the name, buckwheat is not closely related to wheat, as it is not a grass. Instead, buckwheat is related to sorrel, knotweed, and rhubarb. Buckwheat is referred to as a pseudocereal because its seeds' culinary use is the same as cereals', owing to their composition of complex carbohydrates."""@en ;
+	skos:definition	"Grain-like seeds of a pseudocereal in the genus Fagopyrum."@en ;
 	skos:exactMatch	agrovoc:c_9471 , eurovoc:3898 , wd:Q132734 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20109010" ;
+	skos:note	"Buckwheat is referred to as a pseudocereal because its seeds' culinary use is the same as cereals', owing to their composition of complex carbohydrates."@en ;
 	skos:prefLabel	"Buckwheat"@en .
 
 ccat:20109020
 	a	skos:Concept ;
 	skos:broader	ccat:201090 ;
-	skos:definition	"""A flowering plant in the amaranth family. It is a herbaceous annual plant grown as a crop primarily for its edible seeds; the seeds are rich in protein, dietary fiber, B vitamins, and dietary minerals in amounts greater than in many grains. Quinoa is not a grass, but rather a pseudocereal botanically related to spinach and amaranth (Amaranthus spp.), and originated in the Andean region of northwestern South America. It was first used to feed livestock 5.2-7.0 thousand years ago, and for human consumption-4 thousand years ago in the Lake Titicaca basin of Peru and Bolivia.
-
-Today, almost all production in the Andean region is done by small farms and associations. Its cultivation has spread to more than 70 countries, including Kenya, India, the United States, and several European countries. As a result of increased popularity and consumption in North America, Europe, and Australasia, quinoa crop prices tripled between 2006 and 2014."""@en ;
+	skos:definition	"Seeds of a flowering plant in the amaranth family."@en ;
 	skos:exactMatch	agrovoc:c_13716 , wd:Q139925 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20109020" ;
+	skos:note	"""The seeds are rich in protein, dietary fiber, B vitamins, and dietary minerals in amounts greater than in many grains. Quinoa is not a grass, but rather a pseudocereal botanically related to spinach and amaranth (Amaranthus spp.), and originated in the Andean region of northwestern South America. It was first used to feed livestock 5.2-7.0 thousand years ago, and for human consumption-4 thousand years ago in the Lake Titicaca basin of Peru and Bolivia.
+
+Today, almost all production in the Andean region is done by small farms and associations. Its cultivation has spread to more than 70 countries, including Kenya, India, the United States, and several European countries. As a result of increased popularity and consumption in North America, Europe, and Australasia, quinoa crop prices tripled between 2006 and 2014."""@en ;
 	skos:prefLabel	"Quinoa"@en .
 
 ccat:2020
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
-	skos:definition	"Oil-bearing crops are plants that are grown primarily for their oil. Edible vegetable oils may be used for cooking, or as food additives. Many vegetable oils, edible and otherwise, are burned as fuel, for instance as a substitute for petroleum-based fuels. Some may be also used for cosmetics, medical purposes, wood finishing, oil painting and other industrial purposes."@en ;
+	skos:definition	"Plants that are grown primarily for their oil. The oil may be used for cooking, as food additives, or processed into oleochemicals, e.g. as a substitute for petroleum-based fuels. Some may be also used for cosmetics, medical purposes, wood finishing, oil painting and other industrial purposes."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"2020" ;
-	skos:prefLabel	"Oil-Bearing Crops and Derived Products"@en .
+	skos:prefLabel	"Oil-Bearing Crops"@en .
 
 ccat:202010
 	a	skos:Concept ;
 	skos:broader	ccat:2020 ;
-	skos:definition	"""The soybean or soya bean (Glycine max) is a species of legume native to East Asia, widely grown for its edible bean, which has numerous uses.
-
-Traditional unfermented food uses of soybeans include soy milk, from which tofu and tofu skin are made. Fermented soy foods include soy sauce, fermented bean paste, natto, and tempeh. Fat-free (defatted) soybean meal is a significant and cheap source of protein for animal feeds and many packaged meals. For example, soybean products, such as textured vegetable protein (TVP), are ingredients in many meat and dairy substitutes.
-
-Soy beans contain significant amounts of phytic acid, dietary minerals and B vitamins. Soy vegetable oil, used in food and industrial applications, is another product of processing the soybean crop. Soybean is the most important protein source for feed farm animals (that in turn yields animal protein for human consumption)."""@en ;
-	skos:exactMatch	agrovoc:c_14477 , stw:14081-4 ;
+	skos:definition	"Beans of Glycine max, a species of legume native to East Asia."@en ;
+	skos:exactMatch	agrovoc:c_14477 , stw:14081-4 , wd:Q61503220 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"202010" ;
+	skos:note	"""Traditional unfermented food uses of soybeans include soy milk, from which tofu and tofu skin are made. Fermented soy foods include soy sauce, fermented bean paste, natto, and tempeh. Fat-free (defatted) soybean meal is a significant and cheap source of protein for animal feeds and many packaged meals. For example, soybean products, such as textured vegetable protein (TVP), are ingredients in many meat and dairy substitutes.
+
+Soy beans contain significant amounts of phytic acid, dietary minerals and B vitamins. Soy vegetable oil, used in food and industrial applications, is another product of processing the soybean crop. Soybean is the most important protein source for feed farm animals (that in turn yields animal protein for human consumption)."""@en ;
 	skos:prefLabel	"Soybeans"@en .
 
 ccat:202020
 	a	skos:Concept ;
 	skos:altLabel	"Canola"@en ;
 	skos:broader	ccat:2020 ;
-	skos:definition	"Rapeseed (Brassica napus subsp. napus) is a bright-yellow flowering member of the family Brassicaceae (mustard or cabbage family), cultivated mainly for its oil-rich seed, which naturally contains appreciable amounts of toxic erucic acid. Canola are a group of rapeseed cultivars which were bred to have very low levels of erucic acid and are especially prized for use for human and animal food. Rapeseed is the third-largest source of vegetable oil and second-largest source of protein meal in the world."@en ;
+	skos:definition	"Seed of rapeseed (Brassica napus subsp. napus), a bright-yellow flowering member of the family Brassicaceae (mustard or cabbage family)"@en ;
 	skos:exactMatch	agrovoc:c_25499 , eurovoc:6042 , stw:14078-0 , wd:Q177932 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"202020" ;
+	skos:note	"The seed naturally contains appreciable amounts of toxic erucic acid. Canola are a group of rapeseed cultivars which were bred to have very low levels of erucic acid and are especially prized for use for human and animal food. Rapeseed is the third-largest source of vegetable oil and second-largest source of protein meal in the world."@en ;
 	skos:prefLabel	"Rapeseed"@en .
 
 ccat:202030
@@ -957,16 +931,6 @@ ccat:202050
 	skos:inScheme	ccat: ;
 	skos:notation	"202050" ;
 	skos:prefLabel	"Groundnuts"@en .
-
-ccat:202055
-	a	skos:Concept ;
-	skos:altLabel	"Azuki Beans"@en ;
-	skos:broader	ccat:2020 ;
-	skos:definition	"""The adzuki bean is an annual vine widely cultivated throughout East Asia for its small (approximately 5 millimetres (0.20 in) long) bean. The cultivars most familiar in East Asia have a uniform red color, but there are also white, black, gray, and variously mottled varieties."""@en ;
-	skos:exactMatch	agrovoc:c_8632 , wd:Q380279 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"202055" ;
-	skos:prefLabel	"Adzuki Beans"@en .
 
 ccat:202090
 	a	skos:Concept ;
@@ -1054,15 +1018,6 @@ ccat:20209065
 	skos:inScheme	ccat: ;
 	skos:notation	"20209065" ;
 	skos:prefLabel	"Hempseed"@en .
-
-ccat:20209070
-	a	skos:Concept ;
-	skos:broader	ccat:202090 ;
-	skos:definition	"The guar or cluster bean, with the botanical name Cyamopsis tetragonoloba, is an annual legume and the source of guar gum. It is also known as gavar, gawar, or guvar bean. This legume is a valuable plant in a crop rotation cycle, as it lives in symbiosis with nitrogen-fixing bacteria. Agriculturists in semi-arid regions of Rajasthan follow crop-rotation and use guar to replenish the soil with essential fertilizers and nitrogen fixation, before the next crop. Guar has many functions for human and animal nutrition, but the gelling agent in its seeds (guar gum) is the most important use. Demand is rising due to the use of guar gum in hydraulic fracturing (oil shale gas). About 80% of world production occurs in India, but due to strong demand, the plant is being introduced elsewhere."@en ;
-	skos:exactMatch	wd:Q264770 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"20209070" ;
-	skos:prefLabel	"Guar"@en .
 
 ccat:202095
 	a	skos:Concept ;
@@ -1185,11 +1140,11 @@ ccat:20209920
 ccat:2025
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
-	skos:definition	"Vegetal oils or vegetal fats are extracted from seeds, or less often, from other parts of fruits. Like animal fats, vegetable fats are mixtures of triglycerides. In common usage, vegetable oil may refer exclusively to vegetable fats which are liquid at room temperature. Vegetal oils are usually edible."@en ;
+	skos:definition	"Vegetal oils and fats are extractions from the seed or other parts of fruits. They are mixtures of triglycerides, usually liquid at room temperature, and usually edible."@en ;
 	skos:exactMatch	agrovoc:c_8170 , wd:Q4739805 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"2025" ;
-	skos:prefLabel	"Vegetal Oils"@en .
+	skos:prefLabel	"Vegetal Oils and Fats"@en .
 
 ccat:202510
 	a	skos:Concept ;
@@ -1417,15 +1372,6 @@ Hemp oil is a \"drying oil\", as it can polymerize into a solid form. Due to its
 	skos:inScheme	ccat: ;
 	skos:notation	"20259065" ;
 	skos:prefLabel	"Oil of Hempseed"@en .
-
-ccat:20259070
-	a	skos:Concept ;
-	skos:altLabel	"Guaran"@en ;
-	skos:broader	ccat:202590 ;
-	skos:definition	"Guar gum, also called guaran, is a galactomannan polysaccharide extracted from guar beans that has thickening and stabilizing properties useful in food, feed, and industrial applications. The guar seeds are mechanically dehusked, hydrated, milled and screened according to application. It is typically produced as a free-flowing, off-white powder."@en ;
-	skos:inScheme	ccat: ;
-	skos:notation	"20259070" ;
-	skos:prefLabel	"Guar Gum"@en .
 
 ccat:202595
 	a	skos:Concept ;
@@ -1707,6 +1653,74 @@ ccat:20305020
 	skos:inScheme	ccat: ;
 	skos:notation	"20305020" ;
 	skos:prefLabel	"Molasses"@en .
+
+ccat:2035
+	a	skos:Concept ;
+	skos:broader	ccat:20 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"2035" ;
+	skos:prefLabel	"Starches, Gums, and Polysaccharides"@en .
+
+ccat:203510
+	a	skos:Concept ;
+	skos:broader	ccat:2035 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203510" ;
+	skos:prefLabel	"Corn Starch"@en .
+
+ccat:203520
+	a	skos:Concept ;
+	skos:broader	ccat:2035 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203520" ;
+	skos:prefLabel	"Potatoe Starch"@en .
+
+ccat:203530
+	a	skos:Concept ;
+	skos:broader	ccat:2035 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203530" ;
+	skos:prefLabel	"Malt"@en .
+
+ccat:203550
+	a	skos:Concept ;
+	skos:broader	ccat:2035 ;
+	skos:definition	"The guar or cluster bean, with the botanical name Cyamopsis tetragonoloba, is an annual legume and the source of guar gum. It is also known as gavar, gawar, or guvar bean. This legume is a valuable plant in a crop rotation cycle, as it lives in symbiosis with nitrogen-fixing bacteria. Agriculturists in semi-arid regions of Rajasthan follow crop-rotation and use guar to replenish the soil with essential fertilizers and nitrogen fixation, before the next crop. Guar has many functions for human and animal nutrition, but the gelling agent in its seeds (guar gum) is the most important use. Demand is rising due to the use of guar gum in hydraulic fracturing (oil shale gas). About 80% of world production occurs in India, but due to strong demand, the plant is being introduced elsewhere."@en ;
+	skos:exactMatch	wd:Q264770 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203550" ;
+	skos:prefLabel	"Guar"@en .
+
+ccat:203555
+	a	skos:Concept ;
+	skos:broader	ccat:2035 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203555" ;
+	skos:prefLabel	"Guar Gum"@en .
+
+ccat:203557
+	a	skos:Concept ;
+	skos:broader	ccat:2035 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203557" ;
+	skos:prefLabel	"Guar Meal"@en .
+
+ccat:203560
+	a	skos:Concept ;
+	skos:broader	ccat:2035 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203560" ;
+	skos:prefLabel	"Arabic Gum"@en .
+
+ccat:203570
+	a	skos:Concept ;
+	skos:altLabel	"Azuki Beans"@en , "Red Beans"@en ;
+	skos:broader	ccat:2035 ;
+	skos:definition	"""The adzuki bean is an annual vine widely cultivated throughout East Asia for its small (approximately 5 millimetres (0.20 in) long) bean. The cultivars most familiar in East Asia have a uniform red color, but there are also white, black, gray, and variously mottled varieties."""@en ;
+	skos:exactMatch	agrovoc:c_8632 , wd:Q380279 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203570" ;
+	skos:prefLabel	"Adzuki Beans"@en .
 
 ccat:2040
 	a	skos:Concept ;
@@ -3503,6 +3517,41 @@ ccat:301590
 	skos:notation	"301590" ;
 	skos:prefLabel	"Other Coarse Hair"@en .
 
+ccat:3020
+	a	skos:Concept ;
+	skos:broader	ccat:20 ;
+	skos:definition	"Oleochemicals are products derived from vegetal oils and fats, e.g. by hydrolysis, transesterification, or hydrogenation."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"3020" ;
+	skos:prefLabel	"Oleochemicals"@en .
+
+ccat:302010
+	a	skos:Concept ;
+	skos:altLabel	"FAME"@en , "Fatty Acid Methyl Ester"@en ;
+	skos:broader	ccat:3020 ;
+	skos:definition	"Oleochemical derived by transesterification of fats with methanol, usually blended with petrodiesel."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"302010" ;
+	skos:prefLabel	"Biodiesel"@en .
+
+ccat:302020
+	a	skos:Concept ;
+	skos:altLabel	"PLA"@en ;
+	skos:broader	ccat:3020 ;
+	skos:definition	"Thermoplastic polyester obtained by condensation of lactic acid, a monomer made from fermented plant starch such as from corn, cassava, sugarcane or sugar beet pulp."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"302020" ;
+	skos:prefLabel	"Polylactic Acid"@en .
+
+ccat:302030
+	a	skos:Concept ;
+	skos:altLabel	"PA 11"@en ;
+	skos:broader	ccat:101030 ;
+	skos:definition	"Polyamide produced by the polymerization of 11-aminoundecanoic acid which is produced from castor beans under the trade name Rilsan."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"302030" ;
+	skos:prefLabel	"Polyamide 11"@en .
+
 ccat:3030
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
@@ -3534,6 +3583,28 @@ Finished lumber is supplied in standard sizes, mostly for the construction indus
 	skos:inScheme	ccat: ;
 	skos:notation	"303015" ;
 	skos:prefLabel	"Sawnwood"@en .
+
+ccat:303020
+	a	skos:Concept ;
+	skos:altLabel	"Blockboard"@en ;
+	skos:broader	ccat:3030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"303020" ;
+	skos:prefLabel	"Plywood"@en .
+
+ccat:303030
+	a	skos:Concept ;
+	skos:broader	ccat:3030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"303030" ;
+	skos:prefLabel	"Fibreboard"@en .
+
+ccat:303050
+	a	skos:Concept ;
+	skos:broader	ccat:3030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"303050" ;
+	skos:prefLabel	"Wood Pellets"@en .
 
 ccat:3035
 	a	skos:Concept ;
@@ -3589,20 +3660,6 @@ Natural rubber is used extensively in many applications and products, either alo
 	skos:inScheme	ccat: ;
 	skos:notation	"304010" ;
 	skos:prefLabel	"Natural Rubber"@en .
-
-ccat:304015
-	a	skos:Concept ;
-	skos:broader	ccat:3040 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"304015" ;
-	skos:prefLabel	"Natural Gums"@en .
-
-ccat:304016
-	a	skos:Concept ;
-	skos:broader	ccat:3040 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"304016" ;
-	skos:prefLabel	"Arabic Gum"@en .
 
 ccat:304019
 	a	skos:Concept ;
@@ -3869,6 +3926,20 @@ ccat:30603025
 	skos:notation	"30603025" ;
 	skos:prefLabel	"Ethylene Glycol"@en .
 
+ccat:30603030
+	a	skos:Concept ;
+	skos:broader	ccat:306030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30603030" ;
+	skos:prefLabel	"Propanol"@en .
+
+ccat:30603040
+	a	skos:Concept ;
+	skos:broader	ccat:306030 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"30603040" ;
+	skos:prefLabel	"Butanol"@en .
+
 ccat:3070
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
@@ -4015,19 +4086,50 @@ ccat:401010
 	skos:notation	"401010" ;
 	skos:prefLabel	"Wet Freight"@en .
 
+ccat:40101010
+	a	skos:Concept ;
+	skos:broader	ccat:401010 ;
+	skos:definition	"Tanker for dirty loads, i.e. crude oils."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"40101010" ;
+	skos:prefLabel	"Dirty Freight"@en ;
+	skos:scopeNote	"TDx at the Baltic Exchange"@en .
+
+ccat:40101020
+	a	skos:Concept ;
+	skos:broader	ccat:401010 ;
+	skos:definition	"Tanker for clean loads, i.e. refined products excluding gases."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"40101020" ;
+	skos:prefLabel	"Clean Freight"@en ;
+	skos:scopeNote	"TCx at the Baltic Exchange"@en .
+
+ccat:40101030
+	a	skos:Concept ;
+	skos:broader	ccat:401010 ;
+	skos:definition	"Tanker for gas loads, i.e. liquefied natural gas or petroleum gas."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"40101030" ;
+	skos:prefLabel	"Gas Freight"@en ;
+	skos:scopeNote	"BLNGx, BLPGx at the Baltic Exchange"@en .
+
 ccat:401020
 	a	skos:Concept ;
 	skos:broader	ccat:4010 ;
+	skos:definition	"Cargoes on a per container basis."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"401020" ;
-	skos:prefLabel	"Container Freight"@en .
+	skos:prefLabel	"Container Freight"@en ;
+	skos:scopeNote	"FBXx at the Baltic Exchange"@en .
 
 ccat:401025
 	a	skos:Concept ;
 	skos:broader	ccat:4010 ;
+	skos:definition	"Bulk cargoes on a time-charter or tonne voyage basis."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"401025" ;
-	skos:prefLabel	"Dry Bulk Freight"@en .
+	skos:prefLabel	"Dry Bulk Freight"@en ;
+	skos:scopeNote	"Cx, Px, Sx, HSx at the Baltic Exchange"@en .
 
 ccat:401030
 	a	skos:Concept ;
@@ -4040,10 +4142,10 @@ ccat:401030
 ccat:401050
 	a	skos:Concept ;
 	skos:broader	ccat:4010 ;
-	skos:definition	"Spread between identical loads where one is shipped CIF and the other is shipped FOB."@en ;
+	skos:definition	"Premium of one freight rate over another to a different location, or with different shipping agreements."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"401050" ;
-	skos:prefLabel	"CIF v FOB"@en .
+	skos:prefLabel	"Cargo Spread"@en .
 
 ccat:4020
 	a	skos:Concept ;
@@ -4057,7 +4159,7 @@ ccat:4020
 ccat:402010
 	a	skos:Concept ;
 	skos:broader	ccat:4020 ;
-	skos:definition	"Difference of daily high/low temperature as measured by a (set of) reference weather stations to a reference temperature, then aggregated to give degree days over the observation period.  Sometimes capped/floored as heating degree days/cooling degree days so that only temperatures below/above reference are taken into account which avoids aggregating signed differences."@en ;
+	skos:definition	"An aggregate of (average, trimmed mean, daily high, daily low) temperature as measured by a (set of) reference weather stations over a pre-defined time period. Sometimes capped/floored under the name heating degree days/cooling degree days, respectively."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"402010" ;
 	skos:prefLabel	"Temperature"@en .
@@ -4065,6 +4167,7 @@ ccat:402010
 ccat:402020
 	a	skos:Concept ;
 	skos:broader	ccat:4020 ;
+	skos:definition	"Product that tracks the (average, trimmed mean, minimum, maxium, ...) rainfall in a region over a predefined time period."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"402020" ;
 	skos:prefLabel	"Rainfall"@en .
@@ -4073,7 +4176,7 @@ ccat:4030
 	a	skos:Concept ;
 	skos:broader	ccat:40 ;
 	skos:closeMatch	agrovoc:c_1b1e0e70 , eurovoc:434843 , stw:20762-1 , wd:Q8348417 ;
-	skos:definition	"""Permits and allowances in writing. A central authority (usually a governmental body) allocates or sells a limited number of permits that allow a discharge of a specific quantity of a specific pollutant over a set time period. Polluters are required to hold permits in amount equal to their emissions. Polluters that want to increase their emissions must buy permits from others willing to sell them."""@en ;
+	skos:definition	"Permits and allowances in writing issued by a central authority (usually a governmental body) that allow a discharge of a specific quantity of a specific pollutant over a set time period. Polluters are required to hold permits in amount equal to their emissions. Polluters that want to increase their emissions must buy permits from others willing to sell them."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"4030" ;
 	skos:prefLabel	"Emissions"@en .
@@ -4081,7 +4184,7 @@ ccat:4030
 ccat:403010
 	a	skos:Concept ;
 	skos:broader	ccat:4030 ;
-	skos:definition	"""Permits and allowances specifically for carbon dioxide (CO2) emission."""@en ;
+	skos:definition	"Permits and allowances specifically for carbon dioxide (CO2) emission."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"403010" ;
 	skos:prefLabel	"CO2 permits"@en .
@@ -4089,7 +4192,7 @@ ccat:403010
 ccat:403020
 	a	skos:Concept ;
 	skos:broader	ccat:4030 ;
-	skos:definition	"""Permits and allowances specifically for nitrogen oxides (NOx) emissions."""@en ;
+	skos:definition	"Permits and allowances specifically for nitrogen oxides (NOx) emissions."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"403020" ;
 	skos:prefLabel	"NOx permits"@en .
@@ -4097,7 +4200,7 @@ ccat:403020
 ccat:403030
 	a	skos:Concept ;
 	skos:broader	ccat:4030 ;
-	skos:definition	"""Permits and allowances specifically for sulfur dioxide (SO2) emission."""@en ;
+	skos:definition	"Permits and allowances specifically for sulfur dioxide (SO2) emission."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"403030" ;
 	skos:prefLabel	"SO2 permits"@en .
@@ -4107,24 +4210,73 @@ ccat:403040
 	skos:altLabel	"GO"@en , "REC"@en ;
 	skos:broader	ccat:4030 ;
 	skos:closeMatch	wd:Q1478326 , wd:Q2143923 ;
-	skos:definition	"Renewable Energy Certificates (RECs), also known as Green tags, Renewable Energy Credits, Renewable Electricity Certificates, or Tradable Renewable Certificates (TRCs), are tradable, non-tangible energy commodities in the United States that represent proof that 1 megawatt-hour (MWh) of electricity was generated from an eligible renewable energy resource (renewable electricity) and was fed into the shared system of power lines which transport energy. Similarly Guarantees of Origin (GO) is a tracking instrument defined in article 15 of the European Directive 2009/28/EC. A GO labels electricity from renewable sources to provide information to electricity customers on the source of their energy. Guarantees of origin are the only precisely defined instruments evidencing the origin of electricity generated from renewable energy sources."@en ;
+	skos:definition	"Tradable, non-tangible energy commodities that represent proof that 1 megawatt-hour (MWh) of electricity was generated from an eligible renewable energy resource and was fed into the shared system of power lines which transport energy."@en ;
 	skos:exactMatch	wd:Q7313092 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"403040" ;
-	skos:prefLabel	"Renewable Energy Credits/Guarantee of Origin"@en .
+	skos:prefLabel	"Renewable Energy Credits/Guarantee of Origin"@en ;
+	skos:scopeNote	"Tracking instruments as outlined in  <https://resource-solutions.org/wp-content/uploads/2015/07/The-Legal-Basis-for-RECs.pdf>, or following article 15 of the European Directive 2009/28/EC, or similar."@en .
+
+ccat:403050
+	a	skos:Concept ;
+	skos:altLabel	"ERU"@en ;
+	skos:broader	ccat:4030 ;
+	skos:definition	"Emission Reduction Unit that represents a reduction of greenhouse gases under the Joint Implementation mechanism, where it represents one tonne of CO2 equivalent reduced."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"403050" ;
+	skos:prefLabel	"Emission Reduction Unit"@en .
 
 ccat:4040
 	a	skos:Concept ;
 	skos:broader	ccat:40 ;
 	skos:closeMatch	msa:2779948615 , wd:Q7973730 ;
-	skos:definition	"Water market transactions involve the sale or lease of a wide range of ownership interests in water. A water right entitles the owner to divert or pump water from rivers, streams, and groundwater basins. Water rights are the most commonly traded category of ownership interest. Other commonly traded entitlements include shares in groundwater banks, surface reservoir storage rights, and entitlements to treated wastewater."@en ;
+	skos:definition	"Ownership interest in water."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"4040" ;
 	skos:prefLabel	"Commercial Water Rights"@en .
 
+ccat:404010
+	a	skos:Concept ;
+	skos:broader	ccat:4040 ;
+	skos:definition	"Entitlement to divert a river or pump water from a river or lake."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"404010" ;
+	skos:prefLabel	"Diversion Rights"@en .
+
+ccat:404020
+	a	skos:Concept ;
+	skos:broader	ccat:4040 ;
+	skos:definition	"Entitlement to pump groundwater above a certain level."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"404020" ;
+	skos:prefLabel	"Groundwater Rights"@en .
+
+ccat:404030
+	a	skos:Concept ;
+	skos:broader	ccat:4040 ;
+	skos:definition	"Entitlement to use the water in a surface storage reservoir."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"404030" ;
+	skos:prefLabel	"Surface Storage Reservoir Rights"@en .
+
+ccat:404040
+	a	skos:Concept ;
+	skos:broader	ccat:4040 ;
+	skos:definition	"Entitlement to use treated wastewater."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"404040" ;
+	skos:prefLabel	"Treated Wastewater Rights"@en .
+
+ccat:4050
+	a	skos:Concept ;
+	skos:broader	ccat:40 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"4050" ;
+	skos:prefLabel	"Tax and Duties"@en .
+
 ccat:50
 	a	skos:Concept ;
-	skos:definition	"Financials are tradables made up of one or a basket of financial instruments."@en ;
+	skos:definition	"Product whose underlying is, generally, non-physical."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"50" ;
 	skos:prefLabel	"Financials"@en ;
@@ -4141,9 +4293,7 @@ ccat:5010
 ccat:501010
 	a	skos:Concept ;
 	skos:broader	ccat:5010 ;
-	skos:definition	"""A currency is a system of money in common use within a specific environment over time, especially for people in a nation state. Currencies may act as stores of value and be traded between nations in foreign exchange markets, which determine the relative values of the different currencies. Currencies in this sense are either chosen by users or decreed by governments, and each type has limited boundaries of acceptance - i.e. legal tender laws may require a particular unit of account for payments to government agencies.
-
-The foreign exchange market (Forex, FX, or currency market) is a global decentralized or over-the-counter (OTC) market for the trading of currencies."""@en ;
+	skos:definition	"Currency excluding privately issued (digital) currency and notes."@en ;
 	skos:exactMatch	wd:Q8142 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"501010" ;
@@ -4152,19 +4302,25 @@ The foreign exchange market (Forex, FX, or currency market) is a global decentra
 ccat:501020
 	a	skos:Concept ;
 	skos:broader	ccat:5010 ;
-	skos:definition	"""Digital currency is any currency, money, or money-like asset that is primarily managed, stored or exchanged on digital computer systems, especially over the internet. Types of digital currencies include cryptocurrency, virtual currency and central bank digital currency. Digital currency may be recorded on a distributed database on the internet, a centralized electronic computer database owned by a company or bank, within digital files or on a stored-value card.
-
-Non-sovereign digital currency is largely unregulated and issued and usually controlled by its developers and used and accepted electronically among the members of a specific virtual community. The European Banking Authority defines this variant as \"a digital representation of value that is neither issued by a central bank or a public authority, nor necessarily attached to a fiat currency, but is accepted by natural or legal persons as a means of payment and can be transferred, stored or traded electronically.\""""@en ;
+	skos:definition	"Digital currency including virtual currencies or cryptocurrencies."@en ;
 	skos:exactMatch	wd:Q10836209 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"501020" ;
 	skos:prefLabel	"Digital Currency"@en .
 
+ccat:501080
+	a	skos:Concept ;
+	skos:broader	ccat:5010 ;
+	skos:definition	"Portfolio o f selected currencies with a preagreed weighting."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"501080" ;
+	skos:prefLabel	"Currency Basket"@en .
+
 ccat:5020
 	a	skos:Concept ;
 	skos:broader	ccat:50 ;
 	skos:closeMatch	wd:Q3239315 ;
-	skos:definition	"A tradeable debt or rate instrument that provides a return in the form of fixed periodic interest payments and the eventual return of principal at maturity."@en ;
+	skos:definition	"Tradeable debt or rate instrument that provides a return in the form of fixed periodic interest payments and/or the eventual return of principal at maturity."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"5020" ;
 	skos:prefLabel	"Fixed Income"@en .
@@ -4177,12 +4333,12 @@ ccat:502010
 	skos:exactMatch	<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/SovereignBond> , wd:Q2324820 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"502010" ;
-	skos:prefLabel	"Sovereign bonds"@en .
+	skos:prefLabel	"Sovereign bond"@en .
 
 ccat:502020
 	a	skos:Concept ;
 	skos:broader	ccat:5020 ;
-	skos:definition	"Rates with tenors of up to 12 months"@en ;
+	skos:definition	"Rates with tenors of up to 12 months."@en ;
 	skos:exactMatch	wd:Q102113162 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"502020" ;
@@ -4222,85 +4378,131 @@ ccat:502040
 	skos:notation	"502040" ;
 	skos:prefLabel	"Inflation-linked Security"@en .
 
+ccat:502080
+	a	skos:Concept ;
+	skos:broader	ccat:5010 ;
+	skos:definition	"Product that tracks the performance of a basket of fixed-income securities, e.g. a bond index."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"502080" ;
+	skos:prefLabel	"FI Basket"@en ;
+	skos:scopeNote	"A basket of FRAs shall be classified IRS, a basket that is a strip of STIRs shall be classified as STIR."@en .
+
 ccat:5030
 	a	skos:Concept ;
 	skos:broader	ccat:50 ;
-	skos:closeMatch	wd:Q2272475 ;
-	skos:definition	"A statistical measure of change in a representative group of individual data points. These data may be derived from any number of sources, including company performance, prices, productivity, and employment. Excluded are indices made up of probes from different measurements of or surveys about a unique subject, or time aggegrates thereof, like the Platts Dated Brent spot price average, or the Los Angeles Seasonal Strip Rainfall index. Those are to be categorised under their respective concept. "@en ;
+	skos:definition	"Ownership of assets that may have debt and liabilities attached to them."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"5030" ;
-	skos:prefLabel	"Index"@en .
+	skos:prefLabel	"Equity"@en .
 
 ccat:503010
 	a	skos:Concept ;
 	skos:broader	ccat:5030 ;
-	skos:definition	"An index that measures the value of a basket of soft or hard commodities."@en ;
+	skos:definition	"Derivative products with a single stock or ETF as underlying."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"503010" ;
-	skos:prefLabel	"Commodity Index"@en .
+	skos:prefLabel	"Single Stock"@en .
 
 ccat:503020
 	a	skos:Concept ;
 	skos:broader	ccat:5030 ;
-	skos:definition	"""An index that measures a stock market, or a subset of the stock market, that helps investors compare current price levels with past prices to calculate market performance. It is computed from the prices of selected stocks (typically a weighted arithmetic mean).
-
-Two of the primary criteria of an index are that it is investable and transparent: The method of its construction are specified. Investors can invest in a stock market index by buying an index fund, which are structured as either a mutual fund or an exchange-traded fund, and \"track\" an index. The difference between an index fund's performance and the index, if any, is called tracking error. For a list of major stock market indices, see List of stock market indices."""@en ;
-	skos:exactMatch	wd:Q223371 ;
+	skos:definition	"Product that tracks the dividend of a stock or stock index."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"503020" ;
-	skos:prefLabel	"Equity Index"@en .
-
-ccat:503022
-	a	skos:Concept ;
-	skos:broader	ccat:5030 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"503022" ;
-	skos:prefLabel	"Dividend Index"@en .
-
-ccat:503025
-	a	skos:Concept ;
-	skos:broader	ccat:5030 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"503025" ;
-	skos:prefLabel	"Volatility/Variance Index"@en .
+	skos:prefLabel	"Dividend"@en .
 
 ccat:503030
 	a	skos:Concept ;
 	skos:broader	ccat:5030 ;
-	skos:closeMatch	wd:Q1284784 ;
-	skos:definition	"An index that measures the performance of a basket of fixed-income (debt or rate) securities."@en ;
+	skos:definition	"Product that tracks the variance or volatility of a stock or stock index."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"503030" ;
-	skos:prefLabel	"Fixed Income Index"@en .
+	skos:prefLabel	"Variance"@en .
 
-ccat:503040
+ccat:503080
 	a	skos:Concept ;
 	skos:broader	ccat:5030 ;
-	skos:definition	"An index that measures the performance of a basket of currencies or special drawing rights."@en ;
+	skos:definition	"Product that tracks the performance of stock indices."@en ;
 	skos:inScheme	ccat: ;
-	skos:notation	"503040" ;
-	skos:prefLabel	"Currency Index"@en .
+	skos:notation	"503080" ;
+	skos:prefLabel	"Stock Index"@en .
 
-ccat:503045
+ccat:5040
 	a	skos:Concept ;
-	skos:broader	ccat:5030 ;
-	skos:definition	"An index that measures the performance of a basket of digital currencies."@en ;
+	skos:broader	ccat:50 ;
+	skos:definition	"Property consisting of land and the buildings on it, along with its natural resources such as crops, minerals or water."@en ;
 	skos:inScheme	ccat: ;
-	skos:notation	"503045" ;
-	skos:prefLabel	"Digital Currency Index"@en .
+	skos:notation	"5040" ;
+	skos:prefLabel	"Real Estate"@en .
 
-ccat:503050
+ccat:504010
 	a	skos:Concept ;
-	skos:broader	ccat:5030 ;
-	skos:definition	"An index that measures the performance of a basket of real estate properties."@en ;
+	skos:broader	ccat:5040 ;
+	skos:definition	"Product that track the performance of a REIT."@en ;
 	skos:inScheme	ccat: ;
-	skos:notation	"503050" ;
-	skos:prefLabel	"Real Estate Index"@en .
+	skos:notation	"504010" ;
+	skos:prefLabel	"REIT"@en .
 
-ccat:503090
+ccat:504020
 	a	skos:Concept ;
-	skos:broader	ccat:5030 ;
-	skos:definition	"An index that isn't categorised elsewhere."@en ;
+	skos:broader	ccat:5040 ;
+	skos:definition	"Product that track some quality of properties, e.g. rents or average sales prices in a particular area."@en ;
 	skos:inScheme	ccat: ;
-	skos:notation	"503090" ;
+	skos:notation	"504020" ;
+	skos:prefLabel	"Property Market Indicator"@en .
+
+ccat:504080
+	a	skos:Concept ;
+	skos:broader	ccat:5040 ;
+	skos:definition	"Derivative product with a basket of properties or REITs as underlying."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"504080" ;
+	skos:prefLabel	"Property Portfolio"@en .
+
+ccat:5090
+	a	skos:Concept ;
+	skos:broader	ccat:50 ;
+	skos:definition	"Generally non-deliverable product that cannot be classified elsewhere."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"5090" ;
+	skos:prefLabel	"Other Financial"@en .
+
+ccat:509080
+	a	skos:Concept ;
+	skos:broader	ccat:50 ;
+	skos:definition	"Non-deliverable product that tracks the performance of a basket of commodities."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"509080" ;
+	skos:prefLabel	"Commodity Index"@en .
+
+ccat:509090
+	a	skos:Concept ;
+	skos:broader	ccat:50 ;
+	skos:definition	"Product over an index that cannot be categorised elsewhere."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"509090" ;
 	skos:prefLabel	"Other Index"@en .
+
+ccat:90
+	a	skos:Concept ;
+	skos:definition	"Ephemerals are products for the purpose of transition or testing, they might be temporary or not tradable at all."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"90" ;
+	skos:prefLabel	"Ephemerals"@en ;
+	skos:topConceptOf	ccat: .
+
+ccat:9080
+	a	skos:Concept ;
+	skos:broader	ccat:90 ;
+	skos:definition	"Product that can be bought and sold without delivery or payment."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"9080" ;
+	skos:prefLabel	"Test"@en .
+
+ccat:9090
+	a	skos:Concept ;
+	skos:broader	ccat:90 ;
+	skos:definition	"Catch-all category, to be used when no other category fits but it needs to be documented that classification has been tried."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"9090" ;
+	skos:prefLabel	"Unclassified"@en .
