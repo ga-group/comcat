@@ -4,32 +4,39 @@ comcat tree
 - 10  Hards  
   - 1010  Energy  
     - 101010  Crude Oil  
-      - 10101080  Crude Spread  
+      - 10101050  Crude Transfer  
+      - 10101070  Crude Storage  
+      - 10101080  Crude Premium  
       - 10101085  Crack Spread  
-    - 101020  Coal  
-      - 10102010  Anthracite  (Hard Coal)
-      - 10102020  Bituminous Coal  (Thermal Coal, Black Coal)
-      - 10102030  Lignite  
-      - 10102040  Coke  
-    - 101030  Natural Gas  
-      - 10103010  Baseload Gas  
-      - 10103020  Liquefied Natural Gas  (LNG)
-      - 10103030  Liquefied Petroleum Gas  (LPG)
-    - 101040  Refined Products  
-      - 10104010  Heating Oil  
-      - 10104020  Gasoline  (Petrol)
-      - 10104030  Kerosene  
-      - 10104040  Diesel  (Petrodiesel, Gas Oil)
-      - 10104050  Marine Fuel  (Fuel Oil, Bunker)
-      - 10104060  Naphtha  
-      - 10104080  Visco Spread  
-      - 10104090  Other Refined Products  
+    - 101020  Natural Gas  
+      - 10102010  Purified Natural Gas  
+      - 10102020  Liquefied Natural Gas  (LNG)
+      - 10102030  Liquefied Petroleum Gas  (LPG)
+      - 10102040  Natural Gas Condensate  (Condy)
+      - 10102050  Gas Baseload  
+      - 10102055  Pipeline capacity  
+      - 10102080  Gas Premium  
+    - 101030  Refined Products  
+      - 10103010  Heating Oil  
+      - 10103020  Gasoline  (Petrol)
+      - 10103030  Kerosene  (Jet Fuel, Paraffin)
+      - 10103040  Diesel  (Petrodiesel, Gas Oil)
+      - 10103050  Marine Fuel  (Fuel Oil, Bunker, HFO, HSFO, NSFO)
+      - 10103060  Naphtha  
+      - 10103080  Visco Spread  
+      - 10103090  Other Refined Products  
+    - 101040  Coal  
+      - 10104010  Anthracite  (Hard Coal)
+      - 10104020  Bituminous Coal  (Thermal Coal, Black Coal)
+      - 10104030  Lignite  (Brown Coal)
+      - 10104040  Coke  
     - 101050  Electricity  
       - 10105010  Base Load  
       - 10105020  Peak Load  
       - 10105030  Off-peak  
       - 10105040  Shoulder  
       - 10105050  Transmission Rights  
+      - 10105080  Floor/Cap  
   - 1020  Precious Metal  
     - 102010  Gold  
     - 102020  Silver  
@@ -38,6 +45,8 @@ comcat tree
     - 102050  Iridium  
     - 102060  Rhodium  
     - 102070  Ruthenium  
+    - 102075  Osmium  
+    - 102080  Precious Metal Cross  
   - 1030  Base Metal  (Non-ferrous Metal)
     - 103010  Copper  
     - 103020  Aluminium  
@@ -66,25 +75,24 @@ comcat tree
     - 201010  Maize  (Corn)
     - 201020  Rice  
     - 201030  Wheat  
-    - 201035  Durum  
+    - 201035  Durum  (Pasta Wheat)
     - 201040  Barley  
     - 201050  Oats  
     - 201060  Sorghum  
-    - 201065  Pearl Millet  (Bajra, Kambu, Pennisetum glaucum, Sajjey)
+    - 201065  Pearl Millet  (Bajra, Kambu, Sajjey)
     - 201070  Rye  
     - 201075  Triticale  
     - 201080  White Fonio  
     - 201090  Other Cereals and Pseudocereals  
       - 20109010  Buckwheat  
       - 20109020  Quinoa  
-  - 2020  Oil-Bearing Crops and Derived Products  
+  - 2020  Oil-Bearing Crops  
     - 202010  Soybeans  
     - 202020  Rapeseed  (Canola)
-    - 202030  Oil Palm  
+    - 202030  Oil Palm Fruit  
     - 202035  Coconuts  
     - 202040  Cottonseed  
     - 202050  Groundnuts  
-    - 202055  Adzuki Beans  (Azuki Beans)
     - 202090  Other Rosid Seeds  
       - 20209010  Melonseed  (Egusi)
       - 20209020  Castor Beans  
@@ -93,18 +101,17 @@ comcat tree
       - 20209050  Tallowtree Seeds  
       - 20209060  Linseed  
       - 20209065  Hempseed  
-      - 20209070  Guar  
+      - 20209070  Kapok Fruit  
     - 202095  Other Asterid Seeds  
       - 20209510  Sunflower Seed  
       - 20209520  Olives  
       - 20209530  Safflower Seed  
       - 20209535  Sesame Seed  
       - 20209540  Karite Nuts  (Shea Nuts)
-      - 20209545  Kapok Fruit  
     - 202099  Other Oilseeds  
       - 20209910  Poppy Seed  
       - 20209920  Jojoba  (Goat Nut)
-  - 2025  Vegetal Oils  
+  - 2025  Vegetal Oils and Fats  
     - 202510  Oil of Soybeans  
     - 202520  Oil of Rapeseed  
     - 202530  Oil of Palm  (CPO, Crude Palm Oil)
@@ -112,13 +119,18 @@ comcat tree
       - 20253110  RBD Palm Olein  
       - 20253120  Palm Stearin  
       - 20253130  Palm Acid Oil  
-      - 20253135  Palm Fatty Acid Distillate  
-    - 202532  Oil of Palm Kernel  
+      - 20253135  Palm Fatty Acid Distillate  (PFAD)
+    - 202532  Oil of Palm Kernel  (CPKO)
+    - 202533  Processed Oil of Palm Kernel  
+      - 20253310  RBD Palm Kernel Oil  (RBDPKO)
+      - 20253320  Palm Kernel Stearin  
+      - 20253330  Palm Kernel Acid Oil  
+      - 20253335  Palm Kernel Fatty Acid Distillate  (PKFAD)
     - 202535  Oil of Coconuts  (Oil of Copra)
     - 202540  Oil of Cottonseed  
     - 202550  Oil of Groundnuts  
     - 202590  Other Rosid Oils  
-      - 20259010  Melon Seed Oil  
+      - 20259010  Melon Seed Oil  (Ootanga Oil)
       - 20259020  Oil of Castor Beans  
       - 20259025  Hydrogenated Castor Oil  
       - 20259030  Oil of Tung Nuts  (China wood oil)
@@ -127,7 +139,7 @@ comcat tree
       - 20259052  Stillingia Oil  
       - 20259060  Oil of Linseed  
       - 20259065  Oil of Hempseed  
-      - 20259070  Guar Gum  (Guaran)
+      - 20259070  Oil of Kapok  
     - 202595  Other Asterid Oils  
       - 20259510  Oil of Sunflower  
       - 20259520  Virgin Oil of Olives  
@@ -135,7 +147,6 @@ comcat tree
       - 20259530  Oil of Safflower Seed  
       - 20259535  Oil of Sesame Seed  
       - 20259540  Butter of Karite Nuts  (Shea Butter)
-      - 20259545  Oil of Kapok  
       - 20259550  Oil of Mentha  
     - 202599  Other Vegetal Oils  
       - 20259910  Oil of Poppy Seed  
@@ -146,9 +157,9 @@ comcat tree
     - 202610  Cake and Meal of Soybeans  
     - 202620  Cake and Meal of Rapeseed  
     - 202630  Palm Cake and Palm Meal  
-    - 202632  Cake and Meal of Palm Kernel  
+    - 202632  Cake and Meal of Palm Kernel  (PKC, PKM)
     - 202640  Cake and Meal of Cottonseed  
-  - 2030  Sugar Crops and Sweeteners  
+  - 2030  Sugar Crops and Vegetal Sweeteners  
     - 203010  Sugar Cane  
       - 20301010  Cane Sugar  
     - 203020  Sugar Beet  
@@ -158,6 +169,16 @@ comcat tree
     - 203050  Raw Centrifugal Sugar  
       - 20305010  Refined Sugar  
       - 20305020  Molasses  
+    - 203060  Stevia  
+  - 2035  Starches, Gums, and Polysaccharides  
+    - 203510  Corn Starch  
+    - 203520  Potatoe Starch  
+    - 203530  Malt  
+    - 203550  Guar Beans  
+    - 203555  Guar Gum  
+    - 203557  Guar Meal  
+    - 203560  Arabic Gum  
+    - 203570  Adzuki Beans  (Azuki Beans, Red Beans)
   - 2040  Roots and Tubers  
     - 204010  Potatoes  
     - 204015  Sweet Potatoes  
@@ -168,7 +189,7 @@ comcat tree
     - 204060  Chicory Roots  
     - 204090  Other Roots  
   - 2050  Fruits  
-    - 205010  Oranges and Citrus Fruits  
+    - 205010  Citrus Fruits  
       - 20501010  Sweet Oranges  
       - 20501020  Tangerines and Mandarines and Clementines and Satsumas  
       - 20501030  Lemons  
@@ -224,6 +245,7 @@ comcat tree
     - 206070  Pepper  
     - 206075  Pimento  (Allspice)
     - 206090  Other Spices  
+  - 2065  Herbs  
   - 2070  Stimulant Crops  
     - 207010  Green Coffee  
     - 207020  Cocoa Beans  
@@ -239,10 +261,10 @@ comcat tree
     - 251015  Buffaloes  
     - 251020  Sheep  
     - 251025  Goats  
-    - 251030  Swine  (Pigs)
+    - 251030  Swine  (Pigs, Hogs)
     - 251040  Chickens  
     - 251042  Turkeys  
-    - 251045  Ducks  
+    - 251045  Ducks  (Mallards)
     - 251047  Geese  
     - 251048  Pigeons  
     - 251049  Other Birds  
@@ -267,7 +289,7 @@ comcat tree
     - 252090  Other Animal Fats  
   - 2530  Food from Slaughtered Animals  
     - 253010  Meat of Cattle  (Beef)
-    - 253015  Buffalo Meat  
+    - 253015  Buffalo Meat  (Buff, Red Beef)
     - 253020  Meat of Sheep  (Mutton)
     - 253025  Goat Meat  
     - 253030  Pig Meat  (Pork)
@@ -275,7 +297,7 @@ comcat tree
     - 253042  Turkey Meat  
     - 253045  Duck Meat  
     - 253047  Goose Meat  
-    - 253048  Meat of Pigeons  
+    - 253048  Meat of Pigeons  (Squab)
     - 253049  Meat of Other Birds  
     - 253050  Horse Meat  
     - 253055  Meat of Asses  
@@ -314,12 +336,12 @@ comcat tree
       - 25401023  Dry Skim Cow Milk  
       - 25401030  Fresh Whey  
       - 25401031  Condensed Whey  
-      - 25401033  Dry Whey  
+      - 25401033  Dry Whey  (Whey Powder)
       - 25401040  Cheese from Whole Cow Milk  
       - 25401042  Cheese From Skimmed Cow Milk  
       - 25401043  Whey Cheese  
       - 25401045  Processed Cheese  
-      - 25401050  Buttermilk, Curdled Milk, Acidifie  
+      - 25401050  Buttermilk  (Curdled Milk)
       - 25401053  Dry Buttermilk  
       - 25401055  Unconcentrated Yoghurt  
       - 25401056  Concentrated Yoghurt  
@@ -328,6 +350,7 @@ comcat tree
       - 25401070  Reconstitued Milk  
       - 25401080  Products of Natural Milk Constituents  
       - 25401085  Ice Cream and Edible Ice  
+      - 25401090  Other Milk Products  
     - 254015  Buffalo Milk  
     - 254016  Sheep Milk  
     - 254017  Goat Milk  
@@ -359,18 +382,23 @@ comcat tree
     - 301530  Hair of Horses  
     - 301540  Reelable Cocoons  
     - 301590  Other Coarse Hair  
+  - 3020  Oleochemicals  
+    - 302010  Biodiesel  (FAME, Fatty Acid Methyl Ester)
+    - 302020  Polylactic Acid  (PLA)
+    - 302030  Polyamide 11  (PA 11)
   - 3030  Forest Products  
     - 303010  Wood  (Timber)
     - 303015  Sawnwood  (Lumber)
+    - 303020  Plywood  (Blockboard)
+    - 303030  Fibreboard  
+    - 303050  Wood Pellets  
   - 3035  Paper  
     - 303510  Newsprint  
     - 303520  Containerboard  
     - 303530  Pulp  
     - 303550  Recovered Paper  
   - 3040  Rubber and Wax  
-    - 304010  Natural Rubber  
-    - 304015  Natural Gums  
-    - 304016  Arabic Gum  
+    - 304010  Raw Natural Rubber  
     - 304019  Other Resins  
     - 304020  Concentrated Latex  (HA Latex)
     - 304022  Coagulated Latex  
@@ -379,18 +407,18 @@ comcat tree
     - 304030  Vegetable Waxes  
     - 304035  Beeswax  
   - 3050  Inorganic Compounds  
-    - 305010  Sodium Carbonate  (Soda Ash, Washing Soda)
+    - 305010  Sodium Carbonate  (Soda Ash, Washing Soda, E500)
     - 305020  Glass  
     - 305030  Intermetallics  
       - 30503010  Ferrosilicon  
       - 30503020  Manganese Silicide  
   - 3060  Organic Compounds  
     - 306010  Polymers  
-      - 30601010  Polyvinyl Chloride  
-      - 30601020  Polyethylene  
+      - 30601010  Polyvinyl Chloride  (PVC)
+      - 30601020  Polyethylene  (PE)
       - 30601025  Polyethylene Terephthalate  (PET)
-      - 30601030  Polypropylene  
-      - 30601040  Polystyrene  
+      - 30601030  Polypropylene  (PP)
+      - 30601040  Polystyrene  (PS)
     - 306020  Benzenoids  
       - 30602010  Benzene  
       - 30602015  Naphthalene  
@@ -401,6 +429,8 @@ comcat tree
       - 30603010  Methanol  
       - 30603020  Ethanol  
       - 30603025  Ethylene Glycol  
+      - 30603030  Propanol  
+      - 30603040  Butanol  
   - 3070  Fertilizer  
     - 307010  Urea  
     - 307012  Ammonia  
@@ -418,10 +448,13 @@ comcat tree
 - 40  Commoditized  
   - 4010  Freight  
     - 401010  Wet Freight  
+      - 40101010  Dirty Freight  
+      - 40101020  Clean Freight  
+      - 40101030  Gas Freight  
     - 401020  Container Freight  
     - 401025  Dry Bulk Freight  
     - 401030  Air Freight  
-    - 401050  CIF v FOB  
+    - 401050  Cargo Spread  
   - 4020  Weather  
     - 402010  Temperature  
     - 402020  Rainfall  
@@ -430,25 +463,38 @@ comcat tree
     - 403020  NOx permits  
     - 403030  SO2 permits  
     - 403040  Renewable Energy Credits/Guarantee of Origin  (GO, REC)
+    - 403050  Emission Reduction Unit  (ERU)
   - 4040  Commercial Water Rights  
+    - 404010  Diversion Rights  
+    - 404020  Groundwater Rights  
+    - 404030  Surface Storage Reservoir Rights  
+    - 404040  Treated Wastewater Rights  
+  - 4050  Tax and Duties  
 - 50  Financials  
   - 5010  Money  
     - 501010  Currency  
     - 501020  Digital Currency  
+    - 501080  Currency Basket  
   - 5020  Fixed Income  
-    - 502010  Sovereign bonds  (Government bonds)
+    - 502010  Sovereign bond  (Government bonds)
     - 502020  STIR  
     - 502030  IRS  
     - 502032  FRA  
     - 502035  OIS  
     - 502040  Inflation-linked Security  
-  - 5030  Index  
-    - 503010  Commodity Index  
-    - 503020  Equity Index  
-    - 503022  Dividend Index  
-    - 503025  Volatility/Variance Index  
-    - 503030  Fixed Income Index  
-    - 503040  Currency Index  
-    - 503045  Digital Currency Index  
-    - 503050  Real Estate Index  
-    - 503090  Other Index  
+    - 502080  FI Basket  
+  - 5030  Equity  
+    - 503010  Single Stock  
+    - 503020  Dividend  
+    - 503030  Variance  
+    - 503080  Stock Index  
+  - 5040  Real Estate  
+    - 504010  REIT  
+    - 504020  Property Market Indicator  
+    - 504080  Property Portfolio  
+  - 5090  Other Financial  
+    - 509080  Commodity Index  
+    - 509090  Other Index  
+- 90  Ephemerals  
+  - 9080  Test  
+  - 9090  Unclassified  

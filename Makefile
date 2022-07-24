@@ -3,7 +3,7 @@ SHELL := /bin/zsh
 sparql := /home/freundt/usr/apache-jena/bin/sparql
 stardog := STARDOG_JAVA_ARGS='-Dstardog.default.cli.server=http://plutos:5820' /home/freundt/usr/stardog/bin/stardog
 
-all: comcat.skos.ttl canon imported tree.md
+all: comcat.skos.ttl canon imported tree.md tree+def.md
 check: check.comcat.skos
 canon: .comcat.skos.ttl.canon
 imported: .imported.comcat.skos
@@ -47,6 +47,7 @@ check.%: %.ttl shacl/%.shacl.sql .imported.%
 
 tmp/%.out: sql/%.sql .imported.comcat.skos
 	$(csvsql) $< \
+	| sed 's@%0A@\n@' \
 	> $@.t && mv $@.t $@
 
 export.void: tmp/comcat.skos.void
@@ -74,6 +75,9 @@ comcat tree
 endef
 export header
 tree.md: tmp/tree.out
+	mawk -v header="$$header" '(NR==1){print header}{sub("\(\)","",$$0)}NR>1' < $< \
+	> $@.t && mv $@.t $@
+tree+def.md: tmp/tree+def.out
 	mawk -v header="$$header" '(NR==1){print header}{sub("\(\)","",$$0)}NR>1' < $< \
 	> $@.t && mv $@.t $@
 

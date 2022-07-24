@@ -15,6 +15,7 @@ ccat:concept a sh:NodeShape ;
 	sh:property ccat:comp.label ;
 	sh:property ccat:comp.definition ;
 	sh:property ccat:comp.inScheme ;
+	sh:sparql ccat:cons.label ;
 	sh:sparql ccat:cons.notation ;
 	.
 
@@ -56,6 +57,21 @@ ccat:comp.topConceptOf a sh:PropertyShape ;
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
 	sh:hasValue ccat: ;
+	.
+
+ccat:cons.label
+	sh:prefixes ccat: ;
+	sh:message "Labels of different concepts should be different" ;
+	sh:select """
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ccat: <http://data.ga-group.nl/comcat/>
+
+SELECT $this ?value WHERE {
+	$this skos:prefLabel ?value .
+	?that skos:prefLabel ?value .
+	FILTER($this != ?that)
+}
+"""
 	.
 
 ccat:cons.notation

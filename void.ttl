@@ -25,20 +25,20 @@
 
 <http://data.ga-group.nl/comcat/Dataset>
 	a	void:Dataset ;
-	pav:lastRefreshedOn	"2022-07-18T05:09:39.404Z"^^xsd:dateTime ;
+	pav:lastRefreshedOn	"2022-07-26T05:19:23.825Z"^^xsd:dateTime ;
 	void:classPartition	[
 		void:class	<http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 		void:entities	1 ;
 	] , [
 		void:class	owl:Thing ;
-		void:entities	962 ;
+		void:entities	1020 ;
 	] , [
 		void:class	<http://www.w3.org/2004/02/skos/core#Concept> ;
-		void:entities	451 ;
+		void:entities	497 ;
 	] ;
 	void:classes	3 ;
-	void:entities	962 ;
-	void:properties	26 ;
+	void:entities	1020 ;
+	void:properties	27 ;
 	void:propertyPartition	[
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -50,25 +50,30 @@
 		void:property	<http://www.w3.org/2004/02/skos/core#narrowMatch> ;
 		void:triples	5 ;
 	] , [
-		void:distinctObjects	45 ;
-		void:distinctSubjects	30 ;
+		void:distinctObjects	54 ;
+		void:distinctSubjects	31 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#closeMatch> ;
-		void:triples	45 ;
+		void:triples	54 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
 		void:property	<http://purl.org/dc/terms/abstract> ;
 		void:triples	1 ;
 	] , [
-		void:distinctObjects	57 ;
-		void:distinctSubjects	48 ;
-		void:property	<http://www.w3.org/2004/02/skos/core#altLabel> ;
-		void:triples	57 ;
+		void:distinctObjects	19 ;
+		void:distinctSubjects	19 ;
+		void:property	<http://www.w3.org/2004/02/skos/core#scopeNote> ;
+		void:triples	19 ;
 	] , [
-		void:distinctObjects	290 ;
-		void:distinctSubjects	293 ;
+		void:distinctObjects	89 ;
+		void:distinctSubjects	71 ;
+		void:property	<http://www.w3.org/2004/02/skos/core#altLabel> ;
+		void:triples	89 ;
+	] , [
+		void:distinctObjects	346 ;
+		void:distinctSubjects	344 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#definition> ;
-		void:triples	293 ;
+		void:triples	346 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -76,9 +81,9 @@
 		void:triples	1 ;
 	] , [
 		void:distinctObjects	1 ;
-		void:distinctSubjects	5 ;
+		void:distinctSubjects	6 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#topConceptOf> ;
-		void:triples	5 ;
+		void:triples	6 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -96,14 +101,14 @@
 		void:triples	1 ;
 	] , [
 		void:distinctObjects	1 ;
-		void:distinctSubjects	451 ;
+		void:distinctSubjects	497 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#inScheme> ;
-		void:triples	451 ;
+		void:triples	497 ;
 	] , [
-		void:distinctObjects	452 ;
-		void:distinctSubjects	452 ;
+		void:distinctObjects	498 ;
+		void:distinctSubjects	498 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#prefLabel> ;
-		void:triples	452 ;
+		void:triples	498 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -120,20 +125,20 @@
 		void:property	<http://purl.org/dc/terms/modified> ;
 		void:triples	1 ;
 	] , [
-		void:distinctObjects	447 ;
-		void:distinctSubjects	204 ;
-		void:property	<http://www.w3.org/2004/02/skos/core#exactMatch> ;
-		void:triples	453 ;
-	] , [
 		void:distinctObjects	451 ;
-		void:distinctSubjects	451 ;
-		void:property	<http://www.w3.org/2004/02/skos/core#notation> ;
-		void:triples	451 ;
+		void:distinctSubjects	203 ;
+		void:property	<http://www.w3.org/2004/02/skos/core#exactMatch> ;
+		void:triples	457 ;
 	] , [
-		void:distinctObjects	67 ;
-		void:distinctSubjects	446 ;
+		void:distinctObjects	497 ;
+		void:distinctSubjects	497 ;
+		void:property	<http://www.w3.org/2004/02/skos/core#notation> ;
+		void:triples	497 ;
+	] , [
+		void:distinctObjects	74 ;
+		void:distinctSubjects	491 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#broader> ;
-		void:triples	448 ;
+		void:triples	493 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
@@ -141,33 +146,33 @@
 		void:triples	1 ;
 	] , [
 		void:distinctObjects	3 ;
-		void:distinctSubjects	962 ;
+		void:distinctSubjects	1020 ;
 		void:property	rdf:type ;
-		void:triples	1414 ;
+		void:triples	1518 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
 		void:property	<http://purl.org/vocab/vann/preferredNamespacePrefix> ;
 		void:triples	1 ;
 	] , [
-		void:distinctObjects	1 ;
-		void:distinctSubjects	1 ;
+		void:distinctObjects	118 ;
+		void:distinctSubjects	118 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#note> ;
-		void:triples	1 ;
+		void:triples	118 ;
 	] , [
 		void:distinctObjects	1 ;
 		void:distinctSubjects	1 ;
 		void:property	<http://www.omg.org/techprocess/ab/SpecificationMetadata/filename> ;
 		void:triples	1 ;
 	] , [
-		void:distinctObjects	11 ;
-		void:distinctSubjects	17 ;
+		void:distinctObjects	12 ;
+		void:distinctSubjects	18 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#related> ;
-		void:triples	20 ;
+		void:triples	21 ;
 	] , [
 		void:distinctObjects	4 ;
 		void:distinctSubjects	7 ;
 		void:property	<http://www.w3.org/2004/02/skos/core#broadMatch> ;
 		void:triples	7 ;
 	] ;
-	void:triples	4114 .
+	void:triples	4637 .

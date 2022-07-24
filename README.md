@@ -38,3 +38,4 @@ For ease of access the latest versions of the taxonomy can be downloaded here:
 A hierarchical outline of all concepts can be found here:
 
 - [tree](tree)
+- [tree+def](tree+def) including definitions
