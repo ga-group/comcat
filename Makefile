@@ -10,6 +10,7 @@ imported: .imported.comcat.skos
 
 -include secrets.mk
 csvsql := isql $(ISQL_HOST) $(ISQL_USER) $(ISQL_PASS) BANNER=ON CSV=ON VERBOSE=OFF PROMPT=OFF CSV_FIELD_SEPARATOR='	'
+txtsql := isql $(ISQL_HOST) $(ISQL_USER) $(ISQL_PASS) BANNER=OFF CSV=OFF VERBOSE=OFF PROMPT=OFF
 
 .%.ttl.canon: %.ttl
 	rapper -i turtle $< >/dev/null
@@ -46,8 +47,11 @@ check.%: %.ttl shacl/%.shacl.sql .imported.%
 	$(sparql) --results text --data $< --query sql/valrpt.sql
 
 tmp/%.out: sql/%.sql .imported.comcat.skos
+	$(txtsql) $< \
+	> $@.t && mv $@.t $@
+
+tmp/%.csv: sql/%.sql .imported.comcat.skos
 	$(csvsql) $< \
-	| sed 's@%0A@\n@' \
 	> $@.t && mv $@.t $@
 
 export.void: tmp/comcat.skos.void
@@ -75,10 +79,11 @@ comcat tree
 endef
 export header
 tree.md: tmp/tree.out
-	mawk -v header="$$header" '(NR==1){print header}{sub("\(\)","",$$0)}NR>1' < $< \
+	mawk -v header="$$header" 'BEGIN{print header}{sub("\(\)","",$$0)}1' < $< \
 	> $@.t && mv $@.t $@
 tree+def.md: tmp/tree+def.out
-	mawk -v header="$$header" '(NR==1){print header}{sub("\(\)","",$$0)}NR>1' < $< \
+	mawk -v header="$$header" 'BEGIN{print header}{sub("\(\)","",$$0)}1' < $< \
+	| sed 's@%\([[:xdigit:]]\{2\}\)@\&x\1;@g' \
 	> $@.t && mv $@.t $@
 
 tmp/comcat.html: comcat.skos.ttl

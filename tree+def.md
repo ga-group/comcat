@@ -100,7 +100,7 @@ comcat tree
     - #### 103020  Aluminium  
       Silvery-white, soft, non-magnetic and ductile metal in the boron group.
     - #### 103025  North American Special Aluminum Alloy  (NASAAC)
-      Aluminium alloy conforming to the LME NA380.1 specification which is a modification of The Aluminium Association Inc. A380.1 specification (1989).  The alloy has a composition of 8.50%25-9.50%25 Si, 3.00%25-3.50%25 Cu, 0.80%25-1.00%25 Fe, a maximum of 3.00%25 Zn, a maximum of 1.80%25 sludge (Fe + 2Mn + 3Cr), a maximum of 0.50%25 Ni, a maximum of 0.45%25 Mn, a maximum of 0.10%25 Mg, Sn, Pb, Ti, and Cr each.
+      Aluminium alloy conforming to the LME NA380.1 specification which is a modification of The Aluminium Association Inc. A380.1 specification (1989).  The alloy has a composition of 8.50%-9.50% Si, 3.00%-3.50% Cu, 0.80%-1.00% Fe, a maximum of 3.00% Zn, a maximum of 1.80% sludge (Fe + 2Mn + 3Cr), a maximum of 0.50% Ni, a maximum of 0.45% Mn, a maximum of 0.10% Mg, Sn, Pb, Ti, and Cr each.
     - #### 103030  Zinc  
       Slightly brittle metal at room temperature, blue-silvery appearance when oxidation is removed.
     - #### 103040  Nickel  
@@ -116,9 +116,9 @@ comcat tree
     - #### 103510  Pig Iron  
       Obtained by smelting iron ore in a blast furnace as intermediate product in the production of steel.
     - #### 103520  Steel  
-      Alloy of iron with typically a few percent of carbon to improve its strength and fracture resistance, or 11%25 of chromium to produce corrosion and oxidation resistant stainless steel.
+      Alloy of iron with typically a few percent of carbon to improve its strength and fracture resistance, or 11% of chromium to produce corrosion and oxidation resistant stainless steel.
     - #### 103530  Iron Ore  
-      Rocks and minerals from which metallic iron can be economically extracted. The ores are usually rich in iron oxides and vary in colour from dark grey, bright yellow, or deep purple to rusty red. The iron is usually found in the form of magnetite (Fe3O4, 72.4%25 Fe), hematite (Fe2O3, 69.9%25 Fe), goethite (FeO(OH), 62.9%25 Fe), limonite (FeO(OH)%FFC3%FF82%FFC2%FFB7n(H2O), 55%25 Fe) or siderite (FeCO3, 48.2%25 Fe).
+      Rocks and minerals from which metallic iron can be economically extracted. The ores are usually rich in iron oxides and vary in colour from dark grey, bright yellow, or deep purple to rusty red. The iron is usually found in the form of magnetite (Fe3O4, 72.4% Fe), hematite (Fe2O3, 69.9% Fe), goethite (FeO(OH), 62.9% Fe), limonite (FeO(OH)Â·n(H2O), 55% Fe) or siderite (FeCO3, 48.2% Fe).
     - #### 103535  Ferrous Scrap  
         Iron and steel scrap from automobiles, trains, ships, bridges, buildings, railway rails and fasteners, or farming equipment.
     - #### 103540  Bauxite  
@@ -134,11 +134,11 @@ comcat tree
     - #### 104010  Uranium  
       Uranium oxide or Uranium fluoride, extracted from uranium-bearing minerals such as uraninite.
     - #### 104020  Cobalt  
-      Cobalt 99.8%25, cobalt standard grade, cobalt alloy grade, cobalt hydroxide 0%25, cobalt sulfate 20.5%25, or cobalt tetroxide 72.6%25.
+      Cobalt 99.8%, cobalt standard grade, cobalt alloy grade, cobalt hydroxide 0%, cobalt sulfate 20.5%, or cobalt tetroxide 72.6%.
     - #### 104030  Lithium  
-      Lithium carbonate 99%25, or Lithium hydroxide monohydrate 56.5%25.
+      Lithium carbonate 99%, or Lithium hydroxide monohydrate 56.5%.
     - #### 104040  Bismuth  
-      Bismuth 99.99%25 extracted from ores containing bismuth oxide or sulfide
+      Bismuth 99.99% extracted from ores containing bismuth oxide or sulfide
 - #### 20  Softs  
   Soft commodities, or softs, are commodities that, generally, are grown, rather than mined.  Furthermore, softs in this concept scheme are primarily for consumption, i.e. distinct from Materials.
   - #### 2010  Cereals  
@@ -188,7 +188,7 @@ comcat tree
     - #### 202090  Other Rosid Seeds  
       Members of a large clade (monophyletic group) of flowering plants making up more than a quarter of all angiosperms with their about 70,000 species.
       - #### 20209010  Melonseed  (Egusi)
-        Seed of certain cucurbitaceous plants (squash, melon, gourd)."@en ;%0A%09skos:note "Authorities disagree whether the word is used more properly for the seeds of the colocynth, those of a particular large-seeded variety of the watermelon, or generically for those of any cucurbitaceous plant. The characteristics and uses of all these seeds are broadly similar. Major egusi-growing nations include Mali, Burkina Faso, Togo, Ghana, Cote d'Ivoire, Benin, Nigeria, and Cameroon.%0A%0ASpecies from which egusi is derived include Cucumeropsis mannii and Citrullus lanatus.
+        Seed of certain cucurbitaceous plants (squash, melon, gourd).
       - #### 20209020  Castor Beans  
         Seed of a species of perennial flowering plant in the spurge family, Euphorbiaceae.
       - #### 20209030  Tung Nuts  
@@ -580,13 +580,13 @@ comcat tree
     - #### 253015  Buffalo Meat  (Buff, Red Beef)
       Meat of the water buffalo.
     - #### 253020  Meat of Sheep  (Mutton)
-      Meat of domestic sheep, Ovis aries.%0A
+      Meat of domestic sheep (Ovis aries).
     - #### 253025  Goat Meat  
-      Meat of the domestic goat (Capra aegagrus hircus).%0A
+      Meat of the domestic goat (Capra aegagrus hircus).
     - #### 253030  Pig Meat  (Pork)
-      Meat of the domestic pig (Sus scrofa domesticus).%0A
+      Meat of the domestic pig (Sus scrofa domesticus).
     - #### 253040  Chicken Meat  
-      Meat of the domestic chicken (Gallus gallus domesticus).%0A
+      Meat of the domestic chicken (Gallus gallus domesticus).
     - #### 253042  Turkey Meat  
       Meat from turkeys, typically domesticated turkeys but also wild turkeys.
     - #### 253045  Duck Meat  
@@ -666,7 +666,7 @@ comcat tree
       - #### 25401022  Evaporated Skim Milk  
         Same as 25401012, but applied to skim milk.
       - #### 25401023  Dry Skim Cow Milk  
-        Same as 25401013, but from skim milk. Normally does not exceed 1.5%25 fat content.
+        Same as 25401013, but from skim milk. Normally does not exceed 1.5% fat content.
       - #### 25401030  Fresh Whey  
         Liquid part of the milk that remains after the separation of curd in cheese making.
       - #### 25401031  Condensed Whey  
@@ -733,8 +733,8 @@ comcat tree
       Fibre extracted from the bast of plants in the genus Corchorus, primarily Corchorus olitorius, or alternatively Corchorus capsularis.
     - #### 301045  Jute-like Fibre  
       
-    - #### 301048  Abaca  (Manila Hemp, Manila Hemp)
-      Fibre extracted from the leaf-stems of Musa textilis.  Manila envelopes and Manila paper take their name from this fibre.%0A%0AThe name refers to the capital of the Philippines, one of the main producers of Manila hemp. The hatmaking straw made from Manila hemp is called tagal or tagal straw.
+    - #### 301048  Abaca  (Manila Hemp)
+      Fibre extracted from the leaf-stems of Musa textilis.
     - #### 301050  Sisal  
       Decorticated leaf stems or fibre extracted from the leaf-stems of Agave sisalana, possibly dried, brushed and baled.
     - #### 301059  Other Agave Fibres  

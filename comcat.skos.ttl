@@ -941,13 +941,13 @@ ccat:20209010
 	skos:altLabel	"Egusi"@en ;
 	skos:broader	ccat:202090 ;
 	skos:closeMatch	agrovoc:c_12487 ;
-	skos:definition	"""Seed of certain cucurbitaceous plants (squash, melon, gourd).\"@en ;
-	skos:note \"Authorities disagree whether the word is used more properly for the seeds of the colocynth, those of a particular large-seeded variety of the watermelon, or generically for those of any cucurbitaceous plant. The characteristics and uses of all these seeds are broadly similar. Major egusi-growing nations include Mali, Burkina Faso, Togo, Ghana, Cote d'Ivoire, Benin, Nigeria, and Cameroon.
-
-Species from which egusi is derived include Cucumeropsis mannii and Citrullus lanatus."""@en ;
+	skos:definition	"Seed of certain cucurbitaceous plants (squash, melon, gourd)."@en ;
 	skos:exactMatch	wd:Q10771593 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20209010" ;
+	skos:note	"""Authorities disagree whether the word is used more properly for the seeds of the colocynth, those of a particular large-seeded variety of the watermelon, or generically for those of any cucurbitaceous plant. The characteristics and uses of all these seeds are broadly similar. Major egusi-growing nations include Mali, Burkina Faso, Togo, Ghana, Cote d'Ivoire, Benin, Nigeria, and Cameroon.
+
+Species from which egusi is derived include Cucumeropsis mannii and Citrullus lanatus."""@en ;
 	skos:prefLabel	"Melonseed"@en .
 
 ccat:20209020
@@ -2679,7 +2679,7 @@ ccat:253020
 	a	skos:Concept ;
 	skos:altLabel	"Mutton"@en ;
 	skos:broader	ccat:2530 ;
-	skos:definition	"Meat of domestic sheep, Ovis aries.\n"@en ;
+	skos:definition	"Meat of domestic sheep (Ovis aries)."@en ;
 	skos:exactMatch	agrovoc:c_5015 , stw:19021-4 , wd:Q14566073 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253020" ;
@@ -2690,7 +2690,7 @@ ccat:253020
 ccat:253025
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
-	skos:definition	"Meat of the domestic goat (Capra aegagrus hircus).\n"@en ;
+	skos:definition	"Meat of the domestic goat (Capra aegagrus hircus)."@en ;
 	skos:exactMatch	agrovoc:c_15978 , wd:Q449506 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253025" ;
@@ -2702,7 +2702,7 @@ ccat:253030
 	a	skos:Concept ;
 	skos:altLabel	"Pork"@en ;
 	skos:broader	ccat:2530 ;
-	skos:definition	"Meat of the domestic pig (Sus scrofa domesticus).\n"@en ;
+	skos:definition	"Meat of the domestic pig (Sus scrofa domesticus)."@en ;
 	skos:exactMatch	agrovoc:c_6120 , eurovoc:4692 , stw:18219-2 , wd:Q191768 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253030" ;
@@ -2715,7 +2715,7 @@ Pork is not only the most popular meat in the Western world and in Central Europ
 ccat:253040
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
-	skos:definition	"Meat of the domestic chicken (Gallus gallus domesticus).\n"@en ;
+	skos:definition	"Meat of the domestic chicken (Gallus gallus domesticus)."@en ;
 	skos:exactMatch	agrovoc:c_24000 , wd:Q864693 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253040" ;
@@ -3332,12 +3332,11 @@ ccat:301048
 	a	skos:Concept ;
 	skos:altLabel	"Manila Hemp"@en ;
 	skos:broader	ccat:3010 ;
-	skos:definition	"""Manila envelopes and Manila paper take their name from this fibre.
-
-The name refers to the capital of the Philippines, one of the main producers of Manila hemp. The hatmaking straw made from Manila hemp is called tagal or tagal straw."""@en , "Fibre extracted from the leaf-stems of Musa textilis."@en ;
+	skos:definition	"Fibre extracted from the leaf-stems of Musa textilis."@en ;
 	skos:exactMatch	agrovoc:c_4 , wd:Q1814695 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301048" ;
+	skos:note	"""The name refers to the capital of the Philippines, one of the main producers of Manila hemp. The hatmaking straw made from Manila hemp is called tagal or tagal straw."""@en ;
 	skos:prefLabel	"Abaca"@en .
 
 ccat:301050
