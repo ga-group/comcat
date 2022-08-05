@@ -118,7 +118,7 @@ comcat tree
     - #### 103520  Steel  
       Alloy of iron with typically a few percent of carbon to improve its strength and fracture resistance, or 11% of chromium to produce corrosion and oxidation resistant stainless steel.
     - #### 103530  Iron Ore  
-      Rocks and minerals from which metallic iron can be economically extracted. The ores are usually rich in iron oxides and vary in colour from dark grey, bright yellow, or deep purple to rusty red. The iron is usually found in the form of magnetite (Fe3O4, 72.4% Fe), hematite (Fe2O3, 69.9% Fe), goethite (FeO(OH), 62.9% Fe), limonite (FeO(OH)Â·n(H2O), 55% Fe) or siderite (FeCO3, 48.2% Fe).
+      Rocks and minerals from which metallic iron can be economically extracted. The ores are usually rich in iron oxides and vary in colour from dark grey, bright yellow, or deep purple to rusty red. The iron is usually found in the form of magnetite (Fe3O4, 72.4% Fe), hematite (Fe2O3, 69.9% Fe), goethite (FeO(OH), 62.9% Fe), limonite (FeO(OH)·n(H2O), 55% Fe) or siderite (FeCO3, 48.2% Fe).
     - #### 103535  Ferrous Scrap  
         Iron and steel scrap from automobiles, trains, ships, bridges, buildings, railway rails and fasteners, or farming equipment.
     - #### 103540  Bauxite  

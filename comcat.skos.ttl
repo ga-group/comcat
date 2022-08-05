@@ -578,7 +578,7 @@ ccat:103520
 ccat:103530
 	a	skos:Concept ;
 	skos:broader	ccat:1035 ;
-	skos:definition	"Rocks and minerals from which metallic iron can be economically extracted. The ores are usually rich in iron oxides and vary in colour from dark grey, bright yellow, or deep purple to rusty red. The iron is usually found in the form of magnetite (Fe3O4, 72.4% Fe), hematite (Fe2O3, 69.9% Fe), goethite (FeO(OH), 62.9% Fe), limonite (FeO(OH)Â·n(H2O), 55% Fe) or siderite (FeCO3, 48.2% Fe)."@en ;
+	skos:definition	"Rocks and minerals from which metallic iron can be economically extracted. The ores are usually rich in iron oxides and vary in colour from dark grey, bright yellow, or deep purple to rusty red. The iron is usually found in the form of magnetite (Fe3O4, 72.4% Fe), hematite (Fe2O3, 69.9% Fe), goethite (FeO(OH), 62.9% Fe), limonite (FeO(OH)\u00B7n(H2O), 55% Fe) or siderite (FeCO3, 48.2% Fe)."@en ;
 	skos:exactMatch	eurovoc:1933 , stw:14195-3 , wd:Q191552 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"103530" ;
