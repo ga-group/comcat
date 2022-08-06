@@ -171,7 +171,7 @@ comcat tree
       - 20305020  Molasses  
     - 203060  Stevia  
   - 2035  Starches, Gums, and Polysaccharides  
-    - 203510  Corn Starch  
+    - 203510  Corn Starch  (Cornflour)
     - 203520  Potatoe Starch  
     - 203530  Malt  
     - 203550  Guar Beans  
@@ -183,11 +183,11 @@ comcat tree
     - 204010  Potatoes  
     - 204015  Sweet Potatoes  
     - 204020  Yams  
-    - 204030  Cassava  
-    - 204040  Yautia  
-    - 204050  Taro  
-    - 204060  Chicory Roots  
-    - 204090  Other Roots  
+    - 204030  Cassava  (Manioc)
+    - 204040  Taro  
+    - 204045  Yautia  
+    - 204050  Chicory Roots  
+    - 204090  Other Roots or Tubers  
   - 2050  Fruits  
     - 205010  Citrus Fruits  
       - 20501010  Sweet Oranges  
@@ -197,7 +197,6 @@ comcat tree
       - 20501040  Grapefruit  
       - 20501045  Pomelo  
       - 20501090  Other Citrus Fruit  
-    - 205015  Frozen Orange Juice  
     - 205020  Pome Fruits  
       - 20502010  Apples  
       - 20502020  Pears  
@@ -205,7 +204,6 @@ comcat tree
       - 20502090  Other Pome Fruits  
     - 205030  Stone Fruit  (Drupe)
       - 20503010  Cherries  
-      - 20503015  Sour Cherries  
       - 20503020  Apricots  
       - 20503030  Peaches and Nectarines  
       - 20503040  Plums  
@@ -219,9 +217,8 @@ comcat tree
       - 20504060  Cranberries  
       - 20504090  Other Berries  
     - 205050  Tropical Fruits  
-      - 20505010  Bananas  
-      - 20505015  Plantains  (Cooking Bananas)
-      - 20505020  Kiwi Fruit  
+      - 20505010  Bananas and Plantains  
+      - 20505020  Kiwi Fruit  (Chinese gooseberry)
       - 20505030  Mangoes  
       - 20505040  Jujube  
       - 20505050  Avocados  
@@ -232,6 +229,9 @@ comcat tree
       - 20505080  Pineapples  
       - 20505090  Other Tropical Fruit  
     - 205090  Other Fresh Fruit  
+  - 2055  Fruit Juices and Fruit Syrups  
+    - 205510  Juices and Syrups from Citrus Fruits  
+      - 20551010  Frozen Orange Juice  
   - 2060  Spices  
     - 206010  Cardamom  
     - 206020  Cinnamon  

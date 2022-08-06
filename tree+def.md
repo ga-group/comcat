@@ -296,7 +296,7 @@ comcat tree
       - #### 20259550  Oil of Mentha  
         Oil extracted from the leaves of the Mentha plant.
     - #### 202599  Other Vegetal Oils  
-      
+      Any other vegetal oils.
       - #### 20259910  Oil of Poppy Seed  
         Oil extracted from poppy seeds (specifically seeds of Papaver somniferum, the opium poppy).
       - #### 20259920  Jojoba Oil  
@@ -320,33 +320,33 @@ comcat tree
   - #### 2030  Sugar Crops and Vegetal Sweeteners  
     Crops that yield sweet-tasting soluble carbohydrates or substances that when added to food or drink impart the flavour of sweetness.
     - #### 203010  Sugar Cane  
-      
+      Uncut and unshredded sugar canes suitable for milling.
       - #### 20301010  Cane Sugar  
         A non-refined, crystallized material derived from the juices of sugar-cane stalk and consisting either wholly or essentially of sucrose.
     - #### 203020  Sugar Beet  
-      
+      Unsliced, unwashed sugar beets suitable for diffusion.
       - #### 20302010  Beet Sugar  
         A non-refined, crystallized material derived from the juices extracted from the root of the sugar beet and consisting either wholly or essentially of sucrose.
     - #### 203030  Other Sugar Crops  
       Includes minor sugar crops of local importance. In the case of saps, production is to be expressed in liquid equivalent.
     - #### 203040  Non-Centrifugal Sugar  
-      Generally derived from sugar cane through traditional methods without centrifugation.
+      Sugar derived from sugar cane through traditional methods without centrifugation.
     - #### 203050  Raw Centrifugal Sugar  
-      Cane Sugar or Beet Sugar processed by centrifuges.  Processed further it is called Refined Sugar.
+      Cane sugar or beet sugar processed by centrifuges.  Processed further it is called Refined Sugar.
       - #### 20305010  Refined Sugar  
-        Production covers domestic production, plus or minus imports and/or exports of raw centrifugal sugar in terms of refined sugar.
+        Centrifugal sugar where molasses have been removed, 99.7% or higher purity.
       - #### 20305020  Molasses  
-        A by-product of the extraction or refining of beet or cane sugar or of the production of fructose from maize. Used for feed, food, industrial alcohol, alcoholic beverages and ethanol.
+        Residual molasses after refining sugar cane or beets.
     - #### 203060  Stevia  
       Natural sweetener and sugar substitute derived from the leaves of the plant species Stevia rebaudiana.
   - #### 2035  Starches, Gums, and Polysaccharides  
-    
-    - #### 203510  Corn Starch  
-      
+    Most generally, polysaccharides of vegetal origin. Specifically starches from seeds, roots and tubers, or gums in the woody elements of plants or in seed coatings.
+    - #### 203510  Corn Starch  (Cornflour)
+      Starch from the endosperm of maize kernels.
     - #### 203520  Potatoe Starch  
-      
+      Starch extracted from crushed potatoes.
     - #### 203530  Malt  
-      
+      Germinated cereal grain that has been dried (a process known as "malting").
     - #### 203550  Guar Beans  
       Seed of Guar (Cyamopsis tetragonoloba), an annual legume.
     - #### 203555  Guar Gum  
@@ -354,27 +354,27 @@ comcat tree
     - #### 203557  Guar Meal  
       Residue of Guar gum extraction from the Guar bean.
     - #### 203560  Arabic Gum  
-      
+      Dried exudate from the trunks and branches of Acacia senegal or Vachellia (Acacia) seyal in the family Fabaceae (Leguminosae).
     - #### 203570  Adzuki Beans  (Azuki Beans, Red Beans)
       Seed of Vigna angularis.
   - #### 2040  Roots and Tubers  
-    
+    Parts of the plants whose main economic value is in their anchorage or storage organs, roots or tubers, respectively.
     - #### 204010  Potatoes  
       Starchy tuber of the plant Solanum tuberosum.
     - #### 204015  Sweet Potatoes  
       Starchy tubers or Ipomoea batatas from the bindweed or morning glory family, Convolvulaceae.
     - #### 204020  Yams  
-      
-    - #### 204030  Cassava  
-      
-    - #### 204040  Yautia  
-      
-    - #### 204050  Taro  
-      
-    - #### 204060  Chicory Roots  
-      
-    - #### 204090  Other Roots  
-      
+      Starchy tubers of plant species in the genus Dioscorea that form edible tubers.
+    - #### 204030  Cassava  (Manioc)
+      Starchy tubers of Manihot esculenta.
+    - #### 204040  Taro  
+      Starchy corms of Colocasia esculenta.
+    - #### 204045  Yautia  
+      Starchy corms of several plant species in the genus Xanthosoma.
+    - #### 204050  Chicory Roots  
+      Roots of Cichorium intybus.
+    - #### 204090  Other Roots or Tubers  
+      Any other roots or tubers.
   - #### 2050  Fruits  
     The ripened reproductive body of a seed plant 
     - #### 205010  Citrus Fruits  
@@ -382,49 +382,45 @@ comcat tree
       - #### 20501010  Sweet Oranges  
         Fruit of Citrus x sinensis.
       - #### 20501020  Tangerines and Mandarines and Clementines and Satsumas  
-        
+        Fruit of Citrus tangerina, Citrus reticulata, Citrus x clementina, or Citrus unshiu.
       - #### 20501030  Lemons  
-        
+        Fruit of Citrus limon.
       - #### 20501035  Limes  
-        
+        Fruit of the hybrids produced from citrons (Citrus medica), mandarin oranges (Citrus reticulata), or pomeloes (Citrus maxima) and the lime varieties (Citrus hystrix var. micrantha).
       - #### 20501040  Grapefruit  
-        
+        Fruit of Citrus x paradisi.
       - #### 20501045  Pomelo  
-        
+        Fruit of Citrus maxima.
       - #### 20501090  Other Citrus Fruit  
-        
-    - #### 205015  Frozen Orange Juice  
-      
+        Any other fruit of plants in the Citrus genus.
     - #### 205020  Pome Fruits  
       Fruit produced by flowering plants in the subtribe Malinae of the family Rosaceae.
       - #### 20502010  Apples  
-        Fruit produced by an apple tree (Malus domestica).
+        Fruit of Malus domestica.
       - #### 20502020  Pears  
-        
+        Fruit of trees in the genus Pyrus, in particular Pyrus communis, Pyrus x bretschneideri, and Pyrus pyrifolia.
       - #### 20502030  Quinces  
-        
+        Fruit of Cydonia oblonga.
       - #### 20502090  Other Pome Fruits  
         
     - #### 205030  Stone Fruit  (Drupe)
       Fruits of the botanical family Rosaceae that contain a single hard seed, called a stone, pit, or pip.
       - #### 20503010  Cherries  
-        
-      - #### 20503015  Sour Cherries  
-        
+        Fruit of many plants of the genus Prunus different from apricots, e.g. Prunus avium (sweet cherry) or Prunus cerasus (sour cherries).
       - #### 20503020  Apricots  
-        
+        Fruit of several species in the genus Prunus different from cherries, e.g. Prunus armeniaca, Prunus brigantina, etc.
       - #### 20503030  Peaches and Nectarines  
-        
+        Fruit of Prunus persica.
       - #### 20503040  Plums  
-        
+        Fruit of some species in Prunus subg. Prunus, e.g. Prunus domestica.
       - #### 20503090  Other Drupes  
-        
+        Any other drupes.
     - #### 205040  Berries  
       Fruit with fleshy pericarp, containing one or many seeds.
       - #### 20504010  Strawberries  
-        
+        Fruit of Fragaria x ananassa.
       - #### 20504020  Raspberries  
-        
+        Fruit of many plant species in the genus Rubus, most of which in the subgenus Idaeobatus.
       - #### 20504030  Gooseberries  
         
       - #### 20504040  Currants  
@@ -437,32 +433,36 @@ comcat tree
         
     - #### 205050  Tropical Fruits  
       
-      - #### 20505010  Bananas  
-        
-      - #### 20505015  Plantains  (Cooking Bananas)
-        Fruit of Banana cultivars in the genus Musa, generally used in cooking.
-      - #### 20505020  Kiwi Fruit  
-        
+      - #### 20505010  Bananas and Plantains  
+        Fruit of many cultivars in the genus Musa.
+      - #### 20505020  Kiwi Fruit  (Chinese gooseberry)
+        Fruit of several species of woody vines in the genus Actinidia.
       - #### 20505030  Mangoes  
-        
+        Fruit of Mangifera indica.
       - #### 20505040  Jujube  
         Fruit of Ziziphus jujuba.
       - #### 20505050  Avocados  
-        
+        Fruit of Persea americana.
       - #### 20505060  Dates  
-        
+        Fruit of the date palm (Phoenix dactylifera).
       - #### 20505065  Figs  
-        
+        Fruit of Ficus carica.
       - #### 20505068  Jackfruit  
-        
+        Fruit of Artocarpus heterophyllus.
       - #### 20505070  Papayas  
-        
+        Fruit of Carica papaya.
       - #### 20505080  Pineapples  
-        
+        Fruit of Ananas comosus.
       - #### 20505090  Other Tropical Fruit  
-        
+        Any other tropical fruits.
     - #### 205090  Other Fresh Fruit  
-      
+      Any other fruits.
+  - #### 2055  Fruit Juices and Fruit Syrups  
+    Juice is a drink made by extracting or pressing the natural liquid contained in fruit. Fruit syrups (or fruit molasses) are concentrated fruit juices.
+    - #### 205510  Juices and Syrups from Citrus Fruits  
+      Juices and syrups made by pressing citrus fruits.
+      - #### 20551010  Frozen Orange Juice  
+        U.S. Grade A frozen concentrate of sweet oranges with a Brix value of at least 62.5 degrees.
   - #### 2060  Spices  
     Seed, fruit, root, bark, salt, or other plant substance primarily used for flavouring or colouring food.
     - #### 206010  Cardamom  
@@ -492,25 +492,25 @@ comcat tree
   - #### 2065  Herbs  
     Leaves, flowers, or stems of plants used for flavouring or as a garnish.
   - #### 2070  Stimulant Crops  
-    
+    Plants or plant parts that, if activated, e.g. by heating, infusion, etc., stimulate the central nervous system.
     - #### 207010  Green Coffee  
       Stone inside the cherry of the Coffea plant.
     - #### 207020  Cocoa Beans  
       Seeds from the pod of the cacao tree (Theobroma cacao).
     - #### 207025  Carobs  
-      
+      Seeds from the pod of the carob shrub (Ceratonia siliqua).
     - #### 207030  Tea  
-      
+      Cured or fresh leaves of Camellia sinensis, or rarely Camellia taliensis.
     - #### 207035  Mate  
-      
+      Dried or fresh leaves of the Yerba mate (Ilex paraguariensis).
     - #### 207039  Other Tea  
-      
+      Other leaves or plant parts that are consumed by infusion.
     - #### 207040  Tobacco Leaves  
-      
+      Cured or fresh leaves of several plants in the genus Nicotiana.
     - #### 207050  Hops  
-      
+      Wet or dried seed cones (strobiles) of the hop plant (Humulus lupulus).
     - #### 207090  Other Stimulant Crops  
-      
+      Any other plant or plant parts with stimulatory effects.
   - #### 2510  Livestock  
     Domesticated animals raised in an agricultural setting to produce commodities such as food, fibre, and labour.
     - #### 251010  Cattle  

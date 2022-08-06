@@ -1476,6 +1476,7 @@ ccat:20259550
 ccat:202599
 	a	skos:Concept ;
 	skos:broader	ccat:2025 ;
+	skos:definition	"Any other vegetal oils."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"202599" ;
 	skos:prefLabel	"Other Vegetal Oils"@en .
@@ -1596,6 +1597,7 @@ OTHER DERIVED PRODUCTS. In addition to sugar, molasses is also obtained with var
 ccat:203010
 	a	skos:Concept ;
 	skos:broader	ccat:2030 ;
+	skos:definition	"Uncut and unshredded sugar canes suitable for milling."@en ;
 	skos:exactMatch	agrovoc:c_7501 , wd:Q36940 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"203010" ;
@@ -1613,6 +1615,7 @@ ccat:20301010
 ccat:203020
 	a	skos:Concept ;
 	skos:broader	ccat:2030 ;
+	skos:definition	"Unsliced, unwashed sugar beets suitable for diffusion."@en ;
 	skos:exactMatch	agrovoc:c_7499 , wd:Q151964 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"203020" ;
@@ -1638,7 +1641,7 @@ ccat:203030
 ccat:203040
 	a	skos:Concept ;
 	skos:broader	ccat:20301010 , ccat:20302010 ;
-	skos:definition	"Generally derived from sugar cane through traditional methods without centrifugation."@en ;
+	skos:definition	"Sugar derived from sugar cane through traditional methods without centrifugation."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"203040" ;
 	skos:prefLabel	"Non-Centrifugal Sugar"@en .
@@ -1646,7 +1649,7 @@ ccat:203040
 ccat:203050
 	a	skos:Concept ;
 	skos:broader	ccat:20301010 , ccat:20302010 ;
-	skos:definition	"Cane Sugar or Beet Sugar processed by centrifuges.  Processed further it is called Refined Sugar."@en ;
+	skos:definition	"Cane sugar or beet sugar processed by centrifuges.  Processed further it is called Refined Sugar."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"203050" ;
 	skos:prefLabel	"Raw Centrifugal Sugar"@en .
@@ -1654,7 +1657,7 @@ ccat:203050
 ccat:20305010
 	a	skos:Concept ;
 	skos:broader	ccat:203050 ;
-	skos:definition	"Production covers domestic production, plus or minus imports and/or exports of raw centrifugal sugar in terms of refined sugar."@en ;
+	skos:definition	"Centrifugal sugar where molasses have been removed, 99.7% or higher purity."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20305010" ;
 	skos:prefLabel	"Refined Sugar"@en .
@@ -1662,9 +1665,10 @@ ccat:20305010
 ccat:20305020
 	a	skos:Concept ;
 	skos:broader	ccat:203050 ;
-	skos:definition	"A by-product of the extraction or refining of beet or cane sugar or of the production of fructose from maize. Used for feed, food, industrial alcohol, alcoholic beverages and ethanol."@en ;
+	skos:definition	"Residual molasses after refining sugar cane or beets."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20305020" ;
+	skos:note	"""A by-product of the extraction or refining of beet or cane sugar or of the production of fructose from maize. Used for feed, food, industrial alcohol, alcoholic beverages and ethanol."""@en ;
 	skos:prefLabel	"Molasses"@en .
 
 ccat:203060
@@ -1678,13 +1682,16 @@ ccat:203060
 ccat:2035
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
+	skos:definition	"Most generally, polysaccharides of vegetal origin. Specifically starches from seeds, roots and tubers, or gums in the woody elements of plants or in seed coatings."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"2035" ;
 	skos:prefLabel	"Starches, Gums, and Polysaccharides"@en .
 
 ccat:203510
 	a	skos:Concept ;
+	skos:altLabel	"Cornflour"@en ;
 	skos:broader	ccat:2035 ;
+	skos:definition	"Starch from the endosperm of maize kernels."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"203510" ;
 	skos:prefLabel	"Corn Starch"@en .
@@ -1692,6 +1699,7 @@ ccat:203510
 ccat:203520
 	a	skos:Concept ;
 	skos:broader	ccat:2035 ;
+	skos:definition	"Starch extracted from crushed potatoes."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"203520" ;
 	skos:prefLabel	"Potatoe Starch"@en .
@@ -1699,6 +1707,7 @@ ccat:203520
 ccat:203530
 	a	skos:Concept ;
 	skos:broader	ccat:2035 ;
+	skos:definition	"Germinated cereal grain that has been dried (a process known as \"malting\")."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"203530" ;
 	skos:prefLabel	"Malt"@en .
@@ -1732,6 +1741,7 @@ ccat:203557
 ccat:203560
 	a	skos:Concept ;
 	skos:broader	ccat:2035 ;
+	skos:definition	"Dried exudate from the trunks and branches of Acacia senegal or Vachellia (Acacia) seyal in the family Fabaceae (Leguminosae)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"203560" ;
 	skos:prefLabel	"Arabic Gum"@en .
@@ -1750,6 +1760,7 @@ ccat:2040
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
 	skos:closeMatch	agrovoc:c_6651 , agrovoc:c_7998 ;
+	skos:definition	"Parts of the plants whose main economic value is in their anchorage or storage organs, roots or tubers, respectively."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"2040" ;
 	skos:prefLabel	"Roots and Tubers"@en .
@@ -1776,13 +1787,16 @@ ccat:204015
 ccat:204020
 	a	skos:Concept ;
 	skos:broader	ccat:2040 ;
+	skos:definition	"Starchy tubers of plant species in the genus Dioscorea that form edible tubers."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"204020" ;
 	skos:prefLabel	"Yams"@en .
 
 ccat:204030
 	a	skos:Concept ;
+	skos:altLabel	"Manioc"@en ;
 	skos:broader	ccat:2040 ;
+	skos:definition	"""Starchy tubers of Manihot esculenta."""@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"204030" ;
 	skos:prefLabel	"Cassava"@en .
@@ -1790,30 +1804,35 @@ ccat:204030
 ccat:204040
 	a	skos:Concept ;
 	skos:broader	ccat:2040 ;
+	skos:definition	"Starchy corms of Colocasia esculenta."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"204040" ;
+	skos:prefLabel	"Taro"@en .
+
+ccat:204045
+	a	skos:Concept ;
+	skos:broader	ccat:2040 ;
+	skos:definition	"Starchy corms of several plant species in the genus Xanthosoma."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"204045" ;
+	skos:note	"""The genus is native to tropical America but widely cultivated and naturalized in other tropical regions."""@en ;
 	skos:prefLabel	"Yautia"@en .
 
 ccat:204050
 	a	skos:Concept ;
 	skos:broader	ccat:2040 ;
+	skos:definition	"Roots of Cichorium intybus."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"204050" ;
-	skos:prefLabel	"Taro"@en .
-
-ccat:204060
-	a	skos:Concept ;
-	skos:broader	ccat:2040 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"204060" ;
 	skos:prefLabel	"Chicory Roots"@en .
 
 ccat:204090
 	a	skos:Concept ;
 	skos:broader	ccat:2040 ;
+	skos:definition	"Any other roots or tubers."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"204090" ;
-	skos:prefLabel	"Other Roots"@en .
+	skos:prefLabel	"Other Roots or Tubers"@en .
 
 ccat:2050
 	a	skos:Concept ;
@@ -1848,6 +1867,7 @@ ccat:20501010
 ccat:20501020
 	a	skos:Concept ;
 	skos:broader	ccat:205010 ;
+	skos:definition	"Fruit of Citrus tangerina, Citrus reticulata, Citrus x clementina, or Citrus unshiu."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20501020" ;
 	skos:prefLabel	"Tangerines and Mandarines and Clementines and Satsumas"@en .
@@ -1855,6 +1875,7 @@ ccat:20501020
 ccat:20501030
 	a	skos:Concept ;
 	skos:broader	ccat:205010 ;
+	skos:definition	"Fruit of Citrus limon."@en ;
 	skos:exactMatch	agrovoc:c_4259 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20501030" ;
@@ -1863,6 +1884,7 @@ ccat:20501030
 ccat:20501035
 	a	skos:Concept ;
 	skos:broader	ccat:205010 ;
+	skos:definition	"Fruit of the hybrids produced from citrons (Citrus medica), mandarin oranges (Citrus reticulata), or pomeloes (Citrus maxima) and the lime varieties (Citrus hystrix var. micrantha)."@en ;
 	skos:exactMatch	agrovoc:c_4341 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20501035" ;
@@ -1871,14 +1893,17 @@ ccat:20501035
 ccat:20501040
 	a	skos:Concept ;
 	skos:broader	ccat:205010 ;
+	skos:definition	"Fruit of Citrus x paradisi."@en ;
 	skos:exactMatch	agrovoc:c_3358 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20501040" ;
+	skos:note	"""In 2019, world production of grapefruits (combined with pomelos) was 9.3 million tonnes, of which 53% was in China. Other significant producers include Vietnam, United States and Mexico."""@en ;
 	skos:prefLabel	"Grapefruit"@en .
 
 ccat:20501045
 	a	skos:Concept ;
 	skos:broader	ccat:205010 ;
+	skos:definition	"Fruit of Citrus maxima."@en ;
 	skos:exactMatch	agrovoc:c_6367 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20501045" ;
@@ -1887,16 +1912,10 @@ ccat:20501045
 ccat:20501090
 	a	skos:Concept ;
 	skos:broader	ccat:205010 ;
+	skos:definition	"Any other fruit of plants in the Citrus genus."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20501090" ;
 	skos:prefLabel	"Other Citrus Fruit"@en .
-
-ccat:205015
-	a	skos:Concept ;
-	skos:broader	ccat:2050 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"205015" ;
-	skos:prefLabel	"Frozen Orange Juice"@en .
 
 ccat:205020
 	a	skos:Concept ;
@@ -1910,7 +1929,7 @@ ccat:205020
 ccat:20502010
 	a	skos:Concept ;
 	skos:broader	ccat:205020 ;
-	skos:definition	"Fruit produced by an apple tree (Malus domestica)."@en ;
+	skos:definition	"Fruit of Malus domestica."@en ;
 	skos:exactMatch	agrovoc:c_541 , stw:19014-1 , wd:Q89 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20502010" ;
@@ -1920,6 +1939,7 @@ ccat:20502010
 ccat:20502020
 	a	skos:Concept ;
 	skos:broader	ccat:205020 ;
+	skos:definition	"Fruit of trees in the genus Pyrus, in particular Pyrus communis, Pyrus x bretschneideri, and Pyrus pyrifolia."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20502020" ;
 	skos:prefLabel	"Pears"@en .
@@ -1927,6 +1947,7 @@ ccat:20502020
 ccat:20502030
 	a	skos:Concept ;
 	skos:broader	ccat:205020 ;
+	skos:definition	"Fruit of Cydonia oblonga."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20502030" ;
 	skos:prefLabel	"Quinces"@en .
@@ -1951,20 +1972,15 @@ ccat:205030
 ccat:20503010
 	a	skos:Concept ;
 	skos:broader	ccat:205030 ;
+	skos:definition	"Fruit of many plants of the genus Prunus different from apricots, e.g. Prunus avium (sweet cherry) or Prunus cerasus (sour cherries)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20503010" ;
 	skos:prefLabel	"Cherries"@en .
 
-ccat:20503015
-	a	skos:Concept ;
-	skos:broader	ccat:205030 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"20503015" ;
-	skos:prefLabel	"Sour Cherries"@en .
-
 ccat:20503020
 	a	skos:Concept ;
 	skos:broader	ccat:205030 ;
+	skos:definition	"Fruit of several species in the genus Prunus different from cherries, e.g. Prunus armeniaca, Prunus brigantina, etc."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20503020" ;
 	skos:prefLabel	"Apricots"@en .
@@ -1972,13 +1988,16 @@ ccat:20503020
 ccat:20503030
 	a	skos:Concept ;
 	skos:broader	ccat:205030 ;
+	skos:definition	"Fruit of Prunus persica."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20503030" ;
+	skos:note	"""Peaches and nectarines are the same species, though they are regarded commercially as different fruits. The skin of nectarines lacks the fuzz (fruit-skin trichomes) that peach skin has; a mutation in a single gene (MYB25) is thought to be responsible for the difference between the two."""@en ;
 	skos:prefLabel	"Peaches and Nectarines"@en .
 
 ccat:20503040
 	a	skos:Concept ;
 	skos:broader	ccat:205030 ;
+	skos:definition	"Fruit of some species in Prunus subg. Prunus, e.g. Prunus domestica."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20503040" ;
 	skos:prefLabel	"Plums"@en .
@@ -1986,6 +2005,7 @@ ccat:20503040
 ccat:20503090
 	a	skos:Concept ;
 	skos:broader	ccat:205030 ;
+	skos:definition	"Any other drupes."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20503090" ;
 	skos:prefLabel	"Other Drupes"@en .
@@ -2002,15 +2022,21 @@ ccat:205040
 ccat:20504010
 	a	skos:Concept ;
 	skos:broader	ccat:205040 ;
+	skos:definition	"Fruit of Fragaria x ananassa."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20504010" ;
+	skos:note	"""In 2020, world production of strawberries was 8.9 million tonnes, led by China with 38% of the total, and the United States and Egypt as other significant producers.
+
+Due the relatively fragile nature of the strawberry, approximately 35 percent of the $2.2 billion United States crop was spoiled in 2020. This led to an Idaho company planning to launch gene-edited strawberries in the near future in an effort to make them more durable and hardier. In the U.S. it costs growers around $35,000 per acre to plant and $35,000 per acre to harvest strawberries now, and more durable berries might reduce the rate of spoilage."""@en ;
 	skos:prefLabel	"Strawberries"@en .
 
 ccat:20504020
 	a	skos:Concept ;
 	skos:broader	ccat:205040 ;
+	skos:definition	"Fruit of many plant species in the genus Rubus, most of which in the subgenus Idaeobatus."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20504020" ;
+	skos:note	"""In 2020, world production of raspberries was 895,771 tonnes, led by Russia with 20% of the world total. Other major producers were Mexico, Poland, Serbia, and the United States."""@en ;
 	skos:prefLabel	"Raspberries"@en .
 
 ccat:20504030
@@ -2059,22 +2085,17 @@ ccat:205050
 ccat:20505010
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of many cultivars in the genus Musa."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505010" ;
-	skos:prefLabel	"Bananas"@en .
-
-ccat:20505015
-	a	skos:Concept ;
-	skos:altLabel	"Cooking Bananas"@en ;
-	skos:broader	ccat:205050 ;
-	skos:definition	"Fruit of Banana cultivars in the genus Musa, generally used in cooking."@en ;
-	skos:inScheme	ccat: ;
-	skos:notation	"20505015" ;
-	skos:prefLabel	"Plantains"@en .
+	skos:prefLabel	"Bananas and Plantains"@en ;
+	skos:scopeNote	"""Plantains are more starchy and less sweet; they are eaten cooked rather than raw; they have thicker skin, which may be green, yellow or black; and they can be used at any stage of ripeness."""@en .
 
 ccat:20505020
 	a	skos:Concept ;
+	skos:altLabel	"Chinese gooseberry"@en ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of several species of woody vines in the genus Actinidia."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505020" ;
 	skos:prefLabel	"Kiwi Fruit"@en .
@@ -2082,6 +2103,7 @@ ccat:20505020
 ccat:20505030
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of Mangifera indica."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505030" ;
 	skos:prefLabel	"Mangoes"@en .
@@ -2098,6 +2120,7 @@ ccat:20505040
 ccat:20505050
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of Persea americana."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505050" ;
 	skos:prefLabel	"Avocados"@en .
@@ -2105,6 +2128,7 @@ ccat:20505050
 ccat:20505060
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of the date palm (Phoenix dactylifera)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505060" ;
 	skos:prefLabel	"Dates"@en .
@@ -2112,6 +2136,7 @@ ccat:20505060
 ccat:20505065
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of Ficus carica."@en ;
 	skos:exactMatch	agrovoc:c_10840 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505065" ;
@@ -2120,6 +2145,7 @@ ccat:20505065
 ccat:20505068
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of Artocarpus heterophyllus."@en ;
 	skos:exactMatch	agrovoc:c_10840 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505068" ;
@@ -2128,6 +2154,7 @@ ccat:20505068
 ccat:20505070
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of Carica papaya."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505070" ;
 	skos:prefLabel	"Papayas"@en .
@@ -2135,6 +2162,7 @@ ccat:20505070
 ccat:20505080
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Fruit of Ananas comosus."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505080" ;
 	skos:prefLabel	"Pineapples"@en .
@@ -2142,6 +2170,7 @@ ccat:20505080
 ccat:20505090
 	a	skos:Concept ;
 	skos:broader	ccat:205050 ;
+	skos:definition	"Any other tropical fruits."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20505090" ;
 	skos:prefLabel	"Other Tropical Fruit"@en .
@@ -2149,9 +2178,34 @@ ccat:20505090
 ccat:205090
 	a	skos:Concept ;
 	skos:broader	ccat:2050 ;
+	skos:definition	"Any other fruits."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"205090" ;
 	skos:prefLabel	"Other Fresh Fruit"@en .
+
+ccat:2055
+	a	skos:Concept ;
+	skos:broader	ccat:20 ;
+	skos:definition	"Juice is a drink made by extracting or pressing the natural liquid contained in fruit. Fruit syrups (or fruit molasses) are concentrated fruit juices."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"2055" ;
+	skos:prefLabel	"Fruit Juices and Fruit Syrups"@en .
+
+ccat:205510
+	a	skos:Concept ;
+	skos:broader	ccat:2055 ;
+	skos:definition	"Juices and syrups made by pressing citrus fruits."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"205510" ;
+	skos:prefLabel	"Juices and Syrups from Citrus Fruits"@en .
+
+ccat:20551010
+	a	skos:Concept ;
+	skos:broader	ccat:205510 ;
+	skos:definition	"U.S. Grade A frozen concentrate of sweet oranges with a Brix value of at least 62.5 degrees."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20551010" ;
+	skos:prefLabel	"Frozen Orange Juice"@en .
 
 ccat:2060
 	a	skos:Concept ;
@@ -2300,6 +2354,7 @@ ccat:2065
 ccat:2070
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
+	skos:definition	"Plants or plant parts that, if activated, e.g. by heating, infusion, etc., stimulate the central nervous system."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"2070" ;
 	skos:prefLabel	"Stimulant Crops"@en .
@@ -2326,6 +2381,7 @@ ccat:207020
 ccat:207025
 	a	skos:Concept ;
 	skos:broader	ccat:2070 ;
+	skos:definition	"Seeds from the pod of the carob shrub (Ceratonia siliqua)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"207025" ;
 	skos:prefLabel	"Carobs"@en .
@@ -2333,6 +2389,7 @@ ccat:207025
 ccat:207030
 	a	skos:Concept ;
 	skos:broader	ccat:2070 ;
+	skos:definition	"Cured or fresh leaves of Camellia sinensis, or rarely Camellia taliensis."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"207030" ;
 	skos:prefLabel	"Tea"@en .
@@ -2340,6 +2397,7 @@ ccat:207030
 ccat:207035
 	a	skos:Concept ;
 	skos:broader	ccat:2070 ;
+	skos:definition	"Dried or fresh leaves of the Yerba mate (Ilex paraguariensis)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"207035" ;
 	skos:prefLabel	"Mate"@en .
@@ -2347,6 +2405,7 @@ ccat:207035
 ccat:207039
 	a	skos:Concept ;
 	skos:broader	ccat:2070 ;
+	skos:definition	"Other leaves or plant parts that are consumed by infusion."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"207039" ;
 	skos:prefLabel	"Other Tea"@en .
@@ -2354,6 +2413,7 @@ ccat:207039
 ccat:207040
 	a	skos:Concept ;
 	skos:broader	ccat:2070 ;
+	skos:definition	"Cured or fresh leaves of several plants in the genus Nicotiana."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"207040" ;
 	skos:prefLabel	"Tobacco Leaves"@en .
@@ -2361,6 +2421,7 @@ ccat:207040
 ccat:207050
 	a	skos:Concept ;
 	skos:broader	ccat:2070 ;
+	skos:definition	"Wet or dried seed cones (strobiles) of the hop plant (Humulus lupulus)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"207050" ;
 	skos:prefLabel	"Hops"@en .
@@ -2368,6 +2429,7 @@ ccat:207050
 ccat:207090
 	a	skos:Concept ;
 	skos:broader	ccat:2070 ;
+	skos:definition	"Any other plant or plant parts with stimulatory effects."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"207090" ;
 	skos:prefLabel	"Other Stimulant Crops"@en .
