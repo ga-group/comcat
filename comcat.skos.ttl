@@ -1955,6 +1955,7 @@ ccat:20502030
 ccat:20502090
 	a	skos:Concept ;
 	skos:broader	ccat:205020 ;
+	skos:definition	"Any other fruit of plants in the subtribe Malinae."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20502090" ;
 	skos:prefLabel	"Other Pome Fruits"@en .
@@ -2042,6 +2043,7 @@ ccat:20504020
 ccat:20504030
 	a	skos:Concept ;
 	skos:broader	ccat:205040 ;
+	skos:definition	"Fruit of many species of Ribes that are not currants, e.g. Ribes uva-crispa."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20504030" ;
 	skos:prefLabel	"Gooseberries"@en .
@@ -2049,6 +2051,7 @@ ccat:20504030
 ccat:20504040
 	a	skos:Concept ;
 	skos:broader	ccat:205040 ;
+	skos:definition	"Fruit of many species of Ribes that are not gooseberries, e.g. Ribes nigrum, Ribes rubrum."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20504040" ;
 	skos:prefLabel	"Currants"@en .
@@ -2056,6 +2059,7 @@ ccat:20504040
 ccat:20504050
 	a	skos:Concept ;
 	skos:broader	ccat:205040 ;
+	skos:definition	"Fruit of species in the section Cyanococcus within the genus Vaccinium, e.g. Vaccinium caesariense."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20504050" ;
 	skos:prefLabel	"Blueberries"@en .
@@ -2063,6 +2067,7 @@ ccat:20504050
 ccat:20504060
 	a	skos:Concept ;
 	skos:broader	ccat:205040 ;
+	skos:definition	"Fruit of species in the subgenus Oxycoccus of the genus Vaccinium, e.g. Vaccinium oxycoccos."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20504060" ;
 	skos:prefLabel	"Cranberries"@en .
@@ -2070,6 +2075,7 @@ ccat:20504060
 ccat:20504090
 	a	skos:Concept ;
 	skos:broader	ccat:205040 ;
+	skos:definition	"Fruit of any other shrubs and bushes whose fruits are berries, excluding those that are classified as tropical fruits."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"20504090" ;
 	skos:prefLabel	"Other Berries"@en .
@@ -2077,6 +2083,7 @@ ccat:20504090
 ccat:205050
 	a	skos:Concept ;
 	skos:broader	ccat:2050 ;
+	skos:definition	"Tropical fruit is any fruit produced by a tree native to the tropics. The tropics are generally defined as the region of the globe between the Tropic of Cancer and the Tropic of Capricorn."@en ;
 	skos:exactMatch	agrovoc:c_7974 , stw:14117-2 , wd:Q844144 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"205050" ;
@@ -2336,6 +2343,7 @@ ccat:206075
 ccat:206090
 	a	skos:Concept ;
 	skos:broader	ccat:2060 ;
+	skos:definition	"Any other spices."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"206090" ;
 	skos:prefLabel	"Other Spices"@en .

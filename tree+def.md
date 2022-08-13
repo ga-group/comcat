@@ -402,7 +402,7 @@ comcat tree
       - #### 20502030  Quinces  
         Fruit of Cydonia oblonga.
       - #### 20502090  Other Pome Fruits  
-        
+        Any other fruit of plants in the subtribe Malinae.
     - #### 205030  Stone Fruit  (Drupe)
       Fruits of the botanical family Rosaceae that contain a single hard seed, called a stone, pit, or pip.
       - #### 20503010  Cherries  
@@ -422,17 +422,17 @@ comcat tree
       - #### 20504020  Raspberries  
         Fruit of many plant species in the genus Rubus, most of which in the subgenus Idaeobatus.
       - #### 20504030  Gooseberries  
-        
+        Fruit of many species of Ribes that are not currants, e.g. Ribes uva-crispa.
       - #### 20504040  Currants  
-        
+        Fruit of many species of Ribes that are not gooseberries, e.g. Ribes nigrum, Ribes rubrum.
       - #### 20504050  Blueberries  
-        
+        Fruit of species in the section Cyanococcus within the genus Vaccinium, e.g. Vaccinium caesariense.
       - #### 20504060  Cranberries  
-        
+        Fruit of species in the subgenus Oxycoccus of the genus Vaccinium, e.g. Vaccinium oxycoccos.
       - #### 20504090  Other Berries  
-        
+        Fruit of any other shrubs and bushes whose fruits are berries, excluding those that are classified as tropical fruits.
     - #### 205050  Tropical Fruits  
-      
+      Tropical fruit is any fruit produced by a tree native to the tropics. The tropics are generally defined as the region of the globe between the Tropic of Cancer and the Tropic of Capricorn.
       - #### 20505010  Bananas and Plantains  
         Fruit of many cultivars in the genus Musa.
       - #### 20505020  Kiwi Fruit  (Chinese gooseberry)
@@ -488,7 +488,7 @@ comcat tree
     - #### 206075  Pimento  (Allspice)
       Dried unripe berry of Pimenta dioica.
     - #### 206090  Other Spices  
-      
+      Any other spices.
   - #### 2065  Herbs  
     Leaves, flowers, or stems of plants used for flavouring or as a garnish.
   - #### 2070  Stimulant Crops  
