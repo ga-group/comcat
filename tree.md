@@ -178,7 +178,6 @@ comcat tree
     - 203555  Guar Gum  
     - 203557  Guar Meal  
     - 203560  Arabic Gum  
-    - 203570  Adzuki Beans  (Azuki Beans, Red Beans)
   - 2040  Roots and Tubers  
     - 204010  Potatoes  
     - 204015  Sweet Potatoes  
@@ -188,6 +187,9 @@ comcat tree
     - 204045  Yautia  
     - 204050  Chicory Roots  
     - 204090  Other Roots or Tubers  
+  - 2045  Legumes and Pulses  
+    - 204510  Chickpeas  (Bengal Gram)
+    - 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
   - 2050  Fruits  
     - 205010  Citrus Fruits  
       - 20501010  Sweet Oranges  
@@ -232,6 +234,8 @@ comcat tree
   - 2055  Fruit Juices and Fruit Syrups  
     - 205510  Juices and Syrups from Citrus Fruits  
       - 20551010  Frozen Orange Juice  
+    - 205520  Juices and Syrups from Pome Fruits  
+      - 20552010  Apple Juice Concentrate  
   - 2060  Spices  
     - 206010  Cardamom  
     - 206020  Cinnamon  
@@ -269,7 +273,7 @@ comcat tree
     - 251048  Pigeons  
     - 251049  Other Birds  
     - 251050  Horses  
-    - 251055  Asses  
+    - 251055  Asses  (Donkey)
     - 251058  Mules  
     - 251060  Camels  
     - 251069  Other Camelids  
@@ -277,15 +281,16 @@ comcat tree
     - 251079  Other Rodents  
     - 251090  Other Live Animals  
     - 251095  Other Non-Food Live Animals  
-  - 2520  Animal Fats  
-    - 252010  Fat of Cattle  
+  - 2520  Animal Oils and Fats  
+    - 252010  Fat of Cattle  (Beef Tallow)
     - 252015  Fat of Buffalo  
-    - 252020  Fat of Sheep  
+    - 252020  Fat of Sheep  (Mutton Tallow)
     - 252025  Fat of Goats  
-    - 252030  Fat of Pigs  
+    - 252030  Fat of Pigs  (Lard)
     - 252040  Fat of Poultry  
     - 252060  Fat of Camels  
     - 252069  Fat of Other Camelids  
+    - 252080  Oil of Oily Fish  
     - 252090  Other Animal Fats  
   - 2530  Food from Slaughtered Animals  
     - 253010  Meat of Cattle  (Beef)
@@ -308,19 +313,16 @@ comcat tree
     - 253079  Meat of other Domestic Rodents  
     - 253080  Gutted Iced Tuna  
     - 253085  Gutted Iced Salmon  
+    - 253089  Other Gutted Iced Oily Fish  
     - 253090  Other Meat  
-    - 253095  Other Offals  
+    - 253095  Offal  
   - 2535  Meat Products and Meat Preparations  
     - 253510  Dried Meat  
-    - 253520  Meat Meal  
+    - 253520  Meat and Bone Meal  (MBM)
     - 253525  Blood Meal  
-    - 253530  Lard Stearine and Lard Oil  
-    - 253535  Tallow  
-    - 253540  Indigenous Meat  
-    - 253550  Biological Meat  
-    - 253590  Other Prepared Meat  
-    - 253592  Other Fat Preparations  
-    - 253595  Other Food Preparations  
+    - 253540  Indigenous Meat  (Bushmeat)
+    - 253550  Biological Meat  (Organic Meat)
+    - 253590  Other Meat Preparations  
   - 2540  Food from Live Animals  
     - 254010  Cow Milk  
       - 25401010  Standardized Milk  
@@ -357,7 +359,8 @@ comcat tree
     - 254018  Camel Milk  
     - 254019  Other Milk  
     - 254020  Hen Eggs  (Chicken Eggs)
-    - 254029  Other Eggs  
+    - 254022  Duck Eggs  
+    - 254029  Other Bird Eggs  
     - 254030  Honey  
 - 30  Materials  
   - 3010  Fibres of Vegetal Origin  
@@ -373,7 +376,7 @@ comcat tree
     - 301060  Kapok Fibre  
     - 301070  Ramie  
     - 301080  Coir  
-    - 301090  Other Fibre Crops  
+    - 301090  Other Crop Fibre  
   - 3015  Fibres of Animal Origin  
     - 301510  Greasy Wool  
     - 301515  Fine Hair  
@@ -381,7 +384,7 @@ comcat tree
     - 301525  Fine Goat Hair  
     - 301530  Hair of Horses  
     - 301540  Reelable Cocoons  
-    - 301590  Other Coarse Hair  
+    - 301590  Other Hair  
   - 3020  Oleochemicals  
     - 302010  Biodiesel  (FAME, Fatty Acid Methyl Ester)
     - 302020  Polylactic Acid  (PLA)
@@ -404,7 +407,7 @@ comcat tree
     - 304022  Coagulated Latex  
     - 304025  Technically Specified Rubber  (TSR)
     - 304027  Ribbed Smoked Sheet Rubber  (RSS Rubber)
-    - 304030  Vegetable Waxes  
+    - 304030  Vegetal Wax  
     - 304035  Beeswax  
   - 3050  Inorganic Compounds  
     - 305010  Sodium Carbonate  (Soda Ash, Washing Soda, E500)
@@ -432,8 +435,9 @@ comcat tree
       - 30603030  Propanol  
       - 30603040  Butanol  
   - 3070  Fertilizer  
-    - 307010  Urea  
+    - 307010  Urea  (Carbamide)
     - 307012  Ammonia  
+    - 307013  Ammonium Nitrate  
     - 307015  UAN  (Urea Ammonium Nitrate)
     - 307020  DAP  (Diamidophosphate)
     - 307025  MAP  (Monoammonium phosphate)

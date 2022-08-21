@@ -355,8 +355,6 @@ comcat tree
       Residue of Guar gum extraction from the Guar bean.
     - #### 203560  Arabic Gum  
       Dried exudate from the trunks and branches of Acacia senegal or Vachellia (Acacia) seyal in the family Fabaceae (Leguminosae).
-    - #### 203570  Adzuki Beans  (Azuki Beans, Red Beans)
-      Seed of Vigna angularis.
   - #### 2040  Roots and Tubers  
     Parts of the plants whose main economic value is in their anchorage or storage organs, roots or tubers, respectively.
     - #### 204010  Potatoes  
@@ -375,6 +373,12 @@ comcat tree
       Roots of Cichorium intybus.
     - #### 204090  Other Roots or Tubers  
       Any other roots or tubers.
+  - #### 2045  Legumes and Pulses  
+    Fruits or seeds of plants in the family Fabaceae (or Leguminosae). Either fresh (legumes) or dried (pulses).
+    - #### 204510  Chickpeas  (Bengal Gram)
+      Seed of annual legume Cicer arietinum.
+    - #### 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
+      Seed of Vigna angularis.
   - #### 2050  Fruits  
     The ripened reproductive body of a seed plant 
     - #### 205010  Citrus Fruits  
@@ -463,6 +467,10 @@ comcat tree
       Juices and syrups made by pressing citrus fruits.
       - #### 20551010  Frozen Orange Juice  
         U.S. Grade A frozen concentrate of sweet oranges with a Brix value of at least 62.5 degrees.
+    - #### 205520  Juices and Syrups from Pome Fruits  
+      Juices and syrups made by pressing pome fruits.
+      - #### 20552010  Apple Juice Concentrate  
+        Concentrate of pressed apples.
   - #### 2060  Spices  
     Seed, fruit, root, bark, salt, or other plant substance primarily used for flavouring or colouring food.
     - #### 206010  Cardamom  
@@ -514,65 +522,67 @@ comcat tree
   - #### 2510  Livestock  
     Domesticated animals raised in an agricultural setting to produce commodities such as food, fibre, and labour.
     - #### 251010  Cattle  
-      Large domesticated ungulates of the species Bos taurus.
+      Large domesticated ungulates in the species Bos taurus.
     - #### 251015  Buffaloes  
-      Domesticated animal of the species Bubalus bualis.
+      Domesticated animal in the species Bubalus bualis.
     - #### 251020  Sheep  
-      Domesticated animal of the species Ovis aries.
+      Domesticated animal in the species Ovis aries.
     - #### 251025  Goats  
-      Domesticated animal of the subspecies Capra aegagrus hircus.
+      Domesticated animal in the subspecies Capra aegagrus hircus.
     - #### 251030  Swine  (Pigs, Hogs)
-      Domesticated even-toed ungulate of the species Sus scrofa domesticus.
+      Domesticated even-toed ungulate in the species Sus scrofa domesticus.
     - #### 251040  Chickens  
-      Domesticated animal of the subspecies Gallus gallus domesticus, a subspecies of the red junglefowl.
+      Domesticated animal in the subspecies Gallus gallus domesticus, a subspecies of the red junglefowl.
     - #### 251042  Turkeys  
-      Domesticated aninmal of the species Meleagris gallopavo domesticus.
+      Domesticated aninmal in the species Meleagris gallopavo domesticus.
     - #### 251045  Ducks  (Mallards)
-      Domesticated animal of the subspecies Anas platyrhynchos domesticus.
+      Domesticated animal in the subspecies Anas platyrhynchos domesticus.
     - #### 251047  Geese  
-      Domesticated animal of the species Anser anser domesticus or Anser cygnoides domesticus.
+      Domesticated animal in the species Anser anser domesticus or Anser cygnoides domesticus.
     - #### 251048  Pigeons  
-      Domesticated bird of the subspecies Columba livia domestica.
+      Domesticated bird in the subspecies Columba livia domestica.
     - #### 251049  Other Birds  
       Other birds, gamebirds, or domestic birds bred or hunted for consumption, such as quail, ostrich, Guinea fowl, etc.
     - #### 251050  Horses  
-      Domesticated odd-toed, hoofed mammal of the species Equus ferus caballus.
-    - #### 251055  Asses  
-      
+      Domesticated odd-toed, hoofed mammal in the species Equus ferus caballus.
+    - #### 251055  Asses  (Donkey)
+      Domesticated hoofed mammal in the subspecies Equus africanus asinus
     - #### 251058  Mules  
-      
+      Domestic equine hybrid between a donkey and a horse, Equus africanus asinus x Equus ferus caballus
     - #### 251060  Camels  
-      
+      Even-toed ungulate in the genus Camelus that bears distinctive fatty deposits (humps) on its back.
     - #### 251069  Other Camelids  
-      
+      Any other animals in the family Camelidae.
     - #### 251070  Rabbits  
-      
+      Small mammals in the family Leporidae.
     - #### 251079  Other Rodents  
-      
+      Any other rodents of economic value.
     - #### 251090  Other Live Animals  
-      
+      Any other live animals.
     - #### 251095  Other Non-Food Live Animals  
-      
-  - #### 2520  Animal Fats  
-    
-    - #### 252010  Fat of Cattle  
-      
+      Any other live animals not kept for food.
+  - #### 2520  Animal Oils and Fats  
+    Animal fats and oils are lipids derived from animals: oils are liquid at room temperature, and fats are solid.
+    - #### 252010  Fat of Cattle  (Beef Tallow)
+      Rendered beef fat.
     - #### 252015  Fat of Buffalo  
-      
-    - #### 252020  Fat of Sheep  
-      
+      Rendered fat of the buffalo.
+    - #### 252020  Fat of Sheep  (Mutton Tallow)
+      Rendered mutton fat.
     - #### 252025  Fat of Goats  
-      
-    - #### 252030  Fat of Pigs  
-      
+      Rendered fatty tissue of a goat.
+    - #### 252030  Fat of Pigs  (Lard)
+      Rendered fatty tissue of a pig.
     - #### 252040  Fat of Poultry  
-      
+      Rendered fat of, typically, waterfowl, e.g. ducks and geese.
     - #### 252060  Fat of Camels  
-      
+      Rendered hump of a camel.
     - #### 252069  Fat of Other Camelids  
-      
+      Rendering of fatty tissue of any other member of Camelidae.
+    - #### 252080  Oil of Oily Fish  
+      Rendered tissue of oily fish, e.g. tuna or salmon.
     - #### 252090  Other Animal Fats  
-      
+      Rendering of fatty tissue of any other animal.
   - #### 2530  Food from Slaughtered Animals  
     Edible products from slaughtered animals, such as meat, offal, and bones, excluding edible or inedible products used as material, e.g. skins and hides.
     - #### 253010  Meat of Cattle  (Beef)
@@ -600,47 +610,41 @@ comcat tree
     - #### 253050  Horse Meat  
       Meat from domestic horses (Equus ferus caballus).
     - #### 253055  Meat of Asses  
-      
+      Meat from domestic asses (Equus africanus asinus).
     - #### 253058  Meat of Mules  
-      
+      Meat from mules (Equus africanus asinus x Equus ferus caballus).
     - #### 253060  Meat of Camels  
-      
+      Meat from camels (species in the genus Camelus).
     - #### 253069  Meat of other Domestic Camelids  
-      
+      Meat from any other camelids (species in the family Camelidae).
     - #### 253070  Rabbit Meat  
-      
+      Meat from animals in the family Leporidae.
     - #### 253079  Meat of other Domestic Rodents  
-      
+      Meat from domestic animals in the order Rodentia, excluding non-domestic but indigenous animals (cf. 253540 Indigenous Meat).
     - #### 253080  Gutted Iced Tuna  
-      
+      Saltwater fish in the tribe Thunnini that has been gutted and put on ice.
     - #### 253085  Gutted Iced Salmon  
-      
+      Several species in the family Salmonidae that have been gutted and put on ice.
+    - #### 253089  Other Gutted Iced Oily Fish  
+      Any other oily fish that has been gutted and put on ice.
     - #### 253090  Other Meat  
-      
-    - #### 253095  Other Offals  
-      
+      Meat from any other animals.
+    - #### 253095  Offal  
+      Viscera (internal organs) and entrails of a butchered animal.
   - #### 2535  Meat Products and Meat Preparations  
-    
+    Fresh meat or meat that has been reduced to fragments which has had foodstuffs, seasonings or additives added to it or which has undergone processes.
     - #### 253510  Dried Meat  
-      
-    - #### 253520  Meat Meal  
-      
+      Meat that has been dehydrated, i.e. hot-air-dried or cured with salt. Freeze-dried meat is to be considered fresh.
+    - #### 253520  Meat and Bone Meal  (MBM)
+      Residue of fat extraction (by rendering).
     - #### 253525  Blood Meal  
-      
-    - #### 253530  Lard Stearine and Lard Oil  
-      
-    - #### 253535  Tallow  
-      
-    - #### 253540  Indigenous Meat  
-      
-    - #### 253550  Biological Meat  
-      
-    - #### 253590  Other Prepared Meat  
-      
-    - #### 253592  Other Fat Preparations  
-      
-    - #### 253595  Other Food Preparations  
-      
+      Blood that has been dehydrated, i.e. hot-air-dried, drum dried, flash dried, or spray dried.
+    - #### 253540  Indigenous Meat  (Bushmeat)
+      Meat or meat products or meat preparations from wildlife species that are hunted rather than grown.
+    - #### 253550  Biological Meat  (Organic Meat)
+      Meat or meat products or meat preparations from animals that have been bred and grown under natural living conditions and feed.
+    - #### 253590  Other Meat Preparations  
+      Any other meat products or meat preparations.
   - #### 2540  Food from Live Animals  
     Produce sourced from animals without slaughtering them.
     - #### 254010  Cow Milk  
@@ -678,23 +682,23 @@ comcat tree
       - #### 25401042  Cheese From Skimmed Cow Milk  
         Curd of milk that has been coagulated and separated from whey. May include some skimmed milk.
       - #### 25401043  Whey Cheese  
-        
+        Made from fresh whey by coagulating, e.g. by heat or acid.
       - #### 25401045  Processed Cheese  
-        
+        Made from cheese and unfermented dairy ingredients mixed with emulsifiers.
       - #### 25401050  Buttermilk  (Curdled Milk)
         Milk inoculated with a culture of Lactococcus lactis or Lactobacillus bulgaricus plus Leuconostoc citrovorum.
       - #### 25401053  Dry Buttermilk  
-        
+        Buttermilk where water has been removed, e.g. by spray drying or roller drying.
       - #### 25401055  Unconcentrated Yoghurt  
         Milk inoculated with yoghurt cultures, may include additives such as sugar, flavouring materials, fruit or cocoa.
       - #### 25401056  Concentrated Yoghurt  
         Yoghurt where the whey has been removed by straining.
       - #### 25401060  Lactose  
-        
+        Main sugar constituent of milk, obtained from whey permeate.
       - #### 25401065  Casein  
-        The main protein constituent of milk, obtained from skimmed milk by precipitation (curdling) with acids or rennet.
+        Main protein constituent of milk, obtained from skimmed milk by precipitation (curdling) with acids or rennet.
       - #### 25401070  Reconstitued Milk  
-        Obtained by adding water, fat, etc. to milk powder.
+        Product obtained by adding water, fat, etc. to milk powder.
       - #### 25401080  Products of Natural Milk Constituents  
         Product that is included in Item 125 on the Import Control List (ICL).
       - #### 25401085  Ice Cream and Edible Ice  
@@ -702,19 +706,21 @@ comcat tree
       - #### 25401090  Other Milk Products  
         Milk products not classified elsewhere.
     - #### 254015  Buffalo Milk  
-      
+      Milk from water buffalo cows.
     - #### 254016  Sheep Milk  
-      
+      Milk from ewes.
     - #### 254017  Goat Milk  
-      
+      Milk from nannies.
     - #### 254018  Camel Milk  
-      
+      Milk from camel cows.
     - #### 254019  Other Milk  
-      
+      Milk from any other female mammal.
     - #### 254020  Hen Eggs  (Chicken Eggs)
-      Oval reproductive body of a fowl (especially a hen) used as food.
-    - #### 254029  Other Eggs  
-      
+      Oval reproductive body of hens used as food.
+    - #### 254022  Duck Eggs  
+      Oval reproductive body of ducks used as food.
+    - #### 254029  Other Bird Eggs  
+      Any other bird eggs.
     - #### 254030  Honey  
       Honey produced by bees (Apis mellifera) or by other insects.
 - #### 30  Materials  
@@ -732,37 +738,37 @@ comcat tree
     - #### 301040  Jute Fibre  
       Fibre extracted from the bast of plants in the genus Corchorus, primarily Corchorus olitorius, or alternatively Corchorus capsularis.
     - #### 301045  Jute-like Fibre  
-      
+      Fibre that shares most of the mechanical properties and the look of jute.
     - #### 301048  Abaca  (Manila Hemp)
       Fibre extracted from the leaf-stems of Musa textilis.
     - #### 301050  Sisal  
       Decorticated leaf stems or fibre extracted from the leaf-stems of Agave sisalana, possibly dried, brushed and baled.
     - #### 301059  Other Agave Fibres  
-      
+      Any other fibre extracted from the leaf-stems of agaves.
     - #### 301060  Kapok Fibre  
       Fibre obtained of the seed pods of Ceiba pentandra.
     - #### 301070  Ramie  
       Decorticated leaf stems or fibre obtained from the inner bark (phloem) of the vegetative stalks of the Ramie plant, possibly degummed.
     - #### 301080  Coir  
       Fibre extracted from the outer husk of coconut.
-    - #### 301090  Other Fibre Crops  
-      
+    - #### 301090  Other Crop Fibre  
+      Any other fibre of vegetal origin.
   - #### 3015  Fibres of Animal Origin  
-    Animal fibres are fibres that are produced by animals. Most notably they comprise bristles, hair, wool, and silk.
+    Fibres that are produced by animals. Most notably they comprise bristles, hair, wool, and silk.
     - #### 301510  Greasy Wool  
-      
+      Wool straight off a sheep, i.e. unscoured.
     - #### 301515  Fine Hair  
-      
+      Wool of the shoulder and sides, less than 20 microns in diameter.
     - #### 301520  Coarse Goat Hair  
-      
+      Hair of goat with diameters >30 microns.
     - #### 301525  Fine Goat Hair  
-      
+      Hair of goat with diameters <30 microns.
     - #### 301530  Hair of Horses  
-      
+      Long hair growing on the manes and tails of horses.
     - #### 301540  Reelable Cocoons  
-      
-    - #### 301590  Other Coarse Hair  
-      
+      Cocoons of the silkworm (Bombyx mori).
+    - #### 301590  Other Hair  
+      Other hair of animal origin.
   - #### 3020  Oleochemicals  
     Oleochemicals are products derived from vegetal oils and fats, e.g. by hydrolysis, transesterification, or hydrogenation.
     - #### 302010  Biodiesel  (FAME, Fatty Acid Methyl Ester)
@@ -772,33 +778,33 @@ comcat tree
     - #### 302030  Polyamide 11  (PA 11)
       Polyamide produced by the polymerization of 11-aminoundecanoic acid which is produced from castor beans under the trade name Rilsan.
   - #### 3030  Forest Products  
-    
+    Material derived from forestry for direct consumption or commercial use.
     - #### 303010  Wood  (Timber)
       Standing or felled trees.
     - #### 303015  Sawnwood  (Lumber)
       Wood that has been processed into beams and planks.
     - #### 303020  Plywood  (Blockboard)
-      
+      Material manufactured from thin layers or "plies" of wood veneer.
     - #### 303030  Fibreboard  
-      
+      Material made out of wood fibres.
     - #### 303050  Wood Pellets  
-      
+      Fuel for a pellet stove made from compacted sawdust.
   - #### 3035  Paper  
-    
+    Material produced by mechanically or chemically processing cellulose fibres derived from wood, rags, grasses or other vegetable sources in water.
     - #### 303510  Newsprint  
-      
+      Material consisting mainly of wood pulp and most commonly used to print newspapers and other publications and advertising material.
     - #### 303520  Containerboard  
-      
+      Material made out of natural unbleached wood fibres for the production of corrugated board.
     - #### 303530  Pulp  
-      
+      Material prepared by chemically or mechanically separating cellulose fibres from wood, fiber crops, waste paper, or rags.
     - #### 303550  Recovered Paper  
-      
+      Material made from cellulose obtained by breaking down waste paper.
   - #### 3040  Rubber and Wax  
-    
+    Biodegradable solid or highly viscous compounds.
     - #### 304010  Raw Natural Rubber  
       Field latex, raw caucho or caoutchouc, with minor impurities of other organic compounds, plus water.
     - #### 304019  Other Resins  
-      
+      Any other resin.
     - #### 304020  Concentrated Latex  (HA Latex)
       Centrifuged and ammoniated field latex that has been processed into latex concentrate.
     - #### 304022  Coagulated Latex  
@@ -807,10 +813,10 @@ comcat tree
       Naturally coagulated rubber (cup lump) that has been reduced in size, cleaned and dried, then baled and palletised for storage and shipment.
     - #### 304027  Ribbed Smoked Sheet Rubber  (RSS Rubber)
       Coagulated latex sheets that have been air dried or smoked in ovens.
-    - #### 304030  Vegetable Waxes  
-      
+    - #### 304030  Vegetal Wax  
+      Waxy substnce of plnt origin, e.g. rice bran wax or sunflower wax.
     - #### 304035  Beeswax  
-      
+      Natural wax produced by honey bees of the genus Apis.
   - #### 3050  Inorganic Compounds  
     Compounds that do not contain a C atom. Exceptions are made for isocyanide/cyanide and their non-hydrocarbyl derivatives, thiophosgene, carbon diselenide, carbon monosulfide, carbon disulfide, carbon subsulfide, carbon monoxide, carbon trioxide, carbon suboxide, and dicarbon monoxide.
     - #### 305010  Sodium Carbonate  (Soda Ash, Washing Soda, E500)
@@ -863,16 +869,18 @@ comcat tree
         
   - #### 3070  Fertilizer  
     Substances providing nutrients to plants.
-    - #### 307010  Urea  
-      
+    - #### 307010  Urea  (Carbamide)
+      Compound of two -NH2 groups joined by a carbonyl group (C=O), formula CO(NH2)2.
     - #### 307012  Ammonia  
-      
+      Compound of nitrogen and hydrogen, formula NH3.
+    - #### 307013  Ammonium Nitrate  
+      Compound of ammonium (NH4+) and nitrate (NO3-).
     - #### 307015  UAN  (Urea Ammonium Nitrate)
-      
+      Solution of urea and ammonium nitrate in water.
     - #### 307020  DAP  (Diamidophosphate)
-      
+      Ion with formula PO2(NH2)2-.
     - #### 307025  MAP  (Monoammonium phosphate)
-      
+      Compound of ammonium (NH4+) and dihydrogen phosphate (PO2(OH)2-).
     - #### 307030  Potash  
       Various mined and manufactured salts that contain potassium in water-soluble form.
   - #### 3080  Pesticide  
@@ -894,7 +902,7 @@ comcat tree
   - #### 4010  Freight  
     Contractual arrangements for carrying cargo, voyage charter, contract of affreightment, time charter and the bareboat charter.
     - #### 401010  Wet Freight  
-      
+      Cargo carried by tanker at a freight rate.
       - #### 40101010  Dirty Freight  
         Tanker for dirty loads, i.e. crude oils.
       - #### 40101020  Clean Freight  

@@ -1746,16 +1746,6 @@ ccat:203560
 	skos:notation	"203560" ;
 	skos:prefLabel	"Arabic Gum"@en .
 
-ccat:203570
-	a	skos:Concept ;
-	skos:altLabel	"Azuki Beans"@en , "Red Beans"@en ;
-	skos:broader	ccat:2035 ;
-	skos:definition	"Seed of Vigna angularis."@en ;
-	skos:exactMatch	agrovoc:c_8632 , wd:Q380279 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"203570" ;
-	skos:prefLabel	"Adzuki Beans"@en .
-
 ccat:2040
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
@@ -1833,6 +1823,35 @@ ccat:204090
 	skos:inScheme	ccat: ;
 	skos:notation	"204090" ;
 	skos:prefLabel	"Other Roots or Tubers"@en .
+
+ccat:2045
+	a	skos:Concept ;
+	skos:broader	ccat:20 ;
+	skos:definition	"Fruits or seeds of plants in the family Fabaceae (or Leguminosae). Either fresh (legumes) or dried (pulses)."@en ;
+	skos:exactMatch	agrovoc:c_4255 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"2045" ;
+	skos:prefLabel	"Legumes and Pulses"@en .
+
+ccat:204510
+	a	skos:Concept ;
+	skos:altLabel	"Bengal Gram"@en ;
+	skos:broader	ccat:2045 ;
+	skos:definition	"Seed of annual legume Cicer arietinum."@en ;
+	skos:exactMatch	agrovoc:c_9785 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"204510" ;
+	skos:prefLabel	"Chickpeas"@en .
+
+ccat:204520
+	a	skos:Concept ;
+	skos:altLabel	"Azuki Beans"@en , "Red Beans"@en , "Red Mung Beans"@en ;
+	skos:broader	ccat:2045 ;
+	skos:definition	"Seed of Vigna angularis."@en ;
+	skos:exactMatch	agrovoc:c_8632 , wd:Q380279 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"204520" ;
+	skos:prefLabel	"Adzuki Beans"@en .
 
 ccat:2050
 	a	skos:Concept ;
@@ -2214,6 +2233,22 @@ ccat:20551010
 	skos:notation	"20551010" ;
 	skos:prefLabel	"Frozen Orange Juice"@en .
 
+ccat:205520
+	a	skos:Concept ;
+	skos:broader	ccat:2055 ;
+	skos:definition	"Juices and syrups made by pressing pome fruits."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"205520" ;
+	skos:prefLabel	"Juices and Syrups from Pome Fruits"@en .
+
+ccat:20552010
+	a	skos:Concept ;
+	skos:broader	ccat:205520 ;
+	skos:definition	"Concentrate of pressed apples."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20552010" ;
+	skos:prefLabel	"Apple Juice Concentrate"@en .
+
 ccat:2060
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
@@ -2454,7 +2489,7 @@ ccat:2510
 ccat:251010
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Large domesticated ungulates of the species Bos taurus."@en ;
+	skos:definition	"Large domesticated ungulates in the species Bos taurus."@en ;
 	skos:exactMatch	agrovoc:c_1391 , eurovoc:5034 , stw:14142-3 , wd:Q830 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251010" ;
@@ -2463,7 +2498,7 @@ ccat:251010
 ccat:251015
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated animal of the species Bubalus bualis."@en ;
+	skos:definition	"Domesticated animal in the species Bubalus bualis."@en ;
 	skos:exactMatch	agrovoc:c_25410 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251015" ;
@@ -2473,7 +2508,7 @@ ccat:251015
 ccat:251020
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated animal of the species Ovis aries."@en ;
+	skos:definition	"Domesticated animal in the species Ovis aries."@en ;
 	skos:exactMatch	agrovoc:c_7030 , eurovoc:2211 , stw:14143-1 , wd:Q7368 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251020" ;
@@ -2485,7 +2520,7 @@ Sheep husbandry is practised throughout the majority of the inhabited world. Aus
 ccat:251025
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated animal of the subspecies Capra aegagrus hircus."@en ;
+	skos:definition	"Domesticated animal in the subspecies Capra aegagrus hircus."@en ;
 	skos:exactMatch	agrovoc:c_3324 , eurovoc:5252 , stw:14146-2 , wd:Q2934 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251025" ;
@@ -2496,7 +2531,7 @@ ccat:251030
 	a	skos:Concept ;
 	skos:altLabel	"Hogs"@en , "Pigs"@en ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated even-toed ungulate of the species Sus scrofa domesticus."@en ;
+	skos:definition	"Domesticated even-toed ungulate in the species Sus scrofa domesticus."@en ;
 	skos:exactMatch	agrovoc:c_7555 , eurovoc:2560 , stw:14144-6 , wd:Q787 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251030" ;
@@ -2507,7 +2542,7 @@ ccat:251040
 	a	skos:Concept ;
 	skos:broadMatch	stw:14135-0 ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated animal of the subspecies Gallus gallus domesticus, a subspecies of the red junglefowl."@en ;
+	skos:definition	"Domesticated animal in the subspecies Gallus gallus domesticus, a subspecies of the red junglefowl."@en ;
 	skos:exactMatch	agrovoc:c_1540 , wd:Q780 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251040" ;
@@ -2518,7 +2553,7 @@ ccat:251042
 	a	skos:Concept ;
 	skos:broadMatch	stw:14135-0 ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated aninmal of the species Meleagris gallopavo domesticus."@en ;
+	skos:definition	"Domesticated aninmal in the species Meleagris gallopavo domesticus."@en ;
 	skos:exactMatch	agrovoc:c_8016 , wd:Q848706 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251042" ;
@@ -2530,7 +2565,7 @@ ccat:251045
 	skos:altLabel	"Mallards"@en ;
 	skos:broadMatch	stw:14135-0 ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated animal of the subspecies Anas platyrhynchos domesticus."@en ;
+	skos:definition	"Domesticated animal in the subspecies Anas platyrhynchos domesticus."@en ;
 	skos:exactMatch	agrovoc:c_2406 , wd:Q742292 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251045" ;
@@ -2540,7 +2575,7 @@ ccat:251047
 	a	skos:Concept ;
 	skos:broadMatch	stw:14135-0 ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated animal of the species Anser anser domesticus or Anser cygnoides domesticus."@en ;
+	skos:definition	"Domesticated animal in the species Anser anser domesticus or Anser cygnoides domesticus."@en ;
 	skos:exactMatch	agrovoc:c_3208 , wd:Q255503 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251047" ;
@@ -2551,7 +2586,7 @@ ccat:251048
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
 	skos:closeMatch	agrovoc:c_3180 ;
-	skos:definition	"Domesticated bird of the subspecies Columba livia domestica."@en ;
+	skos:definition	"Domesticated bird in the subspecies Columba livia domestica."@en ;
 	skos:inScheme	ccat: ;
 	skos:narrowMatch	agrovoc:c_5870 , wd:Q204179 ;
 	skos:notation	"251048" ;
@@ -2568,7 +2603,7 @@ ccat:251049
 ccat:251050
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
-	skos:definition	"Domesticated odd-toed, hoofed mammal of the species Equus ferus caballus."@en ;
+	skos:definition	"Domesticated odd-toed, hoofed mammal in the species Equus ferus caballus."@en ;
 	skos:exactMatch	agrovoc:c_3668 , wd:Q726 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251050" ;
@@ -2576,7 +2611,9 @@ ccat:251050
 
 ccat:251055
 	a	skos:Concept ;
+	skos:altLabel	"Donkey"@en ;
 	skos:broader	ccat:2510 ;
+	skos:definition	"Domesticated hoofed mammal in the subspecies Equus africanus asinus"@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251055" ;
 	skos:prefLabel	"Asses"@en .
@@ -2584,6 +2621,7 @@ ccat:251055
 ccat:251058
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
+	skos:definition	"Domestic equine hybrid between a donkey and a horse, Equus africanus asinus x Equus ferus caballus"@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251058" ;
 	skos:prefLabel	"Mules"@en .
@@ -2591,6 +2629,7 @@ ccat:251058
 ccat:251060
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
+	skos:definition	"Even-toed ungulate in the genus Camelus that bears distinctive fatty deposits (humps) on its back."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251060" ;
 	skos:prefLabel	"Camels"@en .
@@ -2598,6 +2637,7 @@ ccat:251060
 ccat:251069
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
+	skos:definition	"Any other animals in the family Camelidae."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251069" ;
 	skos:prefLabel	"Other Camelids"@en .
@@ -2605,6 +2645,7 @@ ccat:251069
 ccat:251070
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
+	skos:definition	"Small mammals in the family Leporidae."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251070" ;
 	skos:prefLabel	"Rabbits"@en .
@@ -2612,6 +2653,7 @@ ccat:251070
 ccat:251079
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
+	skos:definition	"Any other rodents of economic value."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251079" ;
 	skos:prefLabel	"Other Rodents"@en .
@@ -2619,6 +2661,7 @@ ccat:251079
 ccat:251090
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
+	skos:definition	"Any other live animals."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251090" ;
 	skos:prefLabel	"Other Live Animals"@en .
@@ -2626,6 +2669,7 @@ ccat:251090
 ccat:251095
 	a	skos:Concept ;
 	skos:broader	ccat:2510 ;
+	skos:definition	"Any other live animals not kept for food."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"251095" ;
 	skos:prefLabel	"Other Non-Food Live Animals"@en .
@@ -2633,13 +2677,16 @@ ccat:251095
 ccat:2520
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
+	skos:definition	"Animal fats and oils are lipids derived from animals: oils are liquid at room temperature, and fats are solid."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"2520" ;
-	skos:prefLabel	"Animal Fats"@en .
+	skos:prefLabel	"Animal Oils and Fats"@en .
 
 ccat:252010
 	a	skos:Concept ;
+	skos:altLabel	"Beef Tallow"@en ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendered beef fat."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252010" ;
 	skos:prefLabel	"Fat of Cattle"@en .
@@ -2647,13 +2694,16 @@ ccat:252010
 ccat:252015
 	a	skos:Concept ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendered fat of the buffalo."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252015" ;
 	skos:prefLabel	"Fat of Buffalo"@en .
 
 ccat:252020
 	a	skos:Concept ;
+	skos:altLabel	"Mutton Tallow"@en ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendered mutton fat."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252020" ;
 	skos:prefLabel	"Fat of Sheep"@en .
@@ -2661,13 +2711,16 @@ ccat:252020
 ccat:252025
 	a	skos:Concept ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendered fatty tissue of a goat."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252025" ;
 	skos:prefLabel	"Fat of Goats"@en .
 
 ccat:252030
 	a	skos:Concept ;
+	skos:altLabel	"Lard"@en ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendered fatty tissue of a pig."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252030" ;
 	skos:prefLabel	"Fat of Pigs"@en .
@@ -2675,6 +2728,7 @@ ccat:252030
 ccat:252040
 	a	skos:Concept ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendered fat of, typically, waterfowl, e.g. ducks and geese."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252040" ;
 	skos:prefLabel	"Fat of Poultry"@en .
@@ -2682,6 +2736,7 @@ ccat:252040
 ccat:252060
 	a	skos:Concept ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendered hump of a camel."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252060" ;
 	skos:prefLabel	"Fat of Camels"@en .
@@ -2689,13 +2744,23 @@ ccat:252060
 ccat:252069
 	a	skos:Concept ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendering of fatty tissue of any other member of Camelidae."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252069" ;
 	skos:prefLabel	"Fat of Other Camelids"@en .
 
+ccat:252080
+	a	skos:Concept ;
+	skos:broader	ccat:2520 ;
+	skos:definition	"Rendered tissue of oily fish, e.g. tuna or salmon."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"252080" ;
+	skos:prefLabel	"Oil of Oily Fish"@en .
+
 ccat:252090
 	a	skos:Concept ;
 	skos:broader	ccat:2520 ;
+	skos:definition	"Rendering of fatty tissue of any other animal."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"252090" ;
 	skos:prefLabel	"Other Animal Fats"@en .
@@ -2862,6 +2927,7 @@ Jurisdictions that allow for the slaughter of horses for food rarely have age re
 ccat:253055
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Meat from domestic asses (Equus africanus asinus)."@en ;
 	skos:exactMatch	agrovoc:c_24021 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253055" ;
@@ -2871,6 +2937,7 @@ ccat:253055
 ccat:253058
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Meat from mules (Equus africanus asinus x Equus ferus caballus)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253058" ;
 	skos:prefLabel	"Meat of Mules"@en ;
@@ -2879,6 +2946,7 @@ ccat:253058
 ccat:253060
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Meat from camels (species in the genus Camelus)."@en ;
 	skos:exactMatch	agrovoc:c_23998 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253060" ;
@@ -2888,6 +2956,7 @@ ccat:253060
 ccat:253069
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Meat from any other camelids (species in the family Camelidae)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253069" ;
 	skos:prefLabel	"Meat of other Domestic Camelids"@en ;
@@ -2896,6 +2965,7 @@ ccat:253069
 ccat:253070
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Meat from animals in the family Leporidae."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253070" ;
 	skos:prefLabel	"Rabbit Meat"@en .
@@ -2903,6 +2973,7 @@ ccat:253070
 ccat:253079
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Meat from domestic animals in the order Rodentia, excluding non-domestic but indigenous animals (cf. 253540 Indigenous Meat)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253079" ;
 	skos:prefLabel	"Meat of other Domestic Rodents"@en .
@@ -2910,6 +2981,7 @@ ccat:253079
 ccat:253080
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Saltwater fish in the tribe Thunnini that has been gutted and put on ice."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253080" ;
 	skos:prefLabel	"Gutted Iced Tuna"@en .
@@ -2917,13 +2989,23 @@ ccat:253080
 ccat:253085
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Several species in the family Salmonidae that have been gutted and put on ice."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253085" ;
 	skos:prefLabel	"Gutted Iced Salmon"@en .
 
+ccat:253089
+	a	skos:Concept ;
+	skos:broader	ccat:2530 ;
+	skos:definition	"Any other oily fish that has been gutted and put on ice."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"253089" ;
+	skos:prefLabel	"Other Gutted Iced Oily Fish"@en .
+
 ccat:253090
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Meat from any other animals."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253090" ;
 	skos:prefLabel	"Other Meat"@en .
@@ -2931,86 +3013,71 @@ ccat:253090
 ccat:253095
 	a	skos:Concept ;
 	skos:broader	ccat:2530 ;
+	skos:definition	"Viscera (internal organs) and entrails of a butchered animal."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253095" ;
-	skos:prefLabel	"Other Offals"@en .
+	skos:prefLabel	"Offal"@en .
 
 ccat:2535
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
+	skos:definition	"Fresh meat or meat that has been reduced to fragments which has had foodstuffs, seasonings or additives added to it or which has undergone processes."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"2535" ;
-	skos:prefLabel	"Meat Products and Meat Preparations"@en .
+	skos:prefLabel	"Meat Products and Meat Preparations"@en ;
+	skos:scopeNote	"Meat preparations defined in EC No 853/2004"@en .
 
 ccat:253510
 	a	skos:Concept ;
 	skos:broader	ccat:2535 ;
+	skos:definition	"Meat that has been dehydrated, i.e. hot-air-dried or cured with salt. Freeze-dried meat is to be considered fresh."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253510" ;
 	skos:prefLabel	"Dried Meat"@en .
 
 ccat:253520
 	a	skos:Concept ;
+	skos:altLabel	"MBM"@en ;
 	skos:broader	ccat:2535 ;
+	skos:definition	"Residue of fat extraction (by rendering)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253520" ;
-	skos:prefLabel	"Meat Meal"@en .
+	skos:prefLabel	"Meat and Bone Meal"@en .
 
 ccat:253525
 	a	skos:Concept ;
 	skos:broader	ccat:2535 ;
+	skos:definition	"Blood that has been dehydrated, i.e. hot-air-dried, drum dried, flash dried, or spray dried."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253525" ;
 	skos:prefLabel	"Blood Meal"@en .
 
-ccat:253530
-	a	skos:Concept ;
-	skos:broader	ccat:2535 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253530" ;
-	skos:prefLabel	"Lard Stearine and Lard Oil"@en .
-
-ccat:253535
-	a	skos:Concept ;
-	skos:broader	ccat:2535 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253535" ;
-	skos:prefLabel	"Tallow"@en .
-
 ccat:253540
 	a	skos:Concept ;
+	skos:altLabel	"Bushmeat"@en ;
 	skos:broader	ccat:2535 ;
+	skos:definition	"Meat or meat products or meat preparations from wildlife species that are hunted rather than grown."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253540" ;
 	skos:prefLabel	"Indigenous Meat"@en .
 
 ccat:253550
 	a	skos:Concept ;
+	skos:altLabel	"Organic Meat"@en ;
 	skos:broader	ccat:2535 ;
+	skos:definition	"Meat or meat products or meat preparations from animals that have been bred and grown under natural living conditions and feed."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253550" ;
-	skos:prefLabel	"Biological Meat"@en .
+	skos:prefLabel	"Biological Meat"@en ;
+	skos:scopeNote	"Distinct from Indigenous Meat (253540) in that animals are deliberately kept for meat production."@en .
 
 ccat:253590
 	a	skos:Concept ;
 	skos:broader	ccat:2535 ;
+	skos:definition	"Any other meat products or meat preparations."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"253590" ;
-	skos:prefLabel	"Other Prepared Meat"@en .
-
-ccat:253592
-	a	skos:Concept ;
-	skos:broader	ccat:2535 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253592" ;
-	skos:prefLabel	"Other Fat Preparations"@en .
-
-ccat:253595
-	a	skos:Concept ;
-	skos:broader	ccat:2535 ;
-	skos:inScheme	ccat: ;
-	skos:notation	"253595" ;
-	skos:prefLabel	"Other Food Preparations"@en .
+	skos:prefLabel	"Other Meat Preparations"@en .
 
 ccat:2540
 	a	skos:Concept ;
@@ -3163,6 +3230,7 @@ ccat:25401042
 ccat:25401043
 	a	skos:Concept ;
 	skos:broader	ccat:254010 ;
+	skos:definition	"Made from fresh whey by coagulating, e.g. by heat or acid."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"25401043" ;
 	skos:prefLabel	"Whey Cheese"@en .
@@ -3170,6 +3238,7 @@ ccat:25401043
 ccat:25401045
 	a	skos:Concept ;
 	skos:broader	ccat:254010 ;
+	skos:definition	"Made from cheese and unfermented dairy ingredients mixed with emulsifiers."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"25401045" ;
 	skos:prefLabel	"Processed Cheese"@en .
@@ -3187,6 +3256,7 @@ ccat:25401050
 ccat:25401053
 	a	skos:Concept ;
 	skos:broader	ccat:254010 ;
+	skos:definition	"Buttermilk where water has been removed, e.g. by spray drying or roller drying."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"25401053" ;
 	skos:prefLabel	"Dry Buttermilk"@en .
@@ -3210,14 +3280,16 @@ ccat:25401056
 ccat:25401060
 	a	skos:Concept ;
 	skos:broader	ccat:254010 ;
+	skos:definition	"Main sugar constituent of milk, obtained from whey permeate."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"25401060" ;
+	skos:note	"Lactose makes up 2%-8% of milk, or about 5% of whey solids."@en ;
 	skos:prefLabel	"Lactose"@en .
 
 ccat:25401065
 	a	skos:Concept ;
 	skos:broader	ccat:254010 ;
-	skos:definition	"The main protein constituent of milk, obtained from skimmed milk by precipitation (curdling) with acids or rennet."@en ;
+	skos:definition	"Main protein constituent of milk, obtained from skimmed milk by precipitation (curdling) with acids or rennet."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"25401065" ;
 	skos:prefLabel	"Casein"@en .
@@ -3225,7 +3297,7 @@ ccat:25401065
 ccat:25401070
 	a	skos:Concept ;
 	skos:broader	ccat:254010 ;
-	skos:definition	"Obtained by adding water, fat, etc. to milk powder."@en ;
+	skos:definition	"Product obtained by adding water, fat, etc. to milk powder."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"25401070" ;
 	skos:prefLabel	"Reconstitued Milk"@en .
@@ -3259,13 +3331,16 @@ ccat:25401090
 ccat:254015
 	a	skos:Concept ;
 	skos:broader	ccat:2540 ;
+	skos:definition	"Milk from water buffalo cows."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"254015" ;
+	skos:note	"""India and Pakistan produce the most buffalo milk worldwide."""@en ;
 	skos:prefLabel	"Buffalo Milk"@en .
 
 ccat:254016
 	a	skos:Concept ;
 	skos:broader	ccat:2540 ;
+	skos:definition	"Milk from ewes."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"254016" ;
 	skos:prefLabel	"Sheep Milk"@en .
@@ -3273,6 +3348,7 @@ ccat:254016
 ccat:254017
 	a	skos:Concept ;
 	skos:broader	ccat:2540 ;
+	skos:definition	"Milk from nannies."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"254017" ;
 	skos:prefLabel	"Goat Milk"@en .
@@ -3280,6 +3356,7 @@ ccat:254017
 ccat:254018
 	a	skos:Concept ;
 	skos:broader	ccat:2540 ;
+	skos:definition	"Milk from camel cows."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"254018" ;
 	skos:prefLabel	"Camel Milk"@en .
@@ -3287,6 +3364,7 @@ ccat:254018
 ccat:254019
 	a	skos:Concept ;
 	skos:broader	ccat:2540 ;
+	skos:definition	"Milk from any other female mammal."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"254019" ;
 	skos:prefLabel	"Other Milk"@en .
@@ -3296,18 +3374,28 @@ ccat:254020
 	skos:altLabel	"Chicken Eggs"@en ;
 	skos:broadMatch	stw:14121-4 ;
 	skos:broader	ccat:2540 ;
-	skos:definition	"Oval reproductive body of a fowl (especially a hen) used as food."@en ;
+	skos:definition	"Oval reproductive body of hens used as food."@en ;
 	skos:exactMatch	agrovoc:c_2502 , wd:Q15260613 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"254020" ;
+	skos:note	"""In 2017, world production of chicken eggs was 80.1 million tonnes. The largest producers were China with 31.3 million of this total, the United States with 6.3 million, India at 4.8 million, Mexico at 2.8 million, Japan at 2.6 million, and Brazil and Russia with 2.5 million each."""@en ;
 	skos:prefLabel	"Hen Eggs"@en .
+
+ccat:254022
+	a	skos:Concept ;
+	skos:broader	ccat:2540 ;
+	skos:definition	"Oval reproductive body of ducks used as food."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"254022" ;
+	skos:prefLabel	"Duck Eggs"@en .
 
 ccat:254029
 	a	skos:Concept ;
 	skos:broader	ccat:2540 ;
+	skos:definition	"Any other bird eggs."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"254029" ;
-	skos:prefLabel	"Other Eggs"@en .
+	skos:prefLabel	"Other Bird Eggs"@en .
 
 ccat:254030
 	a	skos:Concept ;
@@ -3394,6 +3482,7 @@ ccat:301040
 ccat:301045
 	a	skos:Concept ;
 	skos:broader	ccat:3010 ;
+	skos:definition	"Fibre that shares most of the mechanical properties and the look of jute."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301045" ;
 	skos:prefLabel	"Jute-like Fibre"@en .
@@ -3421,6 +3510,7 @@ ccat:301050
 ccat:301059
 	a	skos:Concept ;
 	skos:broader	ccat:3010 ;
+	skos:definition	"Any other fibre extracted from the leaf-stems of agaves."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301059" ;
 	skos:prefLabel	"Other Agave Fibres"@en .
@@ -3459,14 +3549,15 @@ ccat:301080
 ccat:301090
 	a	skos:Concept ;
 	skos:broader	ccat:3010 ;
+	skos:definition	"Any other fibre of vegetal origin."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301090" ;
-	skos:prefLabel	"Other Fibre Crops"@en .
+	skos:prefLabel	"Other Crop Fibre"@en .
 
 ccat:3015
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
-	skos:definition	"Animal fibres are fibres that are produced by animals. Most notably they comprise bristles, hair, wool, and silk."@en ;
+	skos:definition	"Fibres that are produced by animals. Most notably they comprise bristles, hair, wool, and silk."@en ;
 	skos:exactMatch	agrovoc:c_430 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"3015" ;
@@ -3475,6 +3566,7 @@ ccat:3015
 ccat:301510
 	a	skos:Concept ;
 	skos:broader	ccat:3015 ;
+	skos:definition	"Wool straight off a sheep, i.e. unscoured."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301510" ;
 	skos:prefLabel	"Greasy Wool"@en .
@@ -3482,6 +3574,7 @@ ccat:301510
 ccat:301515
 	a	skos:Concept ;
 	skos:broader	ccat:3015 ;
+	skos:definition	"Wool of the shoulder and sides, less than 20 microns in diameter."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301515" ;
 	skos:prefLabel	"Fine Hair"@en .
@@ -3489,6 +3582,7 @@ ccat:301515
 ccat:301520
 	a	skos:Concept ;
 	skos:broader	ccat:3015 ;
+	skos:definition	"Hair of goat with diameters >30 microns."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301520" ;
 	skos:prefLabel	"Coarse Goat Hair"@en .
@@ -3496,6 +3590,7 @@ ccat:301520
 ccat:301525
 	a	skos:Concept ;
 	skos:broader	ccat:3015 ;
+	skos:definition	"Hair of goat with diameters <30 microns."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301525" ;
 	skos:prefLabel	"Fine Goat Hair"@en .
@@ -3503,6 +3598,7 @@ ccat:301525
 ccat:301530
 	a	skos:Concept ;
 	skos:broader	ccat:3015 ;
+	skos:definition	"Long hair growing on the manes and tails of horses."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301530" ;
 	skos:prefLabel	"Hair of Horses"@en .
@@ -3510,6 +3606,7 @@ ccat:301530
 ccat:301540
 	a	skos:Concept ;
 	skos:broader	ccat:3015 ;
+	skos:definition	"Cocoons of the silkworm (Bombyx mori)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301540" ;
 	skos:prefLabel	"Reelable Cocoons"@en .
@@ -3517,9 +3614,10 @@ ccat:301540
 ccat:301590
 	a	skos:Concept ;
 	skos:broader	ccat:3015 ;
+	skos:definition	"Other hair of animal origin."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"301590" ;
-	skos:prefLabel	"Other Coarse Hair"@en .
+	skos:prefLabel	"Other Hair"@en .
 
 ccat:3020
 	a	skos:Concept ;
@@ -3559,6 +3657,7 @@ ccat:302030
 ccat:3030
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
+	skos:definition	"Material derived from forestry for direct consumption or commercial use."@en ;
 	skos:exactMatch	agrovoc:c_3049 , stw:14149-3 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"3030" ;
@@ -3590,6 +3689,7 @@ ccat:303020
 	a	skos:Concept ;
 	skos:altLabel	"Blockboard"@en ;
 	skos:broader	ccat:3030 ;
+	skos:definition	"Material manufactured from thin layers or \"plies\" of wood veneer."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"303020" ;
 	skos:prefLabel	"Plywood"@en .
@@ -3597,6 +3697,7 @@ ccat:303020
 ccat:303030
 	a	skos:Concept ;
 	skos:broader	ccat:3030 ;
+	skos:definition	"Material made out of wood fibres."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"303030" ;
 	skos:prefLabel	"Fibreboard"@en .
@@ -3604,6 +3705,7 @@ ccat:303030
 ccat:303050
 	a	skos:Concept ;
 	skos:broader	ccat:3030 ;
+	skos:definition	"Fuel for a pellet stove made from compacted sawdust."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"303050" ;
 	skos:prefLabel	"Wood Pellets"@en .
@@ -3611,6 +3713,7 @@ ccat:303050
 ccat:3035
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
+	skos:definition	"Material produced by mechanically or chemically processing cellulose fibres derived from wood, rags, grasses or other vegetable sources in water."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"3035" ;
 	skos:prefLabel	"Paper"@en .
@@ -3618,6 +3721,7 @@ ccat:3035
 ccat:303510
 	a	skos:Concept ;
 	skos:broader	ccat:3035 ;
+	skos:definition	"Material consisting mainly of wood pulp and most commonly used to print newspapers and other publications and advertising material."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"303510" ;
 	skos:prefLabel	"Newsprint"@en .
@@ -3625,6 +3729,7 @@ ccat:303510
 ccat:303520
 	a	skos:Concept ;
 	skos:broader	ccat:3035 ;
+	skos:definition	"Material made out of natural unbleached wood fibres for the production of corrugated board."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"303520" ;
 	skos:prefLabel	"Containerboard"@en .
@@ -3632,6 +3737,7 @@ ccat:303520
 ccat:303530
 	a	skos:Concept ;
 	skos:broader	ccat:3035 ;
+	skos:definition	"Material prepared by chemically or mechanically separating cellulose fibres from wood, fiber crops, waste paper, or rags."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"303530" ;
 	skos:prefLabel	"Pulp"@en .
@@ -3639,6 +3745,7 @@ ccat:303530
 ccat:303550
 	a	skos:Concept ;
 	skos:broader	ccat:3035 ;
+	skos:definition	"Material made from cellulose obtained by breaking down waste paper."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"303550" ;
 	skos:prefLabel	"Recovered Paper"@en .
@@ -3646,6 +3753,7 @@ ccat:303550
 ccat:3040
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
+	skos:definition	"Biodegradable solid or highly viscous compounds."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"3040" ;
 	skos:prefLabel	"Rubber and Wax"@en .
@@ -3663,6 +3771,7 @@ ccat:304010
 ccat:304019
 	a	skos:Concept ;
 	skos:broader	ccat:3040 ;
+	skos:definition	"Any other resin."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"304019" ;
 	skos:prefLabel	"Other Resins"@en .
@@ -3705,13 +3814,15 @@ ccat:304027
 ccat:304030
 	a	skos:Concept ;
 	skos:broader	ccat:3040 ;
+	skos:definition	"Waxy substnce of plnt origin, e.g. rice bran wax or sunflower wax."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"304030" ;
-	skos:prefLabel	"Vegetable Waxes"@en .
+	skos:prefLabel	"Vegetal Wax"@en .
 
 ccat:304035
 	a	skos:Concept ;
 	skos:broader	ccat:3040 ;
+	skos:definition	"Natural wax produced by honey bees of the genus Apis."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"304035" ;
 	skos:prefLabel	"Beeswax"@en .
@@ -3950,22 +4061,35 @@ ccat:3070
 
 ccat:307010
 	a	skos:Concept ;
+	skos:altLabel	"Carbamide"@en ;
 	skos:broader	ccat:3070 ;
+	skos:definition	"Compound of two -NH2 groups joined by a carbonyl group (C=O), formula CO(NH2)2."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"307010" ;
+	skos:note	"""Substance used in fertilizers as a source of nitrogen (N)."""@en ;
 	skos:prefLabel	"Urea"@en .
 
 ccat:307012
 	a	skos:Concept ;
 	skos:broader	ccat:3070 ;
+	skos:definition	"Compound of nitrogen and hydrogen, formula NH3."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"307012" ;
 	skos:prefLabel	"Ammonia"@en .
+
+ccat:307013
+	a	skos:Concept ;
+	skos:broader	ccat:3070 ;
+	skos:definition	"Compound of ammonium (NH4+) and nitrate (NO3-)."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"307013" ;
+	skos:prefLabel	"Ammonium Nitrate"@en .
 
 ccat:307015
 	a	skos:Concept ;
 	skos:altLabel	"Urea Ammonium Nitrate"@en ;
 	skos:broader	ccat:3070 ;
+	skos:definition	"Solution of urea and ammonium nitrate in water."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"307015" ;
 	skos:prefLabel	"UAN"@en .
@@ -3974,6 +4098,7 @@ ccat:307020
 	a	skos:Concept ;
 	skos:altLabel	"Diamidophosphate"@en ;
 	skos:broader	ccat:3070 ;
+	skos:definition	"Ion with formula PO2(NH2)2-."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"307020" ;
 	skos:prefLabel	"DAP"@en .
@@ -3982,6 +4107,7 @@ ccat:307025
 	a	skos:Concept ;
 	skos:altLabel	"Monoammonium phosphate"@en ;
 	skos:broader	ccat:3070 ;
+	skos:definition	"Compound of ammonium (NH4+) and dihydrogen phosphate (PO2(OH)2-)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"307025" ;
 	skos:prefLabel	"MAP"@en .
@@ -4071,6 +4197,7 @@ ccat:4010
 ccat:401010
 	a	skos:Concept ;
 	skos:broader	ccat:4010 ;
+	skos:definition	"Cargo carried by tanker at a freight rate."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"401010" ;
 	skos:prefLabel	"Wet Freight"@en .
