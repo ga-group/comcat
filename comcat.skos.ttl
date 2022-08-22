@@ -3859,13 +3859,16 @@ ccat:305020
 ccat:305030
 	a	skos:Concept ;
 	skos:broader	ccat:3050 ;
+	skos:definition	"Intermetallics are metallic alloys that form ordered solid-state compounds between two or more metallic elements."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"305030" ;
+	skos:note	"""Intermetallics are generally hard and brittle, with good high-temperature mechanical properties. They can be classified as stoichiometric or nonstoichiometic intermetallic compounds."""@en ;
 	skos:prefLabel	"Intermetallics"@en .
 
 ccat:30503010
 	a	skos:Concept ;
 	skos:broader	ccat:305030 ;
+	skos:definition	"Alloy of iron and silicon with a typical silicon content by weight of 15%-90%."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30503010" ;
 	skos:prefLabel	"Ferrosilicon"@en .
@@ -3873,6 +3876,7 @@ ccat:30503010
 ccat:30503020
 	a	skos:Concept ;
 	skos:broader	ccat:305030 ;
+	skos:definition	"Alloy of manganese and silicon."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30503020" ;
 	skos:prefLabel	"Manganese Silicide"@en .
@@ -3899,7 +3903,7 @@ ccat:30601010
 	a	skos:Concept ;
 	skos:altLabel	"PVC"@en ;
 	skos:broader	ccat:306010 ;
-	skos:definition	"Polyvinyl chloride."@en ;
+	skos:definition	"Polymer made up of vinyl chloride monomers (VCM)."@en ;
 	skos:exactMatch	agrovoc:c_28508 , stw:14715-3 , wd:Q146368 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30601010" ;
@@ -3910,7 +3914,7 @@ ccat:30601020
 	a	skos:Concept ;
 	skos:altLabel	"PE"@en ;
 	skos:broader	ccat:306010 ;
-	skos:definition	"Polyethylene or polythene."@en ;
+	skos:definition	"Polymer made up of ethylene monomers (ethene)."@en ;
 	skos:exactMatch	agrovoc:c_28510 , stw:14705-6 , wd:Q143429 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30601020" ;
@@ -3923,6 +3927,7 @@ ccat:30601025
 	a	skos:Concept ;
 	skos:altLabel	"PET"@en ;
 	skos:broader	ccat:306010 ;
+	skos:definition	"Thermoplastic polymer resin of the polyester family, formula (C10H8O4)n."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30601025" ;
 	skos:prefLabel	"Polyethylene Terephthalate"@en .
@@ -3931,7 +3936,7 @@ ccat:30601030
 	a	skos:Concept ;
 	skos:altLabel	"PP"@en ;
 	skos:broader	ccat:306010 ;
-	skos:definition	"Polypropylene or polypropene."@en ;
+	skos:definition	"Polymer made up of propylene monomers (propene)."@en ;
 	skos:exactMatch	agrovoc:c_24221 , stw:14711-4 , wd:Q146174 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30601030" ;
@@ -3944,7 +3949,7 @@ ccat:30601040
 	a	skos:Concept ;
 	skos:altLabel	"PS"@en ;
 	skos:broader	ccat:306010 ;
-	skos:definition	"Polystyrene."@en ;
+	skos:definition	"Polymer made up of styrene monomers, formula (C8H8)n."@en ;
 	skos:exactMatch	agrovoc:c_28512 , stw:14712-2 ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30601040" ;
@@ -3963,6 +3968,7 @@ ccat:306020
 ccat:30602010
 	a	skos:Concept ;
 	skos:broader	ccat:306020 ;
+	skos:definition	"Compound of six carbon atoms joined in a planar ring with one hydrogen atom attached to each, formula C6H6."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30602010" ;
 	skos:prefLabel	"Benzene"@en .
@@ -3970,13 +3976,16 @@ ccat:30602010
 ccat:30602015
 	a	skos:Concept ;
 	skos:broader	ccat:306020 ;
+	skos:definition	"Fusion of two benzene rings, formula C10H8."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30602015" ;
 	skos:prefLabel	"Naphthalene"@en .
 
 ccat:30602017
 	a	skos:Concept ;
+	skos:altLabel	"Ethenylbenzene"@en , "Phenylethene"@en ;
 	skos:broader	ccat:306020 ;
+	skos:definition	"Derivative of benzene bearing a vinyl functional group (ethylene, ethene) at one position, formula C6H5CH=CH2."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30602017" ;
 	skos:prefLabel	"Styrene"@en .
@@ -3986,7 +3995,7 @@ ccat:30602020
 	skos:altLabel	"p-Xylene"@en ;
 	skos:broadMatch	<http://classyfire.wishartlab.com/tax_nodes/C0004211> ;
 	skos:broader	ccat:306020 ;
-	skos:definition	"Aromatic compounds that contain a p-xylene moiety, which is a monocyclic benzene carrying exactly two methyl groups at the 1- and 4-positions."@en ;
+	skos:definition	"Derivative of benzene bearing two methyl groups at the 1- and 4-positions."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30602020" ;
 	skos:prefLabel	"Paraxylene"@en .
@@ -3996,7 +4005,7 @@ ccat:30602030
 	skos:altLabel	"PTA"@en ;
 	skos:broadMatch	<http://classyfire.wishartlab.com/tax_nodes/C0001108> ;
 	skos:broader	ccat:306020 ;
-	skos:definition	"Compounds containing a benzene ring bearing a carboxylic acid group at ring carbon atoms 1 and 4."@en ;
+	skos:definition	"Derivative of benzene bearing a carboxylic acid group at the 1- and 4-positions."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30602030" ;
 	skos:prefLabel	"Terephthalic Acid"@en .
@@ -4004,6 +4013,7 @@ ccat:30602030
 ccat:306030
 	a	skos:Concept ;
 	skos:broader	ccat:3060 ;
+	skos:definition	"Compounds that carry at least one hydroxyl functional group (bOH) bound to a saturated carbon atom."@en ;
 	skos:exactMatch	<http://classyfire.wishartlab.com/tax_nodes/C0000129> ;
 	skos:inScheme	ccat: ;
 	skos:notation	"306030" ;
@@ -4031,6 +4041,7 @@ ccat:30603020
 ccat:30603025
 	a	skos:Concept ;
 	skos:broader	ccat:306030 ;
+	skos:definition	"Ethane-1,2-diol, formula (CH2OH)2."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30603025" ;
 	skos:prefLabel	"Ethylene Glycol"@en .
@@ -4038,6 +4049,7 @@ ccat:30603025
 ccat:30603030
 	a	skos:Concept ;
 	skos:broader	ccat:306030 ;
+	skos:definition	"Propanol or propyl alcohol."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30603030" ;
 	skos:prefLabel	"Propanol"@en .
@@ -4045,6 +4057,7 @@ ccat:30603030
 ccat:30603040
 	a	skos:Concept ;
 	skos:broader	ccat:306030 ;
+	skos:definition	"Butanol or butyl alcohol."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30603040" ;
 	skos:prefLabel	"Butanol"@en .
@@ -4136,6 +4149,7 @@ ccat:3080
 ccat:308010
 	a	skos:Concept ;
 	skos:broader	ccat:3080 ;
+	skos:definition	"Substance to control undesired plants, also known as weeds."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"308010" ;
 	skos:prefLabel	"Herbicide"@en .
@@ -4143,6 +4157,7 @@ ccat:308010
 ccat:308020
 	a	skos:Concept ;
 	skos:broader	ccat:3080 ;
+	skos:definition	"Substance to control insects by targeting insect eggs or larvae."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"308020" ;
 	skos:prefLabel	"Insecticide"@en .
@@ -4150,6 +4165,7 @@ ccat:308020
 ccat:308030
 	a	skos:Concept ;
 	skos:broader	ccat:3080 ;
+	skos:definition	"Substance to control plant-parasitic nematodes."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"308030" ;
 	skos:prefLabel	"Nematicide"@en .
@@ -4157,6 +4173,7 @@ ccat:308030
 ccat:308040
 	a	skos:Concept ;
 	skos:broader	ccat:3080 ;
+	skos:definition	"Substance to control bacteria."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"308040" ;
 	skos:prefLabel	"Bactericide"@en .
@@ -4164,6 +4181,7 @@ ccat:308040
 ccat:308050
 	a	skos:Concept ;
 	skos:broader	ccat:3080 ;
+	skos:definition	"Substance to control parasitic fungi or their spores."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"308050" ;
 	skos:prefLabel	"Fungicide"@en .
@@ -4387,6 +4405,7 @@ ccat:404040
 ccat:4050
 	a	skos:Concept ;
 	skos:broader	ccat:40 ;
+	skos:definition	"Levy on specific commodities, financial transactions, estates, etc. rather than being a direct imposition on individuals or corporations such income or property taxes."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"4050" ;
 	skos:prefLabel	"Tax and Duties"@en .

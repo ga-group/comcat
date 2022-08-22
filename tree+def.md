@@ -824,49 +824,49 @@ comcat tree
     - #### 305020  Glass  
       Non-crystalline, often transparent amorphous solid.
     - #### 305030  Intermetallics  
-      
+      Intermetallics are metallic alloys that form ordered solid-state compounds between two or more metallic elements.
       - #### 30503010  Ferrosilicon  
-        
+        Alloy of iron and silicon with a typical silicon content by weight of 15%-90%.
       - #### 30503020  Manganese Silicide  
-        
+        Alloy of manganese and silicon.
   - #### 3060  Organic Compounds  
     Compounds that contain at least one carbon atom, excluding the exceptions made for inorganic compounds.
     - #### 306010  Polymers  
       Macromolecules composed of many repeating units.
       - #### 30601010  Polyvinyl Chloride  (PVC)
-        Polyvinyl chloride.
+        Polymer made up of vinyl chloride monomers (VCM).
       - #### 30601020  Polyethylene  (PE)
-        Polyethylene or polythene.
+        Polymer made up of ethylene monomers (ethene).
       - #### 30601025  Polyethylene Terephthalate  (PET)
-        
+        Thermoplastic polymer resin of the polyester family, formula (C10H8O4)n.
       - #### 30601030  Polypropylene  (PP)
-        Polypropylene or polypropene.
+        Polymer made up of propylene monomers (propene).
       - #### 30601040  Polystyrene  (PS)
-        Polystyrene.
+        Polymer made up of styrene monomers, formula (C8H8)n.
     - #### 306020  Benzenoids  
       Aromatic compounds containing one or more benzene rings.
       - #### 30602010  Benzene  
-        
+        Compound of six carbon atoms joined in a planar ring with one hydrogen atom attached to each, formula C6H6.
       - #### 30602015  Naphthalene  
-        
-      - #### 30602017  Styrene  
-        
+        Fusion of two benzene rings, formula C10H8.
+      - #### 30602017  Styrene  (Ethenylbenzene, Phenylethene)
+        Derivative of benzene bearing a vinyl functional group (ethylene, ethene) at one position, formula C6H5CH=CH2.
       - #### 30602020  Paraxylene  (p-Xylene)
-        Aromatic compounds that contain a p-xylene moiety, which is a monocyclic benzene carrying exactly two methyl groups at the 1- and 4-positions.
+        Derivative of benzene bearing two methyl groups at the 1- and 4-positions.
       - #### 30602030  Terephthalic Acid  (PTA)
-        Compounds containing a benzene ring bearing a carboxylic acid group at ring carbon atoms 1 and 4.
+        Derivative of benzene bearing a carboxylic acid group at the 1- and 4-positions.
     - #### 306030  Alkanols and Polyols  
-      
+      Compounds that carry at least one hydroxyl functional group (bOH) bound to a saturated carbon atom.
       - #### 30603010  Methanol  
         Methanol or methyl alcohol.
       - #### 30603020  Ethanol  
         Ethanol or ethyl alcohol.
       - #### 30603025  Ethylene Glycol  
-        
+        Ethane-1,2-diol, formula (CH2OH)2.
       - #### 30603030  Propanol  
-        
+        Propanol or propyl alcohol.
       - #### 30603040  Butanol  
-        
+        Butanol or butyl alcohol.
   - #### 3070  Fertilizer  
     Substances providing nutrients to plants.
     - #### 307010  Urea  (Carbamide)
@@ -886,15 +886,15 @@ comcat tree
   - #### 3080  Pesticide  
     Substances meant to control pests.
     - #### 308010  Herbicide  
-      
+      Substance to control undesired plants, also known as weeds.
     - #### 308020  Insecticide  
-      
+      Substance to control insects by targeting insect eggs or larvae.
     - #### 308030  Nematicide  
-      
+      Substance to control plant-parasitic nematodes.
     - #### 308040  Bactericide  
-      
+      Substance to control bacteria.
     - #### 308050  Fungicide  
-      
+      Substance to control parasitic fungi or their spores.
     - #### 308060  Animal Repellent  
       Specific animal repellents, in particular molluscicides, piscicides, avicides, and rodenticides.
 - #### 40  Commoditized  
@@ -946,7 +946,7 @@ comcat tree
     - #### 404040  Treated Wastewater Rights  
       Entitlement to use treated wastewater.
   - #### 4050  Tax and Duties  
-    
+    Levy on specific commodities, financial transactions, estates, etc. rather than being a direct imposition on individuals or corporations such income or property taxes.
 - #### 50  Financials  
   Product whose underlying is, generally, non-physical.
   - #### 5010  Money  

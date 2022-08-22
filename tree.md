@@ -425,7 +425,7 @@ comcat tree
     - 306020  Benzenoids  
       - 30602010  Benzene  
       - 30602015  Naphthalene  
-      - 30602017  Styrene  
+      - 30602017  Styrene  (Ethenylbenzene, Phenylethene)
       - 30602020  Paraxylene  (p-Xylene)
       - 30602030  Terephthalic Acid  (PTA)
     - 306030  Alkanols and Polyols  
