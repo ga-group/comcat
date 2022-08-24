@@ -49,6 +49,8 @@ comcat tree
     - 102080  Precious Metal Cross  
   - 1030  Base Metal  (Non-ferrous Metal)
     - 103010  Copper  
+    - 103013  Brass  
+    - 103015  Bronze  
     - 103020  Aluminium  
     - 103025  North American Special Aluminum Alloy  (NASAAC)
     - 103030  Zinc  
@@ -174,6 +176,7 @@ comcat tree
     - 203510  Corn Starch  (Cornflour)
     - 203520  Potatoe Starch  
     - 203530  Malt  
+    - 203540  Tapioca  
     - 203550  Guar Beans  
     - 203555  Guar Gum  
     - 203557  Guar Meal  
@@ -190,6 +193,7 @@ comcat tree
   - 2045  Legumes and Pulses  
     - 204510  Chickpeas  (Bengal Gram)
     - 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
+    - 204525  Mung Beans  (Green Gram)
   - 2050  Fruits  
     - 205010  Citrus Fruits  
       - 20501010  Sweet Oranges  

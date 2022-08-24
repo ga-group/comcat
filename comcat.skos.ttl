@@ -473,6 +473,22 @@ ccat:103010
 	skos:note	"A freshly exposed surface of pure copper has a pinkish-orange color. Copper is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement."@en ;
 	skos:prefLabel	"Copper"@en .
 
+ccat:103013
+	a	skos:Concept ;
+	skos:broader	ccat:1030 ;
+	skos:definition	"Alloy of copper and zinc."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"103013" ;
+	skos:prefLabel	"Brass"@en .
+
+ccat:103015
+	a	skos:Concept ;
+	skos:broader	ccat:1030 ;
+	skos:definition	"Alloy of copper and tin."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"103015" ;
+	skos:prefLabel	"Bronze"@en .
+
 ccat:103020
 	a	skos:Concept ;
 	skos:broader	ccat:1030 ;
@@ -1712,6 +1728,14 @@ ccat:203530
 	skos:notation	"203530" ;
 	skos:prefLabel	"Malt"@en .
 
+ccat:203540
+	a	skos:Concept ;
+	skos:broader	ccat:2035 ;
+	skos:definition	"Starch extracted from the roots of the cassava plant (manioc)."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"203540" ;
+	skos:prefLabel	"Tapioca"@en .
+
 ccat:203550
 	a	skos:Concept ;
 	skos:broader	ccat:2035 ;
@@ -1852,6 +1876,15 @@ ccat:204520
 	skos:inScheme	ccat: ;
 	skos:notation	"204520" ;
 	skos:prefLabel	"Adzuki Beans"@en .
+
+ccat:204525
+	a	skos:Concept ;
+	skos:altLabel	"Green Gram"@en ;
+	skos:broader	ccat:2045 ;
+	skos:definition	"Seed of Vigna radiata."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"204525" ;
+	skos:prefLabel	"Mung Beans"@en .
 
 ccat:2050
 	a	skos:Concept ;

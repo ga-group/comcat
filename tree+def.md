@@ -97,6 +97,10 @@ comcat tree
     Common and inexpensive non-ferrous metals, as opposed to precious metals.
     - #### 103010  Copper  
       Soft, malleable, and ductile metal with very high thermal and electrical conductivity.
+    - #### 103013  Brass  
+      Alloy of copper and zinc.
+    - #### 103015  Bronze  
+      Alloy of copper and tin.
     - #### 103020  Aluminium  
       Silvery-white, soft, non-magnetic and ductile metal in the boron group.
     - #### 103025  North American Special Aluminum Alloy  (NASAAC)
@@ -347,6 +351,8 @@ comcat tree
       Starch extracted from crushed potatoes.
     - #### 203530  Malt  
       Germinated cereal grain that has been dried (a process known as "malting").
+    - #### 203540  Tapioca  
+      Starch extracted from the roots of the cassava plant (manioc).
     - #### 203550  Guar Beans  
       Seed of Guar (Cyamopsis tetragonoloba), an annual legume.
     - #### 203555  Guar Gum  
@@ -379,6 +385,8 @@ comcat tree
       Seed of annual legume Cicer arietinum.
     - #### 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
       Seed of Vigna angularis.
+    - #### 204525  Mung Beans  (Green Gram)
+      Seed of Vigna radiata.
   - #### 2050  Fruits  
     The ripened reproductive body of a seed plant 
     - #### 205010  Citrus Fruits  
