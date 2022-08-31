@@ -31,6 +31,8 @@ comcat tree
         Booked capacity for the purpose of gas transfers.
       - #### 10102080  Gas Premium  
         Premium of one gas over another due to chemical composition, freight or storage costs.
+      - #### 10102085  Spark Spread  
+        Premium of gas (possibly including emission rights) used to produce power over baseload electricity.
     - #### 101030  Refined Products  
       Petrochemicals derived from crude oil when processed in oil refineries. This explicitly excludes chemical compounds produced in biochemical or (non-petro) industrial processes, e.g. ethanol from fermentation, or methanol from catalytic gas synthesis.
       - #### 10103010  Heating Oil  
@@ -69,16 +71,20 @@ comcat tree
         Period in the load profile that shows nearly no peaks, typically the night, met by unvarying power plants.
       - #### 10105040  Shoulder  
         Upwards or downwards flank between off-peak and on-peak demand covered by special load following plants.
-      - #### 10105050  Transmission Rights  
-        Entitles the holder to receive compensation for congestion charges across an energy path.
-      - #### 10105080  Floor/Cap  
+      - #### 10105050  Floor/Cap  
         Entitles the holder to receive compensation when the spot price (possibly including transmission charges) goes below/above a strike price.
+      - #### 10105080  Transmission Rights  
+        Entitles the holder to receive compensation for congestion charges across an energy path.
   - #### 1020  Precious Metal  
     Rare, naturally occurring metallic chemical element of high economic value. Chemically, less reactive than most elements.
     - #### 102010  Gold  
       Bright, slightly reddish yellow, dense, soft, malleable, and ductile metal. One of the least reactive chemical elements. Solid under standard conditions.
+    - #### 102015  Gold Variance  
+      Product that tracks the variance or volatility of spot gold.
     - #### 102020  Silver  
       Soft, white, lustrous transition metal, exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal. Solid under standard conditions.
+    - #### 102025  Silver Variance  
+      Product that tracks the variance or volatility of spot silver.
     - #### 102030  Platinum  
       Dense, malleable, ductile, highly unreactive, precious, silverish-white transition metal.
     - #### 102040  Palladium  
@@ -167,8 +173,8 @@ comcat tree
       Grain of the cereal of the Triticeae tribe in the Secale genus.
     - #### 201075  Triticale  
       Hybrid of wheat (female) and rye (male).
-    - #### 201080  White Fonio  
-      Grain of millets in the genus Digitaria.
+    - #### 201080  Grain Inter Spread  
+      Intercommodity spread between grains, or grains and oilseeds.
     - #### 201090  Other Cereals and Pseudocereals  
       Cereals and grains of minor economic importance.
       - #### 20109010  Buckwheat  
@@ -189,6 +195,10 @@ comcat tree
       Seed of the cotton plant. This includes seeds with the attached lint.
     - #### 202050  Groundnuts  
       Seed of the plant Arachis hypogaea
+    - #### 202080  Oilseed Inter Spread  
+      Intercommodity spread between two oilseeds.
+    - #### 202085  Crush Spread  
+      Spread between an oilseed and its oil or meal/cake.
     - #### 202090  Other Rosid Seeds  
       Members of a large clade (monophyletic group) of flowering plants making up more than a quarter of all angiosperms with their about 70,000 species.
       - #### 20209010  Melonseed  (Egusi)
@@ -387,6 +397,8 @@ comcat tree
       Seed of Vigna angularis.
     - #### 204525  Mung Beans  (Green Gram)
       Seed of Vigna radiata.
+    - #### 204527  Urad  (Black Gram)
+      Seed of Vigna mungo.
   - #### 2050  Fruits  
     The ripened reproductive body of a seed plant 
     - #### 205010  Citrus Fruits  
@@ -503,6 +515,8 @@ comcat tree
       Dried drupe of Black pepper (Piper nigrum) in the family Piperaceae.
     - #### 206075  Pimento  (Allspice)
       Dried unripe berry of Pimenta dioica.
+    - #### 206080  Chilli  (Chili)
+      Spicy fruit of plants in the genus Capsicum.
     - #### 206090  Other Spices  
       Any other spices.
   - #### 2065  Herbs  
@@ -785,6 +799,10 @@ comcat tree
       Thermoplastic polyester obtained by condensation of lactic acid, a monomer made from fermented plant starch such as from corn, cassava, sugarcane or sugar beet pulp.
     - #### 302030  Polyamide 11  (PA 11)
       Polyamide produced by the polymerization of 11-aminoundecanoic acid which is produced from castor beans under the trade name Rilsan.
+    - #### 302040  Ethylene  (Ethene)
+      Simplest hydrocarbon with carbon-carbon double bonds, formula CH2=CH2.
+    - #### 302050  Propylene  (Propene)
+      Unsaturated compound with one double bond, formula CH3CH=CH.
   - #### 3030  Forest Products  
     Material derived from forestry for direct consumption or commercial use.
     - #### 303010  Wood  (Timber)
@@ -931,6 +949,8 @@ comcat tree
       An aggregate of (average, trimmed mean, daily high, daily low) temperature as measured by a (set of) reference weather stations over a pre-defined time period. Sometimes capped/floored under the name heating degree days/cooling degree days, respectively.
     - #### 402020  Rainfall  
       Product that tracks the (average, trimmed mean, minimum, maxium, ...) rainfall in a region over a predefined time period.
+    - #### 402030  Catastrophe  
+      Product that tracks damages incurred by abnormal weather conditions or their consequences such as typhoons, hurricanes, or floods.
   - #### 4030  Emissions  
     Permits and allowances in writing issued by a central authority (usually a governmental body) that allow a discharge of a specific quantity of a specific pollutant over a set time period.
     - #### 403010  CO2 permits  

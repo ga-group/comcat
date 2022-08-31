@@ -16,6 +16,7 @@ comcat tree
       - 10102050  Gas Baseload  
       - 10102055  Pipeline capacity  
       - 10102080  Gas Premium  
+      - 10102085  Spark Spread  
     - 101030  Refined Products  
       - 10103010  Heating Oil  
       - 10103020  Gasoline  (Petrol)
@@ -35,11 +36,13 @@ comcat tree
       - 10105020  Peak Load  
       - 10105030  Off-peak  
       - 10105040  Shoulder  
-      - 10105050  Transmission Rights  
-      - 10105080  Floor/Cap  
+      - 10105050  Floor/Cap  
+      - 10105080  Transmission Rights  
   - 1020  Precious Metal  
     - 102010  Gold  
+    - 102015  Gold Variance  
     - 102020  Silver  
+    - 102025  Silver Variance  
     - 102030  Platinum  
     - 102040  Palladium  
     - 102050  Iridium  
@@ -84,7 +87,7 @@ comcat tree
     - 201065  Pearl Millet  (Bajra, Kambu, Sajjey)
     - 201070  Rye  
     - 201075  Triticale  
-    - 201080  White Fonio  
+    - 201080  Grain Inter Spread  
     - 201090  Other Cereals and Pseudocereals  
       - 20109010  Buckwheat  
       - 20109020  Quinoa  
@@ -95,6 +98,8 @@ comcat tree
     - 202035  Coconuts  
     - 202040  Cottonseed  
     - 202050  Groundnuts  
+    - 202080  Oilseed Inter Spread  
+    - 202085  Crush Spread  
     - 202090  Other Rosid Seeds  
       - 20209010  Melonseed  (Egusi)
       - 20209020  Castor Beans  
@@ -194,6 +199,7 @@ comcat tree
     - 204510  Chickpeas  (Bengal Gram)
     - 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
     - 204525  Mung Beans  (Green Gram)
+    - 204527  Urad  (Black Gram)
   - 2050  Fruits  
     - 205010  Citrus Fruits  
       - 20501010  Sweet Oranges  
@@ -252,6 +258,7 @@ comcat tree
     - 206060  Vanilla  
     - 206070  Pepper  
     - 206075  Pimento  (Allspice)
+    - 206080  Chilli  (Chili)
     - 206090  Other Spices  
   - 2065  Herbs  
   - 2070  Stimulant Crops  
@@ -393,6 +400,8 @@ comcat tree
     - 302010  Biodiesel  (FAME, Fatty Acid Methyl Ester)
     - 302020  Polylactic Acid  (PLA)
     - 302030  Polyamide 11  (PA 11)
+    - 302040  Ethylene  (Ethene)
+    - 302050  Propylene  (Propene)
   - 3030  Forest Products  
     - 303010  Wood  (Timber)
     - 303015  Sawnwood  (Lumber)
@@ -466,6 +475,7 @@ comcat tree
   - 4020  Weather  
     - 402010  Temperature  
     - 402020  Rainfall  
+    - 402030  Catastrophe  
   - 4030  Emissions  
     - 403010  CO2 permits  
     - 403020  NOx permits  

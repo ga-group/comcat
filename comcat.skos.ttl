@@ -161,7 +161,16 @@ ccat:10102080
 	skos:definition	"Premium of one gas over another due to chemical composition, freight or storage costs."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10102080" ;
-	skos:prefLabel	"Gas Premium"@en .
+	skos:prefLabel	"Gas Premium"@en ;
+	skos:scopeNote	"This category is also used on spreads between hubs (delivery points)."@en .
+
+ccat:10102085
+	a	skos:Concept ;
+	skos:broader	ccat:101020 ;
+	skos:definition	"Premium of gas (possibly including emission rights) used to produce power over baseload electricity."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10102085" ;
+	skos:prefLabel	"Spark Spread"@en .
 
 ccat:101030
 	a	skos:Concept ;
@@ -343,18 +352,19 @@ ccat:10105040
 ccat:10105050
 	a	skos:Concept ;
 	skos:broader	ccat:101050 ;
-	skos:definition	"Entitles the holder to receive compensation for congestion charges across an energy path."@en ;
+	skos:definition	"Entitles the holder to receive compensation when the spot price (possibly including transmission charges) goes below/above a strike price."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10105050" ;
-	skos:prefLabel	"Transmission Rights"@en .
+	skos:prefLabel	"Floor/Cap"@en .
 
 ccat:10105080
 	a	skos:Concept ;
 	skos:broader	ccat:101050 ;
-	skos:definition	"Entitles the holder to receive compensation when the spot price (possibly including transmission charges) goes below/above a strike price."@en ;
+	skos:definition	"Entitles the holder to receive compensation for congestion charges across an energy path."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"10105080" ;
-	skos:prefLabel	"Floor/Cap"@en .
+	skos:prefLabel	"Transmission Rights"@en ;
+	skos:scopeNote	"This category is also used on spreads between hubs (delivery points) provided the legs' delivery times (peak/off-peak), or profiles (base/peak), or power sources (hydro/spark) are identical."@en .
 
 ccat:1020
 	a	skos:Concept ;
@@ -375,6 +385,14 @@ ccat:102010
 	skos:note	"As of 2017, the world's largest gold producer by far was China with 440 tonnes per year."@en ;
 	skos:prefLabel	"Gold"@en .
 
+ccat:102015
+	a	skos:Concept ;
+	skos:broader	ccat:1020 ;
+	skos:definition	"Product that tracks the variance or volatility of spot gold."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"102015" ;
+	skos:prefLabel	"Gold Variance"@en .
+
 ccat:102020
 	a	skos:Concept ;
 	skos:broader	ccat:1020 ;
@@ -383,6 +401,14 @@ ccat:102020
 	skos:inScheme	ccat: ;
 	skos:notation	"102020" ;
 	skos:prefLabel	"Silver"@en .
+
+ccat:102025
+	a	skos:Concept ;
+	skos:broader	ccat:1020 ;
+	skos:definition	"Product that tracks the variance or volatility of spot silver."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"102025" ;
+	skos:prefLabel	"Silver Variance"@en .
 
 ccat:102030
 	a	skos:Concept ;
@@ -835,11 +861,10 @@ The International Maize and Wheat Improvement Center triticale improvement progr
 ccat:201080
 	a	skos:Concept ;
 	skos:broader	ccat:2010 ;
-	skos:definition	"Grain of millets in the genus Digitaria."@en ;
-	skos:exactMatch	agrovoc:c_3b4c07e9 , wd:Q1340738 ;
+	skos:definition	"Intercommodity spread between grains, or grains and oilseeds."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"201080" ;
-	skos:prefLabel	"White Fonio"@en .
+	skos:prefLabel	"Grain Inter Spread"@en .
 
 ccat:201090
 	a	skos:Concept ;
@@ -943,6 +968,22 @@ ccat:202050
 	skos:notation	"202050" ;
 	skos:note	"Widely grown in the tropics and subtropics, being important to both small and large commercial producers. In botany, it is classified as both a grain legume and, due to its high oil content, an oil crop."@en ;
 	skos:prefLabel	"Groundnuts"@en .
+
+ccat:202080
+	a	skos:Concept ;
+	skos:broader	ccat:2020 ;
+	skos:definition	"Intercommodity spread between two oilseeds."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"202080" ;
+	skos:prefLabel	"Oilseed Inter Spread"@en .
+
+ccat:202085
+	a	skos:Concept ;
+	skos:broader	ccat:2020 ;
+	skos:definition	"Spread between an oilseed and its oil or meal/cake."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"202085" ;
+	skos:prefLabel	"Crush Spread"@en .
 
 ccat:202090
 	a	skos:Concept ;
@@ -1886,6 +1927,15 @@ ccat:204525
 	skos:notation	"204525" ;
 	skos:prefLabel	"Mung Beans"@en .
 
+ccat:204527
+	a	skos:Concept ;
+	skos:altLabel	"Black Gram"@en ;
+	skos:broader	ccat:2045 ;
+	skos:definition	"Seed of Vigna mungo."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"204527" ;
+	skos:prefLabel	"Urad"@en .
+
 ccat:2050
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;
@@ -2148,7 +2198,7 @@ ccat:20505010
 	skos:inScheme	ccat: ;
 	skos:notation	"20505010" ;
 	skos:prefLabel	"Bananas and Plantains"@en ;
-	skos:scopeNote	"""Plantains are more starchy and less sweet; they are eaten cooked rather than raw; they have thicker skin, which may be green, yellow or black; and they can be used at any stage of ripeness."""@en .
+	skos:scopeNote	"Plantains are more starchy and less sweet; they are eaten cooked rather than raw; they have thicker skin, which may be green, yellow or black; and they can be used at any stage of ripeness."@en .
 
 ccat:20505020
 	a	skos:Concept ;
@@ -2407,6 +2457,15 @@ ccat:206075
 	skos:notation	"206075" ;
 	skos:note	"""Midcanopy trees are native to the Greater Antilles, southern Mexico, and Central America, now cultivated in many warm parts of the world."""@en ;
 	skos:prefLabel	"Pimento"@en .
+
+ccat:206080
+	a	skos:Concept ;
+	skos:altLabel	"Chili"@en ;
+	skos:broader	ccat:2060 ;
+	skos:definition	"Spicy fruit of plants in the genus Capsicum."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"206080" ;
+	skos:prefLabel	"Chilli"@en .
 
 ccat:206090
 	a	skos:Concept ;
@@ -2807,7 +2866,7 @@ ccat:2530
 	skos:inScheme	ccat: ;
 	skos:notation	"2530" ;
 	skos:prefLabel	"Food from Slaughtered Animals"@en ;
-	skos:scopeNote	"""Meat here refers to skeletal muscle, associated fat, and other edible tissues such as offal. Also includes animals that have not been domesticated or raised and prepared for human consumption, like game, insects, fish, seafood, and snails."""@en .
+	skos:scopeNote	"Meat here refers to skeletal muscle, associated fat, and other edible tissues such as offal. Also includes animals that have not been domesticated or raised and prepared for human consumption, like game, insects, fish, seafood, and snails."@en .
 
 ccat:253010
 	a	skos:Concept ;
@@ -3681,11 +3740,30 @@ ccat:302020
 ccat:302030
 	a	skos:Concept ;
 	skos:altLabel	"PA 11"@en ;
-	skos:broader	ccat:101030 ;
+	skos:broader	ccat:3020 ;
 	skos:definition	"Polyamide produced by the polymerization of 11-aminoundecanoic acid which is produced from castor beans under the trade name Rilsan."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"302030" ;
 	skos:prefLabel	"Polyamide 11"@en .
+
+ccat:302040
+	a	skos:Concept ;
+	skos:altLabel	"Ethene"@en ;
+	skos:broader	ccat:3020 ;
+	skos:definition	"Simplest hydrocarbon with carbon-carbon double bonds, formula CH2=CH2."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"302040" ;
+	skos:note	"""Produced by steam cracking purified natural gas, naphtha, gasoil or condy."""@en ;
+	skos:prefLabel	"Ethylene"@en .
+
+ccat:302050
+	a	skos:Concept ;
+	skos:altLabel	"Propene"@en ;
+	skos:broader	ccat:3020 ;
+	skos:definition	"Unsaturated compound with one double bond, formula CH3CH=CH."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"302050" ;
+	skos:prefLabel	"Propylene"@en .
 
 ccat:3030
 	a	skos:Concept ;
@@ -4338,6 +4416,15 @@ ccat:402020
 	skos:inScheme	ccat: ;
 	skos:notation	"402020" ;
 	skos:prefLabel	"Rainfall"@en .
+
+ccat:402030
+	a	skos:Concept ;
+	skos:broader	ccat:4020 ;
+	skos:definition	"Product that tracks damages incurred by abnormal weather conditions or their consequences such as typhoons, hurricanes, or floods."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"402030" ;
+	skos:prefLabel	"Catastrophe"@en ;
+	skos:scopeNote	"It is permissible to classify non-weather related catastrophes here, e.g. bush fires, earthquakes, or volcano eruptions."@en .
 
 ccat:4030
 	a	skos:Concept ;
