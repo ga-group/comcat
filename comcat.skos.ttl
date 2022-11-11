@@ -1628,6 +1628,22 @@ ccat:202640
 	skos:notation	"202640" ;
 	skos:prefLabel	"Cake and Meal of Cottonseed"@en .
 
+ccat:202690
+	a	skos:Concept ;
+	skos:broader	ccat:2026 ;
+	skos:definition	"Cake and meals of oil seeds of the rosid clade"@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"202690" ;
+	skos:prefLabel	"Other Cake and Meal of Rosids"@en .
+
+ccat:20269040
+	a	skos:Concept ;
+	skos:broader	ccat:202690 ;
+	skos:definition	"Residue of mustard seeds after oil extraction."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"20269040" ;
+	skos:prefLabel	"Cake and Meal of Mustard Seed"@en .
+
 ccat:2030
 	a	skos:Concept ;
 	skos:broader	ccat:20 ;

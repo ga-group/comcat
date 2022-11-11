@@ -43,7 +43,7 @@ comcat tree
         Combustible hydrocarbon liquid widely used widely used as aviation fuel.
       - #### 10103040  Diesel  (Petrodiesel, Gas Oil)
         Any liquid fuel specifically designed for use in diesel engines
-      - #### 10103050  Marine Fuel  (Fuel Oil, Bunker, HFO, HSFO, NSFO)
+      - #### 10103050  Marine Fuel  (Fuel Oil, NSFO, HSFO, HFO, Bunker)
         Any type of fuel oil used aboard water vessels. Usually bunker B or bunker C, also known as No. 5 or No. 6 respectively.
       - #### 10103060  Naphtha  
         Flammable liquid hydrocarbon mixture produced from natural gas condensates, petroleum distillates, and the distillation of coal tar and peat.
@@ -167,7 +167,7 @@ comcat tree
       Cereal grain in the Avena genus (Avena sativa).
     - #### 201060  Sorghum  
       Grain of an annual cereal, some cultivars are perennial, in the Sorghum genus ranging from 2 to 4 mm in diameter.
-    - #### 201065  Pearl Millet  (Bajra, Kambu, Sajjey)
+    - #### 201065  Pearl Millet  (Bajra, Sajjey, Kambu)
       Grain of Pennisetum glaucum, ovoid, of 3-4 mm length, nearly white, pale yellow, brown, grey, slate blue or purple.
     - #### 201070  Rye  
       Grain of the cereal of the Triticeae tribe in the Secale genus.
@@ -331,6 +331,10 @@ comcat tree
       Main by-product of the palm kernel oil extraction.
     - #### 202640  Cake and Meal of Cottonseed  
       Residue of cottonseed after oil extraction.
+    - #### 202690  Other Cake and Meal of Rosids  
+      Cake and meals of oil seeds of the rosid clade
+      - #### 20269040  Cake and Meal of Mustard Seed  
+        Residue of mustard seeds after oil extraction.
   - #### 2030  Sugar Crops and Vegetal Sweeteners  
     Crops that yield sweet-tasting soluble carbohydrates or substances that when added to food or drink impart the flavour of sweetness.
     - #### 203010  Sugar Cane  
@@ -393,7 +397,7 @@ comcat tree
     Fruits or seeds of plants in the family Fabaceae (or Leguminosae). Either fresh (legumes) or dried (pulses).
     - #### 204510  Chickpeas  (Bengal Gram)
       Seed of annual legume Cicer arietinum.
-    - #### 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
+    - #### 204520  Adzuki Beans  (Azuki Beans, Red Mung Beans, Red Beans)
       Seed of Vigna angularis.
     - #### 204525  Mung Beans  (Green Gram)
       Seed of Vigna radiata.
@@ -845,7 +849,7 @@ comcat tree
       Natural wax produced by honey bees of the genus Apis.
   - #### 3050  Inorganic Compounds  
     Compounds that do not contain a C atom. Exceptions are made for isocyanide/cyanide and their non-hydrocarbyl derivatives, thiophosgene, carbon diselenide, carbon monosulfide, carbon disulfide, carbon subsulfide, carbon monoxide, carbon trioxide, carbon suboxide, and dicarbon monoxide.
-    - #### 305010  Sodium Carbonate  (Soda Ash, Washing Soda, E500)
+    - #### 305010  Sodium Carbonate  (Soda Ash, E500, Washing Soda)
       Sodium carbonate.
     - #### 305020  Glass  
       Non-crystalline, often transparent amorphous solid.

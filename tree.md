@@ -22,7 +22,7 @@ comcat tree
       - 10103020  Gasoline  (Petrol)
       - 10103030  Kerosene  (Jet Fuel, Paraffin)
       - 10103040  Diesel  (Petrodiesel, Gas Oil)
-      - 10103050  Marine Fuel  (Fuel Oil, Bunker, HFO, HSFO, NSFO)
+      - 10103050  Marine Fuel  (Fuel Oil, NSFO, HSFO, HFO, Bunker)
       - 10103060  Naphtha  
       - 10103080  Visco Spread  
       - 10103090  Other Refined Products  
@@ -84,7 +84,7 @@ comcat tree
     - 201040  Barley  
     - 201050  Oats  
     - 201060  Sorghum  
-    - 201065  Pearl Millet  (Bajra, Kambu, Sajjey)
+    - 201065  Pearl Millet  (Bajra, Sajjey, Kambu)
     - 201070  Rye  
     - 201075  Triticale  
     - 201080  Grain Inter Spread  
@@ -166,6 +166,8 @@ comcat tree
     - 202630  Palm Cake and Palm Meal  
     - 202632  Cake and Meal of Palm Kernel  (PKC, PKM)
     - 202640  Cake and Meal of Cottonseed  
+    - 202690  Other Cake and Meal of Rosids  
+      - 20269040  Cake and Meal of Mustard Seed  
   - 2030  Sugar Crops and Vegetal Sweeteners  
     - 203010  Sugar Cane  
       - 20301010  Cane Sugar  
@@ -197,7 +199,7 @@ comcat tree
     - 204090  Other Roots or Tubers  
   - 2045  Legumes and Pulses  
     - 204510  Chickpeas  (Bengal Gram)
-    - 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
+    - 204520  Adzuki Beans  (Azuki Beans, Red Mung Beans, Red Beans)
     - 204525  Mung Beans  (Green Gram)
     - 204527  Urad  (Black Gram)
   - 2050  Fruits  
@@ -423,7 +425,7 @@ comcat tree
     - 304030  Vegetal Wax  
     - 304035  Beeswax  
   - 3050  Inorganic Compounds  
-    - 305010  Sodium Carbonate  (Soda Ash, Washing Soda, E500)
+    - 305010  Sodium Carbonate  (Soda Ash, E500, Washing Soda)
     - 305020  Glass  
     - 305030  Intermetallics  
       - 30503010  Ferrosilicon  
