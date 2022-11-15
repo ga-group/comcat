@@ -4571,6 +4571,14 @@ ccat:501010
 	skos:notation	"501010" ;
 	skos:prefLabel	"Currency"@en .
 
+ccat:501015
+	a	skos:Concept ;
+	skos:broader	ccat:5010 ;
+	skos:definition	"Product that tracks the variance or volatility of currency pairs."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"501015" ;
+	skos:prefLabel	"Currency Variance"@en .
+
 ccat:501020
 	a	skos:Concept ;
 	skos:broader	ccat:5010 ;
@@ -4583,7 +4591,7 @@ ccat:501020
 ccat:501080
 	a	skos:Concept ;
 	skos:broader	ccat:5010 ;
-	skos:definition	"Portfolio o f selected currencies with a preagreed weighting."@en ;
+	skos:definition	"Portfolio of selected currencies with a preagreed weighting."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"501080" ;
 	skos:prefLabel	"Currency Basket"@en .
