@@ -375,6 +375,17 @@ comcat tree
     - 254022  Duck Eggs  
     - 254029  Other Bird Eggs  
     - 254030  Honey  
+  - 2550  Food from Aquaculture  
+    - 255010  Gutted Iced Oily Fish  
+      - 25501010  Gutted Iced Tuna  
+      - 25501020  Gutted Iced Salmon  
+      - 25501090  Other Gutted Iced Oily Fish  
+    - 255020  Decapoda  
+      - 25502010  Lobster  
+      - 25502015  Crayfish  
+      - 25502020  Crab  
+      - 25502030  Prawn  
+      - 25502035  Shrimp  
 - 30  Materials  
   - 3010  Fibres of Vegetal Origin  
     - 301010  Cotton Lint  
@@ -483,6 +494,7 @@ comcat tree
     - 403020  NOx permits  
     - 403030  SO2 permits  
     - 403040  Renewable Energy Credits/Guarantee of Origin  (GO, REC)
+    - 403042  Renewable Identification Number  (RIN)
     - 403050  Emission Reduction Unit  (ERU)
   - 4040  Commercial Water Rights  
     - 404010  Diversion Rights  
@@ -493,6 +505,7 @@ comcat tree
 - 50  Financials  
   - 5010  Money  
     - 501010  Currency  
+    - 501015  Currency Variance  
     - 501020  Digital Currency  
     - 501080  Currency Basket  
   - 5020  Fixed Income  
