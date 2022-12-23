@@ -4591,12 +4591,12 @@ ccat:403042
 
 ccat:403050
 	a	skos:Concept ;
-	skos:altLabel	"ERU"@en ;
+	skos:altLabel	"CER"@en , "ERU"@en ;
 	skos:broader	ccat:4030 ;
 	skos:definition	"Emission Reduction Unit that represents a reduction of greenhouse gases under the Joint Implementation mechanism, where it represents one tonne of CO2 equivalent reduced."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"403050" ;
-	skos:prefLabel	"Emission Reduction Unit"@en .
+	skos:prefLabel	"Emission Reduction Unit/Certified Emission Reduction"@en .
 
 ccat:4040
 	a	skos:Concept ;

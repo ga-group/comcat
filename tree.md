@@ -495,7 +495,7 @@ comcat tree
     - 403030  SO2 permits  
     - 403040  Renewable Energy Credits/Guarantee of Origin  (GO, REC)
     - 403042  Renewable Identification Number  (RIN)
-    - 403050  Emission Reduction Unit  (ERU)
+    - 403050  Emission Reduction Unit/Certified Emission Reduction  (CER, ERU)
   - 4040  Commercial Water Rights  
     - 404010  Diversion Rights  
     - 404020  Groundwater Rights  
