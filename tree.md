@@ -4,12 +4,14 @@ comcat tree
 - 10  Hards  
   - 1010  Energy  
     - 101010  Crude Oil  
+      - 10101015  Crude Variance  
       - 10101050  Crude Transfer  
       - 10101070  Crude Storage  
       - 10101080  Crude Premium  
       - 10101085  Crack Spread  
     - 101020  Natural Gas  
       - 10102010  Purified Natural Gas  
+      - 10102015  Natural Gas Variance  
       - 10102020  Liquefied Natural Gas  (LNG)
       - 10102030  Liquefied Petroleum Gas  (LPG)
       - 10102040  Natural Gas Condensate  (Condy)

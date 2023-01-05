@@ -7,6 +7,8 @@ comcat tree
     Commodities that deal specifically with the trade and supply of energy.
     - #### 101010  Crude Oil  
       Raw, unprocessed blend of various petroleum products. Highly volatile components are traded as Natural Gas (101020).
+      - #### 10101015  Crude Variance  
+        Product that tracks the variance or volatility of crude oil.
       - #### 10101050  Crude Transfer  
         Booked pipeline capacity for the purpose of oil transfers.
       - #### 10101070  Crude Storage  
@@ -19,6 +21,8 @@ comcat tree
       Naturally occurring hydrocarbon gas mixture of higher alkanes (methane, ethane, propane, others), sometimes a small percentage of carbon dioxide, nitrogen, hydrogen sulfide, or helium.
       - #### 10102010  Purified Natural Gas  
         Processed natural gas, or gas from petro-chemical processes, that is close to pure methane or pure ethane.
+      - #### 10102015  Natural Gas Variance  
+        Product that tracks the variance or volatility of natural gas.
       - #### 10102020  Liquefied Natural Gas  (LNG)
         Natural gas or purified natural gas that has been cooled down to liquid form for ease and safety of non-pressurized storage or transfer.
       - #### 10102030  Liquefied Petroleum Gas  (LPG)

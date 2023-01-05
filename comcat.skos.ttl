@@ -60,6 +60,14 @@ ccat:101010
 	skos:notation	"101010" ;
 	skos:prefLabel	"Crude Oil"@en .
 
+ccat:10101015
+	a	skos:Concept ;
+	skos:broader	ccat:101010 ;
+	skos:definition	"Product that tracks the variance or volatility of crude oil."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10101015" ;
+	skos:prefLabel	"Crude Variance"@en .
+
 ccat:10101050
 	a	skos:Concept ;
 	skos:broader	ccat:101010 ;
@@ -109,6 +117,14 @@ ccat:10102010
 	skos:inScheme	ccat: ;
 	skos:notation	"10102010" ;
 	skos:prefLabel	"Purified Natural Gas"@en .
+
+ccat:10102015
+	a	skos:Concept ;
+	skos:broader	ccat:101020 ;
+	skos:definition	"Product that tracks the variance or volatility of natural gas."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10102015" ;
+	skos:prefLabel	"Natural Gas Variance"@en .
 
 ccat:10102020
 	a	skos:Concept ;
