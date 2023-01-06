@@ -1942,7 +1942,7 @@ ccat:2045
 
 ccat:204510
 	a	skos:Concept ;
-	skos:altLabel	"Bengal Gram"@en ;
+	skos:altLabel	"Bengal Gram"@en , "Chana"@en ;
 	skos:broader	ccat:2045 ;
 	skos:definition	"Seed of annual legume Cicer arietinum."@en ;
 	skos:exactMatch	agrovoc:c_9785 ;

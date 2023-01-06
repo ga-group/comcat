@@ -201,7 +201,7 @@ comcat tree
     - 204050  Chicory Roots  
     - 204090  Other Roots or Tubers  
   - 2045  Legumes and Pulses  
-    - 204510  Chickpeas  (Bengal Gram)
+    - 204510  Chickpeas  (Bengal Gram, Chana)
     - 204520  Adzuki Beans  (Azuki Beans, Red Mung Beans, Red Beans)
     - 204525  Mung Beans  (Green Gram)
     - 204527  Urad  (Black Gram)

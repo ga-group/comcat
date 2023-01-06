@@ -401,7 +401,7 @@ comcat tree
       Any other roots or tubers.
   - #### 2045  Legumes and Pulses  
     Fruits or seeds of plants in the family Fabaceae (or Leguminosae). Either fresh (legumes) or dried (pulses).
-    - #### 204510  Chickpeas  (Bengal Gram)
+    - #### 204510  Chickpeas  (Bengal Gram, Chana)
       Seed of annual legume Cicer arietinum.
     - #### 204520  Adzuki Beans  (Azuki Beans, Red Mung Beans, Red Beans)
       Seed of Vigna angularis.
