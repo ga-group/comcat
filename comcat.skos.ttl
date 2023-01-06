@@ -303,6 +303,16 @@ ccat:10104020
 	skos:notation	"10104020" ;
 	skos:prefLabel	"Bituminous Coal"@en .
 
+ccat:10104025
+	a	skos:Concept ;
+	skos:broader	ccat:101040 ;
+	skos:definition	"Lower grade of coal with 35%-45% carbon. Widely used as a thermal coal."@en ;
+	skos:exactMatch	wd:Q790674 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"10104025" ;
+	skos:prefLabel	"Sub-Bituminous Coal"@en ;
+	skos:scopeNote	"The properties of this type are between those of lignite, the lowest grade of coal, and those of bituminous coal, the second-highest grade of coal. Sub-bituminous coal is primarily used as a fuel for steam-electric power generation."@en .
+
 ccat:10104030
 	a	skos:Concept ;
 	skos:altLabel	"Brown Coal"@en ;

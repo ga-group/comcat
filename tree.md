@@ -31,6 +31,7 @@ comcat tree
     - 101040  Coal  
       - 10104010  Anthracite  (Hard Coal)
       - 10104020  Bituminous Coal  (Thermal Coal, Black Coal)
+      - 10104025  Sub-Bituminous Coal  
       - 10104030  Lignite  (Brown Coal)
       - 10104040  Coke  
     - 101050  Electricity  

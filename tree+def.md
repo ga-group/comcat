@@ -61,6 +61,8 @@ comcat tree
         Coal variety with the highest carbon content and the highest energy density.
       - #### 10104020  Bituminous Coal  (Thermal Coal, Black Coal)
         Coal with bitumen or asphalt, second highest ranking coal. Widely used as a thermal coal.
+      - #### 10104025  Sub-Bituminous Coal  
+        Lower grade of coal with 35%-45% carbon. Widely used as a thermal coal.
       - #### 10104030  Lignite  (Brown Coal)
         Soft coal with a relatively low heat content, used almost exclusively as a fuel for steam-electric power generation.
       - #### 10104040  Coke  
