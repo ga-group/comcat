@@ -105,6 +105,8 @@ comcat tree
       Hard, brittle, bluish-white transition metal in the platinum group.
     - #### 102080  Precious Metal Cross  
       Precious metals expressed in terms of other precious metals, e.g. XAUXAG, XAUXPT, etc.
+    - #### 102085  Precious Metal Variance  
+      Product that tracks the variance or volatility of precious metal.
   - #### 1030  Base Metal  (Non-ferrous Metal)
     Common and inexpensive non-ferrous metals, as opposed to precious metals.
     - #### 103010  Copper  
@@ -835,6 +837,8 @@ comcat tree
       Simplest hydrocarbon with carbon-carbon double bonds, formula CH2=CH2.
     - #### 302050  Propylene  (Propene)
       Unsaturated compound with one double bond, formula CH3CH=CH.
+    - #### 302060  Xylene  (Xylol)
+      Mixture of organic compounds with the formula (CH3)2C6H4.
   - #### 3030  Forest Products  
     Material derived from forestry for direct consumption or commercial use.
     - #### 303010  Wood  (Timber)
@@ -910,7 +914,7 @@ comcat tree
       - #### 30602017  Styrene  (Ethenylbenzene, Phenylethene)
         Derivative of benzene bearing a vinyl functional group (ethylene, ethene) at one position, formula C6H5CH=CH2.
       - #### 30602020  Paraxylene  (p-Xylene)
-        Derivative of benzene bearing two methyl groups at the 1- and 4-positions.
+        Derivative of benzene bearing two methyl groups at the 1- and 4-positions.  The most valued compound in mixed xylene (302060).
       - #### 30602030  Terephthalic Acid  (PTA)
         Derivative of benzene bearing a carboxylic acid group at the 1- and 4-positions.
     - #### 306030  Alkanols and Polyols  
@@ -1025,6 +1029,8 @@ comcat tree
     Tradeable debt or rate instrument that provides a return in the form of fixed periodic interest payments and/or the eventual return of principal at maturity.
     - #### 502010  Sovereign bond  (Government bonds)
       Debt security issued by a government to fund government spending.
+    - #### 502015  Sovereign bond variance  
+      Product that tracks the variance or volatility of debt securities issued by a government.
     - #### 502020  STIR  
       Rates with tenors of up to 12 months.
     - #### 502030  IRS  

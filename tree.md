@@ -53,6 +53,7 @@ comcat tree
     - 102070  Ruthenium  
     - 102075  Osmium  
     - 102080  Precious Metal Cross  
+    - 102085  Precious Metal Variance  
   - 1030  Base Metal  (Non-ferrous Metal)
     - 103010  Copper  
     - 103013  Brass  
@@ -418,6 +419,7 @@ comcat tree
     - 302030  Polyamide 11  (PA 11)
     - 302040  Ethylene  (Ethene)
     - 302050  Propylene  (Propene)
+    - 302060  Xylene  (Xylol)
   - 3030  Forest Products  
     - 303010  Wood  (Timber)
     - 303015  Sawnwood  (Lumber)
@@ -513,6 +515,7 @@ comcat tree
     - 501080  Currency Basket  
   - 5020  Fixed Income  
     - 502010  Sovereign bond  (Government bonds)
+    - 502015  Sovereign bond variance  
     - 502020  STIR  
     - 502030  IRS  
     - 502032  FRA  

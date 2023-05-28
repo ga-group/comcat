@@ -413,6 +413,7 @@ ccat:102010
 
 ccat:102015
 	a	skos:Concept ;
+	dct:isReplacedBy	ccat:102085 ;
 	skos:broader	ccat:1020 ;
 	skos:definition	"Product that tracks the variance or volatility of spot gold."@en ;
 	skos:inScheme	ccat: ;
@@ -430,6 +431,7 @@ ccat:102020
 
 ccat:102025
 	a	skos:Concept ;
+	dct:isReplacedBy	ccat:102085 ;
 	skos:broader	ccat:1020 ;
 	skos:definition	"Product that tracks the variance or volatility of spot silver."@en ;
 	skos:inScheme	ccat: ;
@@ -504,6 +506,14 @@ ccat:102080
 	skos:notation	"102080" ;
 	skos:note	"ISO officially assigned currency codes to gold, silver, platinum, and palladium (XAU, XAG, XPT, XPL), by extension unofficial codes for other precious metals are XRH, XIR, XOS, XRU."@en ;
 	skos:prefLabel	"Precious Metal Cross"@en .
+
+ccat:102085
+	a	skos:Concept ;
+	skos:broader	ccat:1020 ;
+	skos:definition	"Product that tracks the variance or volatility of precious metal."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"102085" ;
+	skos:prefLabel	"Precious Metal Variance"@en .
 
 ccat:1030
 	a	skos:Concept ;
@@ -3899,6 +3909,15 @@ ccat:302050
 	skos:notation	"302050" ;
 	skos:prefLabel	"Propylene"@en .
 
+ccat:302060
+	a	skos:Concept ;
+	skos:altLabel	"Xylol"@en ;
+	skos:broader	ccat:3020 ;
+	skos:definition	"Mixture of organic compounds with the formula (CH3)2C6H4."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"302060" ;
+	skos:prefLabel	"Xylene"@en .
+
 ccat:3030
 	a	skos:Concept ;
 	skos:broader	ccat:30 ;
@@ -4240,7 +4259,7 @@ ccat:30602020
 	skos:altLabel	"p-Xylene"@en ;
 	skos:broadMatch	<http://classyfire.wishartlab.com/tax_nodes/C0004211> ;
 	skos:broader	ccat:306020 ;
-	skos:definition	"Derivative of benzene bearing two methyl groups at the 1- and 4-positions."@en ;
+	skos:definition	"Derivative of benzene bearing two methyl groups at the 1- and 4-positions.  The most valued compound in mixed xylene (302060)."@en ;
 	skos:inScheme	ccat: ;
 	skos:notation	"30602020" ;
 	skos:prefLabel	"Paraxylene"@en .
@@ -4741,6 +4760,14 @@ ccat:502010
 	skos:inScheme	ccat: ;
 	skos:notation	"502010" ;
 	skos:prefLabel	"Sovereign bond"@en .
+
+ccat:502015
+	a	skos:Concept ;
+	skos:broader	ccat:5020 ;
+	skos:definition	"Product that tracks the variance or volatility of debt securities issued by a government."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"502015" ;
+	skos:prefLabel	"Sovereign bond variance"@en .
 
 ccat:502020
 	a	skos:Concept ;
