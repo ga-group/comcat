@@ -3,7 +3,8 @@ comcat tree
 
 - 10  Hards  
   - 1010  Energy  
-    - 101010  Crude Oil  
+    - 101010  Crude Products  
+      - 10101010  Crude Oil  
       - 10101015  Crude Variance  
       - 10101050  Crude Transfer  
       - 10101070  Crude Storage  
@@ -24,7 +25,7 @@ comcat tree
       - 10103020  Gasoline  (Petrol)
       - 10103030  Kerosene  (Jet Fuel, Paraffin)
       - 10103040  Diesel  (Petrodiesel, Gas Oil)
-      - 10103050  Marine Fuel  (Fuel Oil, NSFO, HSFO, HFO, Bunker)
+      - 10103050  Marine Fuel  (Fuel Oil, Bunker, HFO, HSFO, NSFO)
       - 10103060  Naphtha  
       - 10103080  Visco Spread  
       - 10103090  Other Refined Products  
@@ -88,7 +89,7 @@ comcat tree
     - 201040  Barley  
     - 201050  Oats  
     - 201060  Sorghum  
-    - 201065  Pearl Millet  (Bajra, Sajjey, Kambu)
+    - 201065  Pearl Millet  (Bajra, Kambu, Sajjey)
     - 201070  Rye  
     - 201075  Triticale  
     - 201080  Grain Inter Spread  
@@ -203,9 +204,10 @@ comcat tree
     - 204090  Other Roots or Tubers  
   - 2045  Legumes and Pulses  
     - 204510  Chickpeas  (Bengal Gram, Chana)
-    - 204520  Adzuki Beans  (Azuki Beans, Red Mung Beans, Red Beans)
+    - 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
     - 204525  Mung Beans  (Green Gram)
     - 204527  Urad  (Black Gram)
+    - 204530  Peas  
   - 2050  Fruits  
     - 205010  Citrus Fruits  
       - 20501010  Sweet Oranges  
@@ -441,7 +443,8 @@ comcat tree
     - 304030  Vegetal Wax  
     - 304035  Beeswax  
   - 3050  Inorganic Compounds  
-    - 305010  Sodium Carbonate  (Soda Ash, E500, Washing Soda)
+    - 305010  Sodium Carbonate  (Soda Ash, Washing Soda, E500)
+    - 305015  Sodium Hydroxide  (Caustic Soda, Lye)
     - 305020  Glass  
     - 305030  Intermetallics  
       - 30503010  Ferrosilicon  
@@ -453,6 +456,8 @@ comcat tree
       - 30601025  Polyethylene Terephthalate  (PET)
       - 30601030  Polypropylene  (PP)
       - 30601040  Polystyrene  (PS)
+      - 30601050  Styrene-butadiene copolymer  (SBR, Styrene-butadiene Rubber)
+      - 30601055  Polybutadiene  (BR, Butadiene Rubber)
     - 306020  Benzenoids  
       - 30602010  Benzene  
       - 30602015  Naphthalene  

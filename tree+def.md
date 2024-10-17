@@ -5,8 +5,10 @@ comcat tree
   Hard commodities, or hards, are commodities that, generally, are mined, rather than grown.
   - #### 1010  Energy  
     Commodities that deal specifically with the trade and supply of energy.
-    - #### 101010  Crude Oil  
-      Raw, unprocessed blend of various petroleum products. Highly volatile components are traded as Natural Gas (101020).
+    - #### 101010  Crude Products  
+      Products associated with the extraction and processing of crude oil.
+      - #### 10101010  Crude Oil  
+        Raw, unprocessed blend of various petroleum products. Highly volatile components are traded as Natural Gas (101020).
       - #### 10101015  Crude Variance  
         Product that tracks the variance or volatility of crude oil.
       - #### 10101050  Crude Transfer  
@@ -47,7 +49,7 @@ comcat tree
         Combustible hydrocarbon liquid widely used widely used as aviation fuel.
       - #### 10103040  Diesel  (Petrodiesel, Gas Oil)
         Any liquid fuel specifically designed for use in diesel engines
-      - #### 10103050  Marine Fuel  (Fuel Oil, NSFO, HSFO, HFO, Bunker)
+      - #### 10103050  Marine Fuel  (Fuel Oil, Bunker, HFO, HSFO, NSFO)
         Any type of fuel oil used aboard water vessels. Usually bunker B or bunker C, also known as No. 5 or No. 6 respectively.
       - #### 10103060  Naphtha  
         Flammable liquid hydrocarbon mixture produced from natural gas condensates, petroleum distillates, and the distillation of coal tar and peat.
@@ -175,7 +177,7 @@ comcat tree
       Cereal grain in the Avena genus (Avena sativa).
     - #### 201060  Sorghum  
       Grain of an annual cereal, some cultivars are perennial, in the Sorghum genus ranging from 2 to 4 mm in diameter.
-    - #### 201065  Pearl Millet  (Bajra, Sajjey, Kambu)
+    - #### 201065  Pearl Millet  (Bajra, Kambu, Sajjey)
       Grain of Pennisetum glaucum, ovoid, of 3-4 mm length, nearly white, pale yellow, brown, grey, slate blue or purple.
     - #### 201070  Rye  
       Grain of the cereal of the Triticeae tribe in the Secale genus.
@@ -405,12 +407,14 @@ comcat tree
     Fruits or seeds of plants in the family Fabaceae (or Leguminosae). Either fresh (legumes) or dried (pulses).
     - #### 204510  Chickpeas  (Bengal Gram, Chana)
       Seed of annual legume Cicer arietinum.
-    - #### 204520  Adzuki Beans  (Azuki Beans, Red Mung Beans, Red Beans)
+    - #### 204520  Adzuki Beans  (Azuki Beans, Red Beans, Red Mung Beans)
       Seed of Vigna angularis.
     - #### 204525  Mung Beans  (Green Gram)
       Seed of Vigna radiata.
     - #### 204527  Urad  (Black Gram)
       Seed of Vigna mungo.
+    - #### 204530  Peas  
+      Seed of Lathyrus oleraceus
   - #### 2050  Fruits  
     The ripened reproductive body of a seed plant 
     - #### 205010  Citrus Fruits  
@@ -881,8 +885,10 @@ comcat tree
       Natural wax produced by honey bees of the genus Apis.
   - #### 3050  Inorganic Compounds  
     Compounds that do not contain a C atom. Exceptions are made for isocyanide/cyanide and their non-hydrocarbyl derivatives, thiophosgene, carbon diselenide, carbon monosulfide, carbon disulfide, carbon subsulfide, carbon monoxide, carbon trioxide, carbon suboxide, and dicarbon monoxide.
-    - #### 305010  Sodium Carbonate  (Soda Ash, E500, Washing Soda)
+    - #### 305010  Sodium Carbonate  (Soda Ash, Washing Soda, E500)
       Sodium carbonate.
+    - #### 305015  Sodium Hydroxide  (Caustic Soda, Lye)
+      Sodium hydroxide.
     - #### 305020  Glass  
       Non-crystalline, often transparent amorphous solid.
     - #### 305030  Intermetallics  
@@ -905,6 +911,10 @@ comcat tree
         Polymer made up of propylene monomers (propene).
       - #### 30601040  Polystyrene  (PS)
         Polymer made up of styrene monomers, formula (C8H8)n.
+      - #### 30601050  Styrene-butadiene copolymer  (SBR, Styrene-butadiene Rubber)
+        Polymer made up of styrene and butadiene monomers, formula (C8H8)m(C4H6)n.
+      - #### 30601055  Polybutadiene  (BR, Butadiene Rubber)
+        Polymer made up of buta-1,3-diene monomers, formula (C4H6)n.
     - #### 306020  Benzenoids  
       Aromatic compounds containing one or more benzene rings.
       - #### 30602010  Benzene  
