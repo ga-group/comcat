@@ -833,6 +833,8 @@ comcat tree
     Oleochemicals are products derived from vegetal oils and fats, e.g. by hydrolysis, transesterification, or hydrogenation.
     - #### 302010  Biodiesel  (FAME, Fatty Acid Methyl Ester)
       Oleochemical derived by transesterification of fats with methanol, usually blended with petrodiesel.
+    - #### 302015  Used Cooking Oil  (UCOME, Used Cooking Oil Methyl Ester)
+      Feedstock to produce biofuel, most notably Fatty Acid Methyl Ester (FAME).
     - #### 302020  Polylactic Acid  (PLA)
       Thermoplastic polyester obtained by condensation of lactic acid, a monomer made from fermented plant starch such as from corn, cassava, sugarcane or sugar beet pulp.
     - #### 302030  Polyamide 11  (PA 11)
