@@ -418,6 +418,7 @@ comcat tree
   - 3020  Oleochemicals  
     - 302010  Biodiesel  (FAME, Fatty Acid Methyl Ester)
     - 302015  Used Cooking Oil  (UCOME, Used Cooking Oil Methyl Ester)
+    - 302018  Hydrotreated Vegetable Oil  (HVO)
     - 302020  Polylactic Acid  (PLA)
     - 302030  Polyamide 11  (PA 11)
     - 302040  Ethylene  (Ethene)

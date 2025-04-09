@@ -3897,6 +3897,15 @@ ccat:302015
 	skos:notation	"302015" ;
 	skos:prefLabel	"Used Cooking Oil"@en .
 
+ccat:302018
+	a	skos:Concept ;
+	skos:altLabel	"HVO"@en ;
+	skos:broader	ccat:3020 ;
+	skos:definition	"Feedstock to produce biofuel, most notably Fatty Acid Methyl Ester (FAME)."@en ;
+	skos:inScheme	ccat: ;
+	skos:notation	"302018" ;
+	skos:prefLabel	"Hydrotreated Vegetable Oil"@en .
+
 ccat:302020
 	a	skos:Concept ;
 	skos:altLabel	"PLA"@en ;
