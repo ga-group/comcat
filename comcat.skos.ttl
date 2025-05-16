@@ -768,6 +768,17 @@ ccat:104040
 	skos:note	"It is a brittle metal with a silvery white color when freshly produced, but surface oxidation can give it an iridescent tinge in numerous colours. Bismuth is the most naturally diamagnetic element, and has one of the lowest values of thermal conductivity among metals."@en ;
 	skos:prefLabel	"Bismuth"@en .
 
+ccat:104050
+	a	skos:Concept ;
+	skos:broader	ccat:1040 ;
+	skos:closeMatch	wd:Q743 ;
+	skos:definition	"Tungsten extracted from tungsten concentrate or tungsten(VI) oxide (WO3)"@en ;
+	skos:exactMatch	agrovoc:c_8006 , eurovoc:4577 ;
+	skos:inScheme	ccat: ;
+	skos:notation	"104050" ;
+	skos:note	"It is remarkable for its robustness, especially the fact that it has the highest melting point of all known elements, melting at 3,695 K. It also has the highest boiling point, at 6203 K. Its density is 19.254 g/cm3, comparable with that of uranium and gold, and much higher (about 1.7 times) than that of lead. Polycrystalline tungsten is an intrinsically brittle and hard material (under standard conditions, when uncombined), making it difficult to work into metal. However, pure single-crystalline tungsten is more ductile and can be cut with a hard-steel hacksaw."@en ;
+	skos:prefLabel	"Tungsten"@en .
+
 ccat:20
 	a	skos:Concept ;
 	skos:definition	"Soft commodities, or softs, are commodities that, generally, are grown, rather than mined.  Furthermore, softs in this concept scheme are primarily for consumption, i.e. distinct from Materials."@en ;

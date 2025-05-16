@@ -80,6 +80,7 @@ comcat tree
     - 104020  Cobalt  
     - 104030  Lithium  
     - 104040  Bismuth  
+    - 104050  Tungsten  
 - 20  Softs  
   - 2010  Cereals  
     - 201010  Maize  (Corn)

@@ -159,6 +159,8 @@ comcat tree
       Lithium carbonate 99%, or Lithium hydroxide monohydrate 56.5%.
     - #### 104040  Bismuth  
       Bismuth 99.99% extracted from ores containing bismuth oxide or sulfide
+    - #### 104050  Tungsten  
+      Tungsten extracted from tungsten concentrate or tungsten(VI) oxide (WO3)
 - #### 20  Softs  
   Soft commodities, or softs, are commodities that, generally, are grown, rather than mined.  Furthermore, softs in this concept scheme are primarily for consumption, i.e. distinct from Materials.
   - #### 2010  Cereals  
